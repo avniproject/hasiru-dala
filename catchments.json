@@ -1,0 +1,15 @@
+{
+  "organisation": "Hasiru Dala",
+  "catchments": [
+    {
+      "name": "Default",
+      "uuid": "4895b1b8-6721-4a7c-98e3-8a94b88d4e17",
+      "type": "Default",
+      "locations": [
+        {
+          "uuid": "769963e1-1e58-4ce5-88cf-0ff9fda53128"
+        }
+      ]
+    }
+  ]
+}

@@ -11,24 +11,28 @@ module.exports = IDI.configure({
     "files": {
         "adminUsers": {
             // "prod": ["admin-user.json"],
-            "dev": [],
+            "dev": ["users/dev-admin-user.json"],
         },
         "forms": [
-
+            "registration/registrationForm.json"
         ],
         "formMappings": [
+            "formMappings.json",
         ],
         "formDeletions": [
         ],
         "formAdditions": [
         ],
         "catchments": [
+            "catchments.json",
         ],
         "checklistDetails": [
         ],
         "concepts": [
+            "registration/registrationConcepts.json",
         ],
         "locations": [
+            "addressLevel/locations.json",
         ],
         "programs": [],
         "encounterTypes": [],
@@ -36,9 +40,10 @@ module.exports = IDI.configure({
         "operationalPrograms": [],
         "operationalSubjectTypes": [],
         "users": {
-            "dev": []
+            "dev": ["users/dev-users.json"]
         },
         "rules": [
+            "./rules.js"
         ],
         "organisationSql": [
             /* "create_organisation.sql"*/
