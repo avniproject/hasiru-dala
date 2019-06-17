@@ -3,6 +3,887 @@
   "uuid": "8dd651b2-4cba-4f5a-8453-d7ab1f2d4c70",
   "formType": "IndividualProfile",
   "formElementGroups": [
+    {
+      "uuid": "476325df-47ab-4c8c-9649-debf0858163f",
+      "name": "Personal details",
+      "display": "Personal details",
+      "displayOrder": 1,
+      "formElements": [
+        {
+          "name": "Gender",
+          "uuid": "0b1d2523-af7f-44d0-be54-dab13af1398b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "483be0b2-b6ba-40e0-8bf7-91cb33c6e284"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Marital status",
+          "uuid": "40500879-98d9-4314-bc2e-6f0eff4917cc",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "aa6687c9-ba4d-49a3-9b3e-bba266eb6f32"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Photo of the person",
+          "uuid": "5f1b9435-dcbf-497a-a5e5-88f199222a55",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c74df3ef-717a-41e6-aef0-2e92a6bb7947"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "81c6d146-9904-42e5-bf35-d6ec9614b2c0",
+      "name": "Present Address",
+      "display": "Present Address",
+      "displayOrder": 2,
+      "formElements": [
+        {
+          "name": "Address Line 1 (House No, Street No/ Name)",
+          "uuid": "1a593973-0e94-48b9-927d-13b8469d9110",
+          "keyValues": [],
+          "concept": {
+            "uuid": "78cf3a0c-51cb-42be-8e35-23466e6333c2"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Address Line 2 (Post Office)",
+          "uuid": "e7c6c24c-3ec5-4231-a3d2-dceeeae3d945",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8cfab39a-2b0e-48fb-8a42-e106f57f9bdf"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Landmark 1",
+          "uuid": "d7970f3-e6bf-41ad-a3c5-fc2e9365a6f0",
+          "keyValues": [],
+          "concept": {
+            "uuid": "20fe6109-2d1e-48be-80ba-44ee4a90d1c5"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Landmark 2",
+          "uuid": "2fa9df0b-c720-4da0-9b50-cbbee8fd4ca8",
+          "keyValues": [],
+          "concept": {
+            "uuid": "3483dde8-559d-40bf-a3a7-3aeba441e35c"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Area",
+          "uuid": "17ec836b-6dd5-4b42-9c61-aeff70f302ca",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8fa734d8-413f-4ea2-a716-68f3196fb58d"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Pincode",
+          "uuid": "63cb1d3f-3f37-455d-9356-e6d1011199f6",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c0f81e8b-73c0-4274-875d-f68b1f1609f9"
+          },
+          "validFormat": {
+            "regex": "^[0-5]{6}$",
+            "descriptionKey": "Required6Digits"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "407d8d1f-adb8-4f95-a3c8-247097e17c5e",
+      "name": "Present Address Contact",
+      "display": "Contact",
+      "displayOrder": 3,
+      "formElements": [
+        {
+          "name": "Contact Number 1",
+          "uuid": "b2f96b6a-77ac-4c50-9673-878ceb9201f2",
+          "keyValues": [],
+          "concept": {
+            "uuid": "89ad0295-2d2b-41ea-bb75-c305d1eb7f03"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{10}$",
+            "descriptionKey": "Required10Digits"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "Contact Number 2",
+          "uuid": "ff9d36f9-e3b2-4e16-afb7-af9d2a7da2a2",
+          "keyValues": [],
+          "concept": {
+            "uuid": "4052c3c4-ba44-455a-9de9-64643fe46e90"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{10}$",
+            "descriptionKey": "Required10Digits"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "d564801e-e742-4d5b-ab09-44c962287a16",
+      "name": "Permanent Address",
+      "display": "Permanent Address",
+      "displayOrder": 4,
+      "formElements": [
+        {
+          "name": "Address Line 1 (House No, Street No/ Name)",
+          "uuid": "ab688589-ba2c-4a23-9808-94babbf55fa8",
+          "keyValues": [],
+          "concept": {
+            "uuid": "42ef2e2b-6a46-4dae-9445-1e523c1f2003"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Address Line 2 (Post Office)",
+          "uuid": "630bf980-9274-475c-9bbd-62df1afc4fa0",
+          "keyValues": [],
+          "concept": {
+            "uuid": "bb251685-3535-4dd3-a43e-9d23a4bbebae"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Landmark 1",
+          "uuid": "82ef43fd-9bde-4746-9db3-61f349a7557f",
+          "keyValues": [],
+          "concept": {
+            "uuid": "93953b32-2183-42c1-800c-9263fe04d56a"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Landmark 2",
+          "uuid": "75030f0c-6af6-4b4a-b0b7-5f77b5964804",
+          "keyValues": [],
+          "concept": {
+            "uuid": "47f2a27d-4773-41f5-b6ca-06e3b5fe8b32"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Area",
+          "uuid": "3f754d8f-d004-4822-8def-2343104f73bb",
+          "keyValues": [],
+          "concept": {
+            "uuid": "a97adba1-6ef4-4dd2-87f3-e1ce0e90277b"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Pincode",
+          "uuid": "8bd4852a-20b2-4507-900d-990d6e2122b7",
+          "keyValues": [],
+          "concept": {
+            "uuid": "7b0bf444-a553-4d7b-a89e-36964e509113"
+          },
+          "validFormat": {
+            "regex": "^[0-5]{6}$",
+            "descriptionKey": "Required6Digits"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "State",
+          "uuid": "c2a80969-9244-4361-a0b1-107eb89ae2d2",
+          "keyValues": [],
+          "concept": {
+            "uuid": "cb323d35-a254-4a36-9236-3a21fb8714dd"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "City",
+          "uuid": "4e503d2c-7a8a-4d31-b6cb-28d7d4e75b35",
+          "keyValues": [],
+          "concept": {
+            "uuid": "1b3795f7-7539-442c-b691-227277829231"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "8afea609-8f03-4fd4-837e-e10e4b9d4baf",
+      "name": "Contact",
+      "display": "Contact",
+      "displayOrder": 5,
+      "formElements": [
+        {
+          "name": "Contact Name 1",
+          "uuid": "371a18aa-7a8f-40ed-8fb0-dce3a4fb30ff",
+          "keyValues": [],
+          "concept": {
+            "uuid": "466bafd2-b9f6-4b10-84c8-6a3601c41517"
+          },
+          "displayOrder": 9,
+          "mandatory": true
+        },
+        {
+          "name": "Contact Number 1",
+          "uuid": "1711f44f-21fd-470d-840a-9f0010764e6d",
+          "keyValues": [],
+          "concept": {
+            "uuid": "503fe95f-2638-46a8-b4ef-521dfea5b0e1"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{10}$",
+            "descriptionKey": "Required10Digits"
+          },
+
+          "displayOrder": 10,
+          "mandatory": true
+        },
+        {
+          "name": "Contact Name 2",
+          "uuid": "30b77b56-6cc2-4cc1-a0f6-9ece1cf5e166",
+          "keyValues": [],
+          "concept": {
+            "uuid": "61bf5d7c-2d86-4c0e-9c0b-736166490261"
+          },
+          "displayOrder": 11,
+          "mandatory": false
+        },
+        {
+          "name": "Contact Number 2",
+          "uuid": "069b199d-0435-4866-bd00-d20b94d5e4e0",
+          "keyValues": [],
+          "concept": {
+            "uuid": "40a6d2d9-c91a-4bf9-8814-ff4cb4304588"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{10}$",
+            "descriptionKey": "Required10Digits"
+          },
+          "displayOrder": 12,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "985695c7-40a1-4963-91b7-d05b7832eae3",
+      "name": "Education Details",
+      "display": "Education Details",
+      "displayOrder": 6,
+      "formElements": [
+        {
+          "name": "Level of Education",
+          "uuid": "d094be62-0cc7-4eed-84e7-869a2d6fd945",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "172422bf-c005-49e5-bd17-910356ea70a0"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Are you studying presently?",
+          "uuid": "8761e8a9-fc89-49e7-99e1-8e84a9082114",
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "5e24c1a3-ab22-499f-b709-f7fdc3d31563"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Please select the class/course",
+          "uuid": "d6ea734a-913f-44e8-8e78-52459061f3c5",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "91441342-9ce0-4bd0-acb7-37d850fe198f"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Please enter details of your skill/vocational training",
+          "uuid": "68956afd-5704-4434-88eb-7816c5f4744d",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c40d800e-5694-4b25-b6ed-765f91568a75"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Please select the reason(s) for discontinuation",
+          "uuid": "412832f5-41b6-46f0-bbbf-8e2736b0319a",
+          "keyValues": [],
+          "type": "MultiSelect",
+
+          "concept": {
+            "uuid": "92fc2b55-2cb7-4c01-8c1f-c22f5ba6034d"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "f8155b82-143e-49d2-8ff3-50be7b52c8f6",
+      "name": "Diability",
+      "display": "Diability",
+      "displayOrder": 7,
+      "formElements": [
+        {
+          "name": "Do you have any physical disability?",
+          "uuid": "600cd21b-e743-4d3f-a435-5ff639cc6ad9",
+          "keyValues": [],
+          "concept": {
+            "uuid": "a7dae83a-7fae-4332-a5c6-f5440dc12968"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Please enter details",
+          "uuid": "59f67cf9-5d0a-4cf0-9d99-20db0bf49817",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c22cee86-fc7b-4f87-8506-4847fcda46aa"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Do you have a doctor's certificate indicating the percentage of disability?",
+          "uuid": "a1a0d344-9fb1-450d-aca0-2ee7492f81fe",
+          "keyValues": [],
+          "concept": {
+            "uuid": "d7686bf2-e43d-42cc-89f2-69b15363ecd9"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Please upload the doctor's certificate",
+          "uuid": "2c044679-e461-4b3d-ab5d-895e9a3ae707",
+          "keyValues": [],
+          "concept": {
+            "uuid": "1c1f2eae-7ff2-4fa0-8bce-6cba6ca60671"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "13d4c41f-873d-46ae-98ab-4173f2bf4abf",
+      "name": "Employment",
+      "display": "Employment",
+      "displayOrder": 8,
+      "formElements": [
+        {
+          "name": "Please choose your employment type",
+          "uuid": "17948e9a-340d-408e-9670-9509cd437942",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "ef22528d-d19d-44e8-aff7-2ecd6f0f0f66"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "7c9da158-ae75-4898-86d6-b8c830547312",
+      "name": "Identity Card",
+      "display": "Identity Card",
+      "displayOrder": 9,
+      "formElements": [
+        {
+          "name": "Do you have any of the following?\n1. Voter Registration Card\n2. Ration/ BPL Card\n3. Aadhar Card\n4. Aadhar Enrolment ID\n5. Labour Card\n6. Health Card\n7. PAN Card\n8. Any other ID? ",
+          "uuid": "136c51f7-5c1d-4511-9831-29c9dcd69985",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8a996d93-908f-433f-8037-ff088e623e22"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Card Number",
+          "uuid": "14dcb373-882b-435b-b7d4-1a3a37c8a981",
+          "keyValues": [],
+          "concept": {
+            "uuid": "f796c203-aeb6-4ec6-afd5-8e99f499f29d"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Name of the Card/Scheme",
+          "uuid": "002b67d8-2ffb-4825-8e34-94a3892fd332",
+          "keyValues": [],
+          "concept": {
+            "uuid": "e54ab1a7-2ccf-4139-95de-5d6911abca20"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Upload Photo",
+          "uuid": "f5ecf443-4687-4541-a042-3319cc082285",
+          "keyValues": [],
+          "concept": {
+            "uuid": "1f1f55c6-8a81-4135-b517-47bf1c2f2b31"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "803746c0-4f23-4b72-8457-175248b78f07",
+      "name": "Occupational ID",
+      "display": "Occupational ID",
+      "displayOrder": 10,
+      "formElements": [
+        {
+          "name": "Do you have an Occupational ID card?",
+          "uuid": "61b7dacb-5867-495f-acf7-c5d705215e35",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c27700d3-9b15-4695-bc29-f4452974287b"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Occupational ID Number",
+          "uuid": "4bffbbf1-8235-4692-81fc-08c938ae3b7b",
+          "keyValues": [],
+          "concept": {
+            "uuid": "af861ce8-a3fd-4048-bf6b-5423839c0e8c"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Upload Photo of the ID",
+          "uuid": "cacd0e25-f647-4707-a40e-6c5d471eba49",
+          "keyValues": [],
+          "concept": {
+            "uuid": "1f1f55c6-8a81-4135-b517-47bf1c2f2b31"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "7cfb0349-4f27-4673-9ba2-c58a2cc8d881",
+      "name": "Profession",
+      "display": "Profession",
+      "displayOrder": 11,
+      "formElements": [
+        {
+          "name": "Type of Informal Waste Worker",
+          "uuid": "df80a8dc-5545-4653-9b79-40dc6d472ad7",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "53779ea6-1734-40ef-a99d-87358952ae90"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Do you have any additional jobs?",
+          "uuid": "724ebba1-88c3-4cba-b1da-9b30cc07ece2",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "e9be897d-0e8d-4a87-bd0e-5cd507823501"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Please provide details",
+          "uuid": "dfa6e171-2b7c-424b-93d3-fefce15686ab",
+          "keyValues": [],
+          "concept": {
+            "uuid": "f275d690-ca9f-4f0a-81b0-d42a28ce5b85"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "How long have you been picking waste/buying waste? (Please mention the number of years and months)",
+          "uuid": "561c18cd-dd36-4fbd-9296-07dee0311a93",
+          "keyValues": [],
+          "concept": {
+            "uuid": "5ddfc77c-dc7f-4030-9c37-b3e7b0c37322"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Are you a member of any organization?",
+          "uuid": "4889a11b-2072-4a0a-aefe-4d11da8136f2",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "cab4b3b6-560b-4fb2-baaa-9318e276dc35"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Name of the Organization",
+          "uuid": "08879021-3841-4f38-8b6f-f04d334cbe45",
+          "keyValues": [],
+          "concept": {
+            "uuid": "fd57e15d-6d51-4287-bbd4-979435108feb"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "a4aef2f0-2417-460d-8f3c-453c46716db0",
+      "name": "Bank Details",
+      "display": "Bank Details",
+      "displayOrder": 12,
+      "formElements": [
+        {
+          "name": "Do you have a bank account?",
+          "uuid": "f4b5d290-eeac-4140-8989-ab517181a5d6",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "3497781e-0014-4568-9eb4-2ffce75fc2fc"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Full Name as on the Account",
+          "uuid": "13e71193-764e-4b6e-bdbd-8db8ed085630",
+          "keyValues": [],
+          "concept": {
+            "uuid": "f23d9f75-5b1a-4eac-bcd2-5a8988b6ca05"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Type of Account",
+          "uuid": "02c68e2b-a50d-40b6-8e1c-c6abd054c181",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "8904f972-6287-4744-99a9-9007cf610301"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Account Number",
+          "uuid": "be63d9cd-b19e-4505-a9c7-7039246ee1e4",
+          "keyValues": [],
+          "concept": {
+            "uuid": "bd2a222f-7867-4802-a9ee-f9ef72b53c5c"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "IFSC Code",
+          "uuid": "e78958aa-9b99-46dd-99d8-58d286bf4d9d",
+          "keyValues": [],
+          "concept": {
+            "uuid": "d1c177d1-a060-4d1b-874a-e774a8de71dc"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "MICR Code",
+          "uuid": "806fe6a3-d53b-445d-adc0-43e30bca886b",
+          "keyValues": [],
+          "concept": {
+            "uuid": "0a5b97f3-9cb6-4d86-b04b-19c27a6ffbb1"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        },
+        {
+          "name": "Name of the Bank",
+          "uuid": "d9ccf9a5-ee4f-47ce-bb10-97182bbbc903",
+          "keyValues": [],
+          "concept": {
+            "uuid": "1ed1672c-f0ea-451a-be4f-fcfc9a35b96d"
+          },
+          "displayOrder": 7,
+          "mandatory": false
+        },
+        {
+          "name": "Name of the Branch",
+          "uuid": "a16937a6-b5ae-456a-8fa3-9aeb64dee43a",
+          "keyValues": [],
+          "concept": {
+            "uuid": "f0718f94-c41c-4f97-8b8f-5d1d225cfe7f"
+          },
+          "displayOrder": 8,
+          "mandatory": false
+        },
+        {
+          "name": "Upload photo of first page of passbook",
+          "uuid": "2da2cc13-93d6-4272-a4c1-846ccbaf7c58",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8661cac8-ffc9-40df-90eb-455cd1e53b44"
+          },
+          "displayOrder": 9,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "3859dd31-3550-4248-9ea8-c2a076ef674a",
+      "name": "Post Office SB",
+      "display": "Post Office SB",
+      "displayOrder": 13,
+      "formElements": [
+        {
+          "name": "Do you have a post office SB account?",
+          "uuid": "2efbe03f-dab8-4ed6-bc38-99f256ac9434",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "19ce8d65-d3c7-47aa-ab46-c68076d6dbfe"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Full Name as on the Account",
+          "uuid": "b43507e5-6100-4c68-a421-6816e03b8fb2",
+          "keyValues": [],
+          "concept": {
+            "uuid": "83f280d3-4986-49d2-ab80-38db88fd8ec1"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Type of Account",
+          "uuid": "bc542346-8c85-4f75-8536-852c85ba11b9",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "7716939d-c44d-4bc9-8185-e4de574d00a4"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Account Number",
+          "uuid": "4163450b-a099-4c49-9aa8-10be4d905eaa",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8ab7a2de-c820-4244-b04e-cbdd960a6bd3"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "IFSC Code",
+          "uuid": "571215af-6b7c-489c-95a2-78122a0ff3fc",
+          "keyValues": [],
+          "concept": {
+            "uuid": "58194c9b-1ef5-48b0-8605-d7dc138b10ac"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "MICR Code",
+          "uuid": "d4199b8d-4f06-455d-85a6-6b2a8ed1a0e2",
+          "keyValues": [],
+          "concept": {
+            "uuid": "9e70adbd-a393-4a9d-b18c-642cdb0a5afc"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        },
+        {
+          "name": "Name of the Bank",
+          "uuid": "1f8df4c0-b254-4f31-9859-3b5e8ee807f5",
+          "keyValues": [],
+          "concept": {
+            "uuid": "200b29a0-f384-4dca-9508-90064bc9f34d"
+          },
+          "displayOrder": 7,
+          "mandatory": false
+        },
+        {
+          "name": "Name of the Branch",
+          "uuid": "e2fddff6-df46-44ad-9224-c4fa8b1a5d87",
+          "keyValues": [],
+          "concept": {
+            "uuid": "4740c0d4-d986-40c0-ab17-f4b60e5ab39a"
+          },
+          "displayOrder": 8,
+          "mandatory": false
+        },
+        {
+          "name": "Upload photo of first page of passbook",
+          "uuid": "6da1946a-2902-4fb2-93d6-8113f1c58448",
+          "keyValues": [],
+          "concept": {
+            "uuid": "5619c65d-b7be-4883-8d1c-f1c84b9f89f6"
+          },
+          "displayOrder": 9,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "924f60a9-c9cd-4343-a032-05b366056c15",
+      "name": "Loan",
+      "display": "Loan",
+      "displayOrder": 14,
+      "formElements": [
+        {
+          "name": "Do you have access to loans from banks/other schemes? ",
+          "uuid": "14be9b98-6290-4dc2-8075-aa75a2de41bf",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "2ac47a61-504a-4d5a-bcfd-cb6093978532"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "aa4253a9-8e6d-45bf-bcef-9c788f5de6ee",
+      "name": "Trainings",
+      "display": "Trainings",
+      "displayOrder": 15,
+      "formElements": [
+        {
+          "name": "Have you undergone any of the following trainings?",
+          "uuid": "262753d8-bd4a-43b0-ad1d-2bfee3904713",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "2ac22c50-8ca5-4589-8441-88d67fe44b70"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Do you have any family members/dependents living with you?",
+          "uuid": "6c2fc89d-eaff-450c-84b7-8cbb2b072c27",
+          "keyValues": [],
+          "concept": {
+            "uuid": "be439fb2-b4a2-4b20-ab30-aab4672e347e"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "What is his/her relationship with you",
+          "uuid": "0f56994e-c935-432d-8f2a-4be0c24d39b2",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "a26dfb19-6fb6-409c-bd78-c7182bd7de40"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Is she/he dependent on your income?",
+          "uuid": "c3318fe4-a7a8-4e94-add5-53fc302bc537",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c3318fe4-a7a8-4e94-add5-53fc302bc537"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "79158f16-8896-412b-93d5-78dc8d133f14",
+      "name": "Introduced by",
+      "display": "Introduced by",
+      "displayOrder": 16,
+      "formElements": [
+        {
+          "name": "Introduced by (Name)",
+          "uuid": "2980af24-e833-49fa-83da-98d5b5c25abd",
+          "keyValues": [],
+          "concept": {
+            "uuid": "22a79433-4513-41bf-80dc-9677262b57e6"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Designation of Introducer",
+          "uuid": "b7edf54a-ba71-4d69-b82b-36967b5d4a63",
+          "keyValues": [],
+          "concept": {
+            "uuid": "2789fc32-a398-42a9-97c3-552206c5b4ad"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        }
+      ]
+    }
 
   ]
 }
+

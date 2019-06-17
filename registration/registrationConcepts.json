@@ -1,3 +1,975 @@
 [
+    {
+      "uuid": "daadb409-0aad-4faf-88b4-b604107c27c3",
+      "name": "Male/Man"
+    },
+    {
+      "uuid": "12f000bf-7a39-4e62-abf8-4bc14b612209",
+      "name": "Female/Woman"
+    },
+    {
+      "uuid": "c41e9c59-1208-4e12-a19b-d983a50b6f4a",
+      "name": "TransMale/TransMan"
+    },
+    {
+      "uuid": "6aa25c32-8b7e-4fda-bc7f-269e26fae60f",
+      "name": "TransFemale/TranWoman"
+    },
+    {
+      "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+      "name": "Other"
+    },
+    {
+      "name": "Gender",
+      "uuid": "483be0b2-b6ba-40e0-8bf7-91cb33c6e284",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "daadb409-0aad-4faf-88b4-b604107c27c3",
+          "name": "Male/Man"
+        },
+        {
+          "uuid": "12f000bf-7a39-4e62-abf8-4bc14b612209",
+          "name": "Female/Woman"
+        },
+        {
+          "uuid": "c41e9c59-1208-4e12-a19b-d983a50b6f4a",
+          "name": "TransMale/TransMan"
+        },
+        {
+          "uuid": "6aa25c32-8b7e-4fda-bc7f-269e26fae60f",
+          "name": "TransFemale/TranWoman"
+        },
+        {
+          "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+          "name": "Other"
+        }
+      ]
+    },
+    {
+      "uuid": "068800a4-3a8f-475a-824b-0a49c4962ac7",
+      "name": "Single"
+    },
+    {
+      "uuid": "d48e172a-5358-4f10-9eed-75b6c2fdfe2a",
+      "name": "Married"
+    },
+    {
+      "uuid": "708e7ddd-8c0f-4e74-ad30-097ca30e1f5f",
+      "name": "Widowed"
+    },
+    {
+      "name": "Marital status",
+      "uuid": "aa6687c9-ba4d-49a3-9b3e-bba266eb6f32",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "068800a4-3a8f-475a-824b-0a49c4962ac7",
+          "name": "Single"
+        },
+        {
+          "uuid": "d48e172a-5358-4f10-9eed-75b6c2fdfe2a",
+          "name": "Married"
+        },
+        {
+          "uuid": "708e7ddd-8c0f-4e74-ad30-097ca30e1f5f",
+          "name": "Widowed"
+        }
+      ]
+    },
+    {
+      "name": "Photo of the person",
+      "uuid": "c74df3ef-717a-41e6-aef0-2e92a6bb7947",
+      "dataType": "Image"
+    },
+    {
+      "name": "Address Line 1 (House No, Street No/ Name)",
+      "uuid": "78cf3a0c-51cb-42be-8e35-23466e6333c2",
+      "dataType": "Text"
+    },
+    {
+      "name": "Address Line 2 (Post Office)",
+      "uuid": "8cfab39a-2b0e-48fb-8a42-e106f57f9bdf",
+      "dataType": "Text"
+    },
+    {
+      "name": "Landmark 1",
+      "uuid": "20fe6109-2d1e-48be-80ba-44ee4a90d1c5",
+      "dataType": "Text"
+    },
+    {
+      "name": "Landmark 2",
+      "uuid": "3483dde8-559d-40bf-a3a7-3aeba441e35c",
+      "dataType": "Text"
+    },
+    {
+      "name": "Area",
+      "uuid": "8fa734d8-413f-4ea2-a716-68f3196fb58d",
+      "dataType": "Text"
+    },
+    {
+      "name": "Pincode",
+      "uuid": "c0f81e8b-73c0-4274-875d-f68b1f1609f9",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Contact Number 1",
+      "uuid": "89ad0295-2d2b-41ea-bb75-c305d1eb7f03",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Contact Number 2",
+      "uuid": "4052c3c4-ba44-455a-9de9-64643fe46e90",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Permanent Address Address Line 1 (House No, Street No/ Name)",
+      "uuid": "42ef2e2b-6a46-4dae-9445-1e523c1f2003",
+      "dataType": "Text"
+    },
+    {
+      "name": "Permanent Address Address Line 2 (Post Office)",
+      "uuid": "bb251685-3535-4dd3-a43e-9d23a4bbebae",
+      "dataType": "Text"
+    },
+    {
+      "name": "Permanent Address Landmark 1",
+      "uuid": "93953b32-2183-42c1-800c-9263fe04d56a",
+      "dataType": "Text"
+    },
+    {
+      "name": "Permanent Address Landmark 2",
+      "uuid": "47f2a27d-4773-41f5-b6ca-06e3b5fe8b32",
+      "dataType": "Text"
+    },
+    {
+      "name": "Permanent Address Area",
+      "uuid": "a97adba1-6ef4-4dd2-87f3-e1ce0e90277b",
+      "dataType": "Text"
+    },
+    {
+      "name": "Permanent Address Pincode",
+      "uuid": "7b0bf444-a553-4d7b-a89e-36964e509113",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Permanent Address State",
+      "uuid": "cb323d35-a254-4a36-9236-3a21fb8714dd",
+      "dataType": "Text"
+    },
+    {
+      "name": "Permanent Address City",
+      "uuid": "1b3795f7-7539-442c-b691-227277829231",
+      "dataType": "Text"
+    },
+    {
+      "name": "Permanent Address Contact Name 1",
+      "uuid": "466bafd2-b9f6-4b10-84c8-6a3601c41517",
+      "dataType": "Text"
+    },
+    {
+      "name": "Permanent Address Contact Number 1",
+      "uuid": "503fe95f-2638-46a8-b4ef-521dfea5b0e1",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Permanent Address Contact Name 2",
+      "uuid": "61bf5d7c-2d86-4c0e-9c0b-736166490261",
+      "dataType": "Text"
+    },
+    {
+      "name": "Permanent Address Contact Number 2",
+      "uuid": "40a6d2d9-c91a-4bf9-8814-ff4cb4304588",
+      "dataType": "Numeric"
+    },
+    {
+      "uuid": "b1186c6f-2c36-4673-be53-f2c8ce3913b1",
+      "name": "Class 5 or below"
+    },
+    {
+      "uuid": "40fb3443-af13-403f-94fc-466f807bfeff",
+      "name": "Below Class 10"
+    },
+    {
+      "uuid": "4c4f2e42-db3b-4e48-ac6f-27313c816948",
+      "name": "Class 10 Fail"
+    },
+    {
+      "uuid": "d234e3a7-fc11-4143-adc0-a90e634725e3",
+      "name": "Class 10 Pass"
+    },
+    {
+      "uuid": "6c4214ff-481b-4290-ad19-6cef6f6a98dd",
+      "name": "Pre-Degree/Diploma Fail"
+    },
+    {
+      "uuid": "92f41032-222e-4153-a921-4f9d28173ab3",
+      "name": "Pre-Degree/Diploma Pass"
+    },
+    {
+      "uuid": "ba2f4ed8-efc4-47c3-a933-0fa5f1ed73db",
+      "name": "Degree Fail"
+    },
+    {
+      "uuid": "836cb1ed-72b5-4537-b043-464b6edbd701",
+      "name": "Degree Pass"
+    },
+    {
+      "uuid": "376190b0-9383-4575-af69-fb187debbf01",
+      "name": "Post-Graduate"
+    },
+    {
+      "name": "Level of Education",
+      "uuid": "172422bf-c005-49e5-bd17-910356ea70a0",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "e7116c89-7fc5-406c-b2ab-c022fd84fb1a",
+          "name": "Illiterate"
+        },
+        {
+          "uuid": "b1186c6f-2c36-4673-be53-f2c8ce3913b1",
+          "name": "Class 5 or below"
+        },
+        {
+          "uuid": "40fb3443-af13-403f-94fc-466f807bfeff",
+          "name": "Below Class 10"
+        },
+        {
+          "uuid": "4c4f2e42-db3b-4e48-ac6f-27313c816948",
+          "name": "Class 10 Fail"
+        },
+        {
+          "uuid": "d234e3a7-fc11-4143-adc0-a90e634725e3",
+          "name": "Class 10 Pass"
+        },
+        {
+          "uuid": "6c4214ff-481b-4290-ad19-6cef6f6a98dd",
+          "name": "Pre-Degree/Diploma Fail"
+        },
+        {
+          "uuid": "92f41032-222e-4153-a921-4f9d28173ab3",
+          "name": "Pre-Degree/Diploma Pass"
+        },
+        {
+          "uuid": "ba2f4ed8-efc4-47c3-a933-0fa5f1ed73db",
+          "name": "Degree Fail"
+        },
+        {
+          "uuid": "836cb1ed-72b5-4537-b043-464b6edbd701",
+          "name": "Degree Pass"
+        },
+        {
+          "uuid": "376190b0-9383-4575-af69-fb187debbf01",
+          "name": "Post-Graduate"
+        },
+        {
+          "uuid": "b615e65a-bf52-437b-b005-b3e80d123aa9",
+          "name": "Other: Skill/Vocational Training"
+        }
+      ]
+    },
+    {
+      "name": "Are you studying presently?",
+      "uuid": "5e24c1a3-ab22-499f-b709-f7fdc3d31563",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "uuid": "db117a24-8bb1-41f6-8184-308bfbc9b687",
+      "name": "Nursery School"
+    },
+    {
+      "uuid": "7759d6eb-6a93-4f69-9c41-c3eaa94b5a97",
+      "name": "Primary School "
+    },
+    {
+      "uuid": "60872b73-2e64-4322-b9fb-bc3219864429",
+      "name": "Middle School"
+    },
+    {
+      "uuid": "e2ec0552-e480-4635-b366-c1b787f4eecc",
+      "name": "High School"
+    },
+    {
+      "uuid": "efddbca2-3826-4f29-be0f-1f823f411817",
+      "name": "Pre-Degree"
+    },
+    {
+      "uuid": "93050c14-2afb-4bcd-905c-8e13a90018b8",
+      "name": "Diploma"
+    },
+    {
+      "uuid": "e68619d0-5126-498a-887b-19de85e604a0",
+      "name": "Under-Graduate Degree"
+    },
+    {
+      "uuid": "a52b860e-ea18-4918-8d99-5490a90a5699",
+      "name": "Post-Graduate Degree"
+    },
+    {
+      "uuid": "b615e65a-bf52-437b-b005-b3e80d123aa9",
+      "name": "Other: Skill/Vocational Training"
+    },
+    {
+      "name": "Please select the class/course",
+      "uuid": "91441342-9ce0-4bd0-acb7-37d850fe198f",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "db117a24-8bb1-41f6-8184-308bfbc9b687",
+          "name": "Nursery School"
+        },
+        {
+          "uuid": "7759d6eb-6a93-4f69-9c41-c3eaa94b5a97",
+          "name": "Primary School "
+        },
+        {
+          "uuid": "60872b73-2e64-4322-b9fb-bc3219864429",
+          "name": "Middle School"
+        },
+        {
+          "uuid": "e2ec0552-e480-4635-b366-c1b787f4eecc",
+          "name": "High School"
+        },
+        {
+          "uuid": "efddbca2-3826-4f29-be0f-1f823f411817",
+          "name": "Pre-Degree"
+        },
+        {
+          "uuid": "93050c14-2afb-4bcd-905c-8e13a90018b8",
+          "name": "Diploma"
+        },
+        {
+          "uuid": "e68619d0-5126-498a-887b-19de85e604a0",
+          "name": "Under-Graduate Degree"
+        },
+        {
+          "uuid": "a52b860e-ea18-4918-8d99-5490a90a5699",
+          "name": "Post-Graduate Degree"
+        },
+        {
+          "uuid": "b615e65a-bf52-437b-b005-b3e80d123aa9",
+          "name": "Other: Skill/Vocational Training"
+        }
+      ]
+    },
+    {
+      "uuid": "495631f3-1336-4741-8dc7-97599fc0e3f1",
+      "name": "I was stopped by my family to study further"
+    },
+    {
+      "uuid": "e551691d-11d4-4a67-8f43-7b6e01aee644",
+      "name": "We could not afford it financially"
+    },
+    {
+      "uuid": "0df12445-2cd4-49e7-becd-d37e29b140a3",
+      "name": "No interest in formal education"
+    },
+    {
+      "uuid": "5ad01d69-0019-46ed-b0c7-180fce9b9eb1",
+      "name": "No schools nearby/Schools have bad infrastructure"
+    },
+    {
+      "uuid": "634ed9d9-1779-4dd5-b44e-bf7e98d9a7e9",
+      "name": "I have the minimum qualification required"
+    },
+    {
+      "uuid": "c42c683a-6389-41c5-9e71-ff0e80b6d854",
+      "name": "Any Other"
+    },
+    {
+      "name": "Please enter details of your skill/vocational training",
+      "uuid": "c40d800e-5694-4b25-b6ed-765f91568a75",
+      "dataType": "Text"
+    },
+    {
+      "name": "Please select the reason(s) for discontinuation",
+      "uuid": "92fc2b55-2cb7-4c01-8c1f-c22f5ba6034d",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "495631f3-1336-4741-8dc7-97599fc0e3f1",
+          "name": "I was stopped by my family to study further"
+        },
+        {
+          "uuid": "e551691d-11d4-4a67-8f43-7b6e01aee644",
+          "name": "We could not afford it financially"
+        },
+        {
+          "uuid": "0df12445-2cd4-49e7-becd-d37e29b140a3",
+          "name": "No interest in formal education"
+        },
+        {
+          "uuid": "5ad01d69-0019-46ed-b0c7-180fce9b9eb1",
+          "name": "No schools nearby/Schools have bad infrastructure"
+        },
+        {
+          "uuid": "634ed9d9-1779-4dd5-b44e-bf7e98d9a7e9",
+          "name": "I have the minimum qualification required"
+        },
+        {
+          "uuid": "c42c683a-6389-41c5-9e71-ff0e80b6d854",
+          "name": "Any Other"
+        }
+      ]
+    },
+    {
+      "name": "Do you have any physical disability?",
+      "uuid": "a7dae83a-7fae-4332-a5c6-f5440dc12968",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Please enter details",
+      "uuid": "c22cee86-fc7b-4f87-8506-4847fcda46aa",
+      "dataType": "Text"
+    },
+    {
+      "name": "Do you have a doctor's certificate indicating the percentage of disability? ",
+      "uuid": "d7686bf2-e43d-42cc-89f2-69b15363ecd9",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Please upload the doctor's certificate",
+      "uuid": "1c1f2eae-7ff2-4fa0-8bce-6cba6ca60671",
+      "dataType": "Image"
+    },
+    {
+      "uuid": "db273d91-0db8-4a9c-9919-0b3c20ce7b28",
+      "name": "Informal waste worker"
+    },
+    {
+      "uuid": "95604ffe-180a-447a-85ac-960c10e64170",
+      "name": "Informal Sanitation worker"
+    },
+    {
+      "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+      "name": "Other"
+    },
+    {
+      "uuid": "71137918-fad5-4e42-98b0-c0475e4a8258",
+      "name": "Unemployed"
+    },
+    {
+      "name": "Please choose your employment type",
+      "uuid": "ef22528d-d19d-44e8-aff7-2ecd6f0f0f66",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "db273d91-0db8-4a9c-9919-0b3c20ce7b28",
+          "name": "Informal waste worker"
+        },
+        {
+          "uuid": "95604ffe-180a-447a-85ac-960c10e64170",
+          "name": "Informal Sanitation worker"
+        },
+        {
+          "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+          "name": "Other"
+        },
+        {
+          "uuid": "71137918-fad5-4e42-98b0-c0475e4a8258",
+          "name": "Unemployed"
+        }
+      ]
+    },
+    {
+      "name": "Do you have any of the following?\n1. Voter Registration Card\n2. Ration/ BPL Card\n3. Aadhar Card\n4. Aadhar Enrolment ID\n5. Labour Card\n6. Health Card\n7. PAN Card\n8. Any other ID? ",
+      "uuid": "8a996d93-908f-433f-8037-ff088e623e22",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Card Number",
+      "uuid": "f796c203-aeb6-4ec6-afd5-8e99f499f29d",
+      "dataType": "Text"
+    },
+    {
+      "name": "Name of the Card/Scheme",
+      "uuid": "e54ab1a7-2ccf-4139-95de-5d6911abca20",
+      "dataType": "Text"
+    },
+    {
+      "name": "Upload Photo",
+      "uuid": "f0520fe8-d828-4ba8-9e0f-0ccf9f1e1f12",
+      "dataType": "Image"
+    },
+    {
+      "name": "Do you have an Occupational ID card?",
+      "uuid": "c27700d3-9b15-4695-bc29-f4452974287b",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Occupational ID Number",
+      "uuid": "af861ce8-a3fd-4048-bf6b-5423839c0e8c",
+      "dataType": "Text"
+    },
+    {
+      "name": "Upload Photo of the ID",
+      "uuid": "1f1f55c6-8a81-4135-b517-47bf1c2f2b31",
+      "dataType": "Image"
+    },
+    {
+      "uuid": "9f2252c8-f7ec-4f5d-a180-c360bbba5e63",
+      "name": "Wastepicker "
+    },
+    {
+      "uuid": "6d92f3d7-8e07-4b09-af1c-c07bed51bad0",
+      "name": "Itinerant buyer "
+    },
+    {
+    "uuid": "4abc9d8d-6770-4701-8130-e975a1004ff2",
+    "name": "Sorters at scrap shops"
+    },
+    {
+      "uuid": "69f995e6-31ec-437e-a040-7605d0926af2",
+      "name": "Sorters at DWCC"
+    },
+    {
+      "uuid": "389954fa-55a0-4a29-b112-162253ce3710",
+      "name": "Waste collectors on ULB Autorickshaws/trucks"
+    },
+    {
+      "uuid": "daf8c14f-828f-4a0b-8a13-44b51c1fa039",
+      "name": "Scrap Dealer"
+    },
+    {
+      "name": "Type of Informal Waste Worker",
+      "uuid": "53779ea6-1734-40ef-a99d-87358952ae90",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "9f2252c8-f7ec-4f5d-a180-c360bbba5e63",
+          "name": "Wastepicker "
+        },
+        {
+          "uuid": "6d92f3d7-8e07-4b09-af1c-c07bed51bad0",
+          "name": "Itinerant buyer "
+        },
+        {
+          "uuid": "4abc9d8d-6770-4701-8130-e975a1004ff2",
+          "name": "Sorters at scrap shops"
+        },
+        {
+          "uuid": "69f995e6-31ec-437e-a040-7605d0926af2",
+          "name": "Sorters at DWCC"
+        },
+        {
+          "uuid": "389954fa-55a0-4a29-b112-162253ce3710",
+          "name": "Waste collectors on ULB Autorickshaws/trucks"
+        },
+        {
+          "uuid": "daf8c14f-828f-4a0b-8a13-44b51c1fa039",
+          "name": "Scrap Dealer"
+        }
+      ]
+    },
+    {
+      "uuid": "9ef3bb7c-b8d4-40b3-8439-4c5f1b4fb033",
+      "name": "Event Waste Management"
+    },
+    {
+      "uuid": "cf521622-9a28-49dd-afb9-40d92a6a0153",
+      "name": "Cleaning Services"
+    },
+    {
+      "uuid": "52bacdb8-ef10-4fce-bddb-3dff37e610a3",
+      "name": "Composting Services"
+    },
+    {
+      "uuid": "c5cc6b9e-a8ca-44dc-85f6-de11fa13586a",
+      "name": "Door to Door Waste Collector"
+    },
+    {
+      "uuid": "452e91c8-5daf-490e-be9f-9457b2720d72",
+      "name": "City Sanitation Worker"
+    },
+    {
+      "uuid": "4fde0153-d73d-48fc-8ad1-5b0532c54603",
+      "name": "Contract Sanitation Worker  "
+    },
+    {
+      "uuid": "c42c683a-6389-41c5-9e71-ff0e80b6d854",
+      "name": "Any Other"
+    },
+    {
+      "name": "Do you have any additional jobs?",
+      "uuid": "e9be897d-0e8d-4a87-bd0e-5cd507823501",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "9ef3bb7c-b8d4-40b3-8439-4c5f1b4fb033",
+          "name": "Event Waste Management"
+        },
+        {
+          "uuid": "cf521622-9a28-49dd-afb9-40d92a6a0153",
+          "name": "Cleaning Services"
+        },
+        {
+          "uuid": "52bacdb8-ef10-4fce-bddb-3dff37e610a3",
+          "name": "Composting Services"
+        },
+        {
+          "uuid": "c5cc6b9e-a8ca-44dc-85f6-de11fa13586a",
+          "name": "Door to Door Waste Collector"
+        },
+        {
+          "uuid": "452e91c8-5daf-490e-be9f-9457b2720d72",
+          "name": "City Sanitation Worker"
+        },
+        {
+          "uuid": "4fde0153-d73d-48fc-8ad1-5b0532c54603",
+          "name": "Contract Sanitation Worker  "
+        },
+        {
+          "uuid": "c42c683a-6389-41c5-9e71-ff0e80b6d854",
+          "name": "Any Other"
+        }
+      ]
+    },
+    {
+      "name": "Please provide details",
+      "uuid": "f275d690-ca9f-4f0a-81b0-d42a28ce5b85",
+      "dataType": "Text"
+    },
+    {
+      "name": "How long have you been picking waste/buying waste? (Please mention the number of years and months)",
+      "uuid": "5ddfc77c-dc7f-4030-9c37-b3e7b0c37322",
+      "dataType": "Date"
+    },
+    {
+      "name": "Are you a member of any organization?",
+      "uuid": "cab4b3b6-560b-4fb2-baaa-9318e276dc35",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Name of the Organization",
+      "uuid": "fd57e15d-6d51-4287-bbd4-979435108feb",
+      "dataType": "Text"
+    },
+    {
+      "name": "Do you have a bank account?",
+      "uuid": "3497781e-0014-4568-9eb4-2ffce75fc2fc",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Full Name as on the Account",
+      "uuid": "f23d9f75-5b1a-4eac-bcd2-5a8988b6ca05",
+      "dataType": "Text"
+    },
+    {
+      "uuid": "67ace3b5-57a1-4757-b3a5-c26c310170d2",
+      "name": "Savings"
+    },
+    {
+      "uuid": "6a06e9ce-6f3f-4af1-a63f-cd1ff74fd2e3",
+      "name": "Current"
+    },
+    {
+      "name": "Type of Account",
+      "uuid": "8904f972-6287-4744-99a9-9007cf610301",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "67ace3b5-57a1-4757-b3a5-c26c310170d2",
+          "name": "Savings"
+        },
+        {
+          "uuid": "6a06e9ce-6f3f-4af1-a63f-cd1ff74fd2e3",
+          "name": "Current"
+        }
+      ]
+    },
+    {
+      "name": "Account Number",
+      "uuid": "bd2a222f-7867-4802-a9ee-f9ef72b53c5c",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "IFSC Code",
+      "uuid": "d1c177d1-a060-4d1b-874a-e774a8de71dc",
+      "dataType": "Text"
+    },
+    {
 
+      "name": "MICR Code",
+      "uuid": "0a5b97f3-9cb6-4d86-b04b-19c27a6ffbb1",
+      "dataType": "Text"
+    },
+    {
+      "name": "Name of the Bank",
+      "uuid": "1ed1672c-f0ea-451a-be4f-fcfc9a35b96d",
+      "dataType": "Text"
+    },
+    {
+      "name": "Name of the Branch",
+      "uuid": "f0718f94-c41c-4f97-8b8f-5d1d225cfe7f",
+      "dataType": "Text"
+    },
+    {
+      "name": "Upload photo of first page of passbook",
+      "uuid": "8661cac8-ffc9-40df-90eb-455cd1e53b44",
+      "dataType": "Image"
+    },
+    {
+      "name": "Do you have a post office SB account?",
+      "uuid": "19ce8d65-d3c7-47aa-ab46-c68076d6dbfe",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+  {
+    "name": "Post Office SB Full Name as on the Account",
+    "uuid": "83f280d3-4986-49d2-ab80-38db88fd8ec1",
+    "dataType": "Text"
+  },
+  {
+    "name": "Post Office SB Type of Account",
+    "uuid": "7716939d-c44d-4bc9-8185-e4de574d00a4",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "67ace3b5-57a1-4757-b3a5-c26c310170d2",
+        "name": "Savings"
+      },
+      {
+        "uuid": "6a06e9ce-6f3f-4af1-a63f-cd1ff74fd2e3",
+        "name": "Current"
+      }
+    ]
+  },
+  {
+    "name": "Post Office SB Account Number",
+    "uuid": "8ab7a2de-c820-4244-b04e-cbdd960a6bd3",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Post Office SB IFSC Code",
+    "uuid": "58194c9b-1ef5-48b0-8605-d7dc138b10ac",
+    "dataType": "Text"
+  },
+  {
+    "name": "Post Office SB MICR Code",
+    "uuid": "9e70adbd-a393-4a9d-b18c-642cdb0a5afc",
+    "dataType": "Text"
+  },
+  {
+    "name": "Post Office SB Name of the Bank",
+    "uuid": "200b29a0-f384-4dca-9508-90064bc9f34d",
+    "dataType": "Text"
+  },
+  {
+    "name": "Post Office SB Name of the Branch",
+    "uuid": "4740c0d4-d986-40c0-ab17-f4b60e5ab39a",
+    "dataType": "Text"
+  },
+  {
+    "name": "Post Office SB Upload photo of first page of passbook",
+    "uuid": "5619c65d-b7be-4883-8d1c-f1c84b9f89f6",
+    "dataType": "Image"
+  },
+  {
+    "name": "Do you have access to loans from banks/other schemes? ",
+    "uuid": "2ac47a61-504a-4d5a-bcfd-cb6093978532",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "uuid": "447bcec8-54e2-4f22-8af4-ba76881fdca0",
+    "name": "Organic Waste Processing"
+  },
+  {
+    "uuid": "103d7c81-6e8b-4bfc-a18e-51b966e02186",
+    "name": "Plastics Waste Management/Recycling/CIPET"
+  },
+  {
+    "uuid": "f988e8ae-cde3-4399-bc69-adf8fdb43958",
+    "name": "Skill Council for Green Jobs (SCGJ) Training"
+  },
+  {
+    "uuid": "9d20be27-871c-4fb3-82c2-3f8f2983021d",
+    "name": "Retail Scrap Shop Certificate Program"
+  },
+  {
+    "uuid": "adb9a9cd-88d8-4be8-abeb-7232776229da",
+    "name": "Four Wheeler/Commercial Vehicle Driver's Training"
+  },
+  {
+    "uuid": "5c84d73b-c5e4-4af4-97f3-6129e0dd8d06",
+    "name": "Mushroom training"
+  },
+  {
+    "uuid": "cff5ce7c-3381-47b8-afe8-ee892ddb80c7",
+    "name": "Chicken Rearing Training "
+  },
+  {
+    "name": "Have you undergone any of the following trainings?",
+    "uuid": "2ac22c50-8ca5-4589-8441-88d67fe44b70",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "447bcec8-54e2-4f22-8af4-ba76881fdca0",
+        "name": "Organic Waste Processing"
+      },
+      {
+        "uuid": "9ef3bb7c-b8d4-40b3-8439-4c5f1b4fb033",
+        "name": "Event Waste Management"
+      },
+      {
+        "uuid": "103d7c81-6e8b-4bfc-a18e-51b966e02186",
+        "name": "Plastics Waste Management/Recycling/CIPET"
+      },
+      {
+        "uuid": "f988e8ae-cde3-4399-bc69-adf8fdb43958",
+        "name": "Skill Council for Green Jobs (SCGJ) Training"
+      },
+      {
+        "uuid": "9d20be27-871c-4fb3-82c2-3f8f2983021d",
+        "name": "Retail Scrap Shop Certificate Program"
+      },
+      {
+        "uuid": "adb9a9cd-88d8-4be8-abeb-7232776229da",
+        "name": "Four Wheeler/Commercial Vehicle Driver's Training"
+      },
+      {
+        "uuid": "5c84d73b-c5e4-4af4-97f3-6129e0dd8d06",
+        "name": "Mushroom training"
+      },
+      {
+        "uuid": "cff5ce7c-3381-47b8-afe8-ee892ddb80c7",
+        "name": "Chicken Rearing Training "
+      },
+      {
+        "uuid": "c42c683a-6389-41c5-9e71-ff0e80b6d854",
+        "name": "Any Other"
+      }
+    ]
+  },
+  {
+    "name": "Do you have any family members/dependents living with you?",
+    "uuid": "be439fb2-b4a2-4b20-ab30-aab4672e347e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "What is his/her relationship with you",
+    "uuid": "a26dfb19-6fb6-409c-bd78-c7182bd7de40",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3305a303-be7f-4270-9f52-055a037b1f1f",
+        "name": "Husband"
+      },
+      {
+        "uuid": "77e9a994-23b5-4d88-bb16-c36dd3c3f58e",
+        "name": "Wife"
+      },
+      {
+        "uuid": "4ab468c6-edca-44ae-8158-e98baac08fab",
+        "name": "Son"
+      },
+      {
+        "uuid": "28b6b4bb-63c8-478a-93d3-a340ec13364c",
+        "name": "Daughter"
+      }
+    ]
+  },
+  {
+    "name": "Is she/he dependent on your income?",
+    "uuid": "c3318fe4-a7a8-4e94-add5-53fc302bc537",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+
+    ]
+  },
+  {
+    "name": "Introduced by (Name)",
+    "uuid": "22a79433-4513-41bf-80dc-9677262b57e6",
+    "dataType": "Text"
+  },
+  {
+    "name": "Designation of Introducer",
+    "uuid": "2789fc32-a398-42a9-97c3-552206c5b4ad",
+    "dataType": "Text"
+  }
 ]
