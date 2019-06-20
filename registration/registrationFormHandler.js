@@ -52,11 +52,6 @@ class RegistrationViewHandlerHasiruDala {
     }
 
     @WithRegistrationStatusBuilder
-    doYouHaveAnOccupationalIdCard([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Please choose your employment type").containsAnswerConceptName("Informal waste worker");
-    }
-
-    @WithRegistrationStatusBuilder
     occupationalIdNumber([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have an Occupational ID card?").is.yes;
     }
