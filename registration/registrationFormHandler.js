@@ -52,6 +52,11 @@ class RegistrationViewHandlerHasiruDala {
     }
 
     @WithRegistrationStatusBuilder
+    doYouHaveAnOccupationalIdCard([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose your employment type").containsAnswerConceptName("Informal waste worker");
+    }
+
+    @WithRegistrationStatusBuilder
     occupationalIdNumber([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have an Occupational ID card?").is.yes;
     }
@@ -61,7 +66,50 @@ class RegistrationViewHandlerHasiruDala {
     statusBuilder.show().when.valueInRegistration("Do you have an Occupational ID card?").is.yes;
     }
 
+    @WithRegistrationStatusBuilder
+    nameOfTheOrganization([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Are you a member of any organization?").is.yes;
+    }
 
+    @WithRegistrationStatusBuilder
+    fullNameAsOnTheAccount([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    typeOfAccount([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    accountNumber([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    ifscCode([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    micrCode([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameOfTheBank([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameOfTheBranch([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    uploadPhotoOfFirstPageOfPassbook([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
 
 }
 
