@@ -436,17 +436,17 @@
       "displayOrder": 9,
       "formElements": [
         {
-          "name": "Do you have any of the following?\n1. Voter Registration Card\n2. Ration/ BPL Card\n3. Aadhar Card\n4. Aadhar Enrolment ID\n5. Labour Card\n6. Health Card\n7. PAN Card\n8. Any other ID? ",
+          "name": "Whether you have Voter Registration Card",
           "uuid": "136c51f7-5c1d-4511-9831-29c9dcd69985",
           "keyValues": [],
           "concept": {
-            "uuid": "8a996d93-908f-433f-8037-ff088e623e22"
+            "uuid": "23dbec91-3aae-4e0f-98ee-17f75efb64d0"
           },
           "displayOrder": 1,
           "mandatory": true
         },
         {
-          "name": "Card Number",
+          "name": "Voter Registration Card Number",
           "uuid": "14dcb373-882b-435b-b7d4-1a3a37c8a981",
           "keyValues": [],
           "concept": {
@@ -456,23 +456,333 @@
           "mandatory": true
         },
         {
-          "name": "Name of the Card/Scheme",
-          "uuid": "002b67d8-2ffb-4825-8e34-94a3892fd332",
+          "name": "Voter Registration Card Photo",
+          "uuid": "f5ecf443-4687-4541-a042-3319cc082285",
           "keyValues": [],
           "concept": {
-            "uuid": "e54ab1a7-2ccf-4139-95de-5d6911abca20"
+            "uuid": "f0520fe8-d828-4ba8-9e0f-0ccf9f1e1f12"
           },
           "displayOrder": 3,
           "mandatory": true
         },
         {
-          "name": "Upload Photo",
-          "uuid": "f5ecf443-4687-4541-a042-3319cc082285",
+          "name": "Whether you have Ration/BPL Card",
+          "uuid": "c3d6e62f-7e16-495e-b899-16492003642c",
           "keyValues": [],
           "concept": {
-            "uuid": "1f1f55c6-8a81-4135-b517-47bf1c2f2b31"
+            "uuid": "28d66d45-5d71-4648-acc7-9a18716b98e0"
           },
           "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Ration/BPL Card Number",
+          "uuid": "b0ddfb4f-56a0-48cb-9ad6-e5403d78400b",
+          "keyValues": [],
+          "concept": {
+            "uuid": "15d136e5-ad88-491d-94ae-8995c4f782dc"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Ration/BPL Card Photo",
+          "uuid": "3facff06-305f-4f1c-9400-0cb1a43b7903",
+          "keyValues": [],
+          "concept": {
+            "uuid": "2628e2ec-2ad2-4ee5-b061-6b0306d20601"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Whether you have Aadhar Card",
+          "uuid": "7a3eb642-b86b-446b-a357-5592320b1dc3",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c1f2b0cb-8bd0-4b6c-ab00-1ab710817a09"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "Aadhar Card Number",
+          "uuid": "46997548-628b-4f09-af91-08bd3f465aef",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8c7c1065-31c4-42ba-9b10-58f994f31a6b"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        },
+        {
+          "name": "Aadhar Card Photo",
+          "uuid": "9289728f-cff4-428d-b91e-7088f49d5db9",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b0fc2677-4030-4a26-b057-253e1cb54221"
+          },
+          "displayOrder": 9,
+          "mandatory": true
+        },
+        {
+          "name": "Whether you have Aadhar Enrolment Card",
+          "uuid": "716508dd-81c3-4c36-a903-3322c3fd70fe",
+          "keyValues": [],
+          "concept": {
+            "uuid": "17147552-019f-43d2-bfb3-300742d8daf8"
+          },
+          "displayOrder": 10,
+          "mandatory": true
+        },
+        {
+          "name": "Aadhar Enrolment Card Number",
+          "uuid": "72ea34c5-4db5-4688-97fa-60c75436be88",
+          "keyValues": [],
+          "concept": {
+            "uuid": "f70ad2ca-ee81-468b-8dfe-6fc0dcddece5"
+          },
+          "displayOrder": 11,
+          "mandatory": true
+        },
+        {
+          "name": "Aadhar Enrolment Card Photo",
+          "uuid": "82b6aba7-6068-4257-a5ae-e885780c3b3f",
+          "keyValues": [],
+          "concept": {
+            "uuid": "9de076ef-4f35-4f53-983c-7d3d19fc9271"
+          },
+          "displayOrder": 12,
+          "mandatory": true
+        },
+        {
+          "name": "Whether you have Labour Card",
+          "uuid": "b9cb383b-2e6d-4693-b223-0469ef46d245",
+          "keyValues": [],
+          "concept": {
+            "uuid": "e6167d58-f2ab-4063-a31e-ef4c27857991"
+          },
+          "displayOrder": 13,
+          "mandatory": true
+        },
+        {
+          "name": "Labour Card Number",
+          "uuid": "72cc562c-9477-4860-b048-a5c44bc90da7",
+          "keyValues": [],
+          "concept": {
+            "uuid": "01e519e1-c1ca-41e0-956a-b17c9a368577"
+          },
+          "displayOrder": 14,
+          "mandatory": true
+        },
+        {
+          "name": "Labour Card Photo",
+          "uuid": "60023949-a5ab-4c08-b18d-2ffa8e38351f",
+          "keyValues": [],
+          "concept": {
+            "uuid": "5a65808b-b1c7-4287-8145-a550e0ca3e71"
+          },
+          "displayOrder": 15,
+          "mandatory": true
+        },
+        {
+          "name": "Whether you have Health Card",
+          "uuid": "730542d7-c106-4a8a-9102-47526d34bfe6",
+          "keyValues": [],
+          "concept": {
+            "uuid": "3140ec79-10b3-4d1f-bdd4-b9fdd935cc8f"
+          },
+          "displayOrder": 16,
+          "mandatory": true
+        },
+        {
+          "name": "Health Card Number",
+          "uuid": "2ebae95c-fa53-4ce9-964d-dcb3bd39737f",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8b003c57-9f8c-45a2-ba42-a4092b0b75cb"
+          },
+          "displayOrder": 17,
+          "mandatory": true
+        },
+        {
+          "name": "Health Card Photo",
+          "uuid": "fdf34b78-8f30-4940-9ffe-ce9eddc4a029",
+          "keyValues": [],
+          "concept": {
+            "uuid": "839abcf2-f00b-4a54-bf60-67f4274abded"
+          },
+          "displayOrder": 18,
+          "mandatory": true
+        },
+        {
+          "name": "Whether you have PAN Card",
+          "uuid": "dda1ae08-509e-4cbf-907a-dcd38ed578c6",
+          "keyValues": [],
+          "concept": {
+            "uuid": "c9b99b92-8545-4944-80d5-7ec2145e162f"
+          },
+          "displayOrder": 19,
+          "mandatory": true
+        },
+        {
+          "name": "PAN Card Number",
+          "uuid": "498d8f46-a1d7-49b1-ba97-086ab90ac548",
+          "keyValues": [],
+          "concept": {
+            "uuid": "0ee788bf-ded3-423a-a18b-32f30200d408"
+          },
+          "displayOrder": 20,
+          "mandatory": true
+        },
+        {
+          "name": "PAN Card Photo",
+          "uuid": "3c862285-38a4-4856-b34d-5379a4e3e9ba",
+          "keyValues": [],
+          "concept": {
+            "uuid": "bfe72493-2304-4fdc-9262-30c29e46efa1"
+          },
+          "displayOrder": 21,
+          "mandatory": true
+        },
+        {
+          "name": "Whether you have any other ID Cards",
+          "uuid": "d18be72d-2c14-49c7-be5d-5f9c58c84562",
+          "keyValues": [],
+          "concept": {
+            "uuid": "3d7cb170-d363-4c90-8755-43aec444abfd"
+          },
+          "displayOrder": 22,
+          "mandatory": true
+        },
+        {
+          "name": "Number of Other ID Cards",
+          "uuid": "93dc4485-5a11-4f0d-9118-fd8c7daf7500",
+          "keyValues": [],
+          "concept": {
+            "uuid": "3e941793-b258-4874-8c68-b20718a07f34"
+          },
+          "displayOrder": 23,
+          "mandatory": true
+        },
+        {
+          "name": "Card Number of Other ID 1",
+          "uuid": "d5a87713-1d32-4fbc-bdfd-d7a54d07db7b",
+          "keyValues": [],
+          "concept": {
+            "uuid": "0877b2bd-7069-45f2-9ab7-8529132c50bc"
+          },
+          "displayOrder": 24,
+          "mandatory": true
+        },
+        {
+          "name": "Name/scheme of Other ID 1",
+          "uuid": "123e2c97-f90a-4503-8975-f11162a8b61a",
+          "keyValues": [],
+          "concept": {
+            "uuid": "74e32026-d054-4843-9dd3-dfe8a065b013"
+          },
+          "displayOrder": 25,
+          "mandatory": true
+        },
+        {
+          "name": "Photo of Other ID 1",
+          "uuid": "2f51698d-4722-4bae-9a56-1af9e363b4a6",
+          "keyValues": [],
+          "concept": {
+            "uuid": "a2cfd126-1f53-4cd2-ab41-16557d1d1010"
+          },
+          "displayOrder": 26,
+          "mandatory": true
+        },
+        {
+          "name": "Card Number of Other ID 2",
+          "uuid": "3982a4b3-758a-4e6f-879c-a1062e845abd",
+          "keyValues": [],
+          "concept": {
+            "uuid": "d39f5315-68dc-4a5c-8b46-852045ed9465"
+          },
+          "displayOrder": 27,
+          "mandatory": true
+        },
+        {
+          "name": "Name/scheme of Other ID 2",
+          "uuid": "65f47653-88c5-4cb4-a2d9-2c3203e116c7",
+          "keyValues": [],
+          "concept": {
+            "uuid": "155ba844-4799-429a-865a-6ffea3815e82"
+          },
+          "displayOrder": 28,
+          "mandatory": true
+        },
+        {
+          "name": "Photo of Other ID 2",
+          "uuid": "1ba097e2-fef4-4c5a-8b6e-7fda91440273",
+          "keyValues": [],
+          "concept": {
+            "uuid": "506a841d-fabe-4308-8af3-0da043ea19fd"
+          },
+          "displayOrder": 29,
+          "mandatory": true
+        },
+        {
+          "name": "Card Number of Other ID 3",
+          "uuid": "6a767fe0-2318-4f49-a628-083672dc1d56",
+          "keyValues": [],
+          "concept": {
+            "uuid": "2b006bad-5805-4471-a0c5-d25aadff2ec6"
+          },
+          "displayOrder": 30,
+          "mandatory": true
+        },
+        {
+          "name": "Name/scheme of Other ID 3",
+          "uuid": "158e6f25-660f-48c3-a649-75559a5c356a",
+          "keyValues": [],
+          "concept": {
+            "uuid": "7cde9e88-7e78-47e4-a3af-21c02723c0ce"
+          },
+          "displayOrder": 31,
+          "mandatory": true
+        },
+        {
+          "name": "Photo of Other ID 3",
+          "uuid": "991ad554-fc7e-483b-b140-b75faa63f1b3",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b7409ee5-ee68-4fb8-8545-2cabd2cda6e3"
+          },
+          "displayOrder": 32,
+          "mandatory": true
+        },
+        {
+          "name": "Card Number of Other ID 4",
+          "uuid": "1ada182c-c550-493c-b458-00620b679642",
+          "keyValues": [],
+          "concept": {
+            "uuid": "e01ca0ee-ab12-47cf-a64a-f931198956e6"
+          },
+          "displayOrder": 33,
+          "mandatory": true
+        },
+        {
+          "name": "Name/scheme of Other ID 4",
+          "uuid": "888a78aa-3c5a-4f25-8558-4e291ef6ba9d",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8de0176a-d4fc-4dc1-937a-e1cefe9cc4fb"
+          },
+          "displayOrder": 34,
+          "mandatory": true
+        },
+        {
+          "name": "Photo of Other ID 4",
+          "uuid": "903f48b6-a01b-4ab4-9d38-e6a4b1b64a42",
+          "keyValues": [],
+          "concept": {
+            "uuid": "2e6e3964-4731-488c-9e2a-f1bb2fbacf41"
+          },
+          "displayOrder": 35,
           "mandatory": true
         }
       ]

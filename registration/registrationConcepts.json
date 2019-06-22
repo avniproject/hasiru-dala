@@ -219,6 +219,10 @@
       "name": "Post-Graduate"
     },
     {
+      "uuid": "b615e65a-bf52-437b-b005-b3e80d123aa9",
+      "name": "Other: Skill/Vocational Training"
+    },
+    {
       "name": "Level of Education",
       "uuid": "172422bf-c005-49e5-bd17-910356ea70a0",
       "dataType": "Coded",
@@ -497,8 +501,8 @@
       ]
     },
     {
-      "name": "Do you have any of the following?\n1. Voter Registration Card\n2. Ration/ BPL Card\n3. Aadhar Card\n4. Aadhar Enrolment ID\n5. Labour Card\n6. Health Card\n7. PAN Card\n8. Any other ID? ",
-      "uuid": "8a996d93-908f-433f-8037-ff088e623e22",
+      "name": "Whether you have Voter Registration Card",
+      "uuid": "23dbec91-3aae-4e0f-98ee-17f75efb64d0",
       "dataType": "Coded",
       "answers": [
         {
@@ -510,18 +514,229 @@
       ]
     },
     {
-      "name": "Card Number",
+      "name": "Voter Registration Card Number",
       "uuid": "f796c203-aeb6-4ec6-afd5-8e99f499f29d",
       "dataType": "Text"
     },
     {
-      "name": "Name of the Card/Scheme",
-      "uuid": "e54ab1a7-2ccf-4139-95de-5d6911abca20",
+      "name": "Voter Registration Card Photo",
+      "uuid": "f0520fe8-d828-4ba8-9e0f-0ccf9f1e1f12",
+      "dataType": "Image"
+    },
+    {
+      "name": "Whether you have Ration/BPL Card",
+      "uuid": "28d66d45-5d71-4648-acc7-9a18716b98e0",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Ration/BPL Card Number",
+      "uuid": "15d136e5-ad88-491d-94ae-8995c4f782dc",
       "dataType": "Text"
     },
     {
-      "name": "Upload Photo",
-      "uuid": "f0520fe8-d828-4ba8-9e0f-0ccf9f1e1f12",
+      "name": "Ration/BPL Card Photo",
+      "uuid": "2628e2ec-2ad2-4ee5-b061-6b0306d20601",
+      "dataType": "Image"
+    },
+    {
+      "name": "Whether you have Aadhar Card",
+      "uuid": "c1f2b0cb-8bd0-4b6c-ab00-1ab710817a09",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Aadhar Card Number",
+      "uuid": "8c7c1065-31c4-42ba-9b10-58f994f31a6b",
+      "dataType": "Text"
+    },
+    {
+      "name": "Aadhar Card Photo",
+      "uuid": "b0fc2677-4030-4a26-b057-253e1cb54221",
+      "dataType": "Image"
+    },
+    {
+      "name": "Whether you have Aadhar Enrolment Card",
+      "uuid": "17147552-019f-43d2-bfb3-300742d8daf8",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Aadhar Enrolment Card Number",
+      "uuid": "f70ad2ca-ee81-468b-8dfe-6fc0dcddece5",
+      "dataType": "Text"
+    },
+    {
+      "name": "Aadhar Enrolment Card Photo",
+      "uuid": "9de076ef-4f35-4f53-983c-7d3d19fc9271",
+      "dataType": "Image"
+    },
+    {
+      "name": "Whether you have Labour Card",
+      "uuid": "e6167d58-f2ab-4063-a31e-ef4c27857991",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Labour Card Number",
+      "uuid": "01e519e1-c1ca-41e0-956a-b17c9a368577",
+      "dataType": "Text"
+    },
+    {
+      "name": "Labour Card Photo",
+      "uuid": "5a65808b-b1c7-4287-8145-a550e0ca3e71",
+      "dataType": "Image"
+    },
+    {
+      "name": "Whether you have Health Card",
+      "uuid": "3140ec79-10b3-4d1f-bdd4-b9fdd935cc8f",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Health Card Number",
+      "uuid": "8b003c57-9f8c-45a2-ba42-a4092b0b75cb",
+      "dataType": "Text"
+    },
+    {
+      "name": "Health Card Photo",
+      "uuid": "839abcf2-f00b-4a54-bf60-67f4274abded",
+      "dataType": "Image"
+    },
+    {
+      "name": "Whether you have PAN Card",
+      "uuid": "c9b99b92-8545-4944-80d5-7ec2145e162f",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "PAN Card Number",
+      "uuid": "0ee788bf-ded3-423a-a18b-32f30200d408",
+      "dataType": "Text"
+    },
+    {
+      "name": "PAN Card Photo",
+      "uuid": "bfe72493-2304-4fdc-9262-30c29e46efa1",
+      "dataType": "Image"
+    },
+    {
+      "name": "Whether you have any other ID Cards",
+      "uuid": "3d7cb170-d363-4c90-8755-43aec444abfd",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
+    },
+    {
+      "name": "Number of Other ID Cards",
+      "uuid": "3e941793-b258-4874-8c68-b20718a07f34",
+      "dataType": "Text"
+    },
+    {
+      "name": "Card Number of Other ID 1",
+      "uuid": "0877b2bd-7069-45f2-9ab7-8529132c50bc",
+      "dataType": "Text"
+    },
+    {
+      "name": "Name/scheme of Other ID 1",
+      "uuid": "74e32026-d054-4843-9dd3-dfe8a065b013",
+      "dataType": "Text"
+    },
+    {
+      "name": "Photo of Other ID 1",
+      "uuid": "a2cfd126-1f53-4cd2-ab41-16557d1d1010",
+      "dataType": "Image"
+    },
+    {
+      "name": "Card Number of Other ID 2",
+      "uuid": "d39f5315-68dc-4a5c-8b46-852045ed9465",
+      "dataType": "Text"
+    },
+    {
+      "name": "Name/scheme of Other ID 2",
+      "uuid": "155ba844-4799-429a-865a-6ffea3815e82",
+      "dataType": "Text"
+    },
+    {
+      "name": "Photo of Other ID 2",
+      "uuid": "506a841d-fabe-4308-8af3-0da043ea19fd",
+      "dataType": "Image"
+    },
+    {
+      "name": "Card Number of Other ID 3",
+      "uuid": "2b006bad-5805-4471-a0c5-d25aadff2ec6",
+      "dataType": "Text"
+    },
+    {
+      "name": "Name/scheme of Other ID 3",
+      "uuid": "7cde9e88-7e78-47e4-a3af-21c02723c0ce",
+      "dataType": "Text"
+    },
+    {
+      "name": "Photo of Other ID 3",
+      "uuid": "b7409ee5-ee68-4fb8-8545-2cabd2cda6e3",
+      "dataType": "Image"
+    },
+    {
+      "name": "Card Number of Other ID 4",
+      "uuid": "e01ca0ee-ab12-47cf-a64a-f931198956e6",
+      "dataType": "Text"
+    },
+    {
+      "name": "Name/scheme of Other ID 4",
+      "uuid": "8de0176a-d4fc-4dc1-937a-e1cefe9cc4fb",
+      "dataType": "Text"
+    },
+    {
+      "name": "Photo of Other ID 4",
+      "uuid": "2e6e3964-4731-488c-9e2a-f1bb2fbacf41",
       "dataType": "Image"
     },
     {

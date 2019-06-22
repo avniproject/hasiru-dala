@@ -106,6 +106,97 @@ class RegistrationViewHandlerHasiruDala {
     statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
     }
 
+    @WithRegistrationStatusBuilder
+    voterRegistrationCardNumber([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Voter Registration Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    voterRegistrationCardPhoto([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Voter Registration Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    rationBplCardNumber([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Ration/BPL Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    rationBplCardPhoto([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Ration/BPL Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    aadharCardNumber([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    aadharCardPhoto([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    aadharEnrolmentCardNumber([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Enrolment Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    aadharEnrolmentCardPhoto([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Enrolment Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    labourCardNumber([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Labour Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    labourCardPhoto([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Labour Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    healthCardNumber([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Health Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    healthCardPhoto([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Health Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    panCardNumber([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have PAN Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    panCardPhoto([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have PAN Card").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    numberOfOtherIdCards([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    cardNumberOfOtherId1([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameSchemeOfOtherId1([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    photoOfOtherId1([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+
 }
 
 module.exports = {RegistrationViewHandlerHasiruDala};
