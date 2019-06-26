@@ -62,6 +62,16 @@ class RegistrationViewHandlerHasiruDala {
     }
 
     @WithRegistrationStatusBuilder
+    doYouHaveAnyAdditionalJobs([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker").containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithRegistrationStatusBuilder
+    pleaseProvideDetails([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker").containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithRegistrationStatusBuilder
     nameOfTheOrganization([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Are you a member of any organization?").is.yes;
     }
@@ -195,6 +205,8 @@ class RegistrationViewHandlerHasiruDala {
     photoOfOtherId1([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
     }
+
+
 
 
 }
