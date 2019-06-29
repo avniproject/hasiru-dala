@@ -420,7 +420,7 @@
           "name": "Please choose your employment type",
           "uuid": "17948e9a-340d-408e-9670-9509cd437942",
           "keyValues": [],
-          "type": "MultiSelect",
+          "type": "SingleSelect",
           "concept": {
             "uuid": "ef22528d-d19d-44e8-aff7-2ecd6f0f0f66"
           },
@@ -885,13 +885,33 @@
           "mandatory": true
         },
         {
-          "name": "Name of the Organization",
+          "name": "Name of the Organization 1",
           "uuid": "08879021-3841-4f38-8b6f-f04d334cbe45",
           "keyValues": [],
           "concept": {
             "uuid": "fd57e15d-6d51-4287-bbd4-979435108feb"
           },
           "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Name of the Organization 2",
+          "uuid": "9d96adf6-afde-43e8-ab31-8a34f4c88717",
+          "keyValues": [],
+          "concept": {
+            "uuid": "86c1d194-32db-44bd-ba5b-ee123e026c7a"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "Name of the Organization 3",
+          "uuid": "afdd86a2-9443-406c-99fb-e8d2370107ec",
+          "keyValues": [],
+          "concept": {
+            "uuid": "4929200d-1ef0-4d98-b08c-1ed56d949a6a"
+          },
+          "displayOrder": 8,
           "mandatory": true
         }
       ]
@@ -1103,7 +1123,7 @@
       "displayOrder": 14,
       "formElements": [
         {
-          "name": "Do you have access to loans from banks/other schemes? ",
+          "name": "Do you have access to loans from banks/other schemes?",
           "uuid": "14be9b98-6290-4dc2-8075-aa75a2de41bf",
           "keyValues": [],
           "type": "SingleSelect",

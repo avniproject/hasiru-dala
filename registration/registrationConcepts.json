@@ -904,8 +904,18 @@
       ]
     },
     {
-      "name": "Name of the Organization",
+      "name": "Name of the Organization 1",
       "uuid": "fd57e15d-6d51-4287-bbd4-979435108feb",
+      "dataType": "Text"
+    },
+    {
+      "name": "Name of the Organization 2",
+      "uuid": "86c1d194-32db-44bd-ba5b-ee123e026c7a",
+      "dataType": "Text"
+    },
+    {
+      "name": "Name of the Organization 3",
+      "uuid": "4929200d-1ef0-4d98-b08c-1ed56d949a6a",
       "dataType": "Text"
     },
     {

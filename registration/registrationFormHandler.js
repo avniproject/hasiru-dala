@@ -3,6 +3,7 @@ import {
     FormElementsStatusHelper,
     FormElementStatusBuilder,
     StatusBuilderAnnotationFactory,
+    WithStatusBuilder,
     FormElementStatus,
     VisitScheduleBuilder,
     ProgramRule,
@@ -48,72 +49,7 @@ class RegistrationViewHandlerHasiruDala {
 
     @WithRegistrationStatusBuilder
     pleaseUploadTheDoctorsCertificate([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Do you have any physical disability?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    occupationalIdNumber([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Do you have an Occupational ID card?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    uploadPhotoOfTheId([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Do you have an Occupational ID card?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    doYouHaveAnyAdditionalJobs([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker").containsAnswerConceptName("Scrap Dealer");
-    }
-
-    @WithRegistrationStatusBuilder
-    pleaseProvideDetails([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker").containsAnswerConceptName("Scrap Dealer");
-    }
-
-    @WithRegistrationStatusBuilder
-    nameOfTheOrganization([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Are you a member of any organization?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    fullNameAsOnTheAccount([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    typeOfAccount([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    accountNumber([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    ifscCode([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    micrCode([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    nameOfTheBank([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    nameOfTheBranch([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    uploadPhotoOfFirstPageOfPassbook([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    statusBuilder.show().when.valueInRegistration("Do you have a doctor's certificate indicating the percentage of disability?").is.yes;
     }
 
     @WithRegistrationStatusBuilder
@@ -204,6 +140,117 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     photoOfOtherId1([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    cardNumberOfOtherId2([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameSchemeOfOtherId2([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    photoOfOtherId2([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    cardNumberOfOtherId3([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameSchemeOfOtherId3([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    photoOfOtherId3([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    cardNumberOfOtherId4([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameSchemeOfOtherId4([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    photoOfOtherId4([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    occupationalIdNumber([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have an Occupational ID card?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    uploadPhotoOfTheId([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have an Occupational ID card?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameOfTheOrganization1([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Are you a member of any organization?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameOfTheOrganization2([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Are you a member of any organization?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameOfTheOrganization3([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Are you a member of any organization?").is.yes;
+    }
+
+
+    @WithRegistrationStatusBuilder
+    fullNameAsOnTheAccount([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    typeOfAccount([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    accountNumber([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    ifscCode([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    micrCode([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameOfTheBank([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameOfTheBranch([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    uploadPhotoOfFirstPageOfPassbook([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
     }
 
 
