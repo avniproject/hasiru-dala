@@ -6,7 +6,8 @@ import {
     FormElementStatus,
     VisitScheduleBuilder,
     ProgramRule,
-    RuleCondition
+    RuleCondition,
+    WithName
 } from 'rules-config/rules';
 
 
@@ -20,6 +21,13 @@ class RegistrationViewHandlerHasiruDala {
         return FormElementsStatusHelper
             .getFormElementsStatusesWithoutDefaults(new RegistrationViewHandlerHasiruDala(), individual, formElementGroup);
     }
+
+    @WithName("Gender")
+    @WithRegistrationStatusBuilder
+    a1([], statusBuilder) {
+    statusBuilder.skipAnswers("Male","Female","Other Gender");
+    }
+
 
     @WithRegistrationStatusBuilder
     pleaseSelectTheClassCourse([], statusBuilder) {
@@ -126,6 +134,7 @@ class RegistrationViewHandlerHasiruDala {
     statusBuilder.show().when.valueInRegistration("Whether you have Voter Registration Card").is.yes;
     }
 
+    
     @WithRegistrationStatusBuilder
     rationBplCardNumber([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Whether you have Ration/BPL Card").is.yes;
@@ -136,6 +145,7 @@ class RegistrationViewHandlerHasiruDala {
     statusBuilder.show().when.valueInRegistration("Whether you have Ration/BPL Card").is.yes;
     }
 
+    
     @WithRegistrationStatusBuilder
     aadharCardNumber([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Card").is.yes;
@@ -145,6 +155,7 @@ class RegistrationViewHandlerHasiruDala {
     aadharCardPhoto([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Card").is.yes;
     }
+    
 
     @WithRegistrationStatusBuilder
     aadharEnrolmentCardNumber([], statusBuilder) {
@@ -206,9 +217,22 @@ class RegistrationViewHandlerHasiruDala {
     statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
     }
 
+    @WithName("Do you have an Occupational ID card?")
+    @WithRegistrationStatusBuilder
+    abc16([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose your employment type")
+        .containsAnswerConceptName("Informal waste worker");
+    }
 
+    @WithName("Type of Informal Waste Worker")
+    @WithRegistrationStatusBuilder
+    abc17([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose your employment type")
+        .containsAnswerConceptName("Informal waste worker");
+    }
 
-
+    //similary write same logic for all the remaining fields 18-27
+ 
 }
 
 module.exports = {RegistrationViewHandlerHasiruDala};
