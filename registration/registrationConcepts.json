@@ -818,6 +818,441 @@
       ]
     },
     {
+      "uuid": "12be7480-c7bd-47a6-9575-132cb6866b35",
+      "name": "Every day"
+    },
+    {
+      "uuid": "7977ae6d-df70-4a02-8f95-3fb7d8f205fe",
+      "name": "Two three times a week"
+    },
+    {
+      "uuid": "9f553973-fb33-4b2d-a4b4-f67749b8b3b6",
+      "name": "Once a week"
+    },
+    {
+      "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+      "name": "Occasionally"
+    },
+    {
+      "name": "How often do you collect scrap/go waste picking?",
+      "uuid": "e19cbd29-b63e-4902-817c-468dc21c0eb9",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "12be7480-c7bd-47a6-9575-132cb6866b35",
+          "name": "Every day"
+        },
+        {
+          "uuid": "7977ae6d-df70-4a02-8f95-3fb7d8f205fe",
+          "name": "Two three times a week"
+        },
+        {
+          "uuid": "9f553973-fb33-4b2d-a4b4-f67749b8b3b6",
+          "name": "Once a week"
+        },
+        {
+          "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+          "name": "Occasionally"
+        }
+      ]
+    },
+    {
+      "uuid": "6bdd77b8-04f9-4863-9dad-ecf5da2cee36",
+      "name": "Free roaming and migrant from other states (living in bangalore for less than 5 years)"
+    },
+    {
+      "uuid": "fb423e29-03fc-48a0-8e3b-895733f7b204",
+      "name": "Free roaming living in Bangalore for more than 5 years"
+    },
+    {
+      "uuid": "77095970-1439-4d1a-b220-44dbf3ee1ea6",
+      "name": "Working as waste collector on ULB Auto rickshaws/trucks"
+    },
+    {
+      "uuid": "7655e832-87ce-4634-863a-13d5cb0babb2",
+      "name": "Working as a sorter under a scrap dealer/ entrepreneur"
+    },
+    {
+      "uuid": "c8cfe2f3-0324-4470-94b4-8e414c6b6c4d",
+      "name": "Working as a sorter in a DWCC"
+    },
+    {
+      "uuid": "7b8b2818-dcd2-4155-82e2-ee07fe5fc420",
+      "name": "Picking waste at the landfill"
+    },
+    {
+      "name": "How do you pick waste?",
+      "uuid": "6be92894-1ba3-4947-8471-dd4dad188c22",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "6bdd77b8-04f9-4863-9dad-ecf5da2cee36",
+          "name": "Free roaming and migrant from other states (living in bangalore for less than 5 years)"
+        },
+        {
+          "uuid": "fb423e29-03fc-48a0-8e3b-895733f7b204",
+          "name": "Free roaming living in Bangalore for more than 5 years"
+        },
+        {
+          "uuid": "77095970-1439-4d1a-b220-44dbf3ee1ea6",
+          "name": "Working as waste collector on ULB Auto rickshaws/trucks"
+        },
+        {
+          "uuid": "7655e832-87ce-4634-863a-13d5cb0babb2",
+          "name": "Working as a sorter under a scrap dealer/ entrepreneur"
+        },
+        {
+          "uuid": "c8cfe2f3-0324-4470-94b4-8e414c6b6c4d",
+          "name": "Working as a sorter in a DWCC"
+        },
+        {
+          "uuid": "7b8b2818-dcd2-4155-82e2-ee07fe5fc420",
+          "name": "Picking waste at the landfill"
+        }
+      ]
+    },
+    {
+      "uuid": "83bdff59-4283-4804-9e1d-a0a32a2539fe",
+      "name": "Plastic"
+    },
+    {
+      "uuid": "793afa49-02e8-4912-aa2c-5954faf5a0d2",
+      "name": "Road scrap"
+    },
+    {
+      "uuid": "25aeefe1-d7ec-44aa-9c3c-885d6bf538ea",
+      "name": "Metal"
+    },
+    {
+      "uuid": "ec76f724-2280-4980-9ba3-be78b0d56105",
+      "name": "Wires"
+    },
+    {
+      "uuid": "70a9c02c-f57f-4d05-8c89-b9d20a0cae23",
+      "name": "Glass"
+    },
+    {
+      "uuid": "6d572af9-f1c6-4649-b3d4-4ab538d8c9a0",
+      "name": "Paper"
+    },
+    {
+      "uuid": "ac308c26-d664-4c45-9344-348e7543e9ea",
+      "name": "Cardboard"
+    },
+    {
+      "name": "What are the kinds of waste you pick/sort?",
+      "uuid": "a59e77bb-592c-4476-9dac-20d9f2d03dc6",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "83bdff59-4283-4804-9e1d-a0a32a2539fe",
+          "name": "Plastic"
+        },
+        {
+          "uuid": "793afa49-02e8-4912-aa2c-5954faf5a0d2",
+          "name": "Road scrap"
+        },
+        {
+          "uuid": "25aeefe1-d7ec-44aa-9c3c-885d6bf538ea",
+          "name": "Metal"
+        },
+        {
+          "uuid": "ec76f724-2280-4980-9ba3-be78b0d56105",
+          "name": "Wires"
+        },
+        {
+          "uuid": "70a9c02c-f57f-4d05-8c89-b9d20a0cae23",
+          "name": "Glass"
+        },
+        {
+          "uuid": "6d572af9-f1c6-4649-b3d4-4ab538d8c9a0",
+          "name": "Paper"
+        },
+        {
+          "uuid": "ac308c26-d664-4c45-9344-348e7543e9ea",
+          "name": "Cardboard"
+        }
+      ]
+    },
+    {
+      "name": "Others",
+      "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
+      "dataType": "Text"
+    },
+    {
+      "name": "Where do you sell your collected waste?",
+      "uuid": "404b2032-d4f6-4212-905d-438f57585530",
+      "dataType": "Text"
+    },
+    {
+      "name": "Name of scrap dealer: ",
+      "uuid": "63e56f31-499a-4dae-ad3d-dc471324fe4e",
+      "dataType": "Text"
+    },
+    {
+      "name": "Address of scrap dealer",
+      "uuid": "34dd92cd-fe0a-49fb-9e98-03269c764a04",
+      "dataType": "Text"
+    },
+    {
+      "name": "Phone number of scrap dealer",
+      "uuid": "b82f10f7-a4de-42ce-9d4e-86c98f45d934",
+      "dataType": "Numeric"
+    },
+    {
+      "uuid": "a2e91670-efa3-41ae-a7b3-209883a0dc07",
+      "name": "Between Rs. 100 – 200 per day"
+    },
+    {
+      "uuid": "93b0c7f5-e1d2-496c-8cf7-8f0498b1844d",
+      "name": "Rs. 200-300 per day"
+    },
+    {
+      "uuid": "c5895e18-4b9d-4296-bd71-7f701b94adbf",
+      "name": "Rs. 300 and above per day"
+    },
+    {
+      "uuid": "a503e450-119e-45be-83a9-430cec5c2e33",
+      "name": "Between Rs. 300-400 per week"
+    },
+    {
+      "uuid": "0a654d73-12de-4484-a3f7-18d86744fe1f",
+      "name": "Rs. 400-600 per week"
+    },
+    {
+      "uuid": "478dd520-c5e5-4cd5-8ce2-5b1059488dbc",
+      "name": "Rs. 600 and above per week"
+    },
+    {
+      "name": "How much do you earn?",
+      "uuid": "ba3a21f4-e428-4508-b41a-367b317d61cc",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "a2e91670-efa3-41ae-a7b3-209883a0dc07",
+          "name": "Between Rs. 100 – 200 per day"
+        },
+        {
+          "uuid": "93b0c7f5-e1d2-496c-8cf7-8f0498b1844d",
+          "name": "Rs. 200-300 per day"
+        },
+        {
+          "uuid": "c5895e18-4b9d-4296-bd71-7f701b94adbf",
+          "name": "Rs. 300 and above per day"
+        },
+        {
+          "uuid": "a503e450-119e-45be-83a9-430cec5c2e33",
+          "name": "Between Rs. 300-400 per week"
+        },
+        {
+          "uuid": "0a654d73-12de-4484-a3f7-18d86744fe1f",
+          "name": "Rs. 400-600 per week"
+        },
+        {
+          "uuid": "478dd520-c5e5-4cd5-8ce2-5b1059488dbc",
+          "name": "Rs. 600 and above per week"
+        }
+      ]
+    },
+    {
+      "uuid": "9b23d9e1-2213-45a9-90d1-32476b4474c2",
+      "name": "On shoulder / head "
+    },
+    {
+      "uuid": "0d438c2d-9ec9-44b8-ae74-06c82d6eb70d",
+      "name": "Cycle"
+    },
+    {
+      "uuid": "9195e81b-23aa-4a72-8459-85c2281cbc45",
+      "name": "Hand cart"
+    },
+    {
+      "uuid": "1369bbe4-e900-4b77-b40d-2247f83362f0",
+      "name": "Motorised vehicle"
+    },
+    {
+      "name": "How do you transport your collected waste?",
+      "uuid": "33c3d095-9ee5-4ad3-83f3-e65e256c7bd8",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "9b23d9e1-2213-45a9-90d1-32476b4474c2",
+          "name": "On shoulder / head "
+        },
+        {
+          "uuid": "0d438c2d-9ec9-44b8-ae74-06c82d6eb70d",
+          "name": "Cycle"
+        },
+        {
+          "uuid": "9195e81b-23aa-4a72-8459-85c2281cbc45",
+          "name": "Hand cart"
+        },
+        {
+          "uuid": "1369bbe4-e900-4b77-b40d-2247f83362f0",
+          "name": "Motorised vehicle"
+        }
+      ]
+    },
+    {
+      "name": "If motorised vehicle then what is your daily expenditure on transport?",
+      "uuid": "84919a5d-f8d9-4075-931f-86523d189ef7",
+      "dataType": "Numeric"
+    },
+    {
+      "uuid": "a747e02e-7f66-4101-9a6a-ce21a6cc4163",
+      "name": "Mostly households / mostly small establishments"
+    },
+    {
+      "uuid": "f96fc611-1d6c-4831-879e-b5f7448c00fd",
+      "name": "Mostly offices/hotels/companies"
+    },
+    {
+      "uuid": "7008ceb1-7641-48b8-83bc-09c92cc169e5",
+      "name": "Mostly industries"
+    },
+    {
+      "name": "Where do you buy your scrap from?",
+      "uuid": "2e6a241b-2a6a-4d1e-a7fb-badc7717fbfa",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "a747e02e-7f66-4101-9a6a-ce21a6cc4163",
+          "name": "Mostly households / mostly small establishments"
+        },
+        {
+          "uuid": "f96fc611-1d6c-4831-879e-b5f7448c00fd",
+          "name": "Mostly offices/hotels/companies"
+        },
+        {
+          "uuid": "7008ceb1-7641-48b8-83bc-09c92cc169e5",
+          "name": "Mostly industries"
+        }
+      ]
+    },
+    {
+      "name": "Please list any other place you buy scrap from",
+      "uuid": "55eae3eb-2dae-499b-9937-2a999f6f193f",
+      "dataType": "Text"
+    },
+    {
+      "name": "What is your daily capital?",
+      "uuid": "73bb061a-7a3c-418b-9db9-a51bd4239b4d",
+      "dataType": "Numeric"
+    },
+    {
+      "uuid": "74466f64-3f7c-4046-aaae-57803cee46b1",
+      "name": "Self"
+    },
+    {
+      "uuid": "a9f5766e-31d9-4f51-b568-710fdcb34ccb",
+      "name": "Scrap trader"
+    },
+    {
+      "name": "Who provides it?",
+      "uuid": "a534c01d-88ce-4c79-9afb-ec541f605562",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "74466f64-3f7c-4046-aaae-57803cee46b1",
+          "name": "Self"
+        },
+        {
+          "uuid": "a9f5766e-31d9-4f51-b568-710fdcb34ccb",
+          "name": "Scrap trader"
+        }
+      ]
+    },
+    {
+      "name": "Any Other for Itinerant buyer ",
+      "uuid": "d25a9af1-8618-4b4f-9c41-84f9c9ff8337",
+      "dataType": "Text"
+    },
+    {
+      "name": "What are the amounts of waste you buy per week in Kg?",
+      "uuid": "943e9303-2d37-48b3-b446-22ee1cc20644",
+      "dataType": "Text"
+    },
+    {
+      "name": "Paper-White",
+      "uuid": "5bbdc2ad-2a6b-4494-8885-d5416e6613c3",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "News paper",
+      "uuid": "139cbe5b-393f-4f57-81df-349dcb2afe55",
+      "dataType": "Text"
+    },
+    {
+      "name": "Plastic for Itinerant buyer",
+      "uuid": "d52a8ab2-6f05-4c86-82aa-25bba0035f6e",
+      "dataType": "Text"
+    },
+    {
+      "name": "Bottles for Itinerant buyer",
+      "uuid": "fbcc6b11-1ce9-463f-b3ce-df7601d95e60",
+      "dataType": "Text"
+    },
+    {
+      "name": "Metal for Itinerant buyer",
+      "uuid": "18992432-aa81-4b61-a362-9b20cbd796ef",
+      "dataType": "Text"
+    },
+    {
+      "name": "Computer and other E-Waste",
+      "uuid": "764bc227-8131-4eee-be3e-c6963552b43d",
+      "dataType": "Text"
+    },
+    {
+      "name": "Any other: Please specify",
+      "uuid": "b7c7ff9f-91a4-4a58-a0e9-d10cce136fc5",
+      "dataType": "Text"
+    },
+    {
+      "name": "No. of shops you run/own/manage",
+      "uuid": "6ecc0b43-8a63-471f-8ed0-91dd95b9945c",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Size of the shop: in sq ft",
+      "uuid": "b8b3dd46-2fe1-47a2-9b1d-bc3709ba1638",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Maximum Storage Capacity",
+      "uuid": "da4292d8-d1f1-4817-9332-4989e5516ff9",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "How many sorters do you employ?",
+      "uuid": "3b63252e-a608-4e8e-a780-a755e86d2657",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "What are your main constraints or challenges?",
+      "uuid": "ecfdb251-9fab-4275-85be-4f674a65e0c5",
+      "dataType": "Text"
+    },
+    {
+      "name": "Where do you get help for capital?",
+      "uuid": "ae8b14e5-e871-4b82-bf36-0f54afd1b1d4",
+      "dataType": "Text"
+    },
+    {
+      "name": "What is the kind of support you feel if provided to you, would help to improve your business?",
+      "uuid": "8883368e-84f2-466c-8bde-6eba5e3a3f0b",
+      "dataType": "Text"
+    },
+    {
+      "name": "Do you need any license to operate?",
+      "uuid": "9ab090b9-0824-4609-a4ca-2ae0107fb12e",
+      "dataType": "Text"
+    },
+    {
+      "name": "Do you have any license?",
+      "uuid": "064704f7-c6a7-415e-a67e-3d52d618b192",
+      "dataType": "Text"
+    },
+    {
       "uuid": "9ef3bb7c-b8d4-40b3-8439-4c5f1b4fb033",
       "name": "Event Waste Management"
     },

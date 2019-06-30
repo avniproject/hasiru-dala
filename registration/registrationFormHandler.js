@@ -23,13 +23,6 @@ class RegistrationViewHandlerHasiruDala {
             .getFormElementsStatusesWithoutDefaults(new RegistrationViewHandlerHasiruDala(), individual, formElementGroup);
     }
 
-    @WithName("Gender")
-    @WithRegistrationStatusBuilder
-    a1([], statusBuilder) {
-    statusBuilder.skipAnswers("Male","Female","Other Gender");
-    }
-
-
     @WithRegistrationStatusBuilder
     pleaseSelectTheClassCourse([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Are you studying presently?").is.yes;
@@ -368,6 +361,104 @@ class RegistrationViewHandlerHasiruDala {
     uploadPhotoOfFirstPageOfPassbook([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
     }
+
+    @WithName("If motorised vehicle then what is your daily expenditure on transport?")
+    @WithRegistrationStatusBuilder
+    abc6([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("How do you transport your collected waste?")
+        .containsAnswerConceptName("Motorised vehicle");
+    }
+
+    @WithName("Where do you buy your scrap from?")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer2([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
+    @WithName("Please list any other place you buy scrap from")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer3([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
+    @WithName("What is your daily capital?")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer4([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
+    @WithName("Who provides it?")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer5([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
+    @WithName("Any Other")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer6([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
+    @WithName("What are the amounts of waste you buy per week in Kg?")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer7([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
+    @WithName("Paper-White")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer8([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
+    @WithName("News paper")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer9([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
+    @WithName("Plastic for Itinerant buyer")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer10([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
+    @WithName("Bottles for Itinerant buyer")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer11([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
+    @WithName("Metal for Itinerant buyer")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer12([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+    @WithName("Computer and other E-Waste")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer13([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
+    @WithName("Any other: Please specify")
+    @WithRegistrationStatusBuilder
+    itinerantBuyer14([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Itinerant buyer");
+    }
+
 
 
 
