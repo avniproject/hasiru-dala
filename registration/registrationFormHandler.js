@@ -323,43 +323,83 @@ class RegistrationViewHandlerHasiruDala {
 
 
     @WithRegistrationStatusBuilder
-    fullNameAsOnTheAccount([], statusBuilder) {
+    fullNameAsOnTheAccountForBank([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
     }
 
     @WithRegistrationStatusBuilder
-    typeOfAccount([], statusBuilder) {
+    typeOfAccountForBank([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
     }
 
     @WithRegistrationStatusBuilder
-    accountNumber([], statusBuilder) {
+    accountNumberForBank([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
     }
 
     @WithRegistrationStatusBuilder
-    ifscCode([], statusBuilder) {
+    ifscCodeForBank([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
     }
 
     @WithRegistrationStatusBuilder
-    micrCode([], statusBuilder) {
+    micrCodeForBank([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
     }
 
     @WithRegistrationStatusBuilder
-    nameOfTheBank([], statusBuilder) {
+    nameOfTheBankForBank([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
     }
 
     @WithRegistrationStatusBuilder
-    nameOfTheBranch([], statusBuilder) {
+    nameOfTheBranchForBank([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
     }
 
     @WithRegistrationStatusBuilder
-    uploadPhotoOfFirstPageOfPassbook([], statusBuilder) {
+    uploadPhotoOfFirstPageOfPassbookForBank([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have a bank account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    fullNameAsOnTheAccountForPostOffice([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a post office SB account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    typeOfAccountForPostOffice([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a post office SB account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    accountNumberForPostOffice([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a post office SB account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    ifscCodeForPostOffice([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a post office SB account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    micrCodeForPostOffice([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a post office SB account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameOfTheBankForPostOffice([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a post office SB account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    nameOfTheBranchForPostOffice([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a post office SB account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    uploadPhotoOfFirstPageOfPassbookForPostOffice([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have a post office SB account?").is.yes;
     }
 
     @WithName("If motorised vehicle then what is your daily expenditure on transport?")

@@ -1271,7 +1271,7 @@
           "mandatory": true
         },
         {
-          "name": "Full Name as on the Account",
+          "name": "Full Name as on the Account For Bank",
           "uuid": "13e71193-764e-4b6e-bdbd-8db8ed085630",
           "keyValues": [],
           "concept": {
@@ -1281,7 +1281,7 @@
           "mandatory": false
         },
         {
-          "name": "Type of Account",
+          "name": "Type of Account For Bank",
           "uuid": "02c68e2b-a50d-40b6-8e1c-c6abd054c181",
           "keyValues": [],
           "type": "SingleSelect",
@@ -1292,7 +1292,7 @@
           "mandatory": false
         },
         {
-          "name": "Account Number",
+          "name": "Account Number For Bank",
           "uuid": "be63d9cd-b19e-4505-a9c7-7039246ee1e4",
           "keyValues": [],
           "concept": {
@@ -1302,7 +1302,7 @@
           "mandatory": false
         },
         {
-          "name": "IFSC Code",
+          "name": "IFSC Code For Bank",
           "uuid": "e78958aa-9b99-46dd-99d8-58d286bf4d9d",
           "keyValues": [],
           "concept": {
@@ -1312,7 +1312,7 @@
           "mandatory": false
         },
         {
-          "name": "MICR Code",
+          "name": "MICR Code For Bank",
           "uuid": "806fe6a3-d53b-445d-adc0-43e30bca886b",
           "keyValues": [],
           "concept": {
@@ -1322,7 +1322,7 @@
           "mandatory": false
         },
         {
-          "name": "Name of the Bank",
+          "name": "Name of the Bank For Bank",
           "uuid": "d9ccf9a5-ee4f-47ce-bb10-97182bbbc903",
           "keyValues": [],
           "concept": {
@@ -1332,7 +1332,7 @@
           "mandatory": false
         },
         {
-          "name": "Name of the Branch",
+          "name": "Name of the Branch For Bank",
           "uuid": "a16937a6-b5ae-456a-8fa3-9aeb64dee43a",
           "keyValues": [],
           "concept": {
@@ -1342,7 +1342,7 @@
           "mandatory": false
         },
         {
-          "name": "Upload photo of first page of passbook",
+          "name": "Upload photo of first page of passbook For Bank",
           "uuid": "2da2cc13-93d6-4272-a4c1-846ccbaf7c58",
           "keyValues": [],
           "concept": {
@@ -1371,7 +1371,7 @@
           "mandatory": true
         },
         {
-          "name": "Full Name as on the Account",
+          "name": "Full Name as on the Account For Post Office",
           "uuid": "b43507e5-6100-4c68-a421-6816e03b8fb2",
           "keyValues": [],
           "concept": {
@@ -1381,7 +1381,7 @@
           "mandatory": false
         },
         {
-          "name": "Type of Account",
+          "name": "Type of Account For Post Office",
           "uuid": "bc542346-8c85-4f75-8536-852c85ba11b9",
           "keyValues": [],
           "type": "SingleSelect",
@@ -1392,7 +1392,7 @@
           "mandatory": false
         },
         {
-          "name": "Account Number",
+          "name": "Account Number For Post Office",
           "uuid": "4163450b-a099-4c49-9aa8-10be4d905eaa",
           "keyValues": [],
           "concept": {
@@ -1402,7 +1402,7 @@
           "mandatory": false
         },
         {
-          "name": "IFSC Code",
+          "name": "IFSC Code For Post Office",
           "uuid": "571215af-6b7c-489c-95a2-78122a0ff3fc",
           "keyValues": [],
           "concept": {
@@ -1412,7 +1412,7 @@
           "mandatory": false
         },
         {
-          "name": "MICR Code",
+          "name": "MICR Code For Post Office",
           "uuid": "d4199b8d-4f06-455d-85a6-6b2a8ed1a0e2",
           "keyValues": [],
           "concept": {
@@ -1422,7 +1422,7 @@
           "mandatory": false
         },
         {
-          "name": "Name of the Bank",
+          "name": "Name of the Bank For Post Office",
           "uuid": "1f8df4c0-b254-4f31-9859-3b5e8ee807f5",
           "keyValues": [],
           "concept": {
@@ -1432,7 +1432,7 @@
           "mandatory": false
         },
         {
-          "name": "Name of the Branch",
+          "name": "Name of the Branch For Post Office",
           "uuid": "e2fddff6-df46-44ad-9224-c4fa8b1a5d87",
           "keyValues": [],
           "concept": {
@@ -1442,7 +1442,7 @@
           "mandatory": false
         },
         {
-          "name": "Upload photo of first page of passbook",
+          "name": "Upload photo of first page of passbook For Post Office",
           "uuid": "6da1946a-2902-4fb2-93d6-8113f1c58448",
           "keyValues": [],
           "concept": {

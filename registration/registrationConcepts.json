@@ -1367,7 +1367,7 @@
       ]
     },
     {
-      "name": "Full Name as on the Account",
+      "name": "Full Name as on the Account For Bank",
       "uuid": "f23d9f75-5b1a-4eac-bcd2-5a8988b6ca05",
       "dataType": "Text"
     },
@@ -1380,7 +1380,7 @@
       "name": "Current"
     },
     {
-      "name": "Type of Account",
+      "name": "Type of Account For Bank",
       "uuid": "8904f972-6287-4744-99a9-9007cf610301",
       "dataType": "Coded",
       "answers": [
@@ -1395,33 +1395,33 @@
       ]
     },
     {
-      "name": "Account Number",
+      "name": "Account Number For Bank",
       "uuid": "bd2a222f-7867-4802-a9ee-f9ef72b53c5c",
       "dataType": "Numeric"
     },
     {
-      "name": "IFSC Code",
+      "name": "IFSC Code For Bank",
       "uuid": "d1c177d1-a060-4d1b-874a-e774a8de71dc",
       "dataType": "Text"
     },
     {
 
-      "name": "MICR Code",
+      "name": "MICR Code For Bank",
       "uuid": "0a5b97f3-9cb6-4d86-b04b-19c27a6ffbb1",
       "dataType": "Text"
     },
     {
-      "name": "Name of the Bank",
+      "name": "Name of the Bank For Bank",
       "uuid": "1ed1672c-f0ea-451a-be4f-fcfc9a35b96d",
       "dataType": "Text"
     },
     {
-      "name": "Name of the Branch",
+      "name": "Name of the Branch For Bank",
       "uuid": "f0718f94-c41c-4f97-8b8f-5d1d225cfe7f",
       "dataType": "Text"
     },
     {
-      "name": "Upload photo of first page of passbook",
+      "name": "Upload photo of first page of passbook For Bank",
       "uuid": "8661cac8-ffc9-40df-90eb-455cd1e53b44",
       "dataType": "Image"
     },
@@ -1439,12 +1439,12 @@
       ]
     },
   {
-    "name": "Post Office SB Full Name as on the Account",
+    "name": "Full Name as on the Account For Post Office",
     "uuid": "83f280d3-4986-49d2-ab80-38db88fd8ec1",
     "dataType": "Text"
   },
   {
-    "name": "Post Office SB Type of Account",
+    "name": "SB Type of Account For Post Office",
     "uuid": "7716939d-c44d-4bc9-8185-e4de574d00a4",
     "dataType": "Coded",
     "answers": [
@@ -1459,32 +1459,32 @@
     ]
   },
   {
-    "name": "Post Office SB Account Number",
+    "name": "Account Number For Post Office",
     "uuid": "8ab7a2de-c820-4244-b04e-cbdd960a6bd3",
     "dataType": "Numeric"
   },
   {
-    "name": "Post Office SB IFSC Code",
+    "name": "IFSC Code For Post Office",
     "uuid": "58194c9b-1ef5-48b0-8605-d7dc138b10ac",
     "dataType": "Text"
   },
   {
-    "name": "Post Office SB MICR Code",
+    "name": "MICR Code For Post Office",
     "uuid": "9e70adbd-a393-4a9d-b18c-642cdb0a5afc",
     "dataType": "Text"
   },
   {
-    "name": "Post Office SB Name of the Bank",
+    "name": "Name of the Bank For Post Office",
     "uuid": "200b29a0-f384-4dca-9508-90064bc9f34d",
     "dataType": "Text"
   },
   {
-    "name": "Post Office SB Name of the Branch",
+    "name": "Name of the Branch For Post Office",
     "uuid": "4740c0d4-d986-40c0-ab17-f4b60e5ab39a",
     "dataType": "Text"
   },
   {
-    "name": "Post Office SB Upload photo of first page of passbook",
+    "name": "Upload photo of first page of passbook For Post Office",
     "uuid": "5619c65d-b7be-4883-8d1c-f1c84b9f89f6",
     "dataType": "Image"
   },
