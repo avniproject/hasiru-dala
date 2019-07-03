@@ -158,6 +158,62 @@ class RegistrationViewHandlerHasiruDala {
         .containsAnswerConceptName("Informal waste worker");
     }
 
+    @WithName("Whether you have Voter Registration Card")
+    @WithRegistrationStatusBuilder
+    Employment1([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
+         .containsAnyAnswerConceptName("Informal waste worker","Informal Sanitation worker","Other","Unemployed");
+     }
+
+    @WithName("Whether you have Ration/BPL Card")
+    @WithRegistrationStatusBuilder
+    Employment2([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
+         .containsAnyAnswerConceptName("Informal waste worker","Informal Sanitation worker","Other","Unemployed");
+     }
+
+    @WithName("Whether you have Aadhar Card")
+    @WithRegistrationStatusBuilder
+    Employment3([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
+         .containsAnyAnswerConceptName("Informal waste worker","Informal Sanitation worker","Other","Unemployed");
+     }
+
+    @WithName("Whether you have Aadhar Enrolment Card")
+    @WithRegistrationStatusBuilder
+    Employment4([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
+         .containsAnyAnswerConceptName("Informal waste worker","Informal Sanitation worker","Other","Unemployed");
+     }
+
+    @WithName("Whether you have Labour Card")
+    @WithRegistrationStatusBuilder
+    Employment5([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
+         .containsAnyAnswerConceptName("Informal waste worker","Informal Sanitation worker","Other","Unemployed");
+     }
+
+ @WithName("Whether you have Health Card")
+    @WithRegistrationStatusBuilder
+    Employment6([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
+         .containsAnyAnswerConceptName("Informal waste worker","Informal Sanitation worker","Other","Unemployed");
+     }
+
+    @WithName("Whether you have PAN Card")
+    @WithRegistrationStatusBuilder
+    Employment7([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
+         .containsAnyAnswerConceptName("Informal waste worker","Informal Sanitation worker","Other","Unemployed");
+     }
+
+    @WithName("Whether you have any other ID Cards")
+    @WithRegistrationStatusBuilder
+    Employment8([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
+         .containsAnyAnswerConceptName("Informal waste worker","Informal Sanitation worker","Other","Unemployed");
+     }
+
     @WithRegistrationStatusBuilder
     voterRegistrationCardNumber([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Whether you have Voter Registration Card").is.yes;

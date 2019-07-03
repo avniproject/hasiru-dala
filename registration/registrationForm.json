@@ -107,7 +107,7 @@
             "uuid": "c0f81e8b-73c0-4274-875d-f68b1f1609f9"
           },
           "validFormat": {
-            "regex": "^[0-5]{6}$",
+            "regex": "^[0-9]{6}$",
             "descriptionKey": "Required6Digits"
           },
           "displayOrder": 6,
@@ -215,7 +215,7 @@
             "uuid": "7b0bf444-a553-4d7b-a89e-36964e509113"
           },
           "validFormat": {
-            "regex": "^[0-5]{6}$",
+            "regex": "^[0-9]{6}$",
             "descriptionKey": "Required6Digits"
           },
           "displayOrder": 6,
@@ -512,6 +512,10 @@
           "concept": {
             "uuid": "8c7c1065-31c4-42ba-9b10-58f994f31a6b"
           },
+          "validFormat": {
+            "regex": "^[0-9]{12}$",
+            "descriptionKey": "Required12Digits"
+          },
           "displayOrder": 8,
           "mandatory": true
         },
@@ -541,6 +545,10 @@
           "keyValues": [],
           "concept": {
             "uuid": "f70ad2ca-ee81-468b-8dfe-6fc0dcddece5"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{28}$",
+            "descriptionKey": "Required28Digits"
           },
           "displayOrder": 11,
           "mandatory": true
