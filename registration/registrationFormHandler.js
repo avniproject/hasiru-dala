@@ -402,9 +402,80 @@ class RegistrationViewHandlerHasiruDala {
     statusBuilder.show().when.valueInRegistration("Do you have a post office SB account?").is.yes;
     }
 
+    @WithName("How often do you collect scrap/go waste picking?")
+    @WithRegistrationStatusBuilder
+    ibSd1([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnyAnswerConceptName("Wastepicker","Itinerant buyer","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
+     }
+
+
+    @WithName("How do you pick waste?")
+    @WithRegistrationStatusBuilder
+    ibSd2([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnyAnswerConceptName("Wastepicker","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
+     }
+
+    @WithName("What are the kinds of waste you pick/sort?")
+    @WithRegistrationStatusBuilder
+    ibSd3([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnyAnswerConceptName("Wastepicker","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
+     }
+
+    @WithName("Others")
+    @WithRegistrationStatusBuilder
+    ibSd4([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnyAnswerConceptName("Wastepicker","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
+     }
+
+    @WithName("Where do you sell your collected waste?")
+    @WithRegistrationStatusBuilder
+    ibSd5([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnyAnswerConceptName("Wastepicker","Itinerant buyer","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
+     }
+
+    @WithName("Name of scrap dealer:")
+    @WithRegistrationStatusBuilder
+    ibSd6([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnyAnswerConceptName("Wastepicker","Itinerant buyer","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
+     }
+
+    @WithName("Address of scrap dealer")
+    @WithRegistrationStatusBuilder
+    ibSd7([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnyAnswerConceptName("Wastepicker","Itinerant buyer","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
+     }
+
+    @WithName("Phone number of scrap dealer")
+    @WithRegistrationStatusBuilder
+    ibSd8([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnyAnswerConceptName("Wastepicker","Itinerant buyer","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
+     }
+
+    @WithName("How much do you earn?")
+    @WithRegistrationStatusBuilder
+    ibSd9([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnyAnswerConceptName("Wastepicker","Itinerant buyer","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
+     }
+
+    @WithName("How do you transport your collected waste?")
+    @WithRegistrationStatusBuilder
+    ibSd10([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnyAnswerConceptName("Wastepicker","Itinerant buyer","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
+     }
+
     @WithName("If motorised vehicle then what is your daily expenditure on transport?")
     @WithRegistrationStatusBuilder
-    abc6([], statusBuilder) {
+    abc6a([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("How do you transport your collected waste?")
         .containsAnswerConceptName("Motorised vehicle");
     }
@@ -744,13 +815,9 @@ class RegistrationViewHandlerHasiruDala {
          .containsAnswerConceptName("Scrap Dealer");
      }
 
-    @WithName("How do you pick waste?")
-    @WithRegistrationStatusBuilder
-    ibsd1([], statusBuilder) {
-         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-         .containsAnswerConceptName("Wastepicker","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
-     }
 }
+
+
 
 module.exports = {RegistrationViewHandlerHasiruDala};
 
