@@ -764,11 +764,11 @@
     },
     {
       "uuid": "9f2252c8-f7ec-4f5d-a180-c360bbba5e63",
-      "name": "Wastepicker "
+      "name": "Wastepicker"
     },
     {
       "uuid": "6d92f3d7-8e07-4b09-af1c-c07bed51bad0",
-      "name": "Itinerant buyer "
+      "name": "Itinerant buyer"
     },
     {
     "uuid": "4abc9d8d-6770-4701-8130-e975a1004ff2",
@@ -793,11 +793,11 @@
       "answers": [
         {
           "uuid": "9f2252c8-f7ec-4f5d-a180-c360bbba5e63",
-          "name": "Wastepicker "
+          "name": "Wastepicker"
         },
         {
           "uuid": "6d92f3d7-8e07-4b09-af1c-c07bed51bad0",
-          "name": "Itinerant buyer "
+          "name": "Itinerant buyer"
         },
         {
           "uuid": "4abc9d8d-6770-4701-8130-e975a1004ff2",
@@ -817,6 +817,107 @@
         }
       ]
     },
+  {
+    "uuid": "9ef3bb7c-b8d4-40b3-8439-4c5f1b4fb033",
+    "name": "Event Waste Management"
+  },
+  {
+    "uuid": "cf521622-9a28-49dd-afb9-40d92a6a0153",
+    "name": "Cleaning Services"
+  },
+  {
+    "uuid": "52bacdb8-ef10-4fce-bddb-3dff37e610a3",
+    "name": "Composting Services"
+  },
+  {
+    "uuid": "c5cc6b9e-a8ca-44dc-85f6-de11fa13586a",
+    "name": "Door to Door Waste Collector"
+  },
+  {
+    "uuid": "452e91c8-5daf-490e-be9f-9457b2720d72",
+    "name": "City Sanitation Worker"
+  },
+  {
+    "uuid": "4fde0153-d73d-48fc-8ad1-5b0532c54603",
+    "name": "Contract Sanitation Worker  "
+  },
+  {
+    "uuid": "c42c683a-6389-41c5-9e71-ff0e80b6d854",
+    "name": "Any Other"
+  },
+  {
+    "name": "Do you have any additional jobs?",
+    "uuid": "e9be897d-0e8d-4a87-bd0e-5cd507823501",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "9ef3bb7c-b8d4-40b3-8439-4c5f1b4fb033",
+        "name": "Event Waste Management"
+      },
+      {
+        "uuid": "cf521622-9a28-49dd-afb9-40d92a6a0153",
+        "name": "Cleaning Services"
+      },
+      {
+        "uuid": "52bacdb8-ef10-4fce-bddb-3dff37e610a3",
+        "name": "Composting Services"
+      },
+      {
+        "uuid": "c5cc6b9e-a8ca-44dc-85f6-de11fa13586a",
+        "name": "Door to Door Waste Collector"
+      },
+      {
+        "uuid": "452e91c8-5daf-490e-be9f-9457b2720d72",
+        "name": "City Sanitation Worker"
+      },
+      {
+        "uuid": "4fde0153-d73d-48fc-8ad1-5b0532c54603",
+        "name": "Contract Sanitation Worker  "
+      },
+      {
+        "uuid": "c42c683a-6389-41c5-9e71-ff0e80b6d854",
+        "name": "Any Other"
+      }
+    ]
+  },
+  {
+    "name": "Please provide details",
+    "uuid": "f275d690-ca9f-4f0a-81b0-d42a28ce5b85",
+    "dataType": "Text"
+  },
+  {
+    "name": "How long have you been picking waste/buying waste? (Please mention the number of years and months)",
+    "uuid": "5ddfc77c-dc7f-4030-9c37-b3e7b0c37322",
+    "dataType": "Date"
+  },
+  {
+    "name": "Are you a member of any organization?",
+    "uuid": "cab4b3b6-560b-4fb2-baaa-9318e276dc35",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+      },
+      {
+        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+      }
+    ]
+  },
+  {
+    "name": "Name of the Organization 1",
+    "uuid": "fd57e15d-6d51-4287-bbd4-979435108feb",
+    "dataType": "Text"
+  },
+  {
+    "name": "Name of the Organization 2",
+    "uuid": "86c1d194-32db-44bd-ba5b-ee123e026c7a",
+    "dataType": "Text"
+  },
+  {
+    "name": "Name of the Organization 3",
+    "uuid": "4929200d-1ef0-4d98-b08c-1ed56d949a6a",
+    "dataType": "Text"
+  },
     {
       "uuid": "12be7480-c7bd-47a6-9575-132cb6866b35",
       "name": "Every day"
@@ -985,7 +1086,7 @@
       "dataType": "Text"
     },
     {
-      "name": "Name of scrap dealer: ",
+      "name": "Name of scrap dealer:",
       "uuid": "63e56f31-499a-4dae-ad3d-dc471324fe4e",
       "dataType": "Text"
     },
@@ -1163,49 +1264,49 @@
       ]
     },
     {
-      "name": "Any Other for Itinerant buyer ",
+      "name": "Any Other :",
       "uuid": "d25a9af1-8618-4b4f-9c41-84f9c9ff8337",
       "dataType": "Text"
     },
     {
-      "name": "What are the amounts of waste you buy per week in Kg?",
-      "uuid": "943e9303-2d37-48b3-b446-22ee1cc20644",
-      "dataType": "Text"
-    },
-    {
-      "name": "Paper-White",
+      "name": "How much Paper-White waste you buy per week in Kg?",
       "uuid": "5bbdc2ad-2a6b-4494-8885-d5416e6613c3",
       "dataType": "Numeric"
     },
     {
-      "name": "News paper",
+      "name": "How much News paper waste you buy per week in Kg?",
       "uuid": "139cbe5b-393f-4f57-81df-349dcb2afe55",
-      "dataType": "Text"
+      "dataType": "Numeric"
     },
     {
-      "name": "Plastic for Itinerant buyer",
+      "name": "How much Plastic waste you buy per week in Kg?",
       "uuid": "d52a8ab2-6f05-4c86-82aa-25bba0035f6e",
-      "dataType": "Text"
+      "dataType": "Numeric"
     },
     {
-      "name": "Bottles for Itinerant buyer",
+      "name": "How much Bottles waste you buy per week in Kg?",
       "uuid": "fbcc6b11-1ce9-463f-b3ce-df7601d95e60",
-      "dataType": "Text"
+      "dataType": "Numeric"
     },
     {
-      "name": "Metal for Itinerant buyer",
+      "name": "How much Metal waste you buy per week in Kg?",
       "uuid": "18992432-aa81-4b61-a362-9b20cbd796ef",
-      "dataType": "Text"
+      "dataType": "Numeric"
     },
     {
-      "name": "Computer and other E-Waste",
+      "name": "How much Computer and other E-Waste waste you buy per week in Kg?",
       "uuid": "764bc227-8131-4eee-be3e-c6963552b43d",
-      "dataType": "Text"
+      "dataType": "Numeric"
     },
     {
-      "name": "Any other: Please specify",
+      "name": "Type of Waste",
       "uuid": "b7c7ff9f-91a4-4a58-a0e9-d10cce136fc5",
       "dataType": "Text"
+    },
+    {
+      "name": "Please Specify (in Kg)",
+      "uuid": "63571a0c-35bf-4138-a59a-e93c03429ddf",
+      "dataType": "Numeric"
     },
     {
       "name": "No. of shops you run/own/manage",
@@ -1252,106 +1353,136 @@
       "uuid": "064704f7-c6a7-415e-a67e-3d52d618b192",
       "dataType": "Text"
     },
+
     {
-      "uuid": "9ef3bb7c-b8d4-40b3-8439-4c5f1b4fb033",
-      "name": "Event Waste Management"
+      "name": "Glass Quarter Bottles waste sold per week in Kg",
+      "uuid": "47c88209-fd79-44f1-ac20-1371becc9540",
+      "dataType": "Numeric"
     },
     {
-      "uuid": "cf521622-9a28-49dd-afb9-40d92a6a0153",
-      "name": "Cleaning Services"
+      "name": "Glass Beer bottles waste sold per week in Kg",
+      "uuid": "154663b0-60d9-47b6-8ec6-b741a2608703",
+      "dataType": "Numeric"
     },
     {
-      "uuid": "52bacdb8-ef10-4fce-bddb-3dff37e610a3",
-      "name": "Composting Services"
+      "name": "Glass waste sold per week in Kg",
+      "uuid": "9db314f8-7258-4bd5-9c1e-126a403c5a33",
+      "dataType": "Numeric"
     },
     {
-      "uuid": "c5cc6b9e-a8ca-44dc-85f6-de11fa13586a",
-      "name": "Door to Door Waste Collector"
+      "name": "Metal Ferrous Metals/Iron waste sold per week in Kg",
+      "uuid": "3ec94beb-294d-4504-a237-8a405fd90a21",
+      "dataType": "Numeric"
     },
     {
-      "uuid": "452e91c8-5daf-490e-be9f-9457b2720d72",
-      "name": "City Sanitation Worker"
+      "name": " Metal Copper waste sold per week in Kg",
+      "uuid": "4b5fe8c0-de6e-43a7-96ea-513aca1be885",
+      "dataType": "Numeric"
     },
     {
-      "uuid": "4fde0153-d73d-48fc-8ad1-5b0532c54603",
-      "name": "Contract Sanitation Worker  "
+      "name": "Metal Aluminum waste sold per week in Kg",
+      "uuid": "420be15f-ae29-496f-9a8a-c6204d2de989",
+      "dataType": "Numeric"
     },
     {
-      "uuid": "c42c683a-6389-41c5-9e71-ff0e80b6d854",
-      "name": "Any Other"
+      "name": "Metal Other Metals waste sold per week in Kg",
+      "uuid": "487d5a0e-dec5-4488-990f-6b22d9531e9e",
+      "dataType": "Numeric"
     },
     {
-      "name": "Do you have any additional jobs?",
-      "uuid": "e9be897d-0e8d-4a87-bd0e-5cd507823501",
-      "dataType": "Coded",
-      "answers": [
-        {
-          "uuid": "9ef3bb7c-b8d4-40b3-8439-4c5f1b4fb033",
-          "name": "Event Waste Management"
-        },
-        {
-          "uuid": "cf521622-9a28-49dd-afb9-40d92a6a0153",
-          "name": "Cleaning Services"
-        },
-        {
-          "uuid": "52bacdb8-ef10-4fce-bddb-3dff37e610a3",
-          "name": "Composting Services"
-        },
-        {
-          "uuid": "c5cc6b9e-a8ca-44dc-85f6-de11fa13586a",
-          "name": "Door to Door Waste Collector"
-        },
-        {
-          "uuid": "452e91c8-5daf-490e-be9f-9457b2720d72",
-          "name": "City Sanitation Worker"
-        },
-        {
-          "uuid": "4fde0153-d73d-48fc-8ad1-5b0532c54603",
-          "name": "Contract Sanitation Worker  "
-        },
-        {
-          "uuid": "c42c683a-6389-41c5-9e71-ff0e80b6d854",
-          "name": "Any Other"
-        }
-      ]
+      "name": "Metal Batteries waste sold per week in Kg",
+      "uuid": "7a12d032-2607-4a1d-9b95-d699c4d154a1",
+      "dataType": "Numeric"
     },
     {
-      "name": "Please provide details",
-      "uuid": "f275d690-ca9f-4f0a-81b0-d42a28ce5b85",
-      "dataType": "Text"
+      "name": "Metal Brass waste sold per week in Kg",
+      "uuid": "b011b8e3-79cd-4f88-87f1-4f0ccc5c0a55",
+      "dataType": "Numeric"
     },
     {
-      "name": "How long have you been picking waste/buying waste? (Please mention the number of years and months)",
-      "uuid": "5ddfc77c-dc7f-4030-9c37-b3e7b0c37322",
-      "dataType": "Date"
+      "name": "Metal Mercury waste sold per week in Kg",
+      "uuid": "dc875734-a6f9-464e-bba8-9038f3508925",
+      "dataType": "Numeric"
     },
     {
-      "name": "Are you a member of any organization?",
-      "uuid": "cab4b3b6-560b-4fb2-baaa-9318e276dc35",
-      "dataType": "Coded",
-      "answers": [
-        {
-          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
-        },
-        {
-          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
-        }
-      ]
+      "name": "Paper Cardboard/Corrugated boxes waste sold per week in Kg",
+      "uuid": "bdf9a8d2-1cee-4ff8-88d8-5b31e5d4e2be",
+      "dataType": "Numeric"
     },
     {
-      "name": "Name of the Organization 1",
-      "uuid": "fd57e15d-6d51-4287-bbd4-979435108feb",
-      "dataType": "Text"
+      "name": "Paper White Paper/White Record waste sold per week in Kg",
+      "uuid": "03cefc64-eeb7-41a5-a962-78ccf8cc1d87",
+      "dataType": "Numeric"
     },
     {
-      "name": "Name of the Organization 2",
-      "uuid": "86c1d194-32db-44bd-ba5b-ee123e026c7a",
-      "dataType": "Text"
+      "name": "Paper Road scrap paper waste sold per week in Kg",
+      "uuid": "73171ed1-722c-4ba6-9307-4249162c10f9",
+      "dataType": "Numeric"
     },
     {
-      "name": "Name of the Organization 3",
-      "uuid": "4929200d-1ef0-4d98-b08c-1ed56d949a6a",
-      "dataType": "Text"
+      "name": "Paper Tetrapak waste sold per week in Kg",
+      "uuid": "f93c0e42-6c89-408b-8acf-43b266ece7db",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Plastics PET (Pearlpet) waste sold per week in Kg",
+      "uuid": "779eaf00-bd68-40ee-8b4d-c795af18135f",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Plastics Hard Plastic items (cassette covers) waste sold per week in Kg",
+      "uuid": "093b7d7f-d87a-4b3e-9838-17eb088a5840",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Plastics Soft Plastic items (Buckets) waste sold per week in Kg",
+      "uuid": "2841104a-7c1d-44b4-904a-a6597f47dafe",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Plastics Soft Plastic, Chappal, soles waste sold per week in Kg",
+      "uuid": "027e3561-0ea8-47b5-82cf-43a2c91fd721",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Plastics Milk Bags waste sold per week in Kg",
+      "uuid": "058e4290-a314-4ca5-9b99-76e7e47d66e3",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Plastics LD Plastic bags waste sold per week in Kg",
+      "uuid": "ab3cfea9-4b81-41d7-8154-2889df35eb9b",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Plastics Thin Plastic bags waste sold per week in Kg",
+      "uuid": "84d96538-2103-432e-ad55-465c3e943e51",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Plastics White Plastic waste sold per week in Kg",
+      "uuid": "38855c44-d115-4b3d-bf5f-7dc04b9fed1f",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Others Rubber waste sold per week in Kg",
+      "uuid": "15c19384-5215-4934-8cf1-466a58fa5613",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Others Textiles/Rags waste sold per week in Kg",
+      "uuid": "fd448acc-d983-4a08-a8bb-53d78bd214bd",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Others Tin waste sold per week in Kg",
+      "uuid": "e1b495c4-6ed8-4861-86b5-609de063c7d8",
+      "dataType": "Numeric"
+    },
+    {
+      "name": "Others Thermocol/Styrofoam waste sold per week in Kg",
+      "uuid": "0ccc5149-a19d-4ac0-bedd-8d621951f4be",
+      "dataType": "Numeric"
     },
     {
       "name": "Do you have a bank account?",

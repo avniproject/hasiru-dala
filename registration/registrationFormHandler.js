@@ -437,72 +437,319 @@ class RegistrationViewHandlerHasiruDala {
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("Any Other")
+    @WithName("Any Other :")
     @WithRegistrationStatusBuilder
     itinerantBuyer6([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("What are the amounts of waste you buy per week in Kg?")
+    @WithName("How much Paper-White waste you buy per week in Kg?")
     @WithRegistrationStatusBuilder
     itinerantBuyer7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("Paper-White")
+    @WithName("How much News paper waste you buy per week in Kg?")
     @WithRegistrationStatusBuilder
     itinerantBuyer8([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("News paper")
+    @WithName("How much Plastic waste you buy per week in Kg?")
     @WithRegistrationStatusBuilder
     itinerantBuyer9([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("Plastic for Itinerant buyer")
+    @WithName("How much Bottles waste you buy per week in Kg?")
     @WithRegistrationStatusBuilder
     itinerantBuyer10([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("Bottles for Itinerant buyer")
+    @WithName("How much Metal waste you buy per week in Kg?")
     @WithRegistrationStatusBuilder
     itinerantBuyer11([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("Metal for Itinerant buyer")
+    @WithName("How much Computer and other E-Waste waste you buy per week in Kg?")
     @WithRegistrationStatusBuilder
     itinerantBuyer12([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
-    @WithName("Computer and other E-Waste")
+    @WithName("Type of Waste")
     @WithRegistrationStatusBuilder
     itinerantBuyer13([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("Any other: Please specify")
+    @WithName("Please Specify (in Kg)")
     @WithRegistrationStatusBuilder
     itinerantBuyer14([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
+    @WithName("No. of shops you run/own/manage")
+    @WithRegistrationStatusBuilder
+    ScrapDealer1([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
 
+    @WithName("Size of the shop: in sq ft")
+    @WithRegistrationStatusBuilder
+    ScrapDealer2([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
 
+    @WithName("Maximum Storage Capacity")
+    @WithRegistrationStatusBuilder
+    ScrapDealer3([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
 
- 
+    @WithName("How many sorters do you employ?")
+    @WithRegistrationStatusBuilder
+    ScrapDealer4([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("What are your main constraints or challenges?")
+    @WithRegistrationStatusBuilder
+    ScrapDealer5([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Where do you get help for capital?")
+    @WithRegistrationStatusBuilder
+    ScrapDealer6([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("What is the kind of support you feel if provided to you, would help to improve your business?")
+    @WithRegistrationStatusBuilder
+    ScrapDealer7([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Do you need any license to operate?")
+    @WithRegistrationStatusBuilder
+    ScrapDealer8([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Do you have any license")
+    @WithRegistrationStatusBuilder
+    ScrapDealer9([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Glass Quarter Bottles waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer10([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnswerConceptName("Scrap Dealer");
+     }
+
+    @WithName("Glass Beer bottles waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer11([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Glass waste sold per week in Kg")
+     @WithRegistrationStatusBuilder
+     ScrapDealer12([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnswerConceptName("Scrap Dealer");
+     }
+
+    @WithName("Metal Ferrous Metals/Iron waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer13([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnswerConceptName("Scrap Dealer");
+     }
+
+    @WithName("Metal Copper waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer14([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Metal Aluminum waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer15([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Metal Other Metals waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer16([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Metal Batteries waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer17([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Metal Brass waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer18([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnswerConceptName("Scrap Dealer");
+     }
+
+    @WithName("Metal Mercury waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer19([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Paper Cardboard/Corrugated boxes waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer20([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Paper White Paper/White Record waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer21([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Paper Road scrap paper waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer22([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Paper Tetrapak waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer23([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Plastics PET (Pearlpet) waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer24([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Plastics Hard Plastic items (cassette covers) waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer25([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Plastics Soft Plastic items (Buckets) waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer26([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Plastics Soft Plastic, Chappal, soles waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer27([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnswerConceptName("Scrap Dealer");
+     }
+
+    @WithName("Plastics Milk Bags waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer28([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnswerConceptName("Scrap Dealer");
+     }
+
+    @WithName("Plastics LD Plastic bags waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer29([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Plastics Thin Plastic bags waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer30([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Plastics White Plastic waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer31([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Others Rubber waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer32([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Others Textiles/Rags waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer33([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Others Tin waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer34([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+        .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Others Thermocol/Styrofoam waste sold per week in Kg")
+    @WithRegistrationStatusBuilder
+    ScrapDealer35([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnswerConceptName("Scrap Dealer");
+     }
+
+    @WithName("How do you pick waste?")
+    @WithRegistrationStatusBuilder
+    ibsd1([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+         .containsAnswerConceptName("Wastepicker","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
+     }
 }
 
 module.exports = {RegistrationViewHandlerHasiruDala};

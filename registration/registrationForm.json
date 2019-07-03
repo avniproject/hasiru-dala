@@ -843,343 +843,6 @@
           "mandatory": true
         },
         {
-          "name": "How often do you collect scrap/go waste picking?",
-          "uuid": "a18c9cb6-a42a-45e1-8ca7-bbbf78ce15e9",
-          "keyValues": [],
-          "type": "SingleSelect",
-          "concept": {
-            "uuid": "e19cbd29-b63e-4902-817c-468dc21c0eb9"
-          },
-          "displayOrder": 2,
-          "mandatory":true
-        },
-        {
-          "name": "How do you pick waste?",
-          "uuid": "d671f0c6-2afd-41c6-bacb-33a6103b7cd4",
-          "keyValues": [],
-          "type": "MultiSelect",
-          "concept": {
-            "uuid": "6be92894-1ba3-4947-8471-dd4dad188c22"
-          },
-          "displayOrder": 3,
-          "mandatory": true
-        },
-        {
-          "name": "What are the kinds of waste you pick/sort?",
-          "uuid": "62415884-d23f-4e04-b455-cf26930d8f4e",
-          "keyValues": [],
-          "type": "MultiSelect",
-          "concept": {
-            "uuid": "a59e77bb-592c-4476-9dac-20d9f2d03dc6"
-          },
-          "displayOrder": 4,
-          "mandatory": true
-        },
-        {
-          "name": "Others",
-          "uuid": "1be2c2cf-cae4-4672-b3c1-c3c6c70931f3",
-          "keyValues": [],
-          "concept": {
-            "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7"
-          },
-          "displayOrder": 5,
-          "mandatory": false
-        },
-        {
-          "name": "Where do you sell your collected waste?",
-          "uuid": "e131a8fd-563b-40e9-b2fd-de61b1bb29bc",
-          "keyValues": [],
-          "concept": {
-            "uuid": "404b2032-d4f6-4212-905d-438f57585530"
-          },
-          "displayOrder": 6,
-          "mandatory": false
-        },
-        {
-          "name": "Name of scrap dealer: ",
-          "uuid": "c42351f1-54a2-44a1-bdf5-f75919b9ee76",
-          "keyValues": [],
-          "concept": {
-            "uuid": "63e56f31-499a-4dae-ad3d-dc471324fe4e"
-          },
-          "displayOrder": 7,
-          "mandatory": false
-        },
-        {
-          "name": "Address of scrap dealer",
-          "uuid": "edc44d4c-94fb-4cb5-8b94-4b94db6a476d",
-          "keyValues": [],
-          "concept": {
-            "uuid": "34dd92cd-fe0a-49fb-9e98-03269c764a04"
-          },
-          "displayOrder": 8,
-          "mandatory": false
-        },
-        {
-          "name": "Phone number of scrap dealer",
-          "uuid": "c5ec3528-758d-41b8-8a0b-acc11166eb64",
-          "keyValues": [],
-          "concept": {
-            "uuid": "b82f10f7-a4de-42ce-9d4e-86c98f45d934"
-          },
-          "displayOrder": 9,
-          "mandatory": false
-        },
-        {
-          "name": "How much do you earn?",
-          "uuid": "0a3c5e19-425c-420c-ab1c-18f41f3ea72f",
-          "keyValues": [],
-          "type": "SingleSelect",
-          "concept": {
-            "uuid": "ba3a21f4-e428-4508-b41a-367b317d61cc"
-          },
-          "displayOrder": 10,
-          "mandatory": true
-        },
-        {
-          "name": "How do you transport your collected waste?",
-          "uuid": "9d51ca28-4099-4252-9bf2-2062b16cb19e",
-          "keyValues": [],
-          "type": "SingleSelect",
-          "concept": {
-            "uuid": "33c3d095-9ee5-4ad3-83f3-e65e256c7bd8"
-          },
-          "displayOrder": 11,
-          "mandatory": false
-        },
-        {
-          "name": "If motorised vehicle then what is your daily expenditure on transport?",
-          "uuid": "de16707e-3d81-4174-912d-ec78f3c28a4e",
-          "keyValues": [],
-          "concept": {
-            "uuid": "84919a5d-f8d9-4075-931f-86523d189ef7"
-          },
-          "displayOrder": 12,
-          "mandatory": false
-        },
-        {
-          "name": "Where do you buy your scrap from?",
-          "uuid": "aef6d366-e9f4-4d0d-8c14-d5c99a02639b",
-          "keyValues": [],
-          "type": "MultiSelect",
-          "concept": {
-            "uuid": "2e6a241b-2a6a-4d1e-a7fb-badc7717fbfa"
-          },
-          "displayOrder": 13,
-          "mandatory": true
-        },
-        {
-          "name": "Please list any other place you buy scrap from",
-          "uuid": "d1c51c77-2c2c-4cbe-86c5-e71c98ff6f26",
-          "keyValues": [],
-          "concept": {
-            "uuid": "55eae3eb-2dae-499b-9937-2a999f6f193f"
-          },
-          "displayOrder": 14,
-          "mandatory": false
-        },
-        {
-          "name": "What is your daily capital?",
-          "uuid": "48d40c00-4e1f-4c7b-9ae6-89380f779a39",
-          "keyValues": [],
-          "concept": {
-            "uuid": "73bb061a-7a3c-418b-9db9-a51bd4239b4d"
-          },
-          "displayOrder": 15,
-          "mandatory": false
-        },
-        {
-          "name": "Who provides it?",
-          "uuid": "f8d02b99-a8f6-463d-a209-8cc9e7839b46",
-          "keyValues": [],
-          "type": "MultiSelect",
-          "concept": {
-            "uuid": "a534c01d-88ce-4c79-9afb-ec541f605562"
-          },
-          "displayOrder": 16,
-          "mandatory": false
-        },
-        {
-          "name": "Any Other",
-          "uuid": "4339e042-703c-4d2a-a4c4-3d81866e6f25",
-          "keyValues": [],
-          "concept": {
-            "uuid": "d25a9af1-8618-4b4f-9c41-84f9c9ff8337"
-          },
-          "displayOrder": 17,
-          "mandatory": false
-        },
-        {
-          "name": "What are the amounts of waste you buy per week in Kg?",
-          "uuid": "02e89891-a2dd-4ba4-9345-ce92195e4dcd",
-          "keyValues": [],
-          "concept": {
-            "uuid": "943e9303-2d37-48b3-b446-22ee1cc20644"
-          },
-          "displayOrder": 18,
-          "mandatory": true
-        },
-        {
-          "name": "Paper-White",
-          "uuid": "25ab6711-0c43-4cb5-8d00-34bb190555cb",
-          "keyValues": [],
-          "concept": {
-            "uuid": "5bbdc2ad-2a6b-4494-8885-d5416e6613c3"
-          },
-          "displayOrder": 19,
-          "mandatory": true
-        },
-        {
-          "name": "News paper",
-          "uuid": "328d7d52-8443-47b5-b88f-f274ec199ea0",
-          "keyValues": [],
-          "concept": {
-            "uuid": "139cbe5b-393f-4f57-81df-349dcb2afe55"
-          },
-          "displayOrder": 20,
-          "mandatory": true
-        },
-        {
-          "name": "Plastic for Itinerant buyer",
-          "uuid": "de946964-1fb3-4de9-903a-b71624e6f934",
-          "keyValues": [],
-          "concept": {
-            "uuid": "d52a8ab2-6f05-4c86-82aa-25bba0035f6e"
-          },
-          "displayOrder": 21,
-          "mandatory": true
-        },
-        {
-          "name": "Bottles for Itinerant buyer",
-          "uuid": "c60af004-1e62-4090-ab3a-a2ce178a6cc7",
-          "keyValues": [],
-          "concept": {
-            "uuid": "fbcc6b11-1ce9-463f-b3ce-df7601d95e60"
-          },
-          "displayOrder": 22,
-          "mandatory": true
-        },
-        {
-          "name": "Metal for Itinerant buyer",
-          "uuid": "ec45acd1-c54b-4f69-8825-7ab76cb07670",
-          "keyValues": [],
-          "concept": {
-            "uuid": "18992432-aa81-4b61-a362-9b20cbd796ef"
-          },
-          "displayOrder": 23,
-          "mandatory": true
-        },
-        {
-          "name": "Computer and other E-Waste",
-          "uuid": "73e3ebe4-14e0-4301-9cdd-8a42488417cb",
-          "keyValues": [],
-          "concept": {
-            "uuid": "764bc227-8131-4eee-be3e-c6963552b43d"
-          },
-          "displayOrder": 24,
-          "mandatory": true
-        },
-        {
-          "name": "Any other: Please specify",
-          "uuid": "19d0d601-83f3-4fbe-8119-9036575447ec",
-          "keyValues": [],
-          "concept": {
-            "uuid": "b7c7ff9f-91a4-4a58-a0e9-d10cce136fc5"
-          },
-          "displayOrder": 25,
-          "mandatory": true
-        },
-        {
-          "name": "No. of shops you run/own/manage",
-          "uuid": "fcc0d83d-acf8-426a-94ad-13863599c20c",
-          "keyValues": [],
-          "concept": {
-            "uuid": "6ecc0b43-8a63-471f-8ed0-91dd95b9945c"
-          },
-          "displayOrder": 26,
-          "mandatory": true
-        },
-        {
-          "name": "Size of the shop: in sq ft",
-          "uuid": "649e7830-a1af-489f-b2f3-9fad2ef9da8e",
-          "keyValues": [],
-          "concept": {
-            "uuid": "b8b3dd46-2fe1-47a2-9b1d-bc3709ba1638"
-          },
-          "displayOrder": 27,
-          "mandatory": true
-        },
-        {
-          "name": "Maximum Storage Capacity",
-          "uuid": "d056dabc-e53e-49b1-a7ab-75b70b12a2a3",
-          "keyValues": [],
-          "concept": {
-            "uuid": "da4292d8-d1f1-4817-9332-4989e5516ff9"
-          },
-          "displayOrder": 28,
-          "mandatory": true
-        },
-        {
-          "name": "How many sorters do you employ?",
-          "uuid": "e6d13d5a-6354-42af-b0a0-d30b506526c9",
-          "keyValues": [],
-          "concept": {
-            "uuid": "3b63252e-a608-4e8e-a780-a755e86d2657"
-          },
-          "displayOrder": 29,
-          "mandatory": true
-        },
-        {
-          "name": "What are your main constraints or challenges?",
-          "uuid": "72511ef0-addd-4e47-a19a-c6b4fee3280a",
-          "keyValues": [],
-          "concept": {
-            "uuid": "ecfdb251-9fab-4275-85be-4f674a65e0c5"
-          },
-          "displayOrder": 30,
-          "mandatory": true
-        },
-        {
-          "name": "Where do you get help for capital?",
-          "uuid": "6bed5bb3-9d2e-473d-9f8c-240066db6681",
-          "keyValues": [],
-          "concept": {
-            "uuid": "ae8b14e5-e871-4b82-bf36-0f54afd1b1d4"
-          },
-          "displayOrder": 31,
-          "mandatory": true
-        },
-        {
-          "name": "What is the kind of support you feel if provided to you, would help to improve your business?",
-          "uuid": "3a34a356-c5a4-4126-9e99-94fb3ba93414",
-          "keyValues": [],
-          "concept": {
-            "uuid": "8883368e-84f2-466c-8bde-6eba5e3a3f0b"
-          },
-          "displayOrder": 32,
-          "mandatory": true
-        },
-        {
-          "name": "Do you need any license to operate?",
-          "uuid": "6c6b9442-1775-478f-8958-0b83305a9e9e",
-          "keyValues": [],
-          "concept": {
-            "uuid": "9ab090b9-0824-4609-a4ca-2ae0107fb12e"
-          },
-          "displayOrder": 33,
-          "mandatory": true
-        },
-        {
-          "name": "Do you have any license?",
-          "uuid": "c6c05641-77b8-42a4-a3b7-646d074f9b29",
-          "keyValues": [],
-          "concept": {
-            "uuid": "064704f7-c6a7-415e-a67e-3d52d618b192"
-          },
-          "displayOrder": 34,
-          "mandatory": true
-        },
-        {
           "name": "Do you have any additional jobs?",
           "uuid": "724ebba1-88c3-4cba-b1da-9b30cc07ece2",
           "keyValues": [],
@@ -1187,7 +850,7 @@
           "concept": {
             "uuid": "e9be897d-0e8d-4a87-bd0e-5cd507823501"
           },
-          "displayOrder": 35,
+          "displayOrder": 2,
           "mandatory": false
         },
         {
@@ -1197,7 +860,7 @@
           "concept": {
             "uuid": "f275d690-ca9f-4f0a-81b0-d42a28ce5b85"
           },
-          "displayOrder": 36,
+          "displayOrder": 3,
           "mandatory": false
         },
         {
@@ -1207,7 +870,7 @@
           "concept": {
             "uuid": "5ddfc77c-dc7f-4030-9c37-b3e7b0c37322"
           },
-          "displayOrder": 37,
+          "displayOrder": 4,
           "mandatory": true
         },
         {
@@ -1218,7 +881,7 @@
           "concept": {
             "uuid": "cab4b3b6-560b-4fb2-baaa-9318e276dc35"
           },
-          "displayOrder": 38,
+          "displayOrder": 5,
           "mandatory": true
         },
         {
@@ -1228,7 +891,7 @@
           "concept": {
             "uuid": "fd57e15d-6d51-4287-bbd4-979435108feb"
           },
-          "displayOrder": 39,
+          "displayOrder": 6,
           "mandatory": true
         },
         {
@@ -1238,7 +901,7 @@
           "concept": {
             "uuid": "86c1d194-32db-44bd-ba5b-ee123e026c7a"
           },
-          "displayOrder": 40,
+          "displayOrder": 7,
           "mandatory": true
         },
         {
@@ -1248,8 +911,670 @@
           "concept": {
             "uuid": "4929200d-1ef0-4d98-b08c-1ed56d949a6a"
           },
-          "displayOrder": 41,
+          "displayOrder": 8,
           "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "1e288d66-4320-4621-992f-a31b100fa797",
+      "name": "Waste Picking",
+      "display": "Waste Picking",
+      "displayOrder": 12,
+      "formElements": [
+        {
+          "name": "How often do you collect scrap/go waste picking?",
+          "uuid": "a18c9cb6-a42a-45e1-8ca7-bbbf78ce15e9",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "e19cbd29-b63e-4902-817c-468dc21c0eb9"
+          },
+          "displayOrder": 1,
+          "mandatory":true
+        },
+        {
+          "name": "How do you pick waste?",
+          "uuid": "d671f0c6-2afd-41c6-bacb-33a6103b7cd4",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "6be92894-1ba3-4947-8471-dd4dad188c22"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "What are the kinds of waste you pick/sort?",
+          "uuid": "62415884-d23f-4e04-b455-cf26930d8f4e",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "a59e77bb-592c-4476-9dac-20d9f2d03dc6"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Others",
+          "uuid": "1be2c2cf-cae4-4672-b3c1-c3c6c70931f3",
+          "keyValues": [],
+          "concept": {
+            "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Where do you sell your collected waste?",
+          "uuid": "e131a8fd-563b-40e9-b2fd-de61b1bb29bc",
+          "keyValues": [],
+          "concept": {
+            "uuid": "404b2032-d4f6-4212-905d-438f57585530"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "bfa3cae8-83e2-4392-860a-5e2018adb08c",
+      "name": "Scrap Dealer Details",
+      "display": "Scrap Dealer Details",
+      "displayOrder": 13,
+      "formElements": [
+        {
+          "name": "Name of scrap dealer:",
+          "uuid": "c42351f1-54a2-44a1-bdf5-f75919b9ee76",
+          "keyValues": [],
+          "concept": {
+            "uuid": "63e56f31-499a-4dae-ad3d-dc471324fe4e"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Address of scrap dealer",
+          "uuid": "edc44d4c-94fb-4cb5-8b94-4b94db6a476d",
+          "keyValues": [],
+          "concept": {
+            "uuid": "34dd92cd-fe0a-49fb-9e98-03269c764a04"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Phone number of scrap dealer",
+          "uuid": "c5ec3528-758d-41b8-8a0b-acc11166eb64",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b82f10f7-a4de-42ce-9d4e-86c98f45d934"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "e1bdddb8-816b-4af6-b210-17df069fce80",
+      "name": "Income From Waste",
+      "display": "Income From Waste",
+      "displayOrder": 14,
+      "formElements": [
+        {
+          "name": "How much do you earn?",
+          "uuid": "0a3c5e19-425c-420c-ab1c-18f41f3ea72f",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "ba3a21f4-e428-4508-b41a-367b317d61cc"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "How do you transport your collected waste?",
+          "uuid": "9d51ca28-4099-4252-9bf2-2062b16cb19e",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "33c3d095-9ee5-4ad3-83f3-e65e256c7bd8"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "If motorised vehicle then what is your daily expenditure on transport?",
+          "uuid": "de16707e-3d81-4174-912d-ec78f3c28a4e",
+          "keyValues": [],
+          "concept": {
+            "uuid": "84919a5d-f8d9-4075-931f-86523d189ef7"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "805bf1d2-2d86-4ee6-93c1-4862c96b10c6",
+      "name": "Scrap Collection",
+      "display": "Scrap Collection",
+      "displayOrder": 15,
+      "formElements": [
+        {
+          "name": "Where do you buy your scrap from?",
+          "uuid": "aef6d366-e9f4-4d0d-8c14-d5c99a02639b",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "2e6a241b-2a6a-4d1e-a7fb-badc7717fbfa"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Please list any other place you buy scrap from",
+          "uuid": "d1c51c77-2c2c-4cbe-86c5-e71c98ff6f26",
+          "keyValues": [],
+          "concept": {
+            "uuid": "55eae3eb-2dae-499b-9937-2a999f6f193f"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "What is your daily capital?",
+          "uuid": "48d40c00-4e1f-4c7b-9ae6-89380f779a39",
+          "keyValues": [],
+          "concept": {
+            "uuid": "73bb061a-7a3c-418b-9db9-a51bd4239b4d"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Who provides it?",
+          "uuid": "f8d02b99-a8f6-463d-a209-8cc9e7839b46",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "a534c01d-88ce-4c79-9afb-ec541f605562"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Any Other :",
+          "uuid": "4339e042-703c-4d2a-a4c4-3d81866e6f25",
+          "keyValues": [],
+          "concept": {
+            "uuid": "d25a9af1-8618-4b4f-9c41-84f9c9ff8337"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "d94b2d63-a0b9-4b98-b227-0d0e4b16712f",
+      "name": "What are the amounts of waste you buy per week in Kg?",
+      "display": "What are the amounts of waste you buy per week in Kg?",
+      "displayOrder": 16,
+      "formElements": [
+        {
+          "name": "How much Paper-White waste you buy per week in Kg?",
+          "uuid": "25ab6711-0c43-4cb5-8d00-34bb190555cb",
+          "keyValues": [],
+          "concept": {
+            "uuid": "5bbdc2ad-2a6b-4494-8885-d5416e6613c3"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "How much News paper waste you buy per week in Kg?",
+          "uuid": "328d7d52-8443-47b5-b88f-f274ec199ea0",
+          "keyValues": [],
+          "concept": {
+            "uuid": "139cbe5b-393f-4f57-81df-349dcb2afe55"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "How much Plastic waste you buy per week in Kg?",
+          "uuid": "de946964-1fb3-4de9-903a-b71624e6f934",
+          "keyValues": [],
+          "concept": {
+            "uuid": "d52a8ab2-6f05-4c86-82aa-25bba0035f6e"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "How much Bottles waste you buy per week in Kg?",
+          "uuid": "c60af004-1e62-4090-ab3a-a2ce178a6cc7",
+          "keyValues": [],
+          "concept": {
+            "uuid": "fbcc6b11-1ce9-463f-b3ce-df7601d95e60"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "How much Metal waste you buy per week in Kg?",
+          "uuid": "ec45acd1-c54b-4f69-8825-7ab76cb07670",
+          "keyValues": [],
+          "concept": {
+            "uuid": "18992432-aa81-4b61-a362-9b20cbd796ef"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "How much Computer and other E-Waste waste you buy per week in Kg?",
+          "uuid": "73e3ebe4-14e0-4301-9cdd-8a42488417cb",
+          "keyValues": [],
+          "concept": {
+            "uuid": "764bc227-8131-4eee-be3e-c6963552b43d"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Type of Waste",
+          "uuid": "19d0d601-83f3-4fbe-8119-9036575447ec",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b7c7ff9f-91a4-4a58-a0e9-d10cce136fc5"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "Please Specify (in Kg)",
+          "uuid": "fec5df6f-eb23-4fa3-871c-a20ed721ca7d",
+          "keyValues": [],
+          "concept": {
+            "uuid": "63571a0c-35bf-4138-a59a-e93c03429ddf"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "df037033-6613-4853-9d82-dd1c573aa1fc",
+      "name": "Shop Details",
+      "display": "Shop Details",
+      "displayOrder": 17,
+      "formElements": [
+        {
+          "name": "No. of shops you run/own/manage",
+          "uuid": "fcc0d83d-acf8-426a-94ad-13863599c20c",
+          "keyValues": [],
+          "concept": {
+            "uuid": "6ecc0b43-8a63-471f-8ed0-91dd95b9945c"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Size of the shop: in sq ft",
+          "uuid": "649e7830-a1af-489f-b2f3-9fad2ef9da8e",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b8b3dd46-2fe1-47a2-9b1d-bc3709ba1638"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Maximum Storage Capacity",
+          "uuid": "d056dabc-e53e-49b1-a7ab-75b70b12a2a3",
+          "keyValues": [],
+          "concept": {
+            "uuid": "da4292d8-d1f1-4817-9332-4989e5516ff9"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "How many sorters do you employ?",
+          "uuid": "e6d13d5a-6354-42af-b0a0-d30b506526c9",
+          "keyValues": [],
+          "concept": {
+            "uuid": "3b63252e-a608-4e8e-a780-a755e86d2657"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "What are your main constraints or challenges?",
+          "uuid": "72511ef0-addd-4e47-a19a-c6b4fee3280a",
+          "keyValues": [],
+          "concept": {
+            "uuid": "ecfdb251-9fab-4275-85be-4f674a65e0c5"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Where do you get help for capital?",
+          "uuid": "6bed5bb3-9d2e-473d-9f8c-240066db6681",
+          "keyValues": [],
+          "concept": {
+            "uuid": "ae8b14e5-e871-4b82-bf36-0f54afd1b1d4"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "What is the kind of support you feel if provided to you, would help to improve your business?",
+          "uuid": "3a34a356-c5a4-4126-9e99-94fb3ba93414",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8883368e-84f2-466c-8bde-6eba5e3a3f0b"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "b1b7ecf1-b873-4cd8-b22a-ef993832e8be",
+      "name": "License",
+      "display": "License",
+      "displayOrder": 18,
+      "formElements": [
+        {
+          "name": "Do you need any license to operate?",
+          "uuid": "6c6b9442-1775-478f-8958-0b83305a9e9e",
+          "keyValues": [],
+          "concept": {
+            "uuid": "9ab090b9-0824-4609-a4ca-2ae0107fb12e"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Do you have any license?",
+          "uuid": "c6c05641-77b8-42a4-a3b7-646d074f9b29",
+          "keyValues": [],
+          "concept": {
+            "uuid": "064704f7-c6a7-415e-a67e-3d52d618b192"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "c3c67854-2035-485a-a465-955586e660e4",
+      "name": "Waste sold per week",
+      "display": "Waste sold per week",
+      "displayOrder": 19,
+      "formElements": [
+
+        {
+          "name": "Glass Quarter Bottles waste sold per week in Kg",
+          "uuid": "4ed15af9-af57-497e-95f1-10a0f3911c35",
+          "keyValues": [],
+          "concept": {
+            "uuid": "47c88209-fd79-44f1-ac20-1371becc9540"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Glass Beer bottles waste sold per week in Kg",
+          "uuid": "f1766adf-6f23-430b-b6ab-55407d796de1",
+          "keyValues": [],
+          "concept": {
+            "uuid": "154663b0-60d9-47b6-8ec6-b741a2608703"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Glass waste sold per week in Kg",
+          "uuid": "0be6d22b-e0b9-4bd6-a7ea-34fbd24631c8",
+          "keyValues": [],
+          "concept": {
+            "uuid": "9db314f8-7258-4bd5-9c1e-126a403c5a33"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Metal Ferrous Metals/Iron waste sold per week in Kg",
+          "uuid": "6f6f6884-d94e-47e1-aa78-1790212b87b6",
+          "keyValues": [],
+          "concept": {
+            "uuid": "3ec94beb-294d-4504-a237-8a405fd90a21"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Metal Copper waste sold per week in Kg",
+          "uuid": "7ab7d3b3-8868-4baa-b7b7-cf2ec61021a6",
+          "keyValues": [],
+          "concept": {
+            "uuid": "4b5fe8c0-de6e-43a7-96ea-513aca1be885"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "Metal Aluminum waste sold per week in Kg",
+          "uuid": "fa4b0b2e-409a-45e7-879d-2bf03dbbf431",
+          "keyValues": [],
+          "concept": {
+            "uuid": "420be15f-ae29-496f-9a8a-c6204d2de989"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        },
+        {
+          "name": "Metal Other Metals waste sold per week in Kg",
+          "uuid": "5f8a0ad2-c242-40d7-83dd-d5f05e5a1461",
+          "keyValues": [],
+          "concept": {
+            "uuid": "487d5a0e-dec5-4488-990f-6b22d9531e9e"
+          },
+          "displayOrder": 7,
+          "mandatory": false
+        },
+        {
+          "name": "Metal Batteries waste sold per week in Kg",
+          "uuid": "feab882d-832c-437c-ac64-ffcad76a9144",
+          "keyValues": [],
+          "concept": {
+            "uuid": "7a12d032-2607-4a1d-9b95-d699c4d154a1"
+          },
+          "displayOrder": 8,
+          "mandatory": false
+        },
+        {
+          "name": "Metal Brass waste sold per week in Kg",
+          "uuid": "9dc17329-b19a-408f-8b93-85d32f325bb1",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b011b8e3-79cd-4f88-87f1-4f0ccc5c0a55"
+          },
+          "displayOrder": 9,
+          "mandatory": false
+        },
+        {
+          "name": "Metal Mercury waste sold per week in Kg",
+          "uuid": "17215f7d-53db-4dad-ac80-b6068abb72c5",
+          "keyValues": [],
+          "concept": {
+            "uuid": "dc875734-a6f9-464e-bba8-9038f3508925"
+          },
+          "displayOrder": 10,
+          "mandatory": false
+        },
+        {
+          "name": "Paper Cardboard/Corrugated boxes waste sold per week in Kg",
+          "uuid": "af98fce6-d889-462a-b400-9d26960baac3",
+          "keyValues": [],
+          "concept": {
+            "uuid": "bdf9a8d2-1cee-4ff8-88d8-5b31e5d4e2be"
+          },
+          "displayOrder": 11,
+          "mandatory": false
+        },
+        {
+          "name": "Paper White Paper/White Record waste sold per week in Kg",
+          "uuid": "09bbd263-171e-4627-a73d-020460e3e986",
+          "keyValues": [],
+          "concept": {
+            "uuid": "03cefc64-eeb7-41a5-a962-78ccf8cc1d87"
+          },
+          "displayOrder": 12,
+          "mandatory": false
+        },
+        {
+          "name": "Paper Road scrap paper waste sold per week in Kg",
+          "uuid": "457a97fb-e97d-4f6c-9523-bfa9bceb905c",
+          "keyValues": [],
+          "concept": {
+            "uuid": "73171ed1-722c-4ba6-9307-4249162c10f9"
+          },
+          "displayOrder": 13,
+          "mandatory": false
+        },
+        {
+          "name": "Paper Tetrapak waste sold per week in Kg",
+          "uuid": "59835a15-05dd-499f-86dc-8402bbf308de",
+          "keyValues": [],
+          "concept": {
+            "uuid": "f93c0e42-6c89-408b-8acf-43b266ece7db"
+          },
+          "displayOrder": 14,
+          "mandatory": false
+        },
+        {
+          "name": "Plastics PET (Pearlpet) waste sold per week in Kg",
+          "uuid": "a9fb364b-b3f4-4682-beff-355b94d1de2c",
+          "keyValues": [],
+          "concept": {
+            "uuid": "779eaf00-bd68-40ee-8b4d-c795af18135f"
+          },
+          "displayOrder": 15,
+          "mandatory": false
+        },
+        {
+          "name": "Plastics Hard Plastic items (cassette covers) waste sold per week in Kg",
+          "uuid": "72e82333-d0a9-4db5-8ca7-4a2ad9f3ce0e",
+          "keyValues": [],
+          "concept": {
+            "uuid": "093b7d7f-d87a-4b3e-9838-17eb088a5840"
+          },
+          "displayOrder": 16,
+          "mandatory": false
+        },
+        {
+          "name": "Plastics Soft Plastic items (Buckets) waste sold per week in Kg",
+          "uuid": "11d86c8e-8e05-4a0f-b878-5389d188bfe4",
+          "keyValues": [],
+          "concept": {
+            "uuid": "2841104a-7c1d-44b4-904a-a6597f47dafe"
+          },
+          "displayOrder": 17,
+          "mandatory": false
+        },
+        {
+          "name": "Plastics Soft Plastic, Chappal, soles waste sold per week in Kg",
+          "uuid": "22cfe374-4637-49b5-9443-dcc68fc48c56",
+          "keyValues": [],
+          "concept": {
+            "uuid": "027e3561-0ea8-47b5-82cf-43a2c91fd721"
+          },
+          "displayOrder": 18,
+          "mandatory": false
+        },
+        {
+          "name": "Plastics Milk Bags waste sold per week in Kg",
+          "uuid": "e07deeec-2c07-41a1-92d4-4cb59bb711b3",
+          "keyValues": [],
+          "concept": {
+            "uuid": "058e4290-a314-4ca5-9b99-76e7e47d66e3"
+          },
+          "displayOrder": 19,
+          "mandatory": false
+        },
+        {
+          "name": "Plastics LD Plastic bags waste sold per week in Kg",
+          "uuid": "385599b1-fd6c-4987-b42e-1362cefdf902",
+          "keyValues": [],
+          "concept": {
+            "uuid": "ab3cfea9-4b81-41d7-8154-2889df35eb9b"
+          },
+          "displayOrder": 20,
+          "mandatory": false
+        },
+        {
+          "name": "Plastics Thin Plastic bags waste sold per week in Kg",
+          "uuid": "262e9af0-fb8b-4491-bb9d-b990496d1089",
+          "keyValues": [],
+          "concept": {
+            "uuid": "84d96538-2103-432e-ad55-465c3e943e51"
+          },
+          "displayOrder": 21,
+          "mandatory": false
+        },
+        {
+          "name": "Plastics White Plastic waste sold per week in Kg",
+          "uuid": "59e5a6bd-cacc-48aa-ad71-9c64fefd21c8",
+          "keyValues": [],
+          "concept": {
+            "uuid": "38855c44-d115-4b3d-bf5f-7dc04b9fed1f"
+          },
+          "displayOrder": 22,
+          "mandatory": false
+        },
+        {
+          "name": "Others Rubber waste sold per week in Kg",
+          "uuid": "80990c87-8493-41d1-86f1-8f97e86e4376",
+          "keyValues": [],
+          "concept": {
+            "uuid": "15c19384-5215-4934-8cf1-466a58fa5613"
+          },
+          "displayOrder": 23,
+          "mandatory": false
+        },
+        {
+          "name": "Others Textiles/Rags waste sold per week in Kg",
+          "uuid": "dbf25788-cb6b-400f-ad2b-c4926edf788b",
+          "keyValues": [],
+          "concept": {
+            "uuid": "fd448acc-d983-4a08-a8bb-53d78bd214bd"
+          },
+          "displayOrder": 24,
+          "mandatory": false
+        },
+        {
+          "name": "Others Tin waste sold per week in Kg",
+          "uuid": "72f59745-b3f3-4936-82d0-7cef99addf24",
+          "keyValues": [],
+          "concept": {
+            "uuid": "e1b495c4-6ed8-4861-86b5-609de063c7d8"
+          },
+          "displayOrder": 25,
+          "mandatory": false
+        },
+        {
+          "name": "Others Thermocol/Styrofoam waste sold per week in Kg",
+          "uuid": "87a343ef-095d-4294-8161-c7e6e51f8b4c",
+          "keyValues": [],
+          "concept": {
+            "uuid": "0ccc5149-a19d-4ac0-bedd-8d621951f4be"
+          },
+          "displayOrder": 26,
+          "mandatory": false
         }
       ]
     },
@@ -1257,7 +1582,7 @@
       "uuid": "a4aef2f0-2417-460d-8f3c-453c46716db0",
       "name": "Bank Details",
       "display": "Bank Details",
-      "displayOrder": 12,
+      "displayOrder": 20,
       "formElements": [
         {
           "name": "Do you have a bank account?",
@@ -1357,7 +1682,7 @@
       "uuid": "3859dd31-3550-4248-9ea8-c2a076ef674a",
       "name": "Post Office SB",
       "display": "Post Office SB",
-      "displayOrder": 13,
+      "displayOrder": 21,
       "formElements": [
         {
           "name": "Do you have a post office SB account?",
@@ -1457,7 +1782,7 @@
       "uuid": "924f60a9-c9cd-4343-a032-05b366056c15",
       "name": "Loan",
       "display": "Loan",
-      "displayOrder": 14,
+      "displayOrder": 22,
       "formElements": [
         {
           "name": "Do you have access to loans from banks/other schemes?",
@@ -1476,7 +1801,7 @@
       "uuid": "aa4253a9-8e6d-45bf-bcef-9c788f5de6ee",
       "name": "Trainings",
       "display": "Trainings",
-      "displayOrder": 15,
+      "displayOrder": 23,
       "formElements": [
         {
           "name": "Have you undergone any of the following trainings?",
@@ -1526,7 +1851,7 @@
       "uuid": "79158f16-8896-412b-93d5-78dc8d133f14",
       "name": "Introduced by",
       "display": "Introduced by",
-      "displayOrder": 16,
+      "displayOrder": 24,
       "formElements": [
         {
           "name": "Introduced by (Name)",
