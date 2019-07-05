@@ -863,7 +863,12 @@
         {
           "name": "How long have you been picking waste/buying waste? (Please mention the number of years and months)",
           "uuid": "561c18cd-dd36-4fbd-9296-07dee0311a93",
-          "keyValues": [],
+          "keyValues": [
+            {
+              "key": "durationOptions",
+              "value": ["years", "months", "days"]
+            }
+          ],
           "concept": {
             "uuid": "5ddfc77c-dc7f-4030-9c37-b3e7b0c37322"
           },
