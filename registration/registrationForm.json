@@ -353,8 +353,8 @@
     },
     {
       "uuid": "f8155b82-143e-49d2-8ff3-50be7b52c8f6",
-      "name": "Diability",
-      "display": "Diability",
+      "name": "Disability",
+      "display": "Disability",
       "displayOrder": 7,
       "formElements": [
         {
@@ -970,88 +970,10 @@
       ]
     },
     {
-      "uuid": "bfa3cae8-83e2-4392-860a-5e2018adb08c",
-      "name": "Where do you sell your collected waste?",
-      "display": "Where do you sell your collected waste?",
-      "displayOrder": 13,
-      "formElements": [
-        {
-          "name": "Name of scrap dealer:",
-          "uuid": "c42351f1-54a2-44a1-bdf5-f75919b9ee76",
-          "keyValues": [],
-          "concept": {
-            "uuid": "63e56f31-499a-4dae-ad3d-dc471324fe4e"
-          },
-          "displayOrder": 1,
-          "mandatory": false
-        },
-        {
-          "name": "Address of scrap dealer",
-          "uuid": "edc44d4c-94fb-4cb5-8b94-4b94db6a476d",
-          "keyValues": [],
-          "concept": {
-            "uuid": "34dd92cd-fe0a-49fb-9e98-03269c764a04"
-          },
-          "displayOrder": 2,
-          "mandatory": false
-        },
-        {
-          "name": "Phone number of scrap dealer",
-          "uuid": "c5ec3528-758d-41b8-8a0b-acc11166eb64",
-          "keyValues": [],
-          "concept": {
-            "uuid": "b82f10f7-a4de-42ce-9d4e-86c98f45d934"
-          },
-          "displayOrder": 3,
-          "mandatory": false
-        }
-      ]
-    },
-    {
-      "uuid": "e1bdddb8-816b-4af6-b210-17df069fce80",
-      "name": "Income from waste",
-      "display": "Income from waste",
-      "displayOrder": 14,
-      "formElements": [
-        {
-          "name": "How much do you earn?",
-          "uuid": "0a3c5e19-425c-420c-ab1c-18f41f3ea72f",
-          "keyValues": [],
-          "type": "SingleSelect",
-          "concept": {
-            "uuid": "ba3a21f4-e428-4508-b41a-367b317d61cc"
-          },
-          "displayOrder": 1,
-          "mandatory": true
-        },
-        {
-          "name": "How do you transport your collected waste?",
-          "uuid": "9d51ca28-4099-4252-9bf2-2062b16cb19e",
-          "keyValues": [],
-          "type": "SingleSelect",
-          "concept": {
-            "uuid": "33c3d095-9ee5-4ad3-83f3-e65e256c7bd8"
-          },
-          "displayOrder": 2,
-          "mandatory": false
-        },
-        {
-          "name": "If motorised vehicle then what is your daily expenditure on transport?",
-          "uuid": "de16707e-3d81-4174-912d-ec78f3c28a4e",
-          "keyValues": [],
-          "concept": {
-            "uuid": "84919a5d-f8d9-4075-931f-86523d189ef7"
-          },
-          "displayOrder": 3,
-          "mandatory": false
-        }
-      ]
-    },
-    {
       "uuid": "805bf1d2-2d86-4ee6-93c1-4862c96b10c6",
       "name": "Scrap collection",
       "display": "Scrap collection",
-      "displayOrder": 15,
+      "displayOrder": 13,
       "formElements": [
         {
           "name": "Where do you buy your scrap from?",
@@ -1111,7 +1033,7 @@
       "uuid": "d94b2d63-a0b9-4b98-b227-0d0e4b16712f",
       "name": "What are the amounts of waste you buy per week in Kg?",
       "display": "What are the amounts of waste you buy per week in Kg?",
-      "displayOrder": 16,
+      "displayOrder": 14,
       "formElements": [
         {
           "name": "How much Paper-White waste you buy per week in Kg?",
@@ -1203,6 +1125,84 @@
           },
           "displayOrder": 9,
           "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "bfa3cae8-83e2-4392-860a-5e2018adb08c",
+      "name": "Where do you sell your collected waste?",
+      "display": "Where do you sell your collected waste?",
+      "displayOrder": 15,
+      "formElements": [
+        {
+          "name": "Name of scrap dealer:",
+          "uuid": "c42351f1-54a2-44a1-bdf5-f75919b9ee76",
+          "keyValues": [],
+          "concept": {
+            "uuid": "63e56f31-499a-4dae-ad3d-dc471324fe4e"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Address of scrap dealer",
+          "uuid": "edc44d4c-94fb-4cb5-8b94-4b94db6a476d",
+          "keyValues": [],
+          "concept": {
+            "uuid": "34dd92cd-fe0a-49fb-9e98-03269c764a04"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Phone number of scrap dealer",
+          "uuid": "c5ec3528-758d-41b8-8a0b-acc11166eb64",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b82f10f7-a4de-42ce-9d4e-86c98f45d934"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "e1bdddb8-816b-4af6-b210-17df069fce80",
+      "name": "Income from waste",
+      "display": "Income from waste",
+      "displayOrder": 16,
+      "formElements": [
+        {
+          "name": "How much do you earn?",
+          "uuid": "0a3c5e19-425c-420c-ab1c-18f41f3ea72f",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "ba3a21f4-e428-4508-b41a-367b317d61cc"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "How do you transport your collected waste?",
+          "uuid": "9d51ca28-4099-4252-9bf2-2062b16cb19e",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "33c3d095-9ee5-4ad3-83f3-e65e256c7bd8"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "If motorised vehicle then what is your daily expenditure on transport?",
+          "uuid": "de16707e-3d81-4174-912d-ec78f3c28a4e",
+          "keyValues": [],
+          "concept": {
+            "uuid": "84919a5d-f8d9-4075-931f-86523d189ef7"
+          },
+          "displayOrder": 3,
+          "mandatory": false
         }
       ]
     },
