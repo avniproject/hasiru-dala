@@ -10,17 +10,6 @@
       "displayOrder": 1,
       "formElements": [
         {
-          "name": "Gender",
-          "uuid": "0b1d2523-af7f-44d0-be54-dab13af1398b",
-          "keyValues": [],
-          "type": "SingleSelect",
-          "concept": {
-            "uuid": "483be0b2-b6ba-40e0-8bf7-91cb33c6e284"
-          },
-          "displayOrder": 1,
-          "mandatory": true
-        },
-        {
           "name": "Marital status",
           "uuid": "40500879-98d9-4314-bc2e-6f0eff4917cc",
           "keyValues": [],
@@ -28,7 +17,7 @@
           "concept": {
             "uuid": "aa6687c9-ba4d-49a3-9b3e-bba266eb6f32"
           },
-          "displayOrder": 2,
+          "displayOrder": 1,
           "mandatory": true
         },
         {
@@ -38,15 +27,15 @@
           "concept": {
             "uuid": "c74df3ef-717a-41e6-aef0-2e92a6bb7947"
           },
-          "displayOrder": 3,
+          "displayOrder": 2,
           "mandatory": false
         }
       ]
     },
     {
       "uuid": "81c6d146-9904-42e5-bf35-d6ec9614b2c0",
-      "name": "Present Address",
-      "display": "Present Address",
+      "name": "Present address",
+      "display": "Present address",
       "displayOrder": 2,
       "formElements": [
         {
@@ -132,7 +121,7 @@
             "regex": "^[0-9]{10}$",
             "descriptionKey": "Required10Digits"
           },
-          "displayOrder": 7,
+          "displayOrder": 1,
           "mandatory": true
         },
         {
@@ -146,15 +135,15 @@
             "regex": "^[0-9]{10}$",
             "descriptionKey": "Required10Digits"
           },
-          "displayOrder": 8,
+          "displayOrder": 2,
           "mandatory": true
         }
       ]
     },
     {
       "uuid": "d564801e-e742-4d5b-ab09-44c962287a16",
-      "name": "Permanent Address",
-      "display": "Permanent Address",
+      "name": "Permanent address",
+      "display": "Permanent address",
       "displayOrder": 4,
       "formElements": [
         {
@@ -256,7 +245,7 @@
           "concept": {
             "uuid": "466bafd2-b9f6-4b10-84c8-6a3601c41517"
           },
-          "displayOrder": 9,
+          "displayOrder": 1,
           "mandatory": true
         },
         {
@@ -271,7 +260,7 @@
             "descriptionKey": "Required10Digits"
           },
 
-          "displayOrder": 10,
+          "displayOrder": 2,
           "mandatory": true
         },
         {
@@ -281,7 +270,7 @@
           "concept": {
             "uuid": "61bf5d7c-2d86-4c0e-9c0b-736166490261"
           },
-          "displayOrder": 11,
+          "displayOrder": 3,
           "mandatory": false
         },
         {
@@ -295,15 +284,15 @@
             "regex": "^[0-9]{10}$",
             "descriptionKey": "Required10Digits"
           },
-          "displayOrder": 12,
+          "displayOrder": 4,
           "mandatory": false
         }
       ]
     },
     {
       "uuid": "985695c7-40a1-4963-91b7-d05b7832eae3",
-      "name": "Education Details",
-      "display": "Education Details",
+      "name": "Education details",
+      "display": "Education details",
       "displayOrder": 6,
       "formElements": [
         {
@@ -431,8 +420,8 @@
     },
     {
       "uuid": "7c9da158-ae75-4898-86d6-b8c830547312",
-      "name": "Identity Card",
-      "display": "Identity Card",
+      "name": "Identity card",
+      "display": "Identity card",
       "displayOrder": 9,
       "formElements": [
         {
@@ -797,8 +786,8 @@
     },
     {
       "uuid": "803746c0-4f23-4b72-8457-175248b78f07",
-      "name": "Occupational ID",
-      "display": "Occupational ID",
+      "name": "Occupational id",
+      "display": "Occupational id",
       "displayOrder": 10,
       "formElements": [
         {
@@ -926,8 +915,8 @@
     },
     {
       "uuid": "1e288d66-4320-4621-992f-a31b100fa797",
-      "name": "Waste Picking",
-      "display": "Waste Picking",
+      "name": "Waste collection",
+      "display": "Waste collection",
       "displayOrder": 12,
       "formElements": [
         {
@@ -972,23 +961,13 @@
           },
           "displayOrder": 4,
           "mandatory": false
-        },
-        {
-          "name": "Where do you sell your collected waste?",
-          "uuid": "e131a8fd-563b-40e9-b2fd-de61b1bb29bc",
-          "keyValues": [],
-          "concept": {
-            "uuid": "404b2032-d4f6-4212-905d-438f57585530"
-          },
-          "displayOrder": 5,
-          "mandatory": false
         }
       ]
     },
     {
       "uuid": "bfa3cae8-83e2-4392-860a-5e2018adb08c",
-      "name": "Scrap Dealer Details",
-      "display": "Scrap Dealer Details",
+      "name": "Where do you sell your collected waste?",
+      "display": "Where do you sell your collected waste?",
       "displayOrder": 13,
       "formElements": [
         {
@@ -1025,8 +1004,8 @@
     },
     {
       "uuid": "e1bdddb8-816b-4af6-b210-17df069fce80",
-      "name": "Income From Waste",
-      "display": "Income From Waste",
+      "name": "Income from waste",
+      "display": "Income from waste",
       "displayOrder": 14,
       "formElements": [
         {
@@ -1065,8 +1044,8 @@
     },
     {
       "uuid": "805bf1d2-2d86-4ee6-93c1-4862c96b10c6",
-      "name": "Scrap Collection",
-      "display": "Scrap Collection",
+      "name": "Scrap collection",
+      "display": "Scrap collection",
       "displayOrder": 15,
       "formElements": [
         {
@@ -1190,13 +1169,24 @@
           "mandatory": true
         },
         {
+          "name": "Do you collect any other type of waste",
+          "uuid": "e879634f-9a10-4c0d-aa3b-7c5d7d2d2def",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "178517a0-1f9c-4eaa-91c1-7dfd93e30b72"
+          },
+          "displayOrder": 7,
+          "mandatory": false
+        },
+        {
           "name": "Type of Waste",
           "uuid": "19d0d601-83f3-4fbe-8119-9036575447ec",
           "keyValues": [],
           "concept": {
             "uuid": "b7c7ff9f-91a4-4a58-a0e9-d10cce136fc5"
           },
-          "displayOrder": 7,
+          "displayOrder": 8,
           "mandatory": true
         },
         {
@@ -1206,15 +1196,15 @@
           "concept": {
             "uuid": "63571a0c-35bf-4138-a59a-e93c03429ddf"
           },
-          "displayOrder": 8,
+          "displayOrder": 9,
           "mandatory": true
         }
       ]
     },
     {
       "uuid": "df037033-6613-4853-9d82-dd1c573aa1fc",
-      "name": "Shop Details",
-      "display": "Shop Details",
+      "name": "Shop details",
+      "display": "Shop details",
       "displayOrder": 17,
       "formElements": [
         {
@@ -1588,8 +1578,8 @@
     },
     {
       "uuid": "a4aef2f0-2417-460d-8f3c-453c46716db0",
-      "name": "Bank Details",
-      "display": "Bank Details",
+      "name": "Bank details",
+      "display": "Bank details",
       "displayOrder": 20,
       "formElements": [
         {
@@ -1688,8 +1678,8 @@
     },
     {
       "uuid": "3859dd31-3550-4248-9ea8-c2a076ef674a",
-      "name": "Post Office SB",
-      "display": "Post Office SB",
+      "name": "Post office sb",
+      "display": "Post office sb",
       "displayOrder": 21,
       "formElements": [
         {
@@ -1820,37 +1810,6 @@
             "uuid": "2ac22c50-8ca5-4589-8441-88d67fe44b70"
           },
           "displayOrder": 1,
-          "mandatory": true
-        },
-        {
-          "name": "Do you have any family members/dependents living with you?",
-          "uuid": "6c2fc89d-eaff-450c-84b7-8cbb2b072c27",
-          "keyValues": [],
-          "concept": {
-            "uuid": "be439fb2-b4a2-4b20-ab30-aab4672e347e"
-          },
-          "displayOrder": 2,
-          "mandatory": false
-        },
-        {
-          "name": "What is his/her relationship with you",
-          "uuid": "0f56994e-c935-432d-8f2a-4be0c24d39b2",
-          "keyValues": [],
-          "type": "SingleSelect",
-          "concept": {
-            "uuid": "a26dfb19-6fb6-409c-bd78-c7182bd7de40"
-          },
-          "displayOrder": 3,
-          "mandatory": true
-        },
-        {
-          "name": "Is she/he dependent on your income?",
-          "uuid": "c3318fe4-a7a8-4e94-add5-53fc302bc537",
-          "keyValues": [],
-          "concept": {
-            "uuid": "c3318fe4-a7a8-4e94-add5-53fc302bc537"
-          },
-          "displayOrder": 4,
           "mandatory": true
         }
       ]

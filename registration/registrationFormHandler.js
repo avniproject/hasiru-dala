@@ -24,6 +24,11 @@ class RegistrationViewHandlerHasiruDala {
     }
 
     @WithRegistrationStatusBuilder
+    maritalStatus([], statusBuilder) {
+        statusBuilder.skipAnswers('Currently married', 'Separated', 'Divorced', 'Widow(er)', 'Remarried', 'Unmarried','Other');
+    }
+
+    @WithRegistrationStatusBuilder
     pleaseSelectTheClassCourse([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Are you studying presently?").is.yes;
     }
@@ -119,27 +124,6 @@ class RegistrationViewHandlerHasiruDala {
     @WithName("Have you undergone any of the following trainings?")
     @WithRegistrationStatusBuilder
     abc23([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose your employment type")
-        .containsAnswerConceptName("Informal waste worker");
-    }
-
-    @WithName("Do you have any family members/dependents living with you?")
-    @WithRegistrationStatusBuilder
-    abc24([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose your employment type")
-        .containsAnswerConceptName("Informal waste worker");
-    }
-
-    @WithName("What is his/her relationship with you")
-    @WithRegistrationStatusBuilder
-    abc25([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose your employment type")
-        .containsAnswerConceptName("Informal waste worker");
-    }
-
-    @WithName("Is she/he dependent on your income?")
-    @WithRegistrationStatusBuilder
-    abc26([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
         .containsAnswerConceptName("Informal waste worker");
     }
@@ -465,7 +449,6 @@ class RegistrationViewHandlerHasiruDala {
          .containsAnyAnswerConceptName("Wastepicker","Itinerant buyer","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
      }
 
-
     @WithName("How do you pick waste?")
     @WithRegistrationStatusBuilder
     ibSd2([], statusBuilder) {
@@ -485,13 +468,6 @@ class RegistrationViewHandlerHasiruDala {
     ibSd4([], statusBuilder) {
          statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
          .containsAnyAnswerConceptName("Wastepicker","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
-     }
-
-    @WithName("Where do you sell your collected waste?")
-    @WithRegistrationStatusBuilder
-    ibSd5([], statusBuilder) {
-         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-         .containsAnyAnswerConceptName("Wastepicker","Itinerant buyer","Sorters at scrap shops","Sorters at DWCC","Waste collectors on ULB Autorickshaws/trucks");
      }
 
     @WithName("Name of scrap dealer:")
@@ -546,8 +522,8 @@ class RegistrationViewHandlerHasiruDala {
     @WithName("Please list any other place you buy scrap from")
     @WithRegistrationStatusBuilder
     itinerantBuyer3([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-        .containsAnswerConceptName("Itinerant buyer");
+        statusBuilder.show().when.valueInRegistration("Where do you buy your scrap from?")
+        .containsAnswerConceptName("Other");
     }
 
     @WithName("What is your daily capital?")
@@ -612,18 +588,21 @@ class RegistrationViewHandlerHasiruDala {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
-    @WithName("Type of Waste")
+    @WithName("Do you collect any other type of waste")
     @WithRegistrationStatusBuilder
     itinerantBuyer13([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("Please Specify (in Kg)")
     @WithRegistrationStatusBuilder
-    itinerantBuyer14([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-        .containsAnswerConceptName("Itinerant buyer");
+    typeOfWaste([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you collect any other type of waste").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    pleaseSpecifyInKg([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you collect any other type of waste").is.yes;
     }
 
     @WithName("No. of shops you run/own/manage")

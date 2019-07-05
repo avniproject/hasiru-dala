@@ -1,52 +1,5 @@
 [
     {
-      "uuid": "daadb409-0aad-4faf-88b4-b604107c27c3",
-      "name": "Male/Man"
-    },
-    {
-      "uuid": "12f000bf-7a39-4e62-abf8-4bc14b612209",
-      "name": "Female/Woman"
-    },
-    {
-      "uuid": "c41e9c59-1208-4e12-a19b-d983a50b6f4a",
-      "name": "TransMale/TransMan"
-    },
-    {
-      "uuid": "6aa25c32-8b7e-4fda-bc7f-269e26fae60f",
-      "name": "TransFemale/TranWoman"
-    },
-    {
-      "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-      "name": "Other"
-    },
-    {
-      "name": "Gender",
-      "uuid": "483be0b2-b6ba-40e0-8bf7-91cb33c6e284",
-      "dataType": "Coded",
-      "answers": [
-        {
-          "uuid": "daadb409-0aad-4faf-88b4-b604107c27c3",
-          "name": "Male/Man"
-        },
-        {
-          "uuid": "12f000bf-7a39-4e62-abf8-4bc14b612209",
-          "name": "Female/Woman"
-        },
-        {
-          "uuid": "c41e9c59-1208-4e12-a19b-d983a50b6f4a",
-          "name": "TransMale/TransMan"
-        },
-        {
-          "uuid": "6aa25c32-8b7e-4fda-bc7f-269e26fae60f",
-          "name": "TransFemale/TranWoman"
-        },
-        {
-          "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
-          "name": "Other"
-        }
-      ]
-    },
-    {
       "uuid": "068800a4-3a8f-475a-824b-0a49c4962ac7",
       "name": "Single"
     },
@@ -1081,11 +1034,6 @@
       "dataType": "Text"
     },
     {
-      "name": "Where do you sell your collected waste?",
-      "uuid": "404b2032-d4f6-4212-905d-438f57585530",
-      "dataType": "Text"
-    },
-    {
       "name": "Name of scrap dealer:",
       "uuid": "63e56f31-499a-4dae-ad3d-dc471324fe4e",
       "dataType": "Text"
@@ -1227,6 +1175,10 @@
         {
           "uuid": "7008ceb1-7641-48b8-83bc-09c92cc169e5",
           "name": "Mostly industries"
+        },
+        {
+          "uuid": "05ea583c-51d2-412d-ad00-06c432ffe538",
+          "name": "Other"
         }
       ]
     },
@@ -1297,6 +1249,19 @@
       "name": "How much Computer and other E-Waste waste you buy per week in Kg?",
       "uuid": "764bc227-8131-4eee-be3e-c6963552b43d",
       "dataType": "Numeric"
+    },
+    {
+      "name": "Do you collect any other type of waste",
+      "uuid": "178517a0-1f9c-4eaa-91c1-7dfd93e30b72",
+      "dataType": "Coded",
+      "answers": [
+        {
+          "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
+        },
+        {
+          "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
+        }
+      ]
     },
     {
       "name": "Type of Waste",
@@ -1701,56 +1666,6 @@
         "uuid": "c42c683a-6389-41c5-9e71-ff0e80b6d854",
         "name": "Any Other"
       }
-    ]
-  },
-  {
-    "name": "Do you have any family members/dependents living with you?",
-    "uuid": "be439fb2-b4a2-4b20-ab30-aab4672e347e",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
-      },
-      {
-        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
-      }
-    ]
-  },
-  {
-    "name": "What is his/her relationship with you",
-    "uuid": "a26dfb19-6fb6-409c-bd78-c7182bd7de40",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "3305a303-be7f-4270-9f52-055a037b1f1f",
-        "name": "Husband"
-      },
-      {
-        "uuid": "77e9a994-23b5-4d88-bb16-c36dd3c3f58e",
-        "name": "Wife"
-      },
-      {
-        "uuid": "4ab468c6-edca-44ae-8158-e98baac08fab",
-        "name": "Son"
-      },
-      {
-        "uuid": "28b6b4bb-63c8-478a-93d3-a340ec13364c",
-        "name": "Daughter"
-      }
-    ]
-  },
-  {
-    "name": "Is she/he dependent on your income?",
-    "uuid": "c3318fe4-a7a8-4e94-add5-53fc302bc537",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "04bb1773-c353-44a1-a68c-9b448e07ff70"
-      },
-      {
-        "uuid": "e7b50c78-3d90-484d-a224-9887887780dc"
-      }
-
     ]
   },
   {
