@@ -269,12 +269,6 @@ class RegistrationViewHandlerHasiruDala {
     }
 
     @WithRegistrationStatusBuilder
-    numberOfOtherIdCards([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
-    }
-
-    
-    @WithRegistrationStatusBuilder
     cardNumberOfOtherId1([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Whether you have any other ID Cards").is.yes;
     }
@@ -547,47 +541,48 @@ class RegistrationViewHandlerHasiruDala {
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("How much Paper-White waste you buy per week in Kg?")
+    @WithName("How much Paper-White waste you buy per week in (Kg)?")
     @WithRegistrationStatusBuilder
     itinerantBuyer7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("How much News paper waste you buy per week in Kg?")
+    @WithName("How much News paper waste you buy per week in (Kg)?")
     @WithRegistrationStatusBuilder
     itinerantBuyer8([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("How much Plastic waste you buy per week in Kg?")
+    @WithName("How much Plastic waste you buy per week in (Kg)?")
     @WithRegistrationStatusBuilder
     itinerantBuyer9([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("How much Bottles waste you buy per week in Kg?")
+    @WithName("How much Bottles waste you buy per week in (Kg)?")
     @WithRegistrationStatusBuilder
     itinerantBuyer10([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("How much Metal waste you buy per week in Kg?")
+    @WithName("How much Metal waste you buy per week in (Kg)?")
     @WithRegistrationStatusBuilder
     itinerantBuyer11([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
 
-    @WithName("How much Computer and other E-Waste waste you buy per week in Kg?")
+    @WithName("How much Computer and other E-Waste waste you buy per week in (Kg)?")
     @WithRegistrationStatusBuilder
     itinerantBuyer12([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
         .containsAnswerConceptName("Itinerant buyer");
     }
+
     @WithName("Do you collect any other type of waste")
     @WithRegistrationStatusBuilder
     itinerantBuyer13([], statusBuilder) {

@@ -628,11 +628,6 @@
       ]
     },
     {
-      "name": "Number of Other ID Cards",
-      "uuid": "3e941793-b258-4874-8c68-b20718a07f34",
-      "dataType": "Text"
-    },
-    {
       "name": "Card Number of Other ID 1",
       "uuid": "0877b2bd-7069-45f2-9ab7-8529132c50bc",
       "dataType": "Text"
@@ -1221,32 +1216,32 @@
       "dataType": "Text"
     },
     {
-      "name": "How much Paper-White waste you buy per week in Kg?",
+      "name": "How much Paper-White waste you buy per week in (Kg)?",
       "uuid": "5bbdc2ad-2a6b-4494-8885-d5416e6613c3",
       "dataType": "Numeric"
     },
     {
-      "name": "How much News paper waste you buy per week in Kg?",
+      "name": "How much News paper waste you buy per week in (Kg)?",
       "uuid": "139cbe5b-393f-4f57-81df-349dcb2afe55",
       "dataType": "Numeric"
     },
     {
-      "name": "How much Plastic waste you buy per week in Kg?",
+      "name": "How much Plastic waste you buy per week in (Kg)?",
       "uuid": "d52a8ab2-6f05-4c86-82aa-25bba0035f6e",
       "dataType": "Numeric"
     },
     {
-      "name": "How much Bottles waste you buy per week in Kg?",
+      "name": "How much Bottles waste you buy per week in (Kg)?",
       "uuid": "fbcc6b11-1ce9-463f-b3ce-df7601d95e60",
       "dataType": "Numeric"
     },
     {
-      "name": "How much Metal waste you buy per week in Kg?",
+      "name": "How much Metal waste you buy per week in (Kg)?",
       "uuid": "18992432-aa81-4b61-a362-9b20cbd796ef",
       "dataType": "Numeric"
     },
     {
-      "name": "How much Computer and other E-Waste waste you buy per week in Kg?",
+      "name": "How much Computer and other E-Waste waste you buy per week in (Kg)?",
       "uuid": "764bc227-8131-4eee-be3e-c6963552b43d",
       "dataType": "Numeric"
     },
@@ -1269,7 +1264,7 @@
       "dataType": "Text"
     },
     {
-      "name": "Please Specify (in Kg)",
+      "name": "Please Specify in (Kg)",
       "uuid": "63571a0c-35bf-4138-a59a-e93c03429ddf",
       "dataType": "Numeric"
     },

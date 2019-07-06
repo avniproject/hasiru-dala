@@ -653,23 +653,13 @@
           "mandatory": true
         },
         {
-          "name": "Number of Other ID Cards",
-          "uuid": "93dc4485-5a11-4f0d-9118-fd8c7daf7500",
-          "keyValues": [],
-          "concept": {
-            "uuid": "3e941793-b258-4874-8c68-b20718a07f34"
-          },
-          "displayOrder": 23,
-          "mandatory": true
-        },
-        {
           "name": "Card Number of Other ID 1",
           "uuid": "d5a87713-1d32-4fbc-bdfd-d7a54d07db7b",
           "keyValues": [],
           "concept": {
             "uuid": "0877b2bd-7069-45f2-9ab7-8529132c50bc"
           },
-          "displayOrder": 24,
+          "displayOrder": 23,
           "mandatory": true
         },
         {
@@ -679,7 +669,7 @@
           "concept": {
             "uuid": "74e32026-d054-4843-9dd3-dfe8a065b013"
           },
-          "displayOrder": 25,
+          "displayOrder": 24,
           "mandatory": true
         },
         {
@@ -689,7 +679,7 @@
           "concept": {
             "uuid": "a2cfd126-1f53-4cd2-ab41-16557d1d1010"
           },
-          "displayOrder": 26,
+          "displayOrder": 25,
           "mandatory": true
         },
         {
@@ -699,7 +689,7 @@
           "concept": {
             "uuid": "d39f5315-68dc-4a5c-8b46-852045ed9465"
           },
-          "displayOrder": 27,
+          "displayOrder": 26,
           "mandatory": true
         },
         {
@@ -709,7 +699,7 @@
           "concept": {
             "uuid": "155ba844-4799-429a-865a-6ffea3815e82"
           },
-          "displayOrder": 28,
+          "displayOrder": 27,
           "mandatory": true
         },
         {
@@ -719,7 +709,7 @@
           "concept": {
             "uuid": "506a841d-fabe-4308-8af3-0da043ea19fd"
           },
-          "displayOrder": 29,
+          "displayOrder": 28,
           "mandatory": true
         },
         {
@@ -729,7 +719,7 @@
           "concept": {
             "uuid": "2b006bad-5805-4471-a0c5-d25aadff2ec6"
           },
-          "displayOrder": 30,
+          "displayOrder": 29,
           "mandatory": true
         },
         {
@@ -739,7 +729,7 @@
           "concept": {
             "uuid": "7cde9e88-7e78-47e4-a3af-21c02723c0ce"
           },
-          "displayOrder": 31,
+          "displayOrder": 30,
           "mandatory": true
         },
         {
@@ -749,7 +739,7 @@
           "concept": {
             "uuid": "b7409ee5-ee68-4fb8-8545-2cabd2cda6e3"
           },
-          "displayOrder": 32,
+          "displayOrder": 31,
           "mandatory": true
         },
         {
@@ -759,7 +749,7 @@
           "concept": {
             "uuid": "e01ca0ee-ab12-47cf-a64a-f931198956e6"
           },
-          "displayOrder": 33,
+          "displayOrder": 32,
           "mandatory": true
         },
         {
@@ -769,7 +759,7 @@
           "concept": {
             "uuid": "8de0176a-d4fc-4dc1-937a-e1cefe9cc4fb"
           },
-          "displayOrder": 34,
+          "displayOrder": 33,
           "mandatory": true
         },
         {
@@ -779,7 +769,7 @@
           "concept": {
             "uuid": "2e6e3964-4731-488c-9e2a-f1bb2fbacf41"
           },
-          "displayOrder": 35,
+          "displayOrder": 34,
           "mandatory": true
         }
       ]
@@ -866,7 +856,7 @@
           "keyValues": [
             {
               "key": "durationOptions",
-              "value": ["years", "months", "days"]
+              "value": ["years", "months"]
             }
           ],
           "concept": {
@@ -966,15 +956,7 @@
           },
           "displayOrder": 4,
           "mandatory": false
-        }
-      ]
-    },
-    {
-      "uuid": "805bf1d2-2d86-4ee6-93c1-4862c96b10c6",
-      "name": "Scrap collection",
-      "display": "Scrap collection",
-      "displayOrder": 13,
-      "formElements": [
+        },
         {
           "name": "Where do you buy your scrap from?",
           "uuid": "aef6d366-e9f4-4d0d-8c14-d5c99a02639b",
@@ -983,7 +965,7 @@
           "concept": {
             "uuid": "2e6a241b-2a6a-4d1e-a7fb-badc7717fbfa"
           },
-          "displayOrder": 1,
+          "displayOrder": 5,
           "mandatory": true
         },
         {
@@ -993,7 +975,7 @@
           "concept": {
             "uuid": "55eae3eb-2dae-499b-9937-2a999f6f193f"
           },
-          "displayOrder": 2,
+          "displayOrder": 6,
           "mandatory": false
         },
         {
@@ -1003,7 +985,7 @@
           "concept": {
             "uuid": "73bb061a-7a3c-418b-9db9-a51bd4239b4d"
           },
-          "displayOrder": 3,
+          "displayOrder": 7,
           "mandatory": false
         },
         {
@@ -1014,7 +996,7 @@
           "concept": {
             "uuid": "a534c01d-88ce-4c79-9afb-ec541f605562"
           },
-          "displayOrder": 4,
+          "displayOrder": 8,
           "mandatory": false
         },
         {
@@ -1024,19 +1006,19 @@
           "concept": {
             "uuid": "d25a9af1-8618-4b4f-9c41-84f9c9ff8337"
           },
-          "displayOrder": 5,
+          "displayOrder": 9,
           "mandatory": false
         }
       ]
     },
     {
       "uuid": "d94b2d63-a0b9-4b98-b227-0d0e4b16712f",
-      "name": "What are the amounts of waste you buy per week in Kg?",
-      "display": "What are the amounts of waste you buy per week in Kg?",
+      "name": "What are the amounts of waste you buy per week in (Kg)?",
+      "display": "What are the amounts of waste you buy per week in (Kg)?",
       "displayOrder": 14,
       "formElements": [
         {
-          "name": "How much Paper-White waste you buy per week in Kg?",
+          "name": "How much Paper-White waste you buy per week in (Kg)?",
           "uuid": "25ab6711-0c43-4cb5-8d00-34bb190555cb",
           "keyValues": [],
           "concept": {
@@ -1046,7 +1028,7 @@
           "mandatory": true
         },
         {
-          "name": "How much News paper waste you buy per week in Kg?",
+          "name": "How much News paper waste you buy per week in (Kg)?",
           "uuid": "328d7d52-8443-47b5-b88f-f274ec199ea0",
           "keyValues": [],
           "concept": {
@@ -1056,7 +1038,7 @@
           "mandatory": true
         },
         {
-          "name": "How much Plastic waste you buy per week in Kg?",
+          "name": "How much Plastic waste you buy per week in (Kg)?",
           "uuid": "de946964-1fb3-4de9-903a-b71624e6f934",
           "keyValues": [],
           "concept": {
@@ -1066,7 +1048,7 @@
           "mandatory": true
         },
         {
-          "name": "How much Bottles waste you buy per week in Kg?",
+          "name": "How much Bottles waste you buy per week in (Kg)?",
           "uuid": "c60af004-1e62-4090-ab3a-a2ce178a6cc7",
           "keyValues": [],
           "concept": {
@@ -1076,7 +1058,7 @@
           "mandatory": true
         },
         {
-          "name": "How much Metal waste you buy per week in Kg?",
+          "name": "How much Metal waste you buy per week in (Kg)?",
           "uuid": "ec45acd1-c54b-4f69-8825-7ab76cb07670",
           "keyValues": [],
           "concept": {
@@ -1086,7 +1068,7 @@
           "mandatory": true
         },
         {
-          "name": "How much Computer and other E-Waste waste you buy per week in Kg?",
+          "name": "How much Computer and other E-Waste waste you buy per week in (Kg)?",
           "uuid": "73e3ebe4-14e0-4301-9cdd-8a42488417cb",
           "keyValues": [],
           "concept": {
@@ -1117,7 +1099,7 @@
           "mandatory": true
         },
         {
-          "name": "Please Specify (in Kg)",
+          "name": "Please Specify in (Kg)",
           "uuid": "fec5df6f-eb23-4fa3-871c-a20ed721ca7d",
           "keyValues": [],
           "concept": {
