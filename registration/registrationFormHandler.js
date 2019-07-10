@@ -24,11 +24,6 @@ class RegistrationViewHandlerHasiruDala {
     }
 
     @WithRegistrationStatusBuilder
-    maritalStatus([], statusBuilder) {
-        statusBuilder.skipAnswers('Currently married', 'Separated', 'Divorced', 'Widow(er)', 'Remarried', 'Unmarried','Other');
-    }
-
-    @WithRegistrationStatusBuilder
     pleaseSelectTheClassCourse([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Are you studying presently?").is.yes;
     }

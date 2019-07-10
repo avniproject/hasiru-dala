@@ -38,6 +38,7 @@ module.exports = IDI.configure({
         "encounterTypes": [],
         "operationalEncounterTypes": [],
         "operationalPrograms": [],
+        "subjectTypes": ["subjectTypes.json"],
         "operationalSubjectTypes": ["operationalModules/operationalSubjectTypes.json"],
         "users": {
             "dev": ["users/dev-users.json"]
