@@ -15,7 +15,7 @@
           "keyValues": [],
           "type": "SingleSelect",
           "concept": {
-            "uuid": "aa6687c9-ba4d-49a3-9b3e-bba266eb6f32"
+            "uuid": "413cf233-3822-40a3-9e2a-1723580bbf2f"
           },
           "displayOrder": 1,
           "mandatory": true
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "uuid": "81c6d146-9904-42e5-bf35-d6ec9614b2c0",
+      "uuid": "dfe909b9-4b66-47b0-947b-31280d2bf7dc",
       "name": "Present address",
       "display": "Present address",
       "displayOrder": 2,
