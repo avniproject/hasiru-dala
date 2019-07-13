@@ -519,7 +519,7 @@
           "mandatory": true
         },
         {
-          "name": "Whether you have Aadhar Enrolment Card",
+          "name": "Whether you have Aadhar Enrolment ID",
           "uuid": "716508dd-81c3-4c36-a903-3322c3fd70fe",
           "keyValues": [],
           "concept": {
@@ -529,7 +529,7 @@
           "mandatory": true
         },
         {
-          "name": "Aadhar Enrolment Card Number",
+          "name": "Aadhar Enrolment ID Number",
           "uuid": "72ea34c5-4db5-4688-97fa-60c75436be88",
           "keyValues": [],
           "concept": {
@@ -543,7 +543,7 @@
           "mandatory": true
         },
         {
-          "name": "Aadhar Enrolment Card Photo",
+          "name": "Aadhar Enrolment ID Photo",
           "uuid": "82b6aba7-6068-4257-a5ae-e885780c3b3f",
           "keyValues": [],
           "concept": {
@@ -690,7 +690,7 @@
             "uuid": "d39f5315-68dc-4a5c-8b46-852045ed9465"
           },
           "displayOrder": 26,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Name/scheme of Other ID 2",
@@ -700,7 +700,7 @@
             "uuid": "155ba844-4799-429a-865a-6ffea3815e82"
           },
           "displayOrder": 27,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Photo of Other ID 2",
@@ -710,7 +710,7 @@
             "uuid": "506a841d-fabe-4308-8af3-0da043ea19fd"
           },
           "displayOrder": 28,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Card Number of Other ID 3",
@@ -720,7 +720,7 @@
             "uuid": "2b006bad-5805-4471-a0c5-d25aadff2ec6"
           },
           "displayOrder": 29,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Name/scheme of Other ID 3",
@@ -730,7 +730,7 @@
             "uuid": "7cde9e88-7e78-47e4-a3af-21c02723c0ce"
           },
           "displayOrder": 30,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Photo of Other ID 3",
@@ -740,7 +740,7 @@
             "uuid": "b7409ee5-ee68-4fb8-8545-2cabd2cda6e3"
           },
           "displayOrder": 31,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Card Number of Other ID 4",
@@ -750,7 +750,7 @@
             "uuid": "e01ca0ee-ab12-47cf-a64a-f931198956e6"
           },
           "displayOrder": 32,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Name/scheme of Other ID 4",
@@ -760,7 +760,7 @@
             "uuid": "8de0176a-d4fc-4dc1-937a-e1cefe9cc4fb"
           },
           "displayOrder": 33,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Photo of Other ID 4",
@@ -770,7 +770,7 @@
             "uuid": "2e6e3964-4731-488c-9e2a-f1bb2fbacf41"
           },
           "displayOrder": 34,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
@@ -894,7 +894,7 @@
             "uuid": "86c1d194-32db-44bd-ba5b-ee123e026c7a"
           },
           "displayOrder": 7,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Name of the Organization 3",
@@ -904,7 +904,7 @@
             "uuid": "4929200d-1ef0-4d98-b08c-1ed56d949a6a"
           },
           "displayOrder": 8,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
@@ -1778,6 +1778,16 @@
             "uuid": "2ac47a61-504a-4d5a-bcfd-cb6093978532"
           },
           "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Details",
+          "uuid": "e40122f1-4c43-4c20-b2c9-d180386c024f",
+          "keyValues": [],
+          "concept": {
+            "uuid": "a0e1d94d-f9ac-4356-b226-d3e0c03ba395"
+          },
+          "displayOrder": 2,
           "mandatory": false
         }
       ]

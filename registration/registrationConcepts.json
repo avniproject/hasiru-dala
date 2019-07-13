@@ -539,7 +539,7 @@
     "dataType": "Image"
   },
   {
-    "name": "Whether you have Aadhar Enrolment Card",
+    "name": "Whether you have Aadhar Enrolment ID",
     "uuid": "17147552-019f-43d2-bfb3-300742d8daf8",
     "dataType": "Coded",
     "answers": [
@@ -552,12 +552,12 @@
     ]
   },
   {
-    "name": "Aadhar Enrolment Card Number",
+    "name": "Aadhar Enrolment ID Number",
     "uuid": "f70ad2ca-ee81-468b-8dfe-6fc0dcddece5",
     "dataType": "Text"
   },
   {
-    "name": "Aadhar Enrolment Card Photo",
+    "name": "Aadhar Enrolment ID Photo",
     "uuid": "9de076ef-4f35-4f53-983c-7d3d19fc9271",
     "dataType": "Image"
   },
@@ -1605,6 +1605,11 @@
         "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
       }
     ]
+  },
+  {
+    "name": "Details",
+    "uuid": "a0e1d94d-f9ac-4356-b226-d3e0c03ba395",
+    "dataType": "Text"
   },
   {
     "uuid": "447bcec8-54e2-4f22-8af4-ba76881fdca0",

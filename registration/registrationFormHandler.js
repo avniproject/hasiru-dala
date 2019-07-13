@@ -158,7 +158,7 @@ class RegistrationViewHandlerHasiruDala {
          .containsAnyAnswerConceptName("Informal waste worker","Informal Sanitation worker","Other","Unemployed");
      }
 
-    @WithName("Whether you have Aadhar Enrolment Card")
+    @WithName("Whether you have Aadhar Enrolment ID")
     @WithRegistrationStatusBuilder
     Employment4([], statusBuilder) {
          statusBuilder.show().when.valueInRegistration("Please choose your employment type")
@@ -224,13 +224,13 @@ class RegistrationViewHandlerHasiruDala {
     }
 
     @WithRegistrationStatusBuilder
-    aadharEnrolmentCardNumber([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Enrolment Card").is.yes;
+    aadharEnrolmentIdNumber([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Enrolment ID").is.yes;
     }
 
     @WithRegistrationStatusBuilder
-    aadharEnrolmentCardPhoto([], statusBuilder) {
-    statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Enrolment Card").is.yes;
+    aadharEnrolmentIdPhoto([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Enrolment ID").is.yes;
     }
 
     @WithRegistrationStatusBuilder
@@ -429,6 +429,11 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     uploadPhotoOfFirstPageOfPassbookForPostOffice([], statusBuilder) {
     statusBuilder.show().when.valueInRegistration("Do you have a post office SB account?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    details([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Do you have access to loans from banks/other schemes?").is.yes;
     }
 
     @WithName("How often do you collect scrap/go waste picking?")
