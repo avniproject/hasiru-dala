@@ -12,7 +12,8 @@ module.exports = IDI.configure({
         "adminUsers": {
             // "prod": ["admin-user.json"],
             "dev": ["users/dev-admin-user.json"],
-            "staging": ["users/dev-admin-user.json"]
+            "staging": ["users/dev-admin-user.json"],
+            "uat":["users/uat-admin-user.json"]
         },
         "forms": [
             "registration/registrationForm.json"
