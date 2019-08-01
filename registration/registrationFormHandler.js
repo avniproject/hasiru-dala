@@ -1242,6 +1242,13 @@ class RegistrationViewHandlerHasiruDala {
               .containsAnyAnswerConceptName("Free roaming and migrant from other states (living in the city for less than 5 years)","Free roaming living in city for more than 5 years");
           }
 
+@WithName("children during off school hours - Please specify")
+    @WithRegistrationStatusBuilder
+    ibSd10([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Details of the buyer to whom you sell your waste")
+         .containsAnyAnswerConceptName("Others");
+     }
+
     @WithName("Name of scrap dealer/buyer")
     @WithRegistrationStatusBuilder
     ibSd11([], statusBuilder) {
@@ -1707,12 +1714,14 @@ class RegistrationViewHandlerHasiruDala {
          statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
          .containsAnyAnswerConceptName("Waste collectors on ULB Autorickshaws/trucks","Solid Waste Door to Door Collector","Solid Waste Micro Compost Worker");
      }
-@WithName("collection from households/establishments -Please Explain")
+
+@WithName("collection from households/establishments - Please Explain")
     @WithRegistrationStatusBuilder
     dtdc3([], statusBuilder) {
-         statusBuilder.show().when.valueInRegistration("How do you carry your waste after collection from households / establishments?")
+         statusBuilder.show().when.valueInRegistration("How do you carry your waste after collection from households/establishments?")
          .containsAnyAnswerConceptName("Others");
      }
+
 @WithName("How long do you carry the collected waste if no vehicle is available?")
     @WithRegistrationStatusBuilder
     dtdc4([], statusBuilder) {
@@ -1834,7 +1843,7 @@ class RegistrationViewHandlerHasiruDala {
         @WithRegistrationStatusBuilder
         dtdc11([], statusBuilder) {
              statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-             .containsAnyAnswerConceptName("Waste collectors on ULB Autorickshaws/trucks","Solid Waste Door to Door Collector","Solid Waste Micro Compost Worker","Street Sweeper / Drain Cleaner");
+             .containsAnyAnswerConceptName("Waste collectors on ULB Autorickshaws/trucks","Solid Waste Door to Door Collector","Solid Waste Micro Compost Worker","Street Sweeper / Drain Cleaner","Decanting Station/Sewage Treatment Plant (STP) Worker","Railway Track Cleaner");
          }
 
     @WithRegistrationStatusBuilder
@@ -1847,7 +1856,404 @@ class RegistrationViewHandlerHasiruDala {
       statusBuilder.show().when.valueInRegistration("Do you receive any income apart from wages?").is.yes;
       }
 
-    @WithName("General observations or comments by surveyor including important piece of reflection shared by the interviewee")
+
+    @WithName("Ownership of the truck")
+    @WithRegistrationStatusBuilder
+    dw1([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+        .containsAnswerConceptName("Desludging Worker");
+    }
+
+    @WithName("truck - Please Explain")
+    @WithRegistrationStatusBuilder
+    dw2([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Ownership of the truck")
+        .containsAnswerConceptName("Others");
+    }
+
+    @WithName("Nature of work")
+    @WithRegistrationStatusBuilder
+    dw3([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+        .containsAnswerConceptName("Desludging Worker");
+    }
+
+    @WithName("Do you also remove blockages?")
+    @WithRegistrationStatusBuilder
+    dw4([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+        .containsAnswerConceptName("Desludging Worker","Household Sanitation Worker","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment","Community/Public Toilet Cleaner","Toilet Cleaner in Schools and Offices");
+    }
+
+    @WithRegistrationStatusBuilder
+      whatAreTheCommonReasonsForBlockages([], statusBuilder) {
+      statusBuilder.show().when.valueInRegistration("Do you also remove blockages?").is.yes;
+      }
+
+    @WithName("What is the average group size of a typical desludging work?")
+    @WithRegistrationStatusBuilder
+    dw5([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+        .containsAnswerConceptName("Desludging Worker");
+    }
+
+    @WithName("On an average, how many houses/establishments do you desludge on a typical working day?")
+    @WithRegistrationStatusBuilder
+    dw6([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+        .containsAnswerConceptName("Desludging Worker");
+    }
+
+    @WithName("What type of customers do you serve?")
+     @WithRegistrationStatusBuilder
+     dw7([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Desludging Worker");
+     }
+
+    @WithName("customers - Please Explain")
+     @WithRegistrationStatusBuilder
+     dw8([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("What type of customers do you serve?")
+         .containsAnswerConceptName("Others");
+     }
+
+    @WithName("Do you leave the lid of the tank open for some time before cleaning?")
+     @WithRegistrationStatusBuilder
+     dw9([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Desludging Worker");
+     }
+
+    @WithName("Have you entered the tank for cleaning?")
+     @WithRegistrationStatusBuilder
+     dw10([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Desludging Worker");
+     }
+
+    @WithRegistrationStatusBuilder
+    howOftenDoYouEnterTheTank([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Have you entered the tank for cleaning?").is.yes;
+    }
+
+    @WithRegistrationStatusBuilder
+    whatAreTheReasonsForEnteringIntoTheTank([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Have you entered the tank for cleaning?").is.yes;
+    }
+
+    @WithName("tank - Please Explain")
+     @WithRegistrationStatusBuilder
+     dw11([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("What are the reasons for entering into the tank?")
+         .containsAnswerConceptName("Others");
+     }
+
+    @WithName("Do you use any tools at work?")
+     @WithRegistrationStatusBuilder
+     dw12([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Desludging Worker");
+     }
+
+    @WithRegistrationStatusBuilder
+    whatTypeOfToolSDoYouUse([], statusBuilder) {
+       statusBuilder.show().when.valueInRegistration("Do you use any tools at work?").is.yes;
+    }
+
+@WithName("Who provided these tools?")
+     @WithRegistrationStatusBuilder
+     dw13([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Desludging Worker");
+     }
+
+@WithName("tools - Please Explain")
+     @WithRegistrationStatusBuilder
+     dw14([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Who provided these tools?")
+         .containsAnswerConceptName("Others");
+     }
+
+@WithName("Who taught you the process of desludging?")
+     @WithRegistrationStatusBuilder
+     dw15([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Desludging Worker");
+     }
+
+@WithName("Have you been formally trained?")
+     @WithRegistrationStatusBuilder
+     dw16([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Desludging Worker");
+     }
+
+@WithRegistrationStatusBuilder
+       nameOfTheOrganisationThatProvidedTheTraining([], statusBuilder) {
+       statusBuilder.show().when.valueInRegistration("Have you been formally trained?").is.yes;
+       }
+
+@WithName("When did you receive training?")
+     @WithRegistrationStatusBuilder
+     dw17([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Desludging Worker");
+     }
+
+@WithName("Do you carry First Aid kit with you at all times?")
+     @WithRegistrationStatusBuilder
+     dw18([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Desludging Worker");
+     }
+
+@WithName("Do you clean yourself after collection from septic tank?")
+     @WithRegistrationStatusBuilder
+     dw19([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Desludging Worker");
+     }
+
+@WithRegistrationStatusBuilder
+        septicTankDoYouUseWaterToClean([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Do you clean yourself after collection from septic tank?").is.yes;
+        }
+
+@WithRegistrationStatusBuilder
+         septicTankDoYouUseSoapCleaningDetergentToClean([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Do you clean yourself after collection from septic tank?").is.yes;
+         }
+
+@WithRegistrationStatusBuilder
+         septicTankDoYouWipeOnCloth([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Do you clean yourself after collection from septic tank?").is.yes;
+         }
+
+@WithName("Do you clean yourself after disposing the load?")
+     @WithRegistrationStatusBuilder
+     dw20([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Desludging Worker");
+     }
+
+ @WithRegistrationStatusBuilder
+         doYouUseWaterToClean([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Do you clean yourself after disposing the load?").is.yes;
+         }
+
+ @WithRegistrationStatusBuilder
+          doYouUseSoapCleaningDetergentToClean([], statusBuilder) {
+          statusBuilder.show().when.valueInRegistration("Do you clean yourself after disposing the load?").is.yes;
+          }
+
+ @WithRegistrationStatusBuilder
+          doYouWipeOnCloth([], statusBuilder) {
+          statusBuilder.show().when.valueInRegistration("Do you clean yourself after disposing the load?").is.yes;
+          }
+
+
+@WithName("Where do you carry out toilet cleaning activities?")
+        @WithRegistrationStatusBuilder
+        tc1([], statusBuilder) {
+             statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+             .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+         }
+
+@WithName("No. of Establishments")
+     @WithRegistrationStatusBuilder
+     tc2([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Where do you carry out toilet cleaning activities?")
+         .containsAnyAnswerConceptName("House","Commercial Establishment","Office","Community/ Public Toilet","Railways","Others");
+     }
+
+@WithName("Do you get paid when the schools are on summer holiday?")
+     @WithRegistrationStatusBuilder
+     tc3([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Where do you carry out toilet cleaning activities?")
+         .containsAnswerConceptName("School/College");
+     }
+
+@WithName("How many toilet seats do you clean per day?")
+        @WithRegistrationStatusBuilder
+        tc4([], statusBuilder) {
+             statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+             .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+         }
+
+@WithName("Who decides frequency of cleaning?")
+        @WithRegistrationStatusBuilder
+        tc5([], statusBuilder) {
+             statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+             .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+         }
+
+@WithName("frequency of cleaning - Please Explain")
+     @WithRegistrationStatusBuilder
+     tc6([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Who decides frequency of cleaning?")
+         .containsAnswerConceptName("Others");
+     }
+
+@WithName("What cleaning materials do you use?")
+        @WithRegistrationStatusBuilder
+        tc7([], statusBuilder) {
+             statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+             .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+         }
+
+ @WithName("cleaning materials - Please Explain")
+      @WithRegistrationStatusBuilder
+      tc8([], statusBuilder) {
+          statusBuilder.show().when.valueInRegistration("What cleaning materials do you use?")
+          .containsAnswerConceptName("Others");
+      }
+
+ @WithName("Who pays for cleaning material?")
+         @WithRegistrationStatusBuilder
+         tc9([], statusBuilder) {
+              statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+              .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+          }
+
+ @WithName("cleaning material - Please Explain")
+       @WithRegistrationStatusBuilder
+       tc10([], statusBuilder) {
+           statusBuilder.show().when.valueInRegistration("Who pays for cleaning material?")
+           .containsAnswerConceptName("Others");
+       }
+
+@WithName("Do you pick up the clogged / contaminated waste?")
+         @WithRegistrationStatusBuilder
+         tc11([], statusBuilder) {
+              statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+              .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+          }
+
+@WithName("How do you dispose the clogged / contaminated waste?")
+         @WithRegistrationStatusBuilder
+         tc12([], statusBuilder) {
+              statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+              .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+          }
+
+
+ @WithName("clogged/contaminated waste - Please Explain")
+       @WithRegistrationStatusBuilder
+       tc13([], statusBuilder) {
+           statusBuilder.show().when.valueInRegistration("How do you dispose the clogged / contaminated waste?")
+           .containsAnswerConceptName("Others");
+       }
+
+ @WithName("Is there any other work you do in the house / institution / establishment / office?")
+          @WithRegistrationStatusBuilder
+          tc14([], statusBuilder) {
+               statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+               .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+           }
+
+ @WithName("house/institution/establishment/office - Please Explain")
+        @WithRegistrationStatusBuilder
+        tc15([], statusBuilder) {
+            statusBuilder.show().when.valueInRegistration("Is there any other work you do in the house / institution / establishment / office?")
+            .containsAnswerConceptName("Others");
+        }
+
+ @WithName("How many of you go together for undertaking the work?")
+           @WithRegistrationStatusBuilder
+           tc16([], statusBuilder) {
+                statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+                .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            }
+
+@WithName("Do you have access and facilities to clean yourself?")
+           @WithRegistrationStatusBuilder
+           tc17([], statusBuilder) {
+                statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+                .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            }
+
+@WithName("What are tools/implants used at work?")
+           @WithRegistrationStatusBuilder
+           tc18([], statusBuilder) {
+                statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+                .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment","Railway Track Cleaner","Decanting Station/Sewage Treatment Plant (STP) Worker");
+            }
+
+@WithName("tools/implants - Please Explain")
+        @WithRegistrationStatusBuilder
+        tc19([], statusBuilder) {
+            statusBuilder.show().when.valueInRegistration("What are tools/implants used at work?")
+            .containsAnswerConceptName("Others");
+        }
+
+@WithName("Who provided these implants?")
+           @WithRegistrationStatusBuilder
+           tc20([], statusBuilder) {
+                statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+                .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            }
+
+
+@WithName("What work do you perform at decanting station/Sewage Treatment Plant?")
+           @WithRegistrationStatusBuilder
+           dwr1([], statusBuilder) {
+                statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+                .containsAnyAnswerConceptName("Railway Track Cleaner"," Decanting Station/Sewage Treatment Plant (STP) Worker");
+            }
+
+
+@WithName("decanting station/Sewage Treatment Plant - Please Explain")
+        @WithRegistrationStatusBuilder
+        dwr2([], statusBuilder) {
+            statusBuilder.show().when.valueInRegistration("What work do you perform at decanting station / Sewage Treatment Plant?")
+            .containsAnswerConceptName("Others");
+        }
+
+@WithName("Who provides these tools/implants?")
+           @WithRegistrationStatusBuilder
+           dwr3([], statusBuilder) {
+                statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+                .containsAnyAnswerConceptName("Railway Track Cleaner"," Decanting Station/Sewage Treatment Plant (STP) Worker");
+            }
+
+@WithName("Do you use any cleaning materials?")
+           @WithRegistrationStatusBuilder
+           dwr4([], statusBuilder) {
+                statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+                .containsAnyAnswerConceptName("Railway Track Cleaner"," Decanting Station/Sewage Treatment Plant (STP) Worker");
+            }
+
+@WithName("materials - Please Explain")
+        @WithRegistrationStatusBuilder
+        dwr5([], statusBuilder) {
+            statusBuilder.show().when.valueInRegistration("Do you use any cleaning materials?")
+            .containsAnswerConceptName("Others");
+        }
+
+@WithName("How do you dispose the collected waste?")
+           @WithRegistrationStatusBuilder
+           dwr6([], statusBuilder) {
+                statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+                .containsAnyAnswerConceptName("Railway Track Cleaner"," Decanting Station/Sewage Treatment Plant (STP) Worker");
+            }
+
+@WithName("collected waste - Please Explain")
+        @WithRegistrationStatusBuilder
+        dwr7([], statusBuilder) {
+            statusBuilder.show().when.valueInRegistration("How do you dispose the collected waste?")
+            .containsAnswerConceptName("Others");
+        }
+
+@WithName("Do you have access and facilities to clean yourself?")
+           @WithRegistrationStatusBuilder
+           dwr8([], statusBuilder) {
+                statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+                .containsAnyAnswerConceptName("Railway Track Cleaner"," Decanting Station/Sewage Treatment Plant (STP) Worker");
+            }
+
+
+   @WithName("General observations or comments by surveyor including important piece of reflection shared by the interviewee")
     @WithRegistrationStatusBuilder
     co1([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
@@ -1856,6 +2262,7 @@ class RegistrationViewHandlerHasiruDala {
         "Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices",
         "Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment","Railway Track Cleaner","Decanting Station/Sewage Treatment Plant (STP) Worker");
     }
+
 
   @WithName("Name")
     @WithRegistrationStatusBuilder

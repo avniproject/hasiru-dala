@@ -3999,7 +3999,7 @@
     ]
   },
   {
-    "name": "Please specify 2",
+    "name": "children during off school hours - Please specify",
     "uuid": "4a6a0bbb-7fc9-40c5-a1d7-3a04ba5b1333",
     "dataType": "Text"
   },
@@ -4917,6 +4917,1500 @@
     "name": "Income per month (INR)",
     "uuid": "99d8d6e3-99cc-4e84-a841-79bfbae6d390",
     "dataType": "Numeric"
+  },
+  {
+    "uuid": "f3957232-c333-430b-9778-2387c3f3ca40",
+    "name": "Self-Owned "
+  },
+  {
+    "uuid": "5f453706-5979-471e-9380-6430f3096f91",
+    "name": "Self-Leased"
+  },
+  {
+    "uuid": "4baa98c8-a88b-4531-947b-2f214babdf3e",
+    "name": "ULB"
+  },
+  {
+    "uuid": "7f5b3873-d1a9-4b77-bc2a-aef13e1c220b",
+    "name": "Private"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "Ownership of the truck",
+    "uuid": "f13fcdf4-dd02-4486-a628-1c25cdcf9148",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "f3957232-c333-430b-9778-2387c3f3ca40",
+        "name": "Self-Owned "
+      },
+      {
+        "uuid": "5f453706-5979-471e-9380-6430f3096f91",
+        "name": "Self-Leased"
+      },
+      {
+        "uuid": "4baa98c8-a88b-4531-947b-2f214babdf3e",
+        "name": "ULB"
+      },
+      {
+        "uuid": "7f5b3873-d1a9-4b77-bc2a-aef13e1c220b",
+        "name": "Private"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "truck - Please Explain",
+    "uuid": "0435c313-ea4d-413b-afbb-a950fedd63a2",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "484d65e3-6716-4981-a8c8-0b26f0cf4b8b",
+    "name": "Worker Only"
+  },
+  {
+    "uuid": "e3bedb7a-b6ac-4dde-9848-98ed9be945a7",
+    "name": "Driver cum Worker"
+  },
+  {
+    "uuid": "cc02593b-1274-436e-bee8-6e6b49ba9a26",
+    "name": "Driver Only"
+  },
+  {
+    "name": "Nature of work",
+    "uuid": "d4ad16c2-6f7e-4be5-9153-205a0de65053",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "484d65e3-6716-4981-a8c8-0b26f0cf4b8b",
+        "name": "Worker Only"
+      },
+      {
+        "uuid": "e3bedb7a-b6ac-4dde-9848-98ed9be945a7",
+        "name": "Driver cum Worker"
+      },
+      {
+        "uuid": "cc02593b-1274-436e-bee8-6e6b49ba9a26",
+        "name": "Driver Only"
+      }
+    ]
+  },
+  {
+    "name": "Do you also remove blockages?",
+    "uuid": "79247b07-d4de-4ab7-8a6d-19fdf3a1edb8",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "what are the common reasons for blockages?",
+    "uuid": "0bbd22b8-ad0d-4b8d-a330-d21230fa6179",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "fa79f043-73d8-4e31-b7a5-c6b029dceb6e",
+    "name": "Alone"
+  },
+  {
+    "uuid": "eb75e9fe-f373-4113-af79-8587b36df75f",
+    "name": "1-2"
+  },
+  {
+    "uuid": "ed607e29-af07-44b1-855a-5e07106209a7",
+    "name": "3-4"
+  },
+  {
+    "uuid": "ef8fdf4d-1fb2-4937-b490-5a0cd4247d53",
+    "name": " More than 4"
+  },
+  {
+    "name": "What is the average group size of a typical desludging work?",
+    "uuid": "d28332f1-616b-4af6-bfee-6cc1b5847b84",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "fa79f043-73d8-4e31-b7a5-c6b029dceb6e",
+        "name": "Alone"
+      },
+      {
+        "uuid": "eb75e9fe-f373-4113-af79-8587b36df75f",
+        "name": "1-2"
+      },
+      {
+        "uuid": "ed607e29-af07-44b1-855a-5e07106209a7",
+        "name": "3-4"
+      },
+      {
+        "uuid": "ef8fdf4d-1fb2-4937-b490-5a0cd4247d53",
+        "name": " More than 4"
+      }
+    ]
+  },
+  {
+    "uuid": "aa7d1d88-51fc-44a5-982c-a2cdd074914c",
+    "name": "1"
+  },
+  {
+    "uuid": "b608e336-c3c1-4600-9cd1-2e34f3fcacde",
+    "name": "2"
+  },
+  {
+    "uuid": "be7b03c2-9662-4e5c-85de-8ec042ca0b18",
+    "name": "3"
+  },
+  {
+    "uuid": "ec4c60f6-6002-4235-8bf6-76c7b9bc419f",
+    "name": "4"
+  },
+  {
+    "uuid": "d4d3629f-7119-46ce-a3eb-f28f0e9ba3b8",
+    "name": "More than  4"
+  },
+  {
+    "name": "On an average, how many houses/establishments do you desludge on a typical working day? ",
+    "uuid": "a3f10443-84da-4192-806c-971b90b11d21",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "aa7d1d88-51fc-44a5-982c-a2cdd074914c",
+        "name": "1"
+      },
+      {
+        "uuid": "b608e336-c3c1-4600-9cd1-2e34f3fcacde",
+        "name": "2"
+      },
+      {
+        "uuid": "be7b03c2-9662-4e5c-85de-8ec042ca0b18",
+        "name": "3"
+      },
+      {
+        "uuid": "ec4c60f6-6002-4235-8bf6-76c7b9bc419f",
+        "name": "4"
+      },
+      {
+        "uuid": "d4d3629f-7119-46ce-a3eb-f28f0e9ba3b8",
+        "name": "More than  4"
+      }
+    ]
+  },
+  {
+    "uuid": "b2f9856b-884f-4d69-b48e-384a8b84d26a",
+    "name": "Household"
+  },
+  {
+    "uuid": "a109bdfd-8300-4cbc-afe7-09bf49a5197d",
+    "name": "Commercial Establishment/Office/ Hotel"
+  },
+  {
+    "uuid": "f20c500c-372d-45a6-8887-76d104fe8cd7",
+    "name": "Educational Institution/School/College"
+  },
+  {
+    "uuid": "a36fefd0-d724-49d8-a5e9-c30cbb91d696",
+    "name": "Factory/Industry"
+  },
+  {
+    "uuid": "56bd99b9-53a6-43b4-b9d1-f157cb82ac29",
+    "name": "Community Toilet/Public Toilet"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "What type of customers do you serve?",
+    "uuid": "d47bfcae-e925-492e-9f69-b8f32e2ea0e2",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "b2f9856b-884f-4d69-b48e-384a8b84d26a",
+        "name": "Household"
+      },
+      {
+        "uuid": "a109bdfd-8300-4cbc-afe7-09bf49a5197d",
+        "name": "Commercial Establishment/Office/ Hotel"
+      },
+      {
+        "uuid": "f20c500c-372d-45a6-8887-76d104fe8cd7",
+        "name": "Educational Institution/School/College"
+      },
+      {
+        "uuid": "a36fefd0-d724-49d8-a5e9-c30cbb91d696",
+        "name": "Factory/Industry"
+      },
+      {
+        "uuid": "56bd99b9-53a6-43b4-b9d1-f157cb82ac29",
+        "name": "Community Toilet/Public Toilet"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "customers - Please Explain",
+    "uuid": "24512ae0-b273-4d63-bf4a-c678fec3c2cb",
+    "dataType": "Text"
+  },
+  {
+    "name": "Do you leave the lid of the tank open for some time before cleaning?",
+    "uuid": "98fc51f0-8bd4-422a-8ffb-82f17a5d8ba5",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Have you entered the tank for cleaning?",
+    "uuid": "a6d7ed06-f6aa-4c84-9f16-9a7940625180",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "uuid": "7474d409-bedd-4c71-91d1-2c4f4c158a61",
+    "name": "Every time"
+  },
+  {
+    "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+    "name": "Occasionally"
+  },
+  {
+    "name": "How often do you enter the tank?",
+    "uuid": "b18fdcfe-9eef-411f-9330-b2b4dd64f78a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "7474d409-bedd-4c71-91d1-2c4f4c158a61",
+        "name": "Every time"
+      },
+      {
+        "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+        "name": "Occasionally"
+      }
+    ]
+  },
+  {
+    "uuid": "cb4f3296-bbf8-473c-8410-9b57a29fa06d",
+    "name": "Request from the Client "
+  },
+  {
+    "uuid": "f89bdd4f-4b21-4896-8d35-73994f31ac81",
+    "name": "Instruction from the truck owner"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "What are the reasons for entering into the tank?",
+    "uuid": "de9b12ff-b9d9-475b-847f-3e66e7be9a76",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "cb4f3296-bbf8-473c-8410-9b57a29fa06d",
+        "name": "Request from the Client "
+      },
+      {
+        "uuid": "f89bdd4f-4b21-4896-8d35-73994f31ac81",
+        "name": "Instruction from the truck owner"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "tank - Please Explain",
+    "uuid": "4dcbd5dc-750d-45cb-8828-c989d990f175",
+    "dataType": "Text"
+  },
+  {
+    "name": "Do you use any tools  at work?",
+    "uuid": "f76520a8-c2c9-4b63-a073-1170713904e3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "uuid": "214f4f46-b2e7-44bf-9f7e-c639ca905f37",
+    "name": "Brush"
+  },
+  {
+    "uuid": "fa00600b-4a84-4d4c-b4b6-23fe15f27878",
+    "name": "Broom"
+  },
+  {
+    "uuid": "0d3877a4-04c9-499b-8d2d-7675c3fd988a",
+    "name": "Scrape"
+  },
+  {
+    "uuid": "aaefb49b-107d-4796-a69b-d4ab78bcb08a",
+    "name": "Rod"
+  },
+  {
+    "name": "What type of tools do you use?",
+    "uuid": "cecf31ca-4b75-4456-8f0f-e762ef55e320",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "214f4f46-b2e7-44bf-9f7e-c639ca905f37",
+        "name": "Brush"
+      },
+      {
+        "uuid": "fa00600b-4a84-4d4c-b4b6-23fe15f27878",
+        "name": "Broom"
+      },
+      {
+        "uuid": "0d3877a4-04c9-499b-8d2d-7675c3fd988a",
+        "name": "Scrape"
+      },
+      {
+        "uuid": "aaefb49b-107d-4796-a69b-d4ab78bcb08a",
+        "name": "Rod"
+      }
+    ]
+  },
+  {
+    "uuid": "13d961e4-7c6e-4c7f-96fa-76aaac5e43e7",
+    "name": "Own"
+  },
+  {
+    "uuid": "6c0b4954-944e-49c8-aff4-9051fe6517d9",
+    "name": "Truck owner"
+  },
+  {
+    "uuid": "4baa98c8-a88b-4531-947b-2f214babdf3e",
+    "name": "ULB"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "Who provided these tools?",
+    "uuid": "67d83c7d-07cb-4f64-840d-e29ece2bea11",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "13d961e4-7c6e-4c7f-96fa-76aaac5e43e7",
+        "name": "Own"
+      },
+      {
+        "uuid": "6c0b4954-944e-49c8-aff4-9051fe6517d9",
+        "name": "Truck owner"
+      },
+      {
+        "uuid": "4baa98c8-a88b-4531-947b-2f214babdf3e",
+        "name": "ULB"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "tools - Please Explain",
+    "uuid": "c857f37f-ee00-407e-856b-40beae1d25a5",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "dfbbc308-3641-456b-a678-1db05a75e0cc",
+    "name": "On the job"
+  },
+  {
+    "uuid": "fd92b299-8476-413c-a50c-fa55475222d4",
+    "name": "Family occupation"
+  },
+  {
+    "name": "Who taught you the process of desludging?",
+    "uuid": "e0e781b0-5f49-4bcf-b65c-db69618f695a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "dfbbc308-3641-456b-a678-1db05a75e0cc",
+        "name": "On the job"
+      },
+      {
+        "uuid": "fd92b299-8476-413c-a50c-fa55475222d4",
+        "name": "Family occupation"
+      }
+    ]
+  },
+  {
+    "name": "Have you been formally trained? ",
+    "uuid": "a3cf5bdf-5187-4b3a-9e51-98f5c8d881d0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Name of the organisation that provided the training",
+    "uuid": "691bac01-e690-46f0-b6c7-be8a32cebdb0",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "7fb54c0d-8be6-4cd2-b0a8-955bfe3c4bca",
+    "name": "One year ago"
+  },
+  {
+    "uuid": "4394951f-c85b-4e14-94c1-7793d715a076",
+    "name": "2 years ago"
+  },
+  {
+    "uuid": "53615e4e-4b71-4a67-9907-37806476c372",
+    "name": "5 years ago"
+  },
+  {
+    "uuid": "392061dc-c144-4666-808c-05b51a96752b",
+    "name": "10 years ago"
+  },
+  {
+    "name": "When did you receive training?",
+    "uuid": "3cbea185-d64d-453b-a9f8-d7f6fc0885b4",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "7fb54c0d-8be6-4cd2-b0a8-955bfe3c4bca",
+        "name": "One year ago"
+      },
+      {
+        "uuid": "4394951f-c85b-4e14-94c1-7793d715a076",
+        "name": "2 years ago"
+      },
+      {
+        "uuid": "53615e4e-4b71-4a67-9907-37806476c372",
+        "name": "5 years ago"
+      },
+      {
+        "uuid": "392061dc-c144-4666-808c-05b51a96752b",
+        "name": "10 years ago"
+      }
+    ]
+  },
+  {
+    "name": "Do you carry First Aid kit with you at all times?",
+    "uuid": "3eb278fb-39df-4f73-a50f-6148bd5017e9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Do you clean yourself after collection from septic tank?",
+    "uuid": "f0d9fc04-76c9-4abb-b32a-a242159eea26",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "septic tank - Do you use water to clean? ",
+    "uuid": "7a1d7206-b285-49b7-99bd-587bffc82ba3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "septic tank - Do you use soap/cleaning detergent to clean?",
+    "uuid": "d6852796-01a8-4536-9b5b-067ecd6fbd38",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "septic tank - Do you wipe on cloth?",
+    "uuid": "180002b6-f6cc-4074-94b9-c0bb5ee10138",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Do you clean yourself after disposing the load?",
+    "uuid": "0adcce05-7374-424a-ab3c-f89a6244fadc",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Do you use water to clean? ",
+    "uuid": "536947e9-8ba6-4be2-a0d6-c48fadbe5670",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Do you use soap/cleaning detergent to clean?",
+    "uuid": "0af589b3-e9f1-42f7-ac73-3dcb68fd7661",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Do you wipe on cloth?",
+    "uuid": "de830e17-5aeb-417f-98ec-dd2ca009e41d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "uuid": "ff9befa8-3b8d-48cf-937e-ce2e6482e80a",
+    "name": "House"
+  },
+  {
+    "uuid": "91104828-f333-4ad3-90a7-3816c924af08",
+    "name": "Commercial Establishment"
+  },
+  {
+    "uuid": "d2f2b668-1d0e-4bf5-bddf-b3825c2fea66",
+    "name": "School/College"
+  },
+  {
+    "uuid": "f5bccbcf-d4a4-49d4-9e58-c5f9559986b6",
+    "name": "Office"
+  },
+  {
+    "uuid": "a6785832-66a6-4791-830a-dde86ea4296d",
+    "name": "Community/ Public Toilet"
+  },
+  {
+    "uuid": "9c899d81-7436-4962-825f-56af0fd4f9c7",
+    "name": "Railways"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "Where do you carry out toilet cleaning activities?",
+    "uuid": "998ab554-1de5-41c6-affc-cd09142bcd32",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "ff9befa8-3b8d-48cf-937e-ce2e6482e80a",
+        "name": "House"
+      },
+      {
+        "uuid": "91104828-f333-4ad3-90a7-3816c924af08",
+        "name": "Commercial Establishment"
+      },
+      {
+        "uuid": "d2f2b668-1d0e-4bf5-bddf-b3825c2fea66",
+        "name": "School/College"
+      },
+      {
+        "uuid": "f5bccbcf-d4a4-49d4-9e58-c5f9559986b6",
+        "name": "Office"
+      },
+      {
+        "uuid": "a6785832-66a6-4791-830a-dde86ea4296d",
+        "name": "Community/ Public Toilet"
+      },
+      {
+        "uuid": "9c899d81-7436-4962-825f-56af0fd4f9c7",
+        "name": "Railways"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "No. of Establishments",
+    "uuid": "259c051d-cae7-49e5-844f-0c548905f426",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "a6872113-b90c-4141-b3b2-1d4fe779cf36",
+    "name": "Sometimes"
+  },
+  {
+    "name": "Do you get paid when the schools are on summer holiday?",
+    "uuid": "5b6268b3-e259-42fc-8aeb-606889038bd9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      },
+      {
+        "uuid": "a6872113-b90c-4141-b3b2-1d4fe779cf36",
+        "name": "Sometimes"
+      }
+    ]
+  },
+  {
+    "uuid": "4ef82dc1-55f1-4fcb-b3fd-d8e9c074fff5",
+    "name": "Less than 5"
+  },
+  {
+    "uuid": "0c48615a-ac53-41f6-98c4-8373a20a84dc",
+    "name": "5-10"
+  },
+  {
+    "uuid": "3b3a2698-c003-400e-936d-b5914b86e5fc",
+    "name": "10-15"
+  },
+  {
+    "uuid": "b07e9c61-d9a2-407d-86c6-5de3a898a554",
+    "name": "15-30"
+  },
+  {
+    "uuid": "63e34ac0-7af4-4515-86de-57c085d76c79",
+    "name": "more than 30"
+  },
+  {
+    "name": "How many toilet seats do you clean per day?",
+    "uuid": "8eb655c9-9dfd-4252-b7a0-1c5e1f5838c9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4ef82dc1-55f1-4fcb-b3fd-d8e9c074fff5",
+        "name": "Less than 5"
+      },
+      {
+        "uuid": "0c48615a-ac53-41f6-98c4-8373a20a84dc",
+        "name": "5-10"
+      },
+      {
+        "uuid": "3b3a2698-c003-400e-936d-b5914b86e5fc",
+        "name": "10-15"
+      },
+      {
+        "uuid": "b07e9c61-d9a2-407d-86c6-5de3a898a554",
+        "name": "15-30"
+      },
+      {
+        "uuid": "63e34ac0-7af4-4515-86de-57c085d76c79",
+        "name": "more than 30"
+      }
+    ]
+  },
+  {
+    "uuid": "1854b353-c997-4307-a247-b8c7ad69992b",
+    "name": "Location supervisor"
+  },
+  {
+    "uuid": "a98cc00c-1e78-4a5f-a4ca-642c1d946290",
+    "name": "Users"
+  },
+  {
+    "uuid": "f6a94145-e2ac-47c3-b64c-6ff74852ace8",
+    "name": "Self"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "Who decides frequency of cleaning?",
+    "uuid": "816a132f-25b8-4314-a00a-0b8c2613c47e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "1854b353-c997-4307-a247-b8c7ad69992b",
+        "name": "Location supervisor"
+      },
+      {
+        "uuid": "a98cc00c-1e78-4a5f-a4ca-642c1d946290",
+        "name": "Users"
+      },
+      {
+        "uuid": "f6a94145-e2ac-47c3-b64c-6ff74852ace8",
+        "name": "Self"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "frequency of cleaning - Please Explain",
+    "uuid": "51b7752c-6adf-4ff8-91dd-c5141cbac5da",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "6f3d5f60-7ebb-46b2-ba35-9ed02f467940",
+    "name": "Acid"
+  },
+  {
+    "uuid": "a1c83778-3435-4c3b-b00d-6c74403f5779",
+    "name": "Soap oil"
+  },
+  {
+    "uuid": "662ecf71-b02a-4526-8f60-b535504c9c4a",
+    "name": "Phenol"
+  },
+  {
+    "uuid": "e52ee74f-91e2-4860-bd65-544612e42c93",
+    "name": "Natural cleaners"
+  },
+  {
+    "uuid": "2c85fedf-7642-4278-af72-c8cb4f1f1546",
+    "name": "Bleaching Powder"
+  },
+  {
+    "uuid": "2ed506ca-b0c5-49ff-821c-aa6c05f21a65",
+    "name": "Tablet"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "What cleaning materials do you use?",
+    "uuid": "ddab1006-a87a-43ed-ad86-4b335990ac40",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "6f3d5f60-7ebb-46b2-ba35-9ed02f467940",
+        "name": "Acid"
+      },
+      {
+        "uuid": "a1c83778-3435-4c3b-b00d-6c74403f5779",
+        "name": "Soap oil"
+      },
+      {
+        "uuid": "662ecf71-b02a-4526-8f60-b535504c9c4a",
+        "name": "Phenol"
+      },
+      {
+        "uuid": "e52ee74f-91e2-4860-bd65-544612e42c93",
+        "name": "Natural cleaners"
+      },
+      {
+        "uuid": "2c85fedf-7642-4278-af72-c8cb4f1f1546",
+        "name": "Bleaching Powder"
+      },
+      {
+        "uuid": "2ed506ca-b0c5-49ff-821c-aa6c05f21a65",
+        "name": "Tablet"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "cleaning materials - Please Explain",
+    "uuid": "5cab4cc7-d8e0-491f-9142-755d70fd516f",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "b3f8a5ef-f548-4d35-97ac-35b9757f8438",
+    "name": "Provided by Work Location"
+  },
+  {
+    "uuid": "1fe195d7-5496-4c08-95c1-8cf15f303d6d",
+    "name": "SHG/WAVE"
+  },
+  {
+    "uuid": "68120cd5-917c-40fd-b887-a6b4fce53ea9",
+    "name": "Government"
+  },
+  {
+    "uuid": "c09d950c-ebe9-415d-a39a-094658a2ac55",
+    "name": "Self (Included in fee)"
+  },
+  {
+    "uuid": "f7e95f3e-780c-4860-b7a3-af3b30cfd5da",
+    "name": "Contractors"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "Who pays for cleaning material?",
+    "uuid": "5ff7956c-33aa-49a8-94a9-cb4cbaeddfdb",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "cleaning materials - Please Explain",
+        "uuid": "5cab4cc7-d8e0-491f-9142-755d70fd516f",
+        "dataType": "Text"
+      },
+      {
+        "uuid": "b3f8a5ef-f548-4d35-97ac-35b9757f8438",
+        "name": "Provided by Work Location"
+      },
+      {
+        "uuid": "1fe195d7-5496-4c08-95c1-8cf15f303d6d",
+        "name": "SHG/WAVE"
+      },
+      {
+        "uuid": "68120cd5-917c-40fd-b887-a6b4fce53ea9",
+        "name": "Government"
+      },
+      {
+        "uuid": "c09d950c-ebe9-415d-a39a-094658a2ac55",
+        "name": "Self (Included in fee)"
+      },
+      {
+        "uuid": "f7e95f3e-780c-4860-b7a3-af3b30cfd5da",
+        "name": "Contractors"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "cleaning material - Please Explain",
+    "uuid": "35f24938-06b4-4163-a351-0e6df4ed32c1",
+    "dataType": "Text"
+  },
+  {
+    "name": "Do you pick up the clogged / contaminated waste?",
+    "uuid": "23d3c16d-da21-4a84-8158-938ad7e104c3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "uuid": "531f68c3-2634-4f2b-9a3b-11b4a361cefa",
+    "name": "Sent with Municipal Solid Waste"
+  },
+  {
+    "uuid": "4e12878b-57ba-4b67-846a-1a804bc7eeb9",
+    "name": "Dumped in open"
+  },
+  {
+    "uuid": "c782533f-92cb-47d6-ac2e-aa7b7c1aef46",
+    "name": "Burnt"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "How do you dispose the clogged / contaminated waste?",
+    "uuid": "43f711df-fc55-47a6-881b-0145226adc2d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "531f68c3-2634-4f2b-9a3b-11b4a361cefa",
+        "name": "Sent with Municipal Solid Waste"
+      },
+      {
+        "uuid": "4e12878b-57ba-4b67-846a-1a804bc7eeb9",
+        "name": "Dumped in open"
+      },
+      {
+        "uuid": "c782533f-92cb-47d6-ac2e-aa7b7c1aef46",
+        "name": "Burnt"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "clogged/contaminated waste - Please Explain",
+    "uuid": "c477a1c5-f12a-4c20-ae6f-627c0fc7d8b0",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "ced763ff-0c8e-4211-b609-e174111ff883",
+    "name": "Dusting"
+  },
+  {
+    "uuid": "f0a8a3a5-df15-4bf0-9bdd-a64d64336ad6",
+    "name": "Floor cleaning"
+  },
+  {
+    "uuid": "b754dd0c-93a9-4fc4-9e54-f761298a1212",
+    "name": "Office work"
+  },
+  {
+    "uuid": "19dce42c-959d-4a73-8a2a-a15f27800518",
+    "name": "Washing vessels/clothes"
+  },
+  {
+    "uuid": "724620b0-8642-4fdd-b4b2-be3093eddc86",
+    "name": "Cooking"
+  },
+  {
+    "uuid": "accdf3cf-5112-473d-a5c1-36b7312445c3",
+    "name": "Baby sitting"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "Is there any other work you do in the house / institution / establishment / office?",
+    "uuid": "38da7597-ed42-4e84-a56a-d11b6d9af8f0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "ced763ff-0c8e-4211-b609-e174111ff883",
+        "name": "Dusting"
+      },
+      {
+        "uuid": "f0a8a3a5-df15-4bf0-9bdd-a64d64336ad6",
+        "name": "Floor cleaning"
+      },
+      {
+        "uuid": "b754dd0c-93a9-4fc4-9e54-f761298a1212",
+        "name": "Office work"
+      },
+      {
+        "uuid": "19dce42c-959d-4a73-8a2a-a15f27800518",
+        "name": "Washing vessels/clothes"
+      },
+      {
+        "uuid": "724620b0-8642-4fdd-b4b2-be3093eddc86",
+        "name": "Cooking"
+      },
+      {
+        "uuid": "accdf3cf-5112-473d-a5c1-36b7312445c3",
+        "name": "Baby sitting"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "house/institution/establishment/office - Please Explain",
+    "uuid": "b346603d-de9a-4c00-a11c-9f036606160a",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "a3be6215-def7-48c8-9c4a-984feab95f2c",
+    "name": "Individual"
+  },
+  {
+    "uuid": "eb75e9fe-f373-4113-af79-8587b36df75f",
+    "name": "1-2"
+  },
+  {
+    "uuid": "ed607e29-af07-44b1-855a-5e07106209a7",
+    "name": "3-4"
+  },
+  {
+    "uuid": "cdf7d6f8-b100-4afe-9c59-c482189c0db5",
+    "name": "Above 4"
+  },
+  {
+    "name": "How many of you go together for undertaking the work?",
+    "uuid": "f6ac6da1-6e86-4d6c-b8ec-5673ec1e9bac",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "a3be6215-def7-48c8-9c4a-984feab95f2c",
+        "name": "Individual"
+      },
+      {
+        "uuid": "eb75e9fe-f373-4113-af79-8587b36df75f",
+        "name": "1-2"
+      },
+      {
+        "uuid": "ed607e29-af07-44b1-855a-5e07106209a7",
+        "name": "3-4"
+      },
+      {
+        "uuid": "cdf7d6f8-b100-4afe-9c59-c482189c0db5",
+        "name": "Above 4"
+      }
+    ]
+  },
+  {
+    "name": "Do you have access and facilities to clean yourself ?",
+    "uuid": "0c803e17-d6f9-4057-9812-74ce3fcbd630",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      },
+      {
+        "uuid": "a6872113-b90c-4141-b3b2-1d4fe779cf36",
+        "name": "Sometimes"
+      }
+    ]
+  },
+  {
+    "uuid": "35e928a5-6afa-4f51-8684-4b06f79ff61a",
+    "name": "Machinery (Electrical)"
+  },
+  {
+    "uuid": "2b00b01b-55b3-4ef9-825a-81651554bef0",
+    "name": "Hand Implements (Mechanical)"
+  },
+  {
+    "uuid": "214f4f46-b2e7-44bf-9f7e-c639ca905f37",
+    "name": "Brush"
+  },
+  {
+    "uuid": "fa00600b-4a84-4d4c-b4b6-23fe15f27878",
+    "name": "Broom"
+  },
+  {
+    "uuid": "436962d5-71e3-4830-a16e-762acd4ce04c",
+    "name": "Stick "
+  },
+  {
+    "uuid": "793ddf0b-cd61-41fd-af7f-0f886c215547",
+    "name": "Cloth"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "What are tools/implants used at work?",
+    "uuid": "454df756-e351-45e5-8aca-1727accc45bf",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "35e928a5-6afa-4f51-8684-4b06f79ff61a",
+        "name": "Machinery (Electrical)"
+      },
+      {
+        "uuid": "2b00b01b-55b3-4ef9-825a-81651554bef0",
+        "name": "Hand Implements (Mechanical)"
+      },
+      {
+        "uuid": "214f4f46-b2e7-44bf-9f7e-c639ca905f37",
+        "name": "Brush"
+      },
+      {
+        "uuid": "fa00600b-4a84-4d4c-b4b6-23fe15f27878",
+        "name": "Broom"
+      },
+      {
+        "uuid": "436962d5-71e3-4830-a16e-762acd4ce04c",
+        "name": "Stick "
+      },
+      {
+        "uuid": "793ddf0b-cd61-41fd-af7f-0f886c215547",
+        "name": "Cloth"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "tools/implants - Please Explain",
+    "uuid": "a2b12c6a-af74-4496-9ded-ec489ddde9e7",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "68120cd5-917c-40fd-b887-a6b4fce53ea9",
+    "name": "Government"
+  },
+  {
+    "uuid": "c09d950c-ebe9-415d-a39a-094658a2ac55",
+    "name": "Self (Included in fee)"
+  },
+  {
+    "uuid": "f7e95f3e-780c-4860-b7a3-af3b30cfd5da",
+    "name": "Contractors"
+  },
+  {
+    "uuid": "16ff4ebf-4477-4c6c-87df-8c30a8fdbe85",
+    "name": "Work location"
+  },
+  {
+    "uuid": "b5ad1072-c1bc-4ffb-9631-24e1dd17f021",
+    "name": "SHG"
+  },
+  {
+    "name": "Who provided these implants?",
+    "uuid": "18a0d0f4-65ed-47eb-bc0b-fd2067e88736",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "68120cd5-917c-40fd-b887-a6b4fce53ea9",
+        "name": "Government"
+      },
+      {
+        "uuid": "c09d950c-ebe9-415d-a39a-094658a2ac55",
+        "name": "Self (Included in fee)"
+      },
+      {
+        "uuid": "f7e95f3e-780c-4860-b7a3-af3b30cfd5da",
+        "name": "Contractors"
+      },
+      {
+        "uuid": "16ff4ebf-4477-4c6c-87df-8c30a8fdbe85",
+        "name": "Work location"
+      },
+      {
+        "uuid": "b5ad1072-c1bc-4ffb-9631-24e1dd17f021",
+        "name": "SHG"
+      }
+    ]
+  },
+  {
+    "uuid": "1ef0d431-000e-4923-86b1-ce853ecd9da1",
+    "name": "Motor / Pump operations"
+  },
+  {
+    "uuid": "4253f845-b402-49d3-9938-5aa8101574f2",
+    "name": "Lifting / Lowering of pump sets"
+  },
+  {
+    "uuid": "533515a3-336a-487e-854d-57adac8a1d5b",
+    "name": "Removal of grit / screenings / floating material"
+  },
+  {
+    "uuid": "21e4b97c-e2e0-4ef5-b0ae-f1d4499d6d65",
+    "name": "Desilting of wells"
+  },
+  {
+    "uuid": "674e9131-3204-4ed2-b150-4fd5b355641d",
+    "name": "Cleaning of spillage by desludging operators"
+  },
+  {
+    "uuid": "5d9d3466-9326-4893-83db-875e679cd513",
+    "name": "Scum control at STP"
+  },
+  {
+    "uuid": "703d0634-4615-4bdb-a3b2-20203ec1c071",
+    "name": "Removal of weed and vegetation at STP"
+  },
+  {
+    "uuid": "a82bffad-9e30-492f-abb8-e85cd1bfd0e4",
+    "name": "Removal of sludge / solids from ponds at STP"
+  },
+  {
+    "uuid": "7b4e238b-0875-492d-93a9-13669600e4d6",
+    "name": "Overall cleaning and upkeep of the pumping station / STP"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "What work do you perform at decanting station / Sewage Treatment Plant? ",
+    "uuid": "a59e82d4-0809-4647-83c6-9cb744f19381",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "1ef0d431-000e-4923-86b1-ce853ecd9da1",
+        "name": "Motor / Pump operations"
+      },
+      {
+        "uuid": "4253f845-b402-49d3-9938-5aa8101574f2",
+        "name": "Lifting / Lowering of pump sets"
+      },
+      {
+        "uuid": "533515a3-336a-487e-854d-57adac8a1d5b",
+        "name": "Removal of grit / screenings / floating material"
+      },
+      {
+        "uuid": "21e4b97c-e2e0-4ef5-b0ae-f1d4499d6d65",
+        "name": "Desilting of wells"
+      },
+      {
+        "uuid": "674e9131-3204-4ed2-b150-4fd5b355641d",
+        "name": "Cleaning of spillage by desludging operators"
+      },
+      {
+        "uuid": "5d9d3466-9326-4893-83db-875e679cd513",
+        "name": "Scum control at STP"
+      },
+      {
+        "uuid": "703d0634-4615-4bdb-a3b2-20203ec1c071",
+        "name": "Removal of weed and vegetation at STP"
+      },
+      {
+        "uuid": "a82bffad-9e30-492f-abb8-e85cd1bfd0e4",
+        "name": "Removal of sludge / solids from ponds at STP"
+      },
+      {
+        "uuid": "7b4e238b-0875-492d-93a9-13669600e4d6",
+        "name": "Overall cleaning and upkeep of the pumping station / STP"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "decanting station/Sewage Treatment Plant - Please Explain",
+    "uuid": "9260b495-e429-42a0-ac5f-f6c8357392aa",
+    "dataType": "Text"
+  },
+  {
+    "name": "Who provides these tools/implants?",
+    "uuid": "1a26fe3c-d3a9-43c6-ac1a-d3bf6939a91a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4baa98c8-a88b-4531-947b-2f214babdf3e",
+        "name": "ULB"
+      },
+      {
+        "uuid": "c09d950c-ebe9-415d-a39a-094658a2ac55",
+        "name": "Self (Included in fee)"
+      },
+      {
+        "uuid": "f7e95f3e-780c-4860-b7a3-af3b30cfd5da",
+        "name": "Contractors"
+      }
+    ]
+  },
+  {
+    "uuid": "69219871-f83b-4acd-a79f-eb771c7e7cc6",
+    "name": " Liquid Chemicals"
+  },
+  {
+    "uuid": "cc7d86fe-5506-44d5-9a5b-0cb2bdc6361e",
+    "name": "Solid Bleaching Powder"
+  },
+  {
+    "uuid": "3fd49c97-5b61-4ded-9df9-52e152f861a1",
+    "name": "Sand / Mud"
+  },
+  {
+    "name": "Do you use any cleaning materials?",
+    "uuid": "af019ebf-1458-4914-b73e-400afc103ae9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "69219871-f83b-4acd-a79f-eb771c7e7cc6",
+        "name": " Liquid Chemicals"
+      },
+      {
+        "uuid": "6f3d5f60-7ebb-46b2-ba35-9ed02f467940",
+        "name": "Acid"
+      },
+      {
+        "uuid": "e52ee74f-91e2-4860-bd65-544612e42c93",
+        "name": "Natural cleaners"
+      },
+      {
+        "uuid": "cc7d86fe-5506-44d5-9a5b-0cb2bdc6361e",
+        "name": "Solid Bleaching Powder"
+      },
+      {
+        "uuid": "2ed506ca-b0c5-49ff-821c-aa6c05f21a65",
+        "name": "Tablet"
+      },
+      {
+        "uuid": "3fd49c97-5b61-4ded-9df9-52e152f861a1",
+        "name": "Sand / Mud"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "materials - Please Explain",
+    "uuid": "98dcbb1c-b6db-4a7d-8785-8fc28c9d2168",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "b872a6ed-2b3b-4794-a651-ff138b2fe48d",
+    "name": "Sent with municipal/solid waste"
+  },
+  {
+    "uuid": "4e12878b-57ba-4b67-846a-1a804bc7eeb9",
+    "name": "Dumped in open"
+  },
+  {
+    "uuid": "c782533f-92cb-47d6-ac2e-aa7b7c1aef46",
+    "name": "Burnt"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "How do you dispose the collected waste?",
+    "uuid": "b83f9afe-32e3-4fac-bd8b-1dcf68494a5a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "b872a6ed-2b3b-4794-a651-ff138b2fe48d",
+        "name": "Sent with municipal/solid waste"
+      },
+      {
+        "uuid": "4e12878b-57ba-4b67-846a-1a804bc7eeb9",
+        "name": "Dumped in open"
+      },
+      {
+        "uuid": "c782533f-92cb-47d6-ac2e-aa7b7c1aef46",
+        "name": "Burnt"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "collected waste - Please Explain",
+    "uuid": "53535493-b0dd-42c2-b5ca-a7d45c765d6c",
+    "dataType": "Text"
+  },
+  {
+    "name": "Do you have access and facilities to clean yourself?",
+    "uuid": "1d0f3660-171e-432d-a9b1-ce6d3eee0c93",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      },
+      {
+        "uuid": "a6872113-b90c-4141-b3b2-1d4fe779cf36",
+        "name": "Sometimes"
+      }
+    ]
   },
   {
     "name": "General observations or comments by surveyor including important piece of reflection shared by the interviewee",
