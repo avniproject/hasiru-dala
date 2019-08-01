@@ -21,16 +21,6 @@
           "mandatory": true
         },
         {
-          "name": "Photo of the person",
-          "uuid": "5f1b9435-dcbf-497a-a5e5-88f199222a55",
-          "keyValues": [],
-          "concept": {
-            "uuid": "c74df3ef-717a-41e6-aef0-2e92a6bb7947"
-          },
-          "displayOrder": 2,
-          "mandatory": false
-        },
-        {
           "name": "Religion",
           "uuid": "16a8d0e9-5142-4908-b634-e8c9c5195881",
           "keyValues": [],
@@ -38,7 +28,7 @@
           "concept": {
             "uuid": "b6d3d7ee-cc1f-4b08-9d3f-d4461ae4323f"
           },
-          "displayOrder": 3,
+          "displayOrder": 2,
           "mandatory": true
         },
         {
@@ -48,7 +38,7 @@
           "concept": {
             "uuid": "ca23148b-6d99-465a-9be6-33efdc3b44ac"
           },
-          "displayOrder": 4,
+          "displayOrder": 3,
           "mandatory": false
         },
         {
@@ -59,7 +49,7 @@
           "concept": {
             "uuid": "43184a9f-5092-4211-ade0-2949f4b438a2"
           },
-          "displayOrder": 5,
+          "displayOrder": 4,
           "mandatory": false
         },
         {
@@ -69,7 +59,7 @@
           "concept": {
             "uuid": "ef3427c9-4c8f-4e6c-90be-1e4cf59bf2b3"
           },
-          "displayOrder": 6,
+          "displayOrder": 5,
           "mandatory": false
         }
       ]
@@ -451,7 +441,7 @@
           "mandatory": true
         },
         {
-          "name": "What work were you doing before this? ",
+          "name": "What work were you doing before this?",
           "uuid": "c809e0ec-ee20-4239-845e-d0095df1b484",
           "keyValues": [],
           "concept": {
@@ -483,7 +473,7 @@
           "mandatory": true
         },
         {
-          "name": "occupation - Please Elaborate",
+          "name": "Occupation - Please Elaborate",
           "uuid": "e67175de-9beb-4692-8d93-e2cedff17e25",
           "keyValues": [],
           "concept": {
@@ -511,24 +501,25 @@
           "mandatory": true
         },
         {
-          "name": "Occupational Identity Card No.",
-          "uuid": "4bffbbf1-8235-4692-81fc-08c938ae3b7b",
+          "name": "Please select the body that issued the Occupational Identity Card",
+          "uuid": "58bfaf37-68fc-4899-8b47-cc22180195cc",
           "keyValues": [],
+          "type": "SingleSelect",
           "concept": {
-            "uuid": "af861ce8-a3fd-4048-bf6b-5423839c0e8c"
+            "uuid": "bb3d286a-e212-44e5-a3a0-f7960d6360b1"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
-          "name": "Upload Photo of the ID",
-          "uuid": "cacd0e25-f647-4707-a40e-6c5d471eba49",
+          "name": "Please Specifying",
+          "uuid": "6817d9ab-673f-4d1f-9dd3-55be340ba61e",
           "keyValues": [],
           "concept": {
-            "uuid": "1f1f55c6-8a81-4135-b517-47bf1c2f2b31"
+            "uuid": "ca370cfa-9d94-4e0e-b7f5-7bde88fadecd"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -773,7 +764,7 @@
           "concept": {
             "uuid": "74e32026-d054-4843-9dd3-dfe8a065b013"
           },
-          "displayOrder": 24,
+          "displayOrder": 23,
           "mandatory": false
         },
         {
@@ -783,7 +774,7 @@
           "concept": {
             "uuid": "a2cfd126-1f53-4cd2-ab41-16557d1d1010"
           },
-          "displayOrder": 25,
+          "displayOrder": 24,
           "mandatory": false
         }
       ]
@@ -940,23 +931,13 @@
           "mandatory": false
         },
         {
-          "name": "Do you have a doctor's certificate indicating the percentage of disability? ",
+          "name": "Do you have a doctor's certificate indicating the percentage of disability?",
           "uuid": "a1a0d344-9fb1-450d-aca0-2ee7492f81fe",
           "keyValues": [],
           "concept": {
             "uuid": "d7686bf2-e43d-42cc-89f2-69b15363ecd9"
           },
           "displayOrder": 3,
-          "mandatory": false
-        },
-        {
-          "name": "Please upload the doctor's certificate",
-          "uuid": "2c044679-e461-4b3d-ab5d-895e9a3ae707",
-          "keyValues": [],
-          "concept": {
-            "uuid": "1c1f2eae-7ff2-4fa0-8bce-6cba6ca60671"
-          },
-          "displayOrder": 4,
           "mandatory": false
         },
         {
@@ -967,7 +948,7 @@
           "concept": {
             "uuid": "c4977a35-b91b-4d29-b948-cd1d61090e8d"
           },
-          "displayOrder": 5,
+          "displayOrder": 4,
           "mandatory": false
         },
         {
@@ -977,7 +958,7 @@
           "concept": {
             "uuid": "69d3428a-3c82-4e53-8ff0-18649826cd06"
           },
-          "displayOrder": 6,
+          "displayOrder": 5,
           "mandatory": false
         }
       ]
@@ -1428,7 +1409,7 @@
       "displayOrder": 14,
       "formElements": [
         {
-          "name": "Do you use any of the following during collection / emptying?",
+          "name": "How often do you use Gloves for emptying and collecting",
           "uuid": "cc62bec9-dff1-4b10-bfce-66565ecf42b3",
           "keyValues": [],
           "type": "SingleSelect",
@@ -1439,13 +1420,89 @@
           "mandatory": false
         },
         {
+          "name": "How often do you use Mask for emptying and collecting",
+          "uuid": "f479bcef-0c63-426f-b0bc-c4b70d9c1632",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "8485cc4b-e9b1-412b-b8de-bbb27494ed3d"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "How often do you use Uniform for emptying and collecting",
+          "uuid": "b20f128c-6f88-4a63-8b4c-e4f927da83d7",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "3fe32a9f-df1e-47d7-92eb-4fdf3fba5d16"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "How often do you use Aprons/Old Shirt for emptying and collecting",
+          "uuid": "87c35c12-0d79-4e52-90a0-e230d5a8521e",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "39c42df1-db38-4c4a-9bd7-e8ea86af9f92"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "How often do you use Gum Boots for emptying and collecting",
+          "uuid": "3e7b6be1-8446-431c-a279-d64a2b637f53",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "d9dd9516-7a55-4dc7-80a9-fcd42bee11ef"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "How often do you use Chappals for emptying and collecting",
+          "uuid": "7263defc-fa30-4e3a-996d-663ceec7f584",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "d2fdf1b5-c37a-4846-bdab-d3b8b4360acc"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        },
+        {
+          "name": "Do you use any other personal protection equipment (PPE) during collection/ Emptying?",
+          "uuid": "9e102f7c-d705-4d43-a08d-88451e49b837",
+          "keyValues": [],
+          "concept": {
+            "uuid": "902921a1-bc7a-4912-a2f2-b802be9bf409"
+          },
+          "displayOrder": 7,
+          "mandatory": false
+        },
+        {
           "name": "Please Explain (Type of PPE and Frequency of Use)",
           "uuid": "eabd56b4-a954-48f9-98bf-5448dcdfd6c0",
           "keyValues": [],
           "concept": {
             "uuid": "6c7fbd56-68c3-4ee6-84c7-0f015a0ac9ba"
           },
-          "displayOrder": 2,
+          "displayOrder": 8,
+          "mandatory": false
+        },
+        {
+          "name": "How often do you use Others for emptying and collecting",
+          "uuid": "085bf085-b999-4cee-a668-989be44daf0e",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "1c6adbef-818b-49c0-ba8c-5d5b42c137dd"
+          },
+          "displayOrder": 9,
           "mandatory": false
         }
       ]
@@ -1477,7 +1534,7 @@
           "mandatory": false
         },
         {
-          "name": "Trade Union Have you received any assistance from them?",
+          "name": "Have you received any assistance from Trade Union?",
           "uuid": "c5d35657-595f-4c25-9459-b19a210b3feb",
           "keyValues": [],
           "concept": {
@@ -1487,7 +1544,7 @@
           "mandatory": false
         },
         {
-          "name": "Please explain 1",
+          "name": "Trade Union - Please explain",
           "uuid": "26cddfaa-ae33-427d-a558-7667b5fcfa19",
           "keyValues": [],
           "concept": {
@@ -1525,7 +1582,7 @@
           "mandatory": false
         },
         {
-          "name": "Political Party Have you received any assistance from them?",
+          "name": "Have you received any assistance from Political Party?",
           "uuid": "28f5d2c3-1c25-4579-bc7e-184adb996003",
           "keyValues": [],
           "concept": {
@@ -1535,7 +1592,7 @@
           "mandatory": false
         },
         {
-          "name": "Please explain 2",
+          "name": "Political Party - Please explain",
           "uuid": "f336b7ec-0e95-4830-b764-5e333db376a2",
           "keyValues": [],
           "concept": {
@@ -1573,7 +1630,7 @@
           "mandatory": false
         },
         {
-          "name": "SHG Have you received any assistance from them?",
+          "name": "Have you received any assistance from SHG?",
           "uuid": "a3c3902b-8918-46bc-a4d3-d2565c3c3657",
           "keyValues": [],
           "concept": {
@@ -1583,7 +1640,7 @@
           "mandatory": false
         },
         {
-          "name": "Please explain 3",
+          "name": "SHG - Please explain",
           "uuid": "0e218595-a4ed-48ad-ab3b-56037e9d5cef",
           "keyValues": [],
           "concept": {
@@ -1621,7 +1678,7 @@
           "mandatory": false
         },
         {
-          "name": "youth association Have you received any assistance from them?",
+          "name": "Have you received any assistance from Youth Association?",
           "uuid": "7990d423-dfbe-484b-9c33-b7b92e287155",
           "keyValues": [],
           "concept": {
@@ -1631,7 +1688,7 @@
           "mandatory": false
         },
         {
-          "name": "Please explain 4",
+          "name": "Youth Association - Please explain",
           "uuid": "f05dfdaa-6a73-4009-b6a3-9b07ced4e3c0",
           "keyValues": [],
           "concept": {
@@ -1669,7 +1726,7 @@
           "mandatory": false
         },
         {
-          "name": "caste association Have you received any assistance from them?",
+          "name": "Have you received any assistance from Caste Association?",
           "uuid": "cac60b4a-8722-4222-91d3-aa05dbdf37c7",
           "keyValues": [],
           "concept": {
@@ -1679,7 +1736,7 @@
           "mandatory": false
         },
         {
-          "name": "Please explain 5",
+          "name": "Caste Association - Please explain",
           "uuid": "8b8cf95d-1b30-4c21-8f75-25afde35ac3a",
           "keyValues": [],
           "concept": {
@@ -1709,7 +1766,7 @@
           "mandatory": false
         },
         {
-          "name": "club/association Have you received any assistance from them?",
+          "name": "Have you received any assistance from Club/Association?",
           "uuid": "9862e3f7-f929-4330-ae79-62a645de778e",
           "keyValues": [],
           "concept": {
@@ -1719,7 +1776,7 @@
           "mandatory": false
         },
         {
-          "name": "Please explain 6",
+          "name": "Club/Association - Please explain",
           "uuid": "a1fd84b6-1309-40f4-9c52-3a1fcb53dd30",
           "keyValues": [],
           "concept": {
@@ -1749,7 +1806,7 @@
           "mandatory": false
         },
         {
-          "name": "other association Have you received any assistance from them?",
+          "name": "Have you received any assistance from Other Association?",
           "uuid": "c76eaa7a-8afe-4efb-aa8f-aa3eb1ccef7c",
           "keyValues": [],
           "concept": {
@@ -1759,7 +1816,7 @@
           "mandatory": false
         },
         {
-          "name": "Please explain 7",
+          "name": "Other Association - Please explain",
           "uuid": "3d095383-7383-4a3e-aab3-fa3f10c3b107",
           "keyValues": [],
           "concept": {
@@ -1819,7 +1876,7 @@
           "mandatory": false
         },
         {
-          "name": "Please explain 8",
+          "name": "NSKFDC - Please explain ",
           "uuid": "1cb42800-4771-423a-b310-ffec21a2b3a9",
           "keyValues": [],
           "concept": {
@@ -1879,7 +1936,7 @@
           "mandatory": false
         },
         {
-          "name": "Please explain 9",
+          "name": "Loan - Please explain",
           "uuid": "97f065cc-129d-4600-9dd9-d75c36add01b",
           "keyValues": [],
           "concept": {
@@ -1939,16 +1996,6 @@
           "mandatory": false
         },
         {
-          "name": "Please explain (Name of the scheme, Amount and Frequency) 1",
-          "uuid": "e111373a-6656-4433-bacc-6412e7666289",
-          "keyValues": [],
-          "concept": {
-            "uuid": "deab8a4e-3f2b-4a9f-9082-249ccb977067"
-          },
-          "displayOrder": 4,
-          "mandatory": false
-        },
-        {
           "name": "Have you or any one in your house enrolled in a government sponsored health insurance scheme?",
           "uuid": "9ffe5738-aee0-4e66-9bf4-9e58be6ec89b",
           "keyValues": [],
@@ -1956,17 +2003,7 @@
           "concept": {
             "uuid": "d8e7c642-3c44-4529-8760-40096d92fe09"
           },
-          "displayOrder": 5,
-          "mandatory": false
-        },
-        {
-          "name": "Please explain (Name of the scheme, Amount and Frequency) 2",
-          "uuid": "4688616e-794b-4377-b581-f2bdd13322fc",
-          "keyValues": [],
-          "concept": {
-            "uuid": "11e0d6da-1213-4a3f-8aa6-538a20a3d4ad"
-          },
-          "displayOrder": 6,
+          "displayOrder": 4,
           "mandatory": false
         },
         {
@@ -1976,17 +2013,7 @@
           "concept": {
             "uuid": "a59e1b63-14e7-40bc-ac99-a66b827768da"
           },
-          "displayOrder": 7,
-          "mandatory": false
-        },
-        {
-          "name": "Please explain (Name of the scheme, Amount and Frequency) 3",
-          "uuid": "a76f1270-14ed-4c0a-870a-01c18ffa0dec",
-          "keyValues": [],
-          "concept": {
-            "uuid": "78f95be1-ba7e-4533-abaa-832d7385c10a"
-          },
-          "displayOrder": 8,
+          "displayOrder": 5,
           "mandatory": false
         },
         {
@@ -1996,17 +2023,7 @@
           "concept": {
             "uuid": "ac2f640b-6634-4113-b494-c21edd4b1d04"
           },
-          "displayOrder": 9,
-          "mandatory": false
-        },
-        {
-          "name": "Please explain (Name of the scheme, Amount and Frequency) 4",
-          "uuid": "5c008f04-1059-4a97-bd53-e4005b1f0b4e",
-          "keyValues": [],
-          "concept": {
-            "uuid": "5625268a-057c-48af-8635-cb34cdd59dc0"
-          },
-          "displayOrder": 10,
+          "displayOrder": 6,
           "mandatory": false
         },
         {
@@ -2016,37 +2033,46 @@
           "concept": {
             "uuid": "34115b94-3934-40c3-a054-91cce427486d"
           },
-          "displayOrder": 11,
+          "displayOrder": 7,
           "mandatory": false
         },
         {
-          "name": "Please explain (Name of the scheme, Amount and Frequency) 5",
-          "uuid": "a6776b8b-c3dd-4613-a666-517de94c6a47",
-          "keyValues": [],
-          "concept": {
-            "uuid": "aef08012-7a3a-4d35-858f-00ed78d0ce1d"
-          },
-          "displayOrder": 12,
-          "mandatory": false
-        },
-        {
-          "name": "Do you receive a Disability Pension??",
+          "name": "Do you receive a Disability Pension?",
           "uuid": "7a1c38aa-0ed7-46b7-9280-ede0dc3750f8",
           "keyValues": [],
           "concept": {
             "uuid": "4549530e-3fd3-42cd-973b-da17c0dca3ce"
           },
-          "displayOrder": 13,
+          "displayOrder": 8,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "bd15150e-eac5-40cb-8320-768177c7b720",
+      "name": "Profession (Relatives)",
+      "display": "Profession (Relatives)",
+      "displayOrder": 22,
+      "formElements": [
+        {
+          "name": "What is your profession?",
+          "uuid": "93fcfbad-7568-4259-afaf-99da9fc250ff",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "7697dc05-3910-452f-9af6-7a36cf29ae0b"
+          },
+          "displayOrder": 1,
           "mandatory": false
         },
         {
-          "name": "Please explain (Name of the scheme, Amount and Frequency) 6",
-          "uuid": "3220f6b9-4151-454c-9ee5-6a6302a68c1b",
+          "name": "profession - Please Explain",
+          "uuid": "c4adeed5-8539-41ad-b663-db66c5e986dc",
           "keyValues": [],
           "concept": {
-            "uuid": "942f84b1-5c0b-43a1-9620-fa9cdcbbbd93"
+            "uuid": "cbe43149-bcc0-4603-b6ba-148620ae1238"
           },
-          "displayOrder": 14,
+          "displayOrder": 2,
           "mandatory": false
         }
       ]
@@ -2055,7 +2081,7 @@
       "uuid": "4ddf478c-c3a1-4454-bd79-240a161ac11c",
       "name": "Profession Common Waste Worker",
       "display": "Profession",
-      "displayOrder": 22,
+      "displayOrder": 23,
       "formElements": [
         {
           "name": "Type of Informal Waste Worker",
@@ -2106,7 +2132,7 @@
       "uuid": "aa4253a9-8e6d-45bf-bcef-9c788f5de6ee",
       "name": "Trainings",
       "display": "Trainings",
-      "displayOrder": 23,
+      "displayOrder": 24,
       "formElements": [
         {
           "name": "Have you undergone any of the following trainings?",
@@ -2120,7 +2146,7 @@
           "mandatory": true
         },
         {
-          "name": "Please Explain",
+          "name": "Trainings - Please Explain",
           "uuid": "8140693c-5ace-48a2-a150-c5f29abe9535",
           "keyValues": [],
           "concept": {
@@ -2135,7 +2161,7 @@
       "uuid": "1e288d66-4320-4621-992f-a31b100fa797",
       "name": "Waste Collection",
       "display": "Waste Collection",
-      "displayOrder": 24,
+      "displayOrder": 25,
       "formElements": [
         {
           "name": "How often do you collect scrap/go waste picking?",
@@ -2220,7 +2246,7 @@
           "concept": {
             "uuid": "2e6a241b-2a6a-4d1e-a7fb-badc7717fbfa"
           },
-          "displayOrder": 5,
+          "displayOrder": 8,
           "mandatory": true
         },
         {
@@ -2230,7 +2256,7 @@
           "concept": {
             "uuid": "55eae3eb-2dae-499b-9937-2a999f6f193f"
           },
-          "displayOrder": 6,
+          "displayOrder": 9,
           "mandatory": false
         },
         {
@@ -2240,7 +2266,7 @@
           "concept": {
             "uuid": "73bb061a-7a3c-418b-9db9-a51bd4239b4d"
           },
-          "displayOrder": 7,
+          "displayOrder": 10,
           "mandatory": false
         },
         {
@@ -2251,7 +2277,7 @@
           "concept": {
             "uuid": "a534c01d-88ce-4c79-9afb-ec541f605562"
           },
-          "displayOrder": 8,
+          "displayOrder": 11,
           "mandatory": false
         },
         {
@@ -2261,7 +2287,7 @@
           "concept": {
             "uuid": "d25a9af1-8618-4b4f-9c41-84f9c9ff8337"
           },
-          "displayOrder": 9,
+          "displayOrder": 12,
           "mandatory": false
         }
       ]
@@ -2270,7 +2296,7 @@
       "uuid": "d94b2d63-a0b9-4b98-b227-0d0e4b16712f",
       "name": "What are the amounts of waste you buy per week in (Kg)?",
       "display": "What are the amounts of waste you buy per week in (Kg)?",
-      "displayOrder": 25,
+      "displayOrder": 26,
       "formElements": [
         {
           "name": "How much Paper-White waste you buy per week in (Kg)?",
@@ -2369,7 +2395,7 @@
       "uuid": "bfa3cae8-83e2-4392-860a-5e2018adb08c",
       "name": "Where do you sell your collected waste?",
       "display": "Where do you sell your collected waste?",
-      "displayOrder": 26,
+      "displayOrder": 27,
       "formElements": [
         {
           "name": "Name of scrap dealer/buyer",
@@ -2447,7 +2473,7 @@
       "uuid": "e1bdddb8-816b-4af6-b210-17df069fce80",
       "name": "Income from waste",
       "display": "Income from waste",
-      "displayOrder": 27,
+      "displayOrder": 28,
       "formElements": [
         {
           "name": "How much do you earn?",
@@ -2497,7 +2523,7 @@
           "uuid": "9389f696-8461-466b-89f7-68d12f1982b0",
           "keyValues": [],
           "concept": {
-            "uuid": ""
+            "uuid": "14566906-0c79-4336-ade4-a0a7d72bdc5f"
           },
           "displayOrder": 5,
           "mandatory": false
@@ -2518,7 +2544,7 @@
       "uuid": "df037033-6613-4853-9d82-dd1c573aa1fc",
       "name": "Shop details",
       "display": "Shop details",
-      "displayOrder": 28,
+      "displayOrder": 29,
       "formElements": [
         {
           "name": "No. of shops you run/own/manage",
@@ -2596,7 +2622,7 @@
       "uuid": "b1b7ecf1-b873-4cd8-b22a-ef993832e8be",
       "name": "License",
       "display": "License",
-      "displayOrder": 29,
+      "displayOrder": 30,
       "formElements": [
         {
           "name": "Do you need any license to operate?",
@@ -2624,7 +2650,7 @@
       "uuid": "c3c67854-2035-485a-a465-955586e660e4",
       "name": "Waste sold per week",
       "display": "Waste sold per week",
-      "displayOrder": 30,
+      "displayOrder": 31,
       "formElements": [
 
         {
@@ -2920,10 +2946,302 @@
       ]
     },
     {
+      "uuid": "3a9eca76-db0e-4500-ab17-db2563b2e422",
+      "name": "Collection",
+      "display": "Collection",
+      "displayOrder": 32,
+      "formElements": [
+        {
+          "name": "How long do you walk to drop collected waste to designated spot/collection point?",
+          "uuid": "c534a3b5-f5c0-40b6-ac6a-6e694e0e344c",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "c7a2ef60-c4f2-4c0c-bd68-7fe3e5f6664d"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "How do you carry your waste after collection from households/establishments?",
+          "uuid": "4c441f7d-8a8b-415f-ab9a-49c5bdeeeaff",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "90c35dbd-0765-4297-a232-05b988a21510"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "collection from households/establishments - Please Explain",
+          "uuid": "38af1cf3-4622-4d73-867c-2148bae7e213",
+          "keyValues": [],
+          "concept": {
+            "uuid": "a0432cf6-4d77-4794-86b2-325fe9999b58"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "How long do you carry the collected waste if no vehicle is available?",
+          "uuid": "533cd37a-92d8-45d6-bbaf-fb538b438048",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "f114705a-e58f-407b-926f-27019d1175c9"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Do you get segregated waste?",
+          "uuid": "48b86841-90f3-4669-a57a-5d4198fc0e26",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8c9054fc-8a40-44cb-9b16-1f49de4be657"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "How much of waste do you collect per day?",
+          "uuid": "c04b1d5c-5748-488f-9fde-ec587eae7966",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "91187b01-1b31-4c91-8e59-447fd39daef3"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        },
+        {
+          "name": "How many hours do you work in a day?",
+          "uuid": "acea25e8-3f27-4ef0-ad34-8b9c70c14272",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "353ea629-c72a-4c3f-831d-75c6a3a74626"
+          },
+          "displayOrder": 7,
+          "mandatory": false
+        },
+        {
+          "name": "Do you also work at ULB site/plant/landfill?",
+          "uuid": "a309783b-d461-4d1e-9e1f-5b81cf397508",
+          "keyValues": [],
+          "concept": {
+            "uuid": "6cf0b5a3-5b85-4dc0-b6f7-8b036dbf94ab"
+          },
+          "displayOrder": 8,
+          "mandatory": false
+        },
+        {
+          "name": "Where do you work? (Ex. DWCC/MRF/Composting Plant/Landfill etc.)",
+          "uuid": "80768f3f-188f-4830-bbfa-1148acb01b87",
+          "keyValues": [],
+          "concept": {
+            "uuid": "576549fa-5e22-41ae-b0d4-1be2304c36cb"
+          },
+          "displayOrder": 9,
+          "mandatory": false
+        },
+        {
+          "name": "What work do you do at there?",
+          "uuid": "79a429b2-e401-462b-8a48-44538dadaf52",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "f856e489-d692-433b-b88f-a598336e0705"
+          },
+          "displayOrder": 10,
+          "mandatory": false
+        },
+        {
+          "name": "Work - Please Explain",
+          "uuid": "9d90e401-3564-49b2-ad25-ba85af980ae8",
+          "keyValues": [],
+          "concept": {
+            "uuid": "33b8dee7-e266-4bd0-87cc-3a87c44ee12f"
+          },
+          "displayOrder": 11,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "2ce6a132-d969-46b3-aec7-01cda7a0caf8",
+      "name": "Cleaning and Sweeping",
+      "display": "Cleaning and Sweeping",
+      "displayOrder": 33,
+      "formElements": [
+        {
+          "name": "Do you clean the storm water drains and other open drainages?",
+          "uuid": "15eb6cc9-b754-4664-86f4-1a022991b0b7",
+          "keyValues": [],
+          "concept": {
+            "uuid": "a3296e72-f4f0-4f94-8fbb-bb252f0edccf"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "What is the distance do you sweep per day?",
+          "uuid": "a6a7db19-cfd9-414b-a25a-5aab7d140f3d",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "965e603f-51ae-434c-97c7-a6db8e30a550"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Do you carry the waste after sweeping?",
+          "uuid": "493b4d10-34b7-4ed6-8feb-a8509bcf8eee",
+          "keyValues": [],
+          "concept": {
+            "uuid": "e6c84945-d3ee-4350-a999-1a0ee0cf9cec"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "How long do you carry the waste after sweeping?",
+          "uuid": "f1833a3d-83c6-48de-9515-625953bb40fb",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "1597a54f-0584-4cab-bfc5-474fc74c17c5"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "How do you carry your waste after sweeping?",
+          "uuid": "91aef067-5c4f-48d8-8b98-a9ed9b1c8a33",
+          "keyValues": [],
+          "concept": {
+            "uuid": "309be17e-3b98-40c3-98d7-056f7f573df1"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "Sweeping - Please Specify",
+          "uuid": "007096d4-5963-4436-8b26-11974c438a6a",
+          "keyValues": [],
+          "concept": {
+            "uuid": "ca599946-2d1c-43f3-bfb8-5a985cb6f4df"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        },
+        {
+          "name": "What kind of brooms do you use?",
+          "uuid": "c48d124c-8ca9-473a-94a7-a21afe8af7b9",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "dffe35ba-836f-48f2-9cc6-a030c9a49e4c"
+          },
+          "displayOrder": 7,
+          "mandatory": false
+        },
+        {
+          "name": "Brooms - Please specify",
+          "uuid": "c4bea757-1cc5-40ce-8e31-5dffd1a51f01",
+          "keyValues": [],
+          "concept": {
+            "uuid": "a355bb5a-e639-401e-a71f-da9a7c03ec11"
+          },
+          "displayOrder": 8,
+          "mandatory": false
+        },
+        {
+          "name": "How often do you get new broom?",
+          "uuid": "168dd171-4091-4260-9c63-66395f30116d",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "e0fdcb46-9c47-417b-8fac-65484b920db7"
+          },
+          "displayOrder": 9,
+          "mandatory": false
+        },
+        {
+          "name": "New Brooms - Please specify",
+          "uuid": "4dd9c7c4-6068-4820-bd5c-a238e41ff314",
+          "keyValues": [],
+          "concept": {
+            "uuid": "e0f17c8f-255d-4d42-b719-6b4e4d58ccf5"
+          },
+          "displayOrder": 10,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "13756fe9-6746-462c-9bfa-deb3191c7726",
+      "name": "Income",
+      "display": "Income",
+      "displayOrder": 34,
+      "formElements": [
+        {
+          "name": "Do you receive any income apart from wages?",
+          "uuid": "1e947cc9-7556-405c-83f9-b12a5e22e6e5",
+          "keyValues": [],
+          "concept": {
+            "uuid": "fb526c9d-ca60-4a55-aef8-970e37379552"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Source of additional income",
+          "uuid": "a7abd416-2569-427a-9051-5a598b644678",
+          "keyValues": [],
+          "concept": {
+            "uuid": "4714add9-36a7-4870-8a8c-42021d8b4ced"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Income per month (INR)",
+          "uuid": "c66171b2-355e-49b1-99e8-f9aeceba031b",
+          "keyValues": [],
+          "concept": {
+            "uuid": "99d8d6e3-99cc-4e84-a841-79bfbae6d390"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "91d5cd3d-186f-46eb-a81a-1330363d3528",
+      "name": "Comments",
+      "display": "Comments",
+      "displayOrder": 35,
+      "formElements": [
+        {
+          "name": "General observations or comments by surveyor including important piece of reflection shared by the interviewee",
+          "uuid": "451ec88f-9c1d-4b3c-8ddc-2509818e5fa0",
+          "keyValues": [],
+          "concept": {
+            "uuid": "f0cc3f0b-2afd-465d-9e2b-b32990e402a9"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        }
+      ]
+    },
+    {
       "uuid": "79158f16-8896-412b-93d5-78dc8d133f14",
       "name": "Introduced by",
       "display": "Introduced by",
-      "displayOrder": 25,
+      "displayOrder": 36,
       "formElements": [
         {
           "name": "Name",

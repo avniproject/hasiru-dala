@@ -47,11 +47,6 @@
     ]
   },
   {
-    "name": "Photo of the person",
-    "uuid": "c74df3ef-717a-41e6-aef0-2e92a6bb7947",
-    "dataType": "Image"
-  },
-  {
     "uuid": "a9244a25-5b6b-4a94-b93c-f1c545095204",
     "name": "Hinduism"
   },
@@ -268,7 +263,7 @@
     "name": "Post-Graduate"
   },
   {
-    "uuid": "b615e65a-bf52-437b-b005-b3e80d123aa9",
+    "uuid": "4082b336-4416-45a5-b725-733bd4d95f28",
     "name": "Skill/Vocational Training"
   },
   {
@@ -322,7 +317,7 @@
         "name": "Post-Graduate"
       },
       {
-        "uuid": "b615e65a-bf52-437b-b005-b3e80d123aa9",
+        "uuid": "4082b336-4416-45a5-b725-733bd4d95f28",
         "name": "Skill/Vocational Training"
       },
       {
@@ -719,7 +714,7 @@
     ]
   },
   {
-    "name": "What work were you doing before this? ",
+    "name": "What work were you doing before this?",
     "uuid": "13553be0-1a76-4808-a667-64b7700ec2d0",
     "dataType": "Text"
   },
@@ -800,7 +795,7 @@
     ]
   },
   {
-    "name": "occupation - Please Elaborate",
+    "name": "Occupation - Please Elaborate",
     "uuid": "10f941b5-a54a-41f5-9eaa-2c23133c9015",
     "dataType": "Text"
   },
@@ -818,15 +813,59 @@
     ]
   },
   {
-    "name": "Occupational Identity Card No.",
-    "uuid": "af861ce8-a3fd-4048-bf6b-5423839c0e8c",
-    "dataType": "Text"
+    "uuid": "4baa98c8-a88b-4531-947b-2f214babdf3e",
+    "name": "ULB"
   },
   {
-    "name": "Upload Photo of the ID",
-    "uuid": "1f1f55c6-8a81-4135-b517-47bf1c2f2b31",
-    "dataType": "Image"
+    "uuid": "a63d8fed-94f5-4ed4-acbe-6cb5f50c77db",
+    "name": "State Government"
   },
+  {
+    "uuid": "cef5cac7-199c-486d-a56b-2be910f24e6d",
+    "name": "Central Government"
+  },
+  {
+    "uuid": "d20aff4f-f68f-4e01-a377-62f373170e79",
+    "name": "NGO/SHG/CBO authorized to issue the card"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  
+  {
+    "name": "Please select the body that issued the Occupational Identity Card",
+    "uuid": "bb3d286a-e212-44e5-a3a0-f7960d6360b1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4baa98c8-a88b-4531-947b-2f214babdf3e",
+        "name": "ULB"
+      },
+      {
+        "uuid": "a63d8fed-94f5-4ed4-acbe-6cb5f50c77db",
+        "name": "State Government"
+      },
+      {
+        "uuid": "cef5cac7-199c-486d-a56b-2be910f24e6d",
+        "name": "Central Government"
+      },
+      {
+        "uuid": "d20aff4f-f68f-4e01-a377-62f373170e79",
+        "name": "NGO/SHG/CBO authorized to issue the card"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "Please Specifying",
+    "uuid": "ca370cfa-9d94-4e0e-b7f5-7bde88fadecd",
+    "dataType": "Text"
+  },
+
   {
     "name": "Whether you have Voter Registration Card",
     "uuid": "23dbec91-3aae-4e0f-98ee-17f75efb64d0",
@@ -851,7 +890,7 @@
     "dataType": "Image"
   },
   {
-    "name": "Whether you have Ration/BPL Card",
+    "name": "Whether you have Ration/BPL Card with your name included",
     "uuid": "28d66d45-5d71-4648-acc7-9a18716b98e0",
     "dataType": "Coded",
     "answers": [
@@ -1441,11 +1480,6 @@
     ]
   },
   {
-    "name": "Please upload the doctor's certificate",
-    "uuid": "1c1f2eae-7ff2-4fa0-8bce-6cba6ca60671",
-    "dataType": "Image"
-  },
-  {
     "uuid": "09d11f41-dfa3-4363-a2a4-6182e88cf7a0",
     "name": "My legs pain when I must walk longer distances."
   },
@@ -1491,19 +1525,19 @@
   },
   {
     "uuid": "2119a41a-3232-4595-b393-a67f01931037",
-    "name": "Self Employed"
+    "name": "Self Employed – Operate their enterprise, may hire helper"
   },
   {
     "uuid": "57321516-2148-42ab-8480-9c1bbead77d6",
-    "name": "Contract (Direct or Indirect)"
+    "name": "Contract – Payment received is other than daily wage / hour rate (Weekly / Fortnightly / Monthly) through contractor or establishment, though calculations maybe based on daily rate/hours"
   },
   {
     "uuid": "ad55c4d9-9637-43cf-a948-c8bd2d229900",
-    "name": "Employee"
+    "name": "Employee – Employed with government or private organization, having social security benefits"
   },
   {
     "uuid": "bcc5897a-3125-4086-b260-c2a3136dd9ca",
-    "name": "Daily wage"
+    "name": "Daily wage – Payment is received daily / hour rate"
   },
   {
     "name": "Nature of Employment",
@@ -1512,19 +1546,19 @@
     "answers": [
       {
         "uuid": "2119a41a-3232-4595-b393-a67f01931037",
-        "name": "Self Employed"
+        "name": "Self Employed – Operate their enterprise, may hire helper"
       },
       {
         "uuid": "57321516-2148-42ab-8480-9c1bbead77d6",
-        "name": "Contract (Direct or Indirect)"
+        "name": "Contract – Payment received is other than daily wage / hour rate (Weekly / Fortnightly / Monthly) through contractor or establishment, though calculations maybe based on daily rate/hours"
       },
       {
         "uuid": "ad55c4d9-9637-43cf-a948-c8bd2d229900",
-        "name": "Employee"
+        "name": "Employee – Employed with government or private organization, having social security benefits"
       },
       {
         "uuid": "bcc5897a-3125-4086-b260-c2a3136dd9ca",
-        "name": "Daily wage"
+        "name": "Daily wage – Payment is received daily / hour rate"
       }
     ]
   },
@@ -1897,11 +1931,6 @@
     "dataType": "Coded",
     "answers": [
       {
-        "name": "Average Income Earned per Month from other sources (INR)",
-        "uuid": "8d1d87d9-d58a-46e4-99a6-d77c91639deb",
-        "dataType": "Numeric"
-      },
-      {
         "uuid": "3da03b07-f08b-4e74-8f4d-d649bae56ea4",
         "name": "Cash"
       },
@@ -2240,11 +2269,6 @@
     "dataType": "Coded",
     "answers": [
       {
-        "name": "medical help - Please Elaborate",
-        "uuid": "46f16837-cc5c-405f-b0ed-0014dfca32ab",
-        "dataType": "Text"
-      },
-      {
         "uuid": "bdf50aba-1dbe-4c9e-88c8-e96d8f27e460",
         "name": "Less than 0.5 km"
       },
@@ -2351,65 +2375,143 @@
     ]
   },
   {
-    "uuid": "de6f3884-b8b5-412d-97bc-400e83cda726",
-    "name": "Gloves"
+    "uuid": "65f7ad5d-5b03-4d6b-94bf-1ca90f1b04b6",
+    "name": "Regularly "
   },
   {
-    "uuid": "39a5cc2b-3d43-4f7f-ade1-525ecaf24bc1",
-    "name": "Mask"
+    "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+    "name": "Occasionally"
   },
   {
-    "uuid": "6b3a3e4a-b8f0-4705-a898-e4a3a47eebe8",
-    "name": "Uniform"
+    "uuid": "bd4b89c3-fc07-47a5-9be8-b3e8d14053e9",
+    "name": "Never"
   },
   {
-    "uuid": "67d0b5ce-2900-464d-bb38-5d6907f0c6dd",
-    "name": "Aprons/Old Shirt"
-  },
-  {
-    "uuid": "351d796e-f7a5-44a5-b429-fd146c669ce3",
-    "name": "Gum Boots"
-  },
-  {
-    "uuid": "9cf56e33-5244-4a53-a481-fc7a2ea8c793",
-    "name": "Chappals"
-  },
-  {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
-    "name": "Others"
-  },
-  {
-    "name": "Do you use any of the following during collection / emptying?",
+    "name": "How often do you use Gloves for emptying and collecting",
     "uuid": "17f14ed3-1fad-4531-b1fa-6cdf93ae8f80",
     "dataType": "Coded",
     "answers": [
       {
-        "uuid": "de6f3884-b8b5-412d-97bc-400e83cda726",
-        "name": "Gloves"
+        "uuid": "65f7ad5d-5b03-4d6b-94bf-1ca90f1b04b6",
+        "name": "Regularly "
       },
       {
-        "uuid": "39a5cc2b-3d43-4f7f-ade1-525ecaf24bc1",
-        "name": "Mask"
+        "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+        "name": "Occasionally"
       },
       {
-        "uuid": "6b3a3e4a-b8f0-4705-a898-e4a3a47eebe8",
-        "name": "Uniform"
+        "uuid": "bd4b89c3-fc07-47a5-9be8-b3e8d14053e9",
+        "name": "Never"
+      }
+    ]
+  },
+  {
+    "name": "How often do you use Mask for emptying and collecting",
+    "uuid": "8485cc4b-e9b1-412b-b8de-bbb27494ed3d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "65f7ad5d-5b03-4d6b-94bf-1ca90f1b04b6",
+        "name": "Regularly "
       },
       {
-        "uuid": "67d0b5ce-2900-464d-bb38-5d6907f0c6dd",
-        "name": "Aprons/Old Shirt"
+        "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+        "name": "Occasionally"
       },
       {
-        "uuid": "351d796e-f7a5-44a5-b429-fd146c669ce3",
-        "name": "Gum Boots"
+        "uuid": "bd4b89c3-fc07-47a5-9be8-b3e8d14053e9",
+        "name": "Never"
+      }
+    ]
+  },
+  {
+    "name": "How often do you use Uniform for emptying and collecting",
+    "uuid": "3fe32a9f-df1e-47d7-92eb-4fdf3fba5d16",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "65f7ad5d-5b03-4d6b-94bf-1ca90f1b04b6",
+        "name": "Regularly "
       },
       {
-        "uuid": "9cf56e33-5244-4a53-a481-fc7a2ea8c793",
-        "name": "Chappals"
+        "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+        "name": "Occasionally"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
-        "name": "Others"
+        "uuid": "bd4b89c3-fc07-47a5-9be8-b3e8d14053e9",
+        "name": "Never"
+      }
+    ]
+  },
+  {
+    "name": "How often do you use Aprons/Old Shirt for emptying and collecting",
+    "uuid": "39c42df1-db38-4c4a-9bd7-e8ea86af9f92",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "65f7ad5d-5b03-4d6b-94bf-1ca90f1b04b6",
+        "name": "Regularly "
+      },
+      {
+        "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+        "name": "Occasionally"
+      },
+      {
+        "uuid": "bd4b89c3-fc07-47a5-9be8-b3e8d14053e9",
+        "name": "Never"
+      }
+    ]
+  },
+  {
+    "name": "How often do you use Gum Boots for emptying and collecting",
+    "uuid": "d9dd9516-7a55-4dc7-80a9-fcd42bee11ef",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "65f7ad5d-5b03-4d6b-94bf-1ca90f1b04b6",
+        "name": "Regularly "
+      },
+      {
+        "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+        "name": "Occasionally"
+      },
+      {
+        "uuid": "bd4b89c3-fc07-47a5-9be8-b3e8d14053e9",
+        "name": "Never"
+      }
+    ]
+  },
+  {
+    "name": "How often do you use Chappals for emptying and collecting",
+    "uuid": "d2fdf1b5-c37a-4846-bdab-d3b8b4360acc",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "65f7ad5d-5b03-4d6b-94bf-1ca90f1b04b6",
+        "name": "Regularly "
+      },
+      {
+        "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+        "name": "Occasionally"
+      },
+      {
+        "uuid": "bd4b89c3-fc07-47a5-9be8-b3e8d14053e9",
+        "name": "Never"
+      }
+    ]
+  },
+  {
+    "name": "Do you use any other personal protection equipment (PPE) during collection/ Emptying?",
+    "uuid": "902921a1-bc7a-4912-a2f2-b802be9bf409",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
       }
     ]
   },
@@ -2417,6 +2519,25 @@
     "name": "Please Explain (Type of PPE and Frequency of Use)",
     "uuid": "6c7fbd56-68c3-4ee6-84c7-0f015a0ac9ba",
     "dataType": "Text"
+  },
+  {
+    "name": "How often do you use Others for emptying and collecting",
+    "uuid": "1c6adbef-818b-49c0-ba8c-5d5b42c137dd",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "65f7ad5d-5b03-4d6b-94bf-1ca90f1b04b6",
+        "name": "Regularly"
+      },
+      {
+        "uuid": "261d9d8f-a073-4f23-9388-6781b3701216",
+        "name": "Occasionally"
+      },
+      {
+        "uuid": "bd4b89c3-fc07-47a5-9be8-b3e8d14053e9",
+        "name": "Never"
+      }
+    ]
   },
   {
     "name": "Are you part of a Trade Union?",
@@ -2439,7 +2560,7 @@
     "dataType": "Text"
   },
   {
-    "name": "Trade Union Have you received any assistance from them?",
+    "name": "Have you received any assistance from Trade Union?",
     "uuid": "a53a347d-9f67-40ba-a778-d55c561f9a1e",
     "dataType": "Coded",
     "answers": [
@@ -2454,7 +2575,7 @@
     ]
   },
   {
-    "name": "Please explain 1",
+    "name": "Trade Union - Please explain",
     "uuid": "e419b751-ff60-4564-9a3a-d13065af1acf",
     "dataType": "Text"
   },
@@ -2479,7 +2600,7 @@
     "dataType": "Text"
   },
   {
-    "name": "Political Party Have you received any assistance from them?",
+    "name": "Have you received any assistance from Political Party?",
     "uuid": "609023a6-8d63-4a54-95e2-a624a73afc4a",
     "dataType": "Coded",
     "answers": [
@@ -2494,7 +2615,7 @@
     ]
   },
   {
-    "name": "Please explain 2",
+    "name": "Political Party - Please explain",
     "uuid": "8b5db67b-baf5-4add-a2bd-168f8936bd0e",
     "dataType": "Text"
   },
@@ -2519,7 +2640,7 @@
     "dataType": "Text"
   },
   {
-    "name": "SHG Have you received any assistance from them?",
+    "name": "Have you received any assistance from SHG?",
     "uuid": "81895a83-a960-4cbe-81c2-851c39755e49",
     "dataType": "Coded",
     "answers": [
@@ -2534,7 +2655,7 @@
     ]
   },
   {
-    "name": "Please explain 3",
+    "name": "SHG - Please explain",
     "uuid": "eff86be6-0f8e-48d9-96a1-4546aefc4753",
     "dataType": "Text"
   },
@@ -2559,7 +2680,7 @@
     "dataType": "Text"
   },
   {
-    "name": "youth association Have you received any assistance from them?",
+    "name": "Have you received any assistance from Youth Association?",
     "uuid": "a54432b9-09d2-4928-bbea-22f395e48c31",
     "dataType": "Coded",
     "answers": [
@@ -2574,7 +2695,7 @@
     ]
   },
   {
-    "name": "Please explain 4",
+    "name": "Youth Association - Please Explain",
     "uuid": "64cfc862-7deb-4e1c-a78a-bf24e819cf92",
     "dataType": "Text"
   },
@@ -2599,7 +2720,7 @@
     "dataType": "Text"
   },
   {
-    "name": "caste association Have you received any assistance from them?",
+    "name": "Have you received any assistance from Caste Association?",
     "uuid": "0ce1360b-457a-433c-8049-8156bcce9659",
     "dataType": "Coded",
     "answers": [
@@ -2614,7 +2735,7 @@
     ]
   },
   {
-    "name": "Please explain 5",
+    "name": "Caste Association - Please explain",
     "uuid": "ce9ce5b5-bddf-4ed3-a1b3-114a9ab56137",
     "dataType": "Text"
   },
@@ -2639,7 +2760,7 @@
     "dataType": "Text"
   },
   {
-    "name": "club/association Have you received any assistance from them?",
+    "name": "Have you received any assistance from Club/Association?",
     "uuid": "65aa1546-9b99-4b35-b740-a92734e093ea",
     "dataType": "Coded",
     "answers": [
@@ -2654,7 +2775,7 @@
     ]
   },
   {
-    "name": "Please explain 6",
+    "name": "Club/Association - Please explain",
     "uuid": "cb3f412b-f6c2-4ee9-9f17-7f8c41bebea9",
     "dataType": "Text"
   },
@@ -2679,7 +2800,7 @@
     "dataType": "Text"
   },
   {
-    "name": "other association Have you received any assistance from them?",
+    "name": "Have you received any assistance from Other Association?",
     "uuid": "958da202-b219-4b34-bd4c-ddc08b33a836",
     "dataType": "Coded",
     "answers": [
@@ -2694,7 +2815,7 @@
     ]
   },
   {
-    "name": "Please explain 7",
+    "name": "Other Association - Please explain",
     "uuid": "83d58d40-bad4-4a15-a09f-77fdd79a8d1a",
     "dataType": "Text"
   },
@@ -2744,7 +2865,7 @@
     ]
   },
   {
-    "name": "Please explain 8",
+    "name": "NSKFDC - Please explain",
     "uuid": "81b78903-7274-4810-baa2-50437031a6a1",
     "dataType": "Text"
   },
@@ -2881,7 +3002,7 @@
     ]
   },
   {
-    "name": "Please explain 9",
+    "name": "Loan - Please explain",
     "uuid": "f332b202-8582-4c55-a5fd-bace299a1012",
     "dataType": "Text"
   },
@@ -2954,11 +3075,6 @@
     ]
   },
   {
-    "name": "Please explain (Name of the scheme, Amount and Frequency) 1",
-    "uuid": "deab8a4e-3f2b-4a9f-9082-249ccb977067",
-    "dataType": "Text"
-  },
-  {
     "name": "Have you or any one in your house enrolled in a government sponsored health insurance scheme?",
     "uuid": "d8e7c642-3c44-4529-8760-40096d92fe09",
     "dataType": "Coded",
@@ -2978,11 +3094,6 @@
     ]
   },
   {
-    "name": "Please explain (Name of the scheme, Amount and Frequency) 2",
-    "uuid": "11e0d6da-1213-4a3f-8aa6-538a20a3d4ad",
-    "dataType": "Text"
-  },
-  {
     "name": "Do you get any government sponsored scholarship?",
     "uuid": "a59e1b63-14e7-40bc-ac99-a66b827768da",
     "dataType": "Coded",
@@ -2996,11 +3107,6 @@
         "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
       }
     ]
-  },
-  {
-    "name": "Please explain (Name of the scheme, Amount and Frequency) 3",
-    "uuid": "78f95be1-ba7e-4533-abaa-832d7385c10a",
-    "dataType": "Text"
   },
   {
     "name": "Do you receive a widow pension?",
@@ -3018,11 +3124,6 @@
     ]
   },
   {
-    "name": "Please explain (Name of the scheme, Amount and Frequency) 4",
-    "uuid": "5625268a-057c-48af-8635-cb34cdd59dc0",
-    "dataType": "Text"
-  },
-  {
     "name": "Do you receive a single woman pension?",
     "uuid": "34115b94-3934-40c3-a054-91cce427486d",
     "dataType": "Coded",
@@ -3036,11 +3137,6 @@
         "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
       }
     ]
-  },
-  {
-    "name": "Please explain (Name of the scheme, Amount and Frequency) 5",
-    "uuid": "aef08012-7a3a-4d35-858f-00ed78d0ce1d",
-    "dataType": "Text"
   },
   {
     "name": "Do you receive a Disability Pension??",
@@ -3058,10 +3154,106 @@
     ]
   },
   {
-    "name": "Please explain (Name of the scheme, Amount and Frequency) 6",
-    "uuid": "942f84b1-5c0b-43a1-9620-fa9cdcbbbd93",
+    "uuid": "029474c2-9ff0-4619-aca5-42b8ab47f33a",
+    "name": "Construction Work/Masonry"
+  },
+  {
+    "uuid": "15d3479e-2ada-4ca4-b5da-0b04b935283c",
+    "name": "Domestic Help"
+  },
+  {
+    "uuid": "5a86134e-7d84-41a3-b5dd-c3e96f83eaf8",
+    "name": "Plumber/Electrician/Mechanic"
+  },
+  {
+    "uuid": "87ec20fc-6a7b-468d-b0b1-3f3f5a282fa2",
+    "name": "Tailor"
+  },
+  {
+    "uuid": "bc3459bd-fc13-4d31-93e9-f62aef880056",
+    "name": "Driver"
+  },
+  {
+    "uuid": "36950f89-07ee-4318-87eb-334e0756931d",
+    "name": "Street Vendor/Petty Shop Worker"
+  },
+  {
+    "uuid": "3a4805b4-725f-410c-96f7-b59b65fe1a1f",
+    "name": "Street Vendor/Petty Shop Owner"
+  },
+  {
+    "uuid": "c0f0125c-c9f4-4db8-b772-8c5bfb39c606",
+    "name": "Garment Worker"
+  },
+  {
+    "uuid": "e6028250-9c11-4f9d-89b6-fd2a5ea047b0",
+    "name": "Sales"
+  },
+  {
+    "uuid": "45adf59a-300b-4d0a-a6e5-bf8308e66704",
+    "name": "Unemployed"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "What is your profession?",
+    "uuid": "7697dc05-3910-452f-9af6-7a36cf29ae0b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "029474c2-9ff0-4619-aca5-42b8ab47f33a",
+        "name": "Construction Work/Masonry"
+      },
+      {
+        "uuid": "15d3479e-2ada-4ca4-b5da-0b04b935283c",
+        "name": "Domestic Help"
+      },
+      {
+        "uuid": "5a86134e-7d84-41a3-b5dd-c3e96f83eaf8",
+        "name": "Plumber/Electrician/Mechanic"
+      },
+      {
+        "uuid": "87ec20fc-6a7b-468d-b0b1-3f3f5a282fa2",
+        "name": "Tailor"
+      },
+      {
+        "uuid": "bc3459bd-fc13-4d31-93e9-f62aef880056",
+        "name": "Driver"
+      },
+      {
+        "uuid": "36950f89-07ee-4318-87eb-334e0756931d",
+        "name": "Street Vendor/Petty Shop Worker"
+      },
+      {
+        "uuid": "3a4805b4-725f-410c-96f7-b59b65fe1a1f",
+        "name": "Street Vendor/Petty Shop Owner"
+      },
+      {
+        "uuid": "c0f0125c-c9f4-4db8-b772-8c5bfb39c606",
+        "name": "Garment Worker"
+      },
+      {
+        "uuid": "e6028250-9c11-4f9d-89b6-fd2a5ea047b0",
+        "name": "Sales"
+      },
+      {
+        "uuid": "45adf59a-300b-4d0a-a6e5-bf8308e66704",
+        "name": "Unemployed"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "profession - Please Explain",
+    "uuid": "cbe43149-bcc0-4603-b6ba-148620ae1238",
     "dataType": "Text"
   },
+
   {
     "uuid": "9f2252c8-f7ec-4f5d-a180-c360bbba5e63",
     "name": "Wastepicker"
@@ -3137,13 +3329,13 @@
       },
       {
         "uuid": "25eae45b-a2bc-46b7-9d73-f45982afc853",
-        "name": "Street Sweeper / Drain Cleaner"
+        "name": "Street Sweeper/Drain Cleaner"
       }
     ]
   },
   {
     "uuid": "654b2b66-1a07-4045-88f3-7113b43cb337",
-    "name": "Desludging Worke"
+    "name": "Desludging Worker"
   },
   {
     "uuid": "e94a90d6-6901-4a9b-b772-bbed44fc6b8a",
@@ -3356,7 +3548,7 @@
     ]
   },
   {
-    "name": "Please Explain",
+    "name": "Trainings - Please Explain",
     "uuid": "6ff677d7-9542-4676-92c4-062d531ea4d6",
     "dataType": "Text"
   },
@@ -3868,7 +4060,7 @@
   },
   {
     "uuid": "9b23d9e1-2213-45a9-90d1-32476b4474c2",
-    "name": "On shoulder / head "
+    "name": "On shoulder / head"
   },
   {
     "uuid": "0d438c2d-9ec9-44b8-ae74-06c82d6eb70d",
@@ -4164,6 +4356,571 @@
   {
     "name": "Thermocol/Styrofoam",
     "uuid": "b3267364-c440-4dad-942f-758eb64b63df",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "bdf50aba-1dbe-4c9e-88c8-e96d8f27e460",
+    "name": "Less than 0.5 km"
+  },
+  {
+    "uuid": "2321edd7-11d7-4cdb-9c84-5cd2b55a2afe",
+    "name": "0.5 km-1 km"
+  },
+  {
+    "uuid": "9cecefc9-5354-4d17-8a32-940f27dd0eb6",
+    "name": "1.5 km-2 km"
+  },
+  {
+    "uuid": "51ec44ce-5469-4c26-8ac8-10f0c62c3afd",
+    "name": "No need to walk"
+  },
+  {
+    "name": "How long do you walk to drop collected waste to designated spot/collection point?",
+    "uuid": "c7a2ef60-c4f2-4c0c-bd68-7fe3e5f6664d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "bdf50aba-1dbe-4c9e-88c8-e96d8f27e460",
+        "name": "Less than 0.5 km"
+      },
+      {
+        "uuid": "2321edd7-11d7-4cdb-9c84-5cd2b55a2afe",
+        "name": "0.5 km-1 km"
+      },
+      {
+        "uuid": "9cecefc9-5354-4d17-8a32-940f27dd0eb6",
+        "name": "1.5 km-2 km"
+      },
+      {
+        "uuid": "51ec44ce-5469-4c26-8ac8-10f0c62c3afd",
+        "name": "No need to walk"
+      }
+    ]
+  },
+  {
+    "uuid": "024fac58-ea3c-45c8-8777-b56742a41816",
+    "name": "Minidoor Auto"
+  },
+  {
+    "uuid": "4ce925f1-01a8-4e7a-819d-8cf763134ef5",
+    "name": "Hand Cart"
+  },
+  {
+    "uuid": "75b6004e-7458-4c8c-b611-3d5dc067875f",
+    "name": "Auto tipper"
+  },
+  {
+    "uuid": "ec2bf578-4a62-4267-be5d-460c5545d161",
+    "name": "Carry on shoulder"
+  },
+  {
+    "uuid": "d6bfe903-5d9a-450d-9494-4c3ce419ec50",
+    "name": "Basket"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "How do you carry your waste after collection from households/establishments?",
+    "uuid": "90c35dbd-0765-4297-a232-05b988a21510",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "024fac58-ea3c-45c8-8777-b56742a41816",
+        "name": "Minidoor Auto"
+      },
+      {
+        "uuid": "4ce925f1-01a8-4e7a-819d-8cf763134ef5",
+        "name": "Hand Cart"
+      },
+      {
+        "uuid": "75b6004e-7458-4c8c-b611-3d5dc067875f",
+        "name": "Auto tipper"
+      },
+      {
+        "uuid": "ec2bf578-4a62-4267-be5d-460c5545d161",
+        "name": "Carry on shoulder"
+      },
+      {
+        "uuid": "d6bfe903-5d9a-450d-9494-4c3ce419ec50",
+        "name": "Basket"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "collection from households/establishments - Please Explain",
+    "uuid": "a0432cf6-4d77-4794-86b2-325fe9999b58",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "c82fbb02-8cf9-4930-ab41-9f9f2fddc050",
+    "name": "Less than 10 minutes"
+  },
+  {
+    "uuid": "11360dc7-47c0-4de8-953b-a447db38172d",
+    "name": "30 minutes"
+  },
+  {
+    "uuid": "ae87497a-1ce2-4172-8d5f-992ed678f118",
+    "name": "1 hour"
+  },
+  {
+    "uuid": "9e6cbb6b-23f1-425a-a585-5857cc070711",
+    "name": "3 hours"
+  },
+  {
+    "uuid": "95dcf42a-4415-434a-a111-dd499a5f3e85",
+    "name": "No such occasion arise"
+  },
+  {
+    "name": "How long do you carry the collected waste if no vehicle is available?",
+    "uuid": "f114705a-e58f-407b-926f-27019d1175c9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "c82fbb02-8cf9-4930-ab41-9f9f2fddc050",
+        "name": "Less than 10 minutes"
+      },
+      {
+        "uuid": "11360dc7-47c0-4de8-953b-a447db38172d",
+        "name": "30 minutes"
+      },
+      {
+        "uuid": "ae87497a-1ce2-4172-8d5f-992ed678f118",
+        "name": "1 hour"
+      },
+      {
+        "uuid": "9e6cbb6b-23f1-425a-a585-5857cc070711",
+        "name": "3 hours"
+      },
+      {
+        "uuid": "95dcf42a-4415-434a-a111-dd499a5f3e85",
+        "name": "No such occasion arise"
+      }
+    ]
+  },
+  {
+    "name": "Do you get segregated waste?",
+    "uuid": "8c9054fc-8a40-44cb-9b16-1f49de4be657",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "uuid": "a751800b-f97e-4361-8374-7ec7e8d2832d",
+    "name": "Less than 150 kg"
+  },
+  {
+    "uuid": "d1acffd0-d077-4ec7-83fd-732f49f98c57",
+    "name": "150 kg-200 kg"
+  },
+  {
+    "uuid": "bd8c63d8-98af-4a9a-8b99-308758ad0b62",
+    "name": "250 kg-300 kg"
+  },
+  {
+    "uuid": "b1bf1a71-4249-4ddc-8a5d-cf0451689726",
+    "name": "more than 300 kg"
+  },
+  {
+    "name": "How much of waste do you collect per day?",
+    "uuid": "91187b01-1b31-4c91-8e59-447fd39daef3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "a751800b-f97e-4361-8374-7ec7e8d2832d",
+        "name": "Less than 150 kg"
+      },
+      {
+        "uuid": "d1acffd0-d077-4ec7-83fd-732f49f98c57",
+        "name": "150 kg-200 kg"
+      },
+      {
+        "uuid": "bd8c63d8-98af-4a9a-8b99-308758ad0b62",
+        "name": "250 kg-300 kg"
+      },
+      {
+        "uuid": "b1bf1a71-4249-4ddc-8a5d-cf0451689726",
+        "name": "more than 300 kg"
+      }
+    ]
+  },
+  {
+    "uuid": "1e001d99-502f-497b-bd12-6e7c4dd0483f",
+    "name": "Upto 3 hours"
+  },
+  {
+    "uuid": "f71a16c8-0837-4a99-91dd-c621766a13aa",
+    "name": "3 - 6 hours"
+  },
+  {
+    "uuid": "0e919e92-5667-4235-ab1c-4665b19bb033",
+    "name": "6 - 8 hours"
+  },
+  {
+    "uuid": "f9d4c0ed-98c6-4dea-a16e-9aef7f6a763d",
+    "name": "more than 8 hours"
+  },
+  {
+    "name": "How many hours do you work in a day?",
+    "uuid": "353ea629-c72a-4c3f-831d-75c6a3a74626",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "1e001d99-502f-497b-bd12-6e7c4dd0483f",
+        "name": "Upto 3 hours"
+      },
+      {
+        "uuid": "f71a16c8-0837-4a99-91dd-c621766a13aa",
+        "name": "3 - 6 hours"
+      },
+      {
+        "uuid": "0e919e92-5667-4235-ab1c-4665b19bb033",
+        "name": "6 - 8 hours"
+      },
+      {
+        "uuid": "f9d4c0ed-98c6-4dea-a16e-9aef7f6a763d",
+        "name": "more than 8 hours"
+      }
+    ]
+  },
+  {
+    "name": "Do you also work at ULB site/plant/landfill?",
+    "uuid": "6cf0b5a3-5b85-4dc0-b6f7-8b036dbf94ab",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Where do you work? (Ex. DWCC/MRF/Composting Plant/Landfill etc.)",
+    "uuid": "576549fa-5e22-41ae-b0d4-1be2304c36cb",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "4483ed11-8316-44ab-8dc2-5185ab5a75d9",
+    "name": "Segregate waste"
+  },
+  {
+    "uuid": "9df30d44-9190-47f5-912b-6ab4797205e8",
+    "name": "Composting"
+  },
+  {
+    "uuid": "166ff682-8cae-44ea-bb81-1d4abe18bdf2",
+    "name": "Run incinerator"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "What work do you do at there?",
+    "uuid": "f856e489-d692-433b-b88f-a598336e0705",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4483ed11-8316-44ab-8dc2-5185ab5a75d9",
+        "name": "Segregate waste"
+      },
+      {
+        "uuid": "9df30d44-9190-47f5-912b-6ab4797205e8",
+        "name": "Composting"
+      },
+      {
+        "uuid": "166ff682-8cae-44ea-bb81-1d4abe18bdf2",
+        "name": "Run incinerator"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "Work - Please Explain",
+    "uuid": "33b8dee7-e266-4bd0-87cc-3a87c44ee12f",
+    "dataType": "Text"
+  },
+  {
+    "name": "Do you clean the storm water drains and other open drainages?",
+    "uuid": "a3296e72-f4f0-4f94-8fbb-bb252f0edccf",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "uuid": "8c7c35d8-6be5-4a11-bb50-296a8e0ac50f",
+    "name": "0.5 km-2 km"
+  },
+  {
+    "uuid": "7c230ac2-1c97-4c09-844c-618d94a5316c",
+    "name": "2 km-4 km"
+  },
+  {
+    "uuid": "ca9a7784-fc51-4dcd-a094-00708292ba43",
+    "name": "4 km-6 km"
+  },
+  {
+    "uuid": "d3734183-62e1-49ab-9005-b25d1bb1d4bf",
+    "name": "6 km-8 km"
+  },
+  {
+    "uuid": "59cb1f87-b45f-4b3f-adb8-56b684d844ea",
+    "name": ">10 km"
+  },
+  {
+    "name": "What is the distance do you sweep per day?",
+    "uuid": "965e603f-51ae-434c-97c7-a6db8e30a550",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "8c7c35d8-6be5-4a11-bb50-296a8e0ac50f",
+        "name": "0.5 km-2 km"
+      },
+      {
+        "uuid": "7c230ac2-1c97-4c09-844c-618d94a5316c",
+        "name": "2 km-4 km"
+      },
+      {
+        "uuid": "ca9a7784-fc51-4dcd-a094-00708292ba43",
+        "name": "4 km-6 km"
+      },
+      {
+        "uuid": "d3734183-62e1-49ab-9005-b25d1bb1d4bf",
+        "name": "6 km-8 km"
+      },
+      {
+        "uuid": "59cb1f87-b45f-4b3f-adb8-56b684d844ea",
+        "name": ">10 km"
+      }
+    ]
+  },
+  {
+    "name": "Do you carry the waste after sweeping?",
+    "uuid": "e6c84945-d3ee-4350-a999-1a0ee0cf9cec",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "uuid": "ae87497a-1ce2-4172-8d5f-992ed678f118",
+    "name": "1 hour"
+  },
+  {
+    "uuid": "f4394297-e0e1-4ba2-9ce1-ea9b52c5e509",
+    "name": "1-3 hours"
+  },
+  {
+    "uuid": "1500e327-7cc2-41d8-83cd-2a8b7e1e389b",
+    "name": "3-5 hours"
+  },
+  {
+    "name": "How long do you carry the waste after sweeping?",
+    "uuid": "1597a54f-0584-4cab-bfc5-474fc74c17c5",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "ae87497a-1ce2-4172-8d5f-992ed678f118",
+        "name": "1 hour"
+      },
+      {
+        "uuid": "f4394297-e0e1-4ba2-9ce1-ea9b52c5e509",
+        "name": "1-3 hours"
+      },
+      {
+        "uuid": "1500e327-7cc2-41d8-83cd-2a8b7e1e389b",
+        "name": "3-5 hours"
+      }
+    ]
+  },
+  {
+    "name": "How do you carry your waste after sweeping?",
+    "uuid": "309be17e-3b98-40c3-98d7-056f7f573df1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "024fac58-ea3c-45c8-8777-b56742a41816",
+        "name": "Minidoor Auto"
+      },
+      {
+        "uuid": "4ce925f1-01a8-4e7a-819d-8cf763134ef5",
+        "name": "Hand Cart"
+      },
+      {
+        "uuid": "75b6004e-7458-4c8c-b611-3d5dc067875f",
+        "name": "Auto tipper"
+      },
+      {
+        "uuid": "ec2bf578-4a62-4267-be5d-460c5545d161",
+        "name": "Carry on shoulder"
+      },
+      {
+        "uuid": "d6bfe903-5d9a-450d-9494-4c3ce419ec50",
+        "name": "Basket"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "Sweeping - Please Specify",
+    "uuid": "ca599946-2d1c-43f3-bfb8-5a985cb6f4df",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "5f4ab8eb-b70f-41c0-817d-27233119d304",
+    "name": "Standy broom "
+  },
+  {
+    "uuid": "5ba7f3f3-337a-432b-8152-fc86ab6f0863",
+    "name": "Small broom"
+  },
+  {
+    "uuid": "2b2a7605-6a4c-4e26-be43-974f6ffdda5e",
+    "name": "Stick broom"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "What kind of brooms do you use?",
+    "uuid": "dffe35ba-836f-48f2-9cc6-a030c9a49e4c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "5f4ab8eb-b70f-41c0-817d-27233119d304",
+        "name": "Standy broom "
+      },
+      {
+        "uuid": "5ba7f3f3-337a-432b-8152-fc86ab6f0863",
+        "name": "Small broom"
+      },
+      {
+        "uuid": "2b2a7605-6a4c-4e26-be43-974f6ffdda5e",
+        "name": "Stick broom"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "Brooms - Please specify",
+    "uuid": "a355bb5a-e639-401e-a71f-da9a7c03ec11",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "eb689bba-e1b8-4f78-b8f1-bc6af7fa5086",
+    "name": "Weekly once"
+  },
+  {
+    "uuid": "fc92ae86-5a81-4bbc-8b35-175f2a2aa8e5",
+    "name": "monthly once"
+  },
+  {
+    "uuid": "50fbea06-7587-4f14-b0a5-b2e0f2e14014",
+    "name": "Once in 6 month"
+  },
+  {
+    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "name": "Others"
+  },
+  {
+    "name": "How often do you get new broom?",
+    "uuid": "e0fdcb46-9c47-417b-8fac-65484b920db7",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "eb689bba-e1b8-4f78-b8f1-bc6af7fa5086",
+        "name": "Weekly once"
+      },
+      {
+        "uuid": "fc92ae86-5a81-4bbc-8b35-175f2a2aa8e5",
+        "name": "monthly once"
+      },
+      {
+        "uuid": "50fbea06-7587-4f14-b0a5-b2e0f2e14014",
+        "name": "Once in 6 month"
+      },
+      {
+        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "New Brooms - Please specify",
+    "uuid": "e0f17c8f-255d-4d42-b719-6b4e4d58ccf5",
+    "dataType": "Text"
+  },
+  {
+    "name": "Do you receive any income apart from wages?",
+    "uuid": "fb526c9d-ca60-4a55-aef8-970e37379552",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Source of additional income",
+    "uuid": "4714add9-36a7-4870-8a8c-42021d8b4ced",
+    "dataType": "Text"
+  },
+  {
+    "name": "Income per month (INR)",
+    "uuid": "99d8d6e3-99cc-4e84-a841-79bfbae6d390",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "General observations or comments by surveyor including important piece of reflection shared by the interviewee",
+    "uuid": "f0cc3f0b-2afd-465d-9e2b-b32990e402a9",
     "dataType": "Text"
   },
   {
