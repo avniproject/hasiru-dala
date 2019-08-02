@@ -1957,7 +1957,7 @@ class RegistrationViewHandlerHasiruDala {
      }
 
     @WithRegistrationStatusBuilder
-    whatTypeOfToolSDoYouUse([], statusBuilder) {
+    whatTypeOfToolsDoYouUse([], statusBuilder) {
        statusBuilder.show().when.valueInRegistration("Do you use any tools at work?").is.yes;
     }
 
@@ -2120,7 +2120,7 @@ class RegistrationViewHandlerHasiruDala {
        @WithRegistrationStatusBuilder
        tc10([], statusBuilder) {
            statusBuilder.show().when.valueInRegistration("Who pays for cleaning material?")
-           .containsAnswerConceptName("Others");
+           .containsAnswerConceptName("Contractors");
        }
 
 @WithName("Do you pick up the clogged / contaminated waste?")
@@ -2177,7 +2177,7 @@ class RegistrationViewHandlerHasiruDala {
            @WithRegistrationStatusBuilder
            tc18([], statusBuilder) {
                 statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-                .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment","Railway Track Cleaner","Decanting Station/Sewage Treatment Plant (STP) Worker");
+                .containsAnyAnswerConceptName("Community/Public Toilet Cleaner","Household Sanitation Worker","Toilet Cleaner in Schools and Offices","Toilet Cleaner at Railways","Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
             }
 
 @WithName("tools/implants - Please Explain")
@@ -2199,7 +2199,7 @@ class RegistrationViewHandlerHasiruDala {
            @WithRegistrationStatusBuilder
            dwr1([], statusBuilder) {
                 statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-                .containsAnyAnswerConceptName("Railway Track Cleaner"," Decanting Station/Sewage Treatment Plant (STP) Worker");
+                .containsAnyAnswerConceptName("Railway Track Cleaner","Decanting Station/Sewage Treatment Plant (STP) Worker");
             }
 
 
@@ -2214,14 +2214,14 @@ class RegistrationViewHandlerHasiruDala {
            @WithRegistrationStatusBuilder
            dwr3([], statusBuilder) {
                 statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-                .containsAnyAnswerConceptName("Railway Track Cleaner"," Decanting Station/Sewage Treatment Plant (STP) Worker");
+                .containsAnyAnswerConceptName("Railway Track Cleaner","Decanting Station/Sewage Treatment Plant (STP) Worker");
             }
 
 @WithName("Do you use any cleaning materials?")
            @WithRegistrationStatusBuilder
            dwr4([], statusBuilder) {
                 statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-                .containsAnyAnswerConceptName("Railway Track Cleaner"," Decanting Station/Sewage Treatment Plant (STP) Worker");
+                .containsAnyAnswerConceptName("Railway Track Cleaner","Decanting Station/Sewage Treatment Plant (STP) Worker");
             }
 
 @WithName("materials - Please Explain")
@@ -2235,7 +2235,7 @@ class RegistrationViewHandlerHasiruDala {
            @WithRegistrationStatusBuilder
            dwr6([], statusBuilder) {
                 statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-                .containsAnyAnswerConceptName("Railway Track Cleaner"," Decanting Station/Sewage Treatment Plant (STP) Worker");
+                .containsAnyAnswerConceptName("Railway Track Cleaner","Decanting Station/Sewage Treatment Plant (STP) Worker");
             }
 
 @WithName("collected waste - Please Explain")
@@ -2244,14 +2244,6 @@ class RegistrationViewHandlerHasiruDala {
             statusBuilder.show().when.valueInRegistration("How do you dispose the collected waste?")
             .containsAnswerConceptName("Others");
         }
-
-@WithName("Do you have access and facilities to clean yourself?")
-           @WithRegistrationStatusBuilder
-           dwr8([], statusBuilder) {
-                statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-                .containsAnyAnswerConceptName("Railway Track Cleaner"," Decanting Station/Sewage Treatment Plant (STP) Worker");
-            }
-
 
    @WithName("General observations or comments by surveyor including important piece of reflection shared by the interviewee")
     @WithRegistrationStatusBuilder

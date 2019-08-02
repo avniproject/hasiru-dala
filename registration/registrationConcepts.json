@@ -832,7 +832,7 @@
     "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
     "name": "Others"
   },
-  
+
   {
     "name": "Please select the body that issued the Occupational Identity Card",
     "uuid": "bb3d286a-e212-44e5-a3a0-f7960d6360b1",
@@ -5257,7 +5257,7 @@
     "dataType": "Text"
   },
   {
-    "name": "Do you use any tools  at work?",
+    "name": "Do you use any tools at work?",
     "uuid": "f76520a8-c2c9-4b63-a073-1170713904e3",
     "dataType": "Coded",
     "answers": [
@@ -5850,11 +5850,6 @@
     "uuid": "5ff7956c-33aa-49a8-94a9-cb4cbaeddfdb",
     "dataType": "Coded",
     "answers": [
-      {
-        "name": "cleaning materials - Please Explain",
-        "uuid": "5cab4cc7-d8e0-491f-9142-755d70fd516f",
-        "dataType": "Text"
-      },
       {
         "uuid": "b3f8a5ef-f548-4d35-97ac-35b9757f8438",
         "name": "Provided by Work Location"
