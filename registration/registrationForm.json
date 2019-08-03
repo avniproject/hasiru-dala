@@ -1239,7 +1239,7 @@
           "name": "Who hands over the cash/cheque or makes the money transfer?",
           "uuid": "72849bf1-2548-4a0e-b53e-c23964b9b9f5",
           "keyValues": [],
-          "type": "MultiSelect",
+          "type": "SingleSelect",
           "concept": {
             "uuid": "04974b75-8449-40f6-ac72-a82c51dfde44"
           },
@@ -1744,7 +1744,15 @@
           },
           "displayOrder": 4,
           "mandatory": false
-        },
+        }
+      ]
+    },
+    {
+      "uuid": "1a470be9-7158-49a3-9645-e7bcaacc9660",
+      "name": "Club Association",
+      "display": "Club Association",
+      "displayOrder": 20,
+      "formElements": [
         {
           "name": "Are you part of any fan club/association?",
           "uuid": "ed84b542-451f-478d-8744-1f3b96834c91",
@@ -1752,7 +1760,7 @@
           "concept": {
             "uuid": "5fb88114-2dad-4f90-9db7-5b733c5281ad"
           },
-          "displayOrder": 5,
+          "displayOrder": 1,
           "mandatory": false
         },
         {
@@ -1762,7 +1770,7 @@
           "concept": {
             "uuid": "b5eefcb8-31e0-4ee1-a218-4745bac32550"
           },
-          "displayOrder": 6,
+          "displayOrder": 2,
           "mandatory": false
         },
         {
@@ -1772,7 +1780,7 @@
           "concept": {
             "uuid": "65aa1546-9b99-4b35-b740-a92734e093ea"
           },
-          "displayOrder": 7,
+          "displayOrder": 3,
           "mandatory": false
         },
         {
@@ -1782,9 +1790,17 @@
           "concept": {
             "uuid": "cb3f412b-f6c2-4ee9-9f17-7f8c41bebea9"
           },
-          "displayOrder": 8,
+          "displayOrder": 4,
           "mandatory": false
-        },
+        }
+      ]
+    },
+    {
+      "uuid": "c6f90a2e-0122-47d5-8687-8da41c2ae260",
+      "name": "Other Association",
+      "display": "Other Association",
+      "displayOrder": 21,
+      "formElements": [
         {
           "name": "Are you part of any other association?",
           "uuid": "07b60c36-c487-4579-bdc2-42ac53f48b1c",
@@ -1792,7 +1808,7 @@
           "concept": {
             "uuid": "afafe7a1-9a1a-41c3-aef3-b7b38cf01408"
           },
-          "displayOrder": 9,
+          "displayOrder": 1,
           "mandatory": false
         },
         {
@@ -1802,7 +1818,7 @@
           "concept": {
             "uuid": "e2580213-15f1-4607-a52b-8e7d342ecd5a"
           },
-          "displayOrder": 10,
+          "displayOrder": 2,
           "mandatory": false
         },
         {
@@ -1812,7 +1828,7 @@
           "concept": {
             "uuid": "958da202-b219-4b34-bd4c-ddc08b33a836"
           },
-          "displayOrder": 11,
+          "displayOrder": 3,
           "mandatory": false
         },
         {
@@ -1822,9 +1838,17 @@
           "concept": {
             "uuid": "83d58d40-bad4-4a15-a09f-77fdd79a8d1a"
           },
-          "displayOrder": 12,
+          "displayOrder": 4,
           "mandatory": false
-        },
+        }
+      ]
+    },
+    {
+      "uuid": "108ad225-6c25-44cc-b006-130689b0d05d",
+      "name": "Loan",
+      "display": "Loan",
+      "displayOrder": 22,
+      "formElements": [
         {
           "name": "Have you received any assistance from any government body? (Ex. TAHDCO, Slum Board etc.)",
           "uuid": "3817d5bd-99cc-4b51-9691-96fa40340455",
@@ -1832,7 +1856,7 @@
           "concept": {
             "uuid": "b514e437-3073-4bf7-8fb8-6f0fa6eeced3"
           },
-          "displayOrder": 13,
+          "displayOrder": 1,
           "mandatory": false
         },
         {
@@ -1842,7 +1866,7 @@
           "concept": {
             "uuid": "36c600ef-1fc6-463c-be88-aaf0c968a3bf"
           },
-          "displayOrder": 14,
+          "displayOrder": 2,
           "mandatory": false
         },
         {
@@ -1852,7 +1876,7 @@
           "concept": {
             "uuid": "1be5d6d6-17a3-4983-8471-7a55acf72a54"
           },
-          "displayOrder": 15,
+          "displayOrder": 3,
           "mandatory": false
         },
         {
@@ -1862,7 +1886,7 @@
           "concept": {
             "uuid": "d7f57895-1011-4c45-ad88-9a47f5514791"
           },
-          "displayOrder": 16,
+          "displayOrder": 4,
           "mandatory": false
         },
         {
@@ -1872,7 +1896,7 @@
           "concept": {
             "uuid": "e9f8a3ad-154e-4434-817f-d7e5727c532c"
           },
-          "displayOrder": 17,
+          "displayOrder": 5,
           "mandatory": false
         },
         {
@@ -1882,7 +1906,7 @@
           "concept": {
             "uuid": "81b78903-7274-4810-baa2-50437031a6a1"
           },
-          "displayOrder": 18,
+          "displayOrder": 6,
           "mandatory": false
         }
       ]
@@ -1891,7 +1915,7 @@
       "uuid": "67a712d6-6daf-45eb-b4ef-d5de7d58b448",
       "name": "ESI",
       "display": "ESI",
-      "displayOrder": 20,
+      "displayOrder": 23,
       "formElements": [
         {
           "name": "Are you registered with Employees’ State Insurance (ESI)?",
@@ -1962,7 +1986,7 @@
       "uuid": "290bb52a-39dd-4514-b24d-65ca27218d88",
       "name": "Social Security",
       "display": "Social Security",
-      "displayOrder": 21,
+      "displayOrder": 24,
       "formElements": [
         {
           "name": "Do you have a bank account?",
@@ -2052,7 +2076,7 @@
       "uuid": "bd15150e-eac5-40cb-8320-768177c7b720",
       "name": "Profession (Relatives)",
       "display": "Profession (Relatives)",
-      "displayOrder": 22,
+      "displayOrder": 25,
       "formElements": [
         {
           "name": "What is your profession?",
@@ -2081,7 +2105,7 @@
       "uuid": "4ddf478c-c3a1-4454-bd79-240a161ac11c",
       "name": "Profession Common Waste Worker",
       "display": "Profession",
-      "displayOrder": 23,
+      "displayOrder": 26,
       "formElements": [
         {
           "name": "Type of Informal Waste Worker",
@@ -2132,7 +2156,7 @@
       "uuid": "aa4253a9-8e6d-45bf-bcef-9c788f5de6ee",
       "name": "Trainings",
       "display": "Trainings",
-      "displayOrder": 24,
+      "displayOrder": 27,
       "formElements": [
         {
           "name": "Have you undergone any of the following trainings?",
@@ -2161,7 +2185,7 @@
       "uuid": "1e288d66-4320-4621-992f-a31b100fa797",
       "name": "Waste Collection",
       "display": "Waste Collection",
-      "displayOrder": 25,
+      "displayOrder": 28,
       "formElements": [
         {
           "name": "How often do you collect scrap/go waste picking?",
@@ -2296,7 +2320,7 @@
       "uuid": "d94b2d63-a0b9-4b98-b227-0d0e4b16712f",
       "name": "What are the amounts of waste you buy per week in (Kg)?",
       "display": "What are the amounts of waste you buy per week in (Kg)?",
-      "displayOrder": 26,
+      "displayOrder": 29,
       "formElements": [
         {
           "name": "How much Paper-White waste you buy per week in (Kg)?",
@@ -2395,7 +2419,7 @@
       "uuid": "bfa3cae8-83e2-4392-860a-5e2018adb08c",
       "name": "Where do you sell your collected waste?",
       "display": "Where do you sell your collected waste?",
-      "displayOrder": 27,
+      "displayOrder": 30,
       "formElements": [
         {
           "name": "Name of scrap dealer/buyer",
@@ -2473,7 +2497,7 @@
       "uuid": "e1bdddb8-816b-4af6-b210-17df069fce80",
       "name": "Income from waste",
       "display": "Income from waste",
-      "displayOrder": 28,
+      "displayOrder": 31,
       "formElements": [
         {
           "name": "How much do you earn?",
@@ -2544,7 +2568,7 @@
       "uuid": "df037033-6613-4853-9d82-dd1c573aa1fc",
       "name": "Shop details",
       "display": "Shop details",
-      "displayOrder": 29,
+      "displayOrder": 32,
       "formElements": [
         {
           "name": "No. of shops you run/own/manage",
@@ -2622,7 +2646,7 @@
       "uuid": "b1b7ecf1-b873-4cd8-b22a-ef993832e8be",
       "name": "License",
       "display": "License",
-      "displayOrder": 30,
+      "displayOrder": 33,
       "formElements": [
         {
           "name": "Do you need any license to operate?",
@@ -2650,7 +2674,7 @@
       "uuid": "c3c67854-2035-485a-a465-955586e660e4",
       "name": "Waste sold per week",
       "display": "Waste sold per week",
-      "displayOrder": 31,
+      "displayOrder": 34,
       "formElements": [
 
         {
@@ -2949,7 +2973,7 @@
       "uuid": "3a9eca76-db0e-4500-ab17-db2563b2e422",
       "name": "Collection",
       "display": "Collection",
-      "displayOrder": 32,
+      "displayOrder": 35,
       "formElements": [
         {
           "name": "How long do you walk to drop collected waste to designated spot/collection point?",
@@ -3070,10 +3094,48 @@
       ]
     },
     {
+      "uuid": "13756fe9-6746-462c-9bfa-deb3191c7726",
+      "name": "Income",
+      "display": "Income",
+      "displayOrder": 36,
+      "formElements": [
+        {
+          "name": "Do you receive any income apart from wages?",
+          "uuid": "1e947cc9-7556-405c-83f9-b12a5e22e6e5",
+          "keyValues": [],
+          "concept": {
+            "uuid": "fb526c9d-ca60-4a55-aef8-970e37379552"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Source of additional income",
+          "uuid": "a7abd416-2569-427a-9051-5a598b644678",
+          "keyValues": [],
+          "concept": {
+            "uuid": "4714add9-36a7-4870-8a8c-42021d8b4ced"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Income per month (INR)",
+          "uuid": "c66171b2-355e-49b1-99e8-f9aeceba031b",
+          "keyValues": [],
+          "concept": {
+            "uuid": "99d8d6e3-99cc-4e84-a841-79bfbae6d390"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        }
+      ]
+    },
+    {
       "uuid": "2ce6a132-d969-46b3-aec7-01cda7a0caf8",
       "name": "Cleaning and Sweeping",
       "display": "Cleaning and Sweeping",
-      "displayOrder": 33,
+      "displayOrder": 37,
       "formElements": [
         {
           "name": "Do you clean the storm water drains and other open drainages?",
@@ -3185,7 +3247,7 @@
       "uuid": "e11f1f0e-1eef-4f7a-97a3-a7d382ede28b",
       "name": "Desludging",
       "display": "Desludging",
-      "displayOrder": 34,
+      "displayOrder": 38,
       "formElements": [
         {
           "name": "Ownership of the truck",
@@ -3340,7 +3402,7 @@
       "uuid": "87987b5b-a38a-4c48-b34e-318a60d3b2d9",
       "name": "Tools",
       "display": "Tools",
-      "displayOrder": 35,
+      "displayOrder": 39,
       "formElements": [
         {
           "name": "Do you use any tools at work?",
@@ -3390,7 +3452,7 @@
       "uuid": "99929bd3-3070-42d5-8ea2-af6571bfd37d",
       "name": "Training",
       "display": "Training",
-      "displayOrder": 36,
+      "displayOrder": 40,
       "formElements": [
         {
           "name": "Who taught you the process of desludging?",
@@ -3440,7 +3502,7 @@
       "uuid": "d40a7944-c4a3-4946-9453-27ce2248c9cc",
       "name": "Safety and cleaning",
       "display": "Safety and cleaning",
-      "displayOrder": 37,
+      "displayOrder": 41,
       "formElements": [
         {
           "name": "Do you carry First Aid kit with you at all times?",
@@ -3538,7 +3600,7 @@
       "uuid": "1e90fd4a-cff7-4b2b-bace-01543fbb9cd6",
       "name": "Toilet cleaning",
       "display": "Toilet cleaning",
-      "displayOrder": 38,
+      "displayOrder": 42,
       "formElements": [
         {
           "name": "Where do you carry out toilet cleaning activities?",
@@ -3726,7 +3788,7 @@
       "uuid": "811db51f-b18c-45ff-bd46-72052c14e6f0",
       "name": "Tools",
       "display": "Tools",
-      "displayOrder": 39,
+      "displayOrder": 43,
       "formElements": [
         {
           "name": "What are tools/implants used at work?",
@@ -3766,7 +3828,7 @@
       "uuid": "c2f829fc-a0a5-4f15-935c-b1d8c4b08718",
       "name": "Decanting",
       "display": "Decanting",
-      "displayOrder": 40,
+      "displayOrder": 44,
       "formElements": [
         {
           "name": "What work do you perform at decanting station / Sewage Treatment Plant?",
@@ -3841,55 +3903,6 @@
           },
           "displayOrder": 7,
           "mandatory": true
-        },
-        {
-          "name": "Do you have access and facilities to clean yourself?",
-          "uuid": "bf54385a-cf79-48e9-86d5-362f506a75e9",
-          "keyValues": [],
-          "type": "SingleSelect",
-          "concept": {
-            "uuid": "1d0f3660-171e-432d-a9b1-ce6d3eee0c93"
-          },
-          "displayOrder": 8,
-          "mandatory": true
-        }
-      ]
-    },
-    {
-      "uuid": "13756fe9-6746-462c-9bfa-deb3191c7726",
-      "name": "Income",
-      "display": "Income",
-      "displayOrder": 41,
-      "formElements": [
-        {
-          "name": "Do you receive any income apart from wages?",
-          "uuid": "1e947cc9-7556-405c-83f9-b12a5e22e6e5",
-          "keyValues": [],
-          "concept": {
-            "uuid": "fb526c9d-ca60-4a55-aef8-970e37379552"
-          },
-          "displayOrder": 1,
-          "mandatory": false
-        },
-        {
-          "name": "Source of additional income",
-          "uuid": "a7abd416-2569-427a-9051-5a598b644678",
-          "keyValues": [],
-          "concept": {
-            "uuid": "4714add9-36a7-4870-8a8c-42021d8b4ced"
-          },
-          "displayOrder": 2,
-          "mandatory": false
-        },
-        {
-          "name": "Income per month (INR)",
-          "uuid": "c66171b2-355e-49b1-99e8-f9aeceba031b",
-          "keyValues": [],
-          "concept": {
-            "uuid": "99d8d6e3-99cc-4e84-a841-79bfbae6d390"
-          },
-          "displayOrder": 3,
-          "mandatory": false
         }
       ]
     },
@@ -3897,7 +3910,7 @@
       "uuid": "91d5cd3d-186f-46eb-a81a-1330363d3528",
       "name": "Comments",
       "display": "Comments",
-      "displayOrder": 42,
+      "displayOrder": 45,
       "formElements": [
         {
           "name": "General observations or comments by surveyor including important piece of reflection shared by the interviewee",
@@ -3915,7 +3928,7 @@
       "uuid": "79158f16-8896-412b-93d5-78dc8d133f14",
       "name": "Introduced by",
       "display": "Introduced by",
-      "displayOrder": 43,
+      "displayOrder": 46,
       "formElements": [
         {
           "name": "Name",

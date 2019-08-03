@@ -6048,8 +6048,8 @@
     ]
   },
   {
-    "name": "Do you have access and facilities to clean yourself ?",
-    "uuid": "0c803e17-d6f9-4057-9812-74ce3fcbd630",
+    "name": "Do you have access and facilities to clean yourself?",
+    "uuid": "1d0f3660-171e-432d-a9b1-ce6d3eee0c93",
     "dataType": "Coded",
     "answers": [
       {
@@ -6387,25 +6387,6 @@
     "name": "collected waste - Please Explain",
     "uuid": "53535493-b0dd-42c2-b5ca-a7d45c765d6c",
     "dataType": "Text"
-  },
-  {
-    "name": "Do you have access and facilities to clean yourself?",
-    "uuid": "1d0f3660-171e-432d-a9b1-ce6d3eee0c93",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "name": "Yes",
-        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
-      },
-      {
-        "name": "No",
-        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
-      },
-      {
-        "uuid": "a6872113-b90c-4141-b3b2-1d4fe779cf36",
-        "name": "Sometimes"
-      }
-    ]
   },
   {
     "name": "General observations or comments by surveyor including important piece of reflection shared by the interviewee",
