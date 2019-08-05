@@ -3097,7 +3097,7 @@
       "uuid": "13756fe9-6746-462c-9bfa-deb3191c7726",
       "name": "Income",
       "display": "Income",
-      "displayOrder": 36,
+      "displayOrder": 44.1,
       "formElements": [
         {
           "name": "Do you receive any income apart from wages?",
@@ -3597,6 +3597,35 @@
       ]
     },
     {
+      "uuid": "46d52519-c7b7-4853-81da-de8d6d002258",
+      "name": "Decanting Work",
+      "display": "Decanting Work",
+      "displayOrder": 41.1,
+      "formElements": [
+        {
+          "name": "What work do you perform at decanting station / Sewage Treatment Plant?",
+          "uuid": "685c5ca3-c646-4f1a-b2ea-2b57ec75aec1",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "a59e82d4-0809-4647-83c6-9cb744f19381"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "decanting station/Sewage Treatment Plant - Please Explain",
+          "uuid": "4e3d7d99-990a-46ab-8cae-1e81fcda84cd",
+          "keyValues": [],
+          "concept": {
+            "uuid": "9260b495-e429-42a0-ac5f-f6c8357392aa"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        }
+      ]
+    },
+    {
       "uuid": "1e90fd4a-cff7-4b2b-bace-01543fbb9cd6",
       "name": "Toilet cleaning",
       "display": "Toilet cleaning",
@@ -3826,8 +3855,8 @@
     },
     {
       "uuid": "c2f829fc-a0a5-4f15-935c-b1d8c4b08718",
-      "name": "Decanting",
-      "display": "Decanting",
+      "name": "Decanting Information",
+      "display": "Decanting Information",
       "displayOrder": 44,
       "formElements": [
         {
@@ -3839,7 +3868,8 @@
             "uuid": "a59e82d4-0809-4647-83c6-9cb744f19381"
           },
           "displayOrder": 1,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "decanting station/Sewage Treatment Plant - Please Explain",
@@ -3849,7 +3879,8 @@
             "uuid": "9260b495-e429-42a0-ac5f-f6c8357392aa"
           },
           "displayOrder": 2,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Who provides these tools/implants?",
