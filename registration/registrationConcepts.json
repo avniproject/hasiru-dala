@@ -473,7 +473,7 @@
     "name": "Peer Pressure"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -510,14 +510,14 @@
         "name": "Peer Pressure"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
   },
   {
     "name": "Please Explain",
-    "uuid": "6ff677d7-9542-4676-92c4-062d531ea4d6",
+    "uuid": "4d1f3377-ef76-479d-800d-e8476b9ddc9b",
     "dataType": "Text"
   },
   {
@@ -756,7 +756,7 @@
     "name": "No Response"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -789,7 +789,7 @@
         "name": "No Response"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -829,7 +829,7 @@
     "name": "NGO/SHG/CBO authorized to issue the card"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
 
@@ -855,7 +855,7 @@
         "name": "NGO/SHG/CBO authorized to issue the card"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -1151,7 +1151,7 @@
     "name": "Don’t know "
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -1192,7 +1192,7 @@
         "name": "Don’t know "
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -1219,7 +1219,7 @@
     "name": "Sheet"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -1244,7 +1244,7 @@
         "name": "Sheet"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -1463,7 +1463,7 @@
   },
   {
     "name": "Please provide details",
-    "uuid": "c22cee86-fc7b-4f87-8506-4847fcda46aa",
+    "uuid": "f275d690-ca9f-4f0a-81b0-d42a28ce5b85",
     "dataType": "Text"
   },
   {
@@ -1492,7 +1492,7 @@
     "name": "My hands are weak; I cannot hold things for long."
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -1513,7 +1513,7 @@
         "name": "My hands are weak; I cannot hold things for long."
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -1587,7 +1587,7 @@
     "name": "Inside and Outside City/Town"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -1620,7 +1620,7 @@
         "name": "Inside and Outside City/Town"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -1660,7 +1660,7 @@
     "name": "Few days a month"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -1693,7 +1693,7 @@
         "name": "Few days a month"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -1771,7 +1771,7 @@
     "name": "Work Difficulty"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -1812,7 +1812,7 @@
         "name": "Work Difficulty"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       },
       {
@@ -1922,7 +1922,7 @@
     "name": "Bank account transfer"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -1943,7 +1943,7 @@
         "name": "Bank account transfer"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -1978,7 +1978,7 @@
     "name": "User fee"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -2011,7 +2011,7 @@
         "name": "User fee"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -2212,7 +2212,7 @@
     "name": "Self-medication"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -2241,7 +2241,7 @@
         "name": "Self-medication"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -2959,7 +2959,7 @@
     "name": "Private Finance"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -2996,7 +2996,7 @@
         "name": "Private Finance"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -3190,11 +3190,11 @@
     "name": "Sales"
   },
   {
-    "uuid": "45adf59a-300b-4d0a-a6e5-bf8308e66704",
+    "uuid": "e8f28442-e599-4aab-9204-9d2fba5ce897",
     "name": "Unemployed"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -3239,11 +3239,11 @@
         "name": "Sales"
       },
       {
-        "uuid": "45adf59a-300b-4d0a-a6e5-bf8308e66704",
+        "uuid": "e8f28442-e599-4aab-9204-9d2fba5ce897",
         "name": "Unemployed"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -3542,7 +3542,7 @@
         "name": "Chicken Rearing Training "
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -3663,7 +3663,7 @@
     "name": "Religious places"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -3696,7 +3696,7 @@
         "name": "Religious places"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -3735,7 +3735,7 @@
     "name": "Cardboard"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -3772,7 +3772,7 @@
         "name": "Cardboard"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -3795,7 +3795,7 @@
     "name": "Large scrap shop beyond 3 kilometres"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -3816,7 +3816,7 @@
         "name": "Large scrap shop beyond 3 kilometres"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -4418,7 +4418,7 @@
     "name": "Basket"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -4447,7 +4447,7 @@
         "name": "Basket"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -4630,7 +4630,7 @@
     "name": "Run incinerator"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -4651,7 +4651,7 @@
         "name": "Run incinerator"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -4795,7 +4795,7 @@
         "name": "Basket"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -4818,7 +4818,7 @@
     "name": "Stick broom"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -4839,7 +4839,7 @@
         "name": "Stick broom"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -4862,7 +4862,7 @@
     "name": "Once in 6 month"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -4883,7 +4883,7 @@
         "name": "Once in 6 month"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -4935,7 +4935,7 @@
     "name": "Private"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -4960,7 +4960,7 @@
         "name": "Private"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -5128,7 +5128,7 @@
     "name": "Community Toilet/Public Toilet"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -5157,7 +5157,7 @@
         "name": "Community Toilet/Public Toilet"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -5229,7 +5229,7 @@
     "name": "Instruction from the truck owner"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -5246,7 +5246,7 @@
         "name": "Instruction from the truck owner"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -5323,7 +5323,7 @@
     "name": "ULB"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -5344,7 +5344,7 @@
         "name": "ULB"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -5596,7 +5596,7 @@
     "name": "Railways"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -5629,7 +5629,7 @@
         "name": "Railways"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -5722,7 +5722,7 @@
     "name": "Self"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -5743,7 +5743,7 @@
         "name": "Self"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -5778,7 +5778,7 @@
     "name": "Tablet"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -5811,7 +5811,7 @@
         "name": "Tablet"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -5842,7 +5842,7 @@
     "name": "Contractors"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -5871,7 +5871,7 @@
         "name": "Contractors"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -5909,7 +5909,7 @@
     "name": "Burnt"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -5930,7 +5930,7 @@
         "name": "Burnt"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -5965,7 +5965,7 @@
     "name": "Baby sitting"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -5998,7 +5998,7 @@
         "name": "Baby sitting"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -6091,7 +6091,7 @@
     "name": "Cloth"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -6124,7 +6124,7 @@
         "name": "Cloth"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -6218,7 +6218,7 @@
     "name": "Overall cleaning and upkeep of the pumping station / STP"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -6263,7 +6263,7 @@
         "name": "Overall cleaning and upkeep of the pumping station / STP"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -6334,7 +6334,7 @@
         "name": "Sand / Mud"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
@@ -6357,7 +6357,7 @@
     "name": "Burnt"
   },
   {
-    "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+    "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
   {
@@ -6378,7 +6378,7 @@
         "name": "Burnt"
       },
       {
-        "uuid": "0af86a1f-e9e4-4e80-a468-3b79fc8686f3",
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
         "name": "Others"
       }
     ]
