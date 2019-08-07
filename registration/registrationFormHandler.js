@@ -2278,8 +2278,9 @@ class RegistrationViewHandlerHasiruDala {
     @WithName("Do you get any government sponsored scholarship?")
     @WithRegistrationStatusBuilder
     dwr8([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("How do you dispose the collected waste?")
-            .containsAnswerConceptName("Others");
+        statusBuilder.show().when.valueInRegistration("Are you studying presently?").is.yes
+            .and.when.valueInRegistration("Please choose the type of respondent")
+            .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)");
     }
 
 }
