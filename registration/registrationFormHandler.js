@@ -47,7 +47,9 @@ class RegistrationViewHandlerHasiruDala {
 
     @WithRegistrationStatusBuilder
     doYouGetAnyGovernmentSponsoredScholarship([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Are you studying presently?").is.yes;
+        statusBuilder.show().when.valueInRegistration("Are you studying presently?").is.yes
+        and.when.valueInRegistration("Please choose the type of respondent")
+            .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)");
     }
 
 
@@ -566,7 +568,10 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     P51([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Basis of Income")
-            .containsAnyAnswerConceptName("Hourly Fixed Rate (Enter Rate per Hour in INR)", "Daily Fixed Rate (Enter Rate per Day in INR)", "Weekly Fixed Rate (Enter Rate per Week in INR)", "Monthly Fixed Rate (Enter Rate per Month in INR)");
+            .containsAnyAnswerConceptName("Hourly Fixed Rate (Enter Rate per Hour in INR)",
+                "Daily Fixed Rate (Enter Rate per Day in INR)",
+                "Weekly Fixed Rate (Enter Rate per Week in INR)",
+                "Monthly Fixed Rate (Enter Rate per Month in INR)");
     }
 
     @WithName("No. of Pieces/Trips per Day")
@@ -671,7 +676,8 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     P8([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Basis of Income").containsAnswerConceptNameOtherThan("No Response");
     }
 
     @WithRegistrationStatusBuilder
@@ -837,6 +843,7 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Informal Worker");
     }
 
+    @WithName("Please Explain (Type of PPE)")
     @WithRegistrationStatusBuilder
     pleaseExplainTypeOfPpeAndFrequencyOfUse([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Do you use any other personal protection equipment (PPE) during collection/ Emptying?").is.yes;
@@ -846,7 +853,9 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     OS7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Do you use any other personal protection equipment (PPE) during collection/ Emptying?")
+            .containsAnswerConceptName("Yes");
     }
 
     @WithName("Are you part of a Trade Union?")
@@ -923,6 +932,7 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Informal Worker")
     }
 
+    @WithName("Name of the youth association")
     @WithRegistrationStatusBuilder
     nameOfTheAssociation1([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Are you part of any youth association?").is.yes;
@@ -945,6 +955,7 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Informal Worker")
     }
 
+    @WithName("Name of the caste association")
     @WithRegistrationStatusBuilder
     nameOfTheAssociation2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Are you part of any caste association?").is.yes;
@@ -1111,14 +1122,18 @@ class RegistrationViewHandlerHasiruDala {
     @WithName("Do you receive a widow pension?")
     @WithRegistrationStatusBuilder
     SS4([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+        statusBuilder.show().when.valueInRegistration("Marital status").containsAnswerConceptName("Widowed")
+            .and.when.valueInRegistration("gender").is.female
+            .and.when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
     }
 
     @WithName("Do you receive a single woman pension?")
     @WithRegistrationStatusBuilder
     SS5([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+        statusBuilder.show().when.valueInRegistration("Marital status").containsAnswerConceptName("Single")
+            .and.when.valueInRegistration("gender").is.female
+            .and.when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
     }
 
@@ -1750,6 +1765,13 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnyAnswerConceptName("Street Sweeper / Drain Cleaner", "Waste collectors on ULB Autorickshaws/trucks", "Solid Waste Door to Door Collector", "Solid Waste Micro Compost Worker");
     }
 
+    @WithName("When is your weekly off?")
+    @WithRegistrationStatusBuilder
+    dtdc75([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+            .containsAnyAnswerConceptName("Street Sweeper / Drain Cleaner", "Waste collectors on ULB Autorickshaws/trucks", "Solid Waste Door to Door Collector", "Solid Waste Micro Compost Worker");
+    }
+
     @WithName("Do you also work at ULB site/plant/landfill?")
     @WithRegistrationStatusBuilder
     dtdc8([], statusBuilder) {
@@ -1830,9 +1852,11 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Street Sweeper / Drain Cleaner")
     }
 
+    @WithName("Sweeping - Please Specify")
     @WithRegistrationStatusBuilder
     sweepingPleaseSpecify([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("How do you carry your waste after sweeping?").is.yes;
+        statusBuilder.show().when.valueInRegistration("How do you carry your waste after sweeping?")
+            .containsAnswerConceptName("Others");
     }
 
     @WithName("What kind of brooms do you use?")
@@ -2247,6 +2271,13 @@ class RegistrationViewHandlerHasiruDala {
     @WithName("collected waste - Please Explain")
     @WithRegistrationStatusBuilder
     dwr7([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("How do you dispose the collected waste?")
+            .containsAnswerConceptName("Others");
+    }
+
+    @WithName("Do you get any government sponsored scholarship?")
+    @WithRegistrationStatusBuilder
+    dwr8([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("How do you dispose the collected waste?")
             .containsAnswerConceptName("Others");
     }

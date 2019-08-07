@@ -880,16 +880,6 @@
     ]
   },
   {
-    "name": "Voter Registration Card Number",
-    "uuid": "f796c203-aeb6-4ec6-afd5-8e99f499f29d",
-    "dataType": "Text"
-  },
-  {
-    "name": "Voter Registration Card Photo",
-    "uuid": "f0520fe8-d828-4ba8-9e0f-0ccf9f1e1f12",
-    "dataType": "Image"
-  },
-  {
     "name": "Whether you have Ration/BPL Card with your name included",
     "uuid": "28d66d45-5d71-4648-acc7-9a18716b98e0",
     "dataType": "Coded",
@@ -901,16 +891,6 @@
         "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
       }
     ]
-  },
-  {
-    "name": "Ration/BPL Card Number",
-    "uuid": "15d136e5-ad88-491d-94ae-8995c4f782dc",
-    "dataType": "Text"
-  },
-  {
-    "name": "Ration/BPL Card Photo",
-    "uuid": "2628e2ec-2ad2-4ee5-b061-6b0306d20601",
-    "dataType": "Image"
   },
   {
     "name": "Whether you have Aadhar Card",
@@ -926,16 +906,6 @@
     ]
   },
   {
-    "name": "Aadhar Card Number",
-    "uuid": "8c7c1065-31c4-42ba-9b10-58f994f31a6b",
-    "dataType": "Text"
-  },
-  {
-    "name": "Aadhar Card Photo",
-    "uuid": "b0fc2677-4030-4a26-b057-253e1cb54221",
-    "dataType": "Image"
-  },
-  {
     "name": "Whether you have Aadhar Enrolment ID",
     "uuid": "17147552-019f-43d2-bfb3-300742d8daf8",
     "dataType": "Coded",
@@ -947,16 +917,6 @@
         "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
       }
     ]
-  },
-  {
-    "name": "Aadhar Enrolment ID Number",
-    "uuid": "f70ad2ca-ee81-468b-8dfe-6fc0dcddece5",
-    "dataType": "Text"
-  },
-  {
-    "name": "Aadhar Enrolment ID Photo",
-    "uuid": "9de076ef-4f35-4f53-983c-7d3d19fc9271",
-    "dataType": "Image"
   },
   {
     "name": "Whether you have Labour Card",
@@ -972,16 +932,6 @@
     ]
   },
   {
-    "name": "Labour Card Number",
-    "uuid": "01e519e1-c1ca-41e0-956a-b17c9a368577",
-    "dataType": "Text"
-  },
-  {
-    "name": "Labour Card Photo",
-    "uuid": "5a65808b-b1c7-4287-8145-a550e0ca3e71",
-    "dataType": "Image"
-  },
-  {
     "name": "Whether you have Health Card",
     "uuid": "3140ec79-10b3-4d1f-bdd4-b9fdd935cc8f",
     "dataType": "Coded",
@@ -995,16 +945,6 @@
     ]
   },
   {
-    "name": "Health Card Number",
-    "uuid": "8b003c57-9f8c-45a2-ba42-a4092b0b75cb",
-    "dataType": "Text"
-  },
-  {
-    "name": "Health Card Photo",
-    "uuid": "839abcf2-f00b-4a54-bf60-67f4274abded",
-    "dataType": "Image"
-  },
-  {
     "name": "Whether you have PAN Card",
     "uuid": "c9b99b92-8545-4944-80d5-7ec2145e162f",
     "dataType": "Coded",
@@ -1016,16 +956,6 @@
         "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
       }
     ]
-  },
-  {
-    "name": "PAN Card Number",
-    "uuid": "0ee788bf-ded3-423a-a18b-32f30200d408",
-    "dataType": "Text"
-  },
-  {
-    "name": "PAN Card Photo",
-    "uuid": "bfe72493-2304-4fdc-9262-30c29e46efa1",
-    "dataType": "Image"
   },
   {
     "name": "Whether you have any Other Cards",
@@ -2516,7 +2446,7 @@
     ]
   },
   {
-    "name": "Please Explain (Type of PPE and Frequency of Use)",
+    "name": "Please Explain (Type of PPE)",
     "uuid": "6c7fbd56-68c3-4ee6-84c7-0f015a0ac9ba",
     "dataType": "Text"
   },
@@ -2675,7 +2605,7 @@
     ]
   },
   {
-    "name": "Name of the association 1",
+    "name": "Name of the youth association",
     "uuid": "f48ce39d-e70e-4aa7-bef4-999061cbcb77",
     "dataType": "Text"
   },
@@ -2715,7 +2645,7 @@
     ]
   },
   {
-    "name": "Name of the association 2",
+    "name": "Name of the caste association",
     "uuid": "7ff334f9-ecb9-4608-a2f0-54a8fc004196",
     "dataType": "Text"
   },
@@ -6401,6 +6331,16 @@
   {
     "name": "Title/Designation",
     "uuid": "2789fc32-a398-42a9-97c3-552206c5b4ad",
+    "dataType": "Text"
+  },
+  {
+    "name": "Picture of the duly filled consent form",
+    "uuid": "68963bf5-37d4-47ab-ab0a-4601050f5908",
+    "dataType": "Image"
+  },
+  {
+    "name": "When is your weekly off",
+    "uuid": "259cead1-7bc2-41a0-864f-53f0db6ad383",
     "dataType": "Text"
   }
 ]

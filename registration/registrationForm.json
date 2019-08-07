@@ -10,6 +10,18 @@
       "displayOrder": 1,
       "formElements": [
         {
+          "name": "Please upload the picture of the duly filled consent form",
+          "uuid": "fdd8118f-7fbb-404d-8f64-b48f9dd25737",
+          "keyValues": [],
+          "concept": {
+            "name": "Picture of the duly filled consent form",
+            "uuid": "68963bf5-37d4-47ab-ab0a-4601050f5908"
+          },
+          "displayOrder": 0.9 ,
+          "mandatory": false
+        },
+
+        {
           "name": "Marital status",
           "uuid": "40500879-98d9-4314-bc2e-6f0eff4917cc",
           "keyValues": [],
@@ -540,26 +552,6 @@
           "mandatory": true
         },
         {
-          "name": "Voter Registration Card Number",
-          "uuid": "14dcb373-882b-435b-b7d4-1a3a37c8a981",
-          "keyValues": [],
-          "concept": {
-            "uuid": "f796c203-aeb6-4ec6-afd5-8e99f499f29d"
-          },
-          "displayOrder": 2,
-          "mandatory": true
-        },
-        {
-          "name": "Voter Registration Card Photo",
-          "uuid": "f5ecf443-4687-4541-a042-3319cc082285",
-          "keyValues": [],
-          "concept": {
-            "uuid": "f0520fe8-d828-4ba8-9e0f-0ccf9f1e1f12"
-          },
-          "displayOrder": 3,
-          "mandatory": true
-        },
-        {
           "name": "Whether you have Ration/BPL Card with your name included",
           "uuid": "c3d6e62f-7e16-495e-b899-16492003642c",
           "keyValues": [],
@@ -567,26 +559,6 @@
             "uuid": "28d66d45-5d71-4648-acc7-9a18716b98e0"
           },
           "displayOrder": 4,
-          "mandatory": true
-        },
-        {
-          "name": "Ration/BPL Card Number",
-          "uuid": "b0ddfb4f-56a0-48cb-9ad6-e5403d78400b",
-          "keyValues": [],
-          "concept": {
-            "uuid": "15d136e5-ad88-491d-94ae-8995c4f782dc"
-          },
-          "displayOrder": 5,
-          "mandatory": true
-        },
-        {
-          "name": "Ration/BPL Card Photo",
-          "uuid": "3facff06-305f-4f1c-9400-0cb1a43b7903",
-          "keyValues": [],
-          "concept": {
-            "uuid": "2628e2ec-2ad2-4ee5-b061-6b0306d20601"
-          },
-          "displayOrder": 6,
           "mandatory": true
         },
         {
@@ -600,30 +572,6 @@
           "mandatory": true
         },
         {
-          "name": "Aadhar Card Number",
-          "uuid": "46997548-628b-4f09-af91-08bd3f465aef",
-          "keyValues": [],
-          "concept": {
-            "uuid": "8c7c1065-31c4-42ba-9b10-58f994f31a6b"
-          },
-          "validFormat": {
-            "regex": "^[0-9]{12}$",
-            "descriptionKey": "Required12Digits"
-          },
-          "displayOrder": 8,
-          "mandatory": true
-        },
-        {
-          "name": "Aadhar Card Photo",
-          "uuid": "9289728f-cff4-428d-b91e-7088f49d5db9",
-          "keyValues": [],
-          "concept": {
-            "uuid": "b0fc2677-4030-4a26-b057-253e1cb54221"
-          },
-          "displayOrder": 9,
-          "mandatory": true
-        },
-        {
           "name": "Whether you have Aadhar Enrolment ID",
           "uuid": "716508dd-81c3-4c36-a903-3322c3fd70fe",
           "keyValues": [],
@@ -631,30 +579,6 @@
             "uuid": "17147552-019f-43d2-bfb3-300742d8daf8"
           },
           "displayOrder": 10,
-          "mandatory": true
-        },
-        {
-          "name": "Aadhar Enrolment ID Number",
-          "uuid": "72ea34c5-4db5-4688-97fa-60c75436be88",
-          "keyValues": [],
-          "concept": {
-            "uuid": "f70ad2ca-ee81-468b-8dfe-6fc0dcddece5"
-          },
-          "validFormat": {
-            "regex": "^[0-9]{28}$",
-            "descriptionKey": "Required28Digits"
-          },
-          "displayOrder": 11,
-          "mandatory": true
-        },
-        {
-          "name": "Aadhar Enrolment ID Photo",
-          "uuid": "82b6aba7-6068-4257-a5ae-e885780c3b3f",
-          "keyValues": [],
-          "concept": {
-            "uuid": "9de076ef-4f35-4f53-983c-7d3d19fc9271"
-          },
-          "displayOrder": 12,
           "mandatory": true
         },
         {
@@ -668,26 +592,6 @@
           "mandatory": true
         },
         {
-          "name": "Labour Card Number",
-          "uuid": "72cc562c-9477-4860-b048-a5c44bc90da7",
-          "keyValues": [],
-          "concept": {
-            "uuid": "01e519e1-c1ca-41e0-956a-b17c9a368577"
-          },
-          "displayOrder": 14,
-          "mandatory": true
-        },
-        {
-          "name": "Labour Card Photo",
-          "uuid": "60023949-a5ab-4c08-b18d-2ffa8e38351f",
-          "keyValues": [],
-          "concept": {
-            "uuid": "5a65808b-b1c7-4287-8145-a550e0ca3e71"
-          },
-          "displayOrder": 15,
-          "mandatory": true
-        },
-        {
           "name": "Whether you have Health Card",
           "uuid": "730542d7-c106-4a8a-9102-47526d34bfe6",
           "keyValues": [],
@@ -698,26 +602,6 @@
           "mandatory": true
         },
         {
-          "name": "Health Card Number",
-          "uuid": "2ebae95c-fa53-4ce9-964d-dcb3bd39737f",
-          "keyValues": [],
-          "concept": {
-            "uuid": "8b003c57-9f8c-45a2-ba42-a4092b0b75cb"
-          },
-          "displayOrder": 17,
-          "mandatory": true
-        },
-        {
-          "name": "Health Card Photo",
-          "uuid": "fdf34b78-8f30-4940-9ffe-ce9eddc4a029",
-          "keyValues": [],
-          "concept": {
-            "uuid": "839abcf2-f00b-4a54-bf60-67f4274abded"
-          },
-          "displayOrder": 18,
-          "mandatory": true
-        },
-        {
           "name": "Whether you have PAN Card",
           "uuid": "dda1ae08-509e-4cbf-907a-dcd38ed578c6",
           "keyValues": [],
@@ -725,26 +609,6 @@
             "uuid": "c9b99b92-8545-4944-80d5-7ec2145e162f"
           },
           "displayOrder": 19,
-          "mandatory": true
-        },
-        {
-          "name": "PAN Card Number",
-          "uuid": "498d8f46-a1d7-49b1-ba97-086ab90ac548",
-          "keyValues": [],
-          "concept": {
-            "uuid": "0ee788bf-ded3-423a-a18b-32f30200d408"
-          },
-          "displayOrder": 20,
-          "mandatory": true
-        },
-        {
-          "name": "PAN Card Photo",
-          "uuid": "3c862285-38a4-4856-b34d-5379a4e3e9ba",
-          "keyValues": [],
-          "concept": {
-            "uuid": "bfe72493-2304-4fdc-9262-30c29e46efa1"
-          },
-          "displayOrder": 21,
           "mandatory": true
         },
         {
@@ -1485,7 +1349,7 @@
           "mandatory": false
         },
         {
-          "name": "Please Explain (Type of PPE and Frequency of Use)",
+          "name": "Please Explain (Type of PPE)",
           "uuid": "eabd56b4-a954-48f9-98bf-5448dcdfd6c0",
           "keyValues": [],
           "concept": {
@@ -1668,7 +1532,7 @@
           "mandatory": false
         },
         {
-          "name": "Name of the association 1",
+          "name": "Name of the youth association",
           "uuid": "77de2b10-38eb-4995-99e8-a6a8998822fc",
           "keyValues": [],
           "concept": {
@@ -1716,7 +1580,7 @@
           "mandatory": false
         },
         {
-          "name": "Name of the association 2",
+          "name": "Name of the caste association",
           "uuid": "e53ebf56-6bba-45cc-ad47-58d21b9d67e8",
           "keyValues": [],
           "concept": {
@@ -3051,6 +2915,17 @@
           "mandatory": false
         },
         {
+          "name": "When is your weekly off?",
+          "uuid": "6b48f943-d13e-4422-8f2d-91a713d77810",
+          "keyValues": [],
+          "concept": {
+            "name": "When is your weekly off",
+            "uuid": "259cead1-7bc2-41a0-864f-53f0db6ad383"
+          },
+          "displayOrder": 7.5,
+          "mandatory": false
+        },
+        {
           "name": "Do you also work at ULB site/plant/landfill?",
           "uuid": "a309783b-d461-4d1e-9e1f-5b81cf397508",
           "keyValues": [],
@@ -3611,7 +3486,7 @@
             "uuid": "a59e82d4-0809-4647-83c6-9cb744f19381"
           },
           "displayOrder": 1,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "decanting station/Sewage Treatment Plant - Please Explain",
@@ -3621,7 +3496,7 @@
             "uuid": "9260b495-e429-42a0-ac5f-f6c8357392aa"
           },
           "displayOrder": 2,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
@@ -3640,7 +3515,7 @@
             "uuid": "998ab554-1de5-41c6-affc-cd09142bcd32"
           },
           "displayOrder": 1,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "No. of Establishments",
@@ -3650,7 +3525,7 @@
             "uuid": "259c051d-cae7-49e5-844f-0c548905f426"
           },
           "displayOrder": 2,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Do you get paid when the schools are on summer holiday?",
@@ -3661,7 +3536,7 @@
             "uuid": "5b6268b3-e259-42fc-8aeb-606889038bd9"
           },
           "displayOrder": 3,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "How many toilet seats do you clean per day?",
@@ -3672,7 +3547,7 @@
             "uuid": "8eb655c9-9dfd-4252-b7a0-1c5e1f5838c9"
           },
           "displayOrder": 4,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Who decides frequency of cleaning?",
@@ -3683,7 +3558,7 @@
             "uuid": "816a132f-25b8-4314-a00a-0b8c2613c47e"
           },
           "displayOrder": 5,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "frequency of cleaning - Please Explain",
@@ -3693,7 +3568,7 @@
             "uuid": "51b7752c-6adf-4ff8-91dd-c5141cbac5da"
           },
           "displayOrder": 6,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "What cleaning materials do you use?",
@@ -3704,7 +3579,7 @@
             "uuid": "ddab1006-a87a-43ed-ad86-4b335990ac40"
           },
           "displayOrder": 7,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "cleaning materials - Please Explain",
@@ -3714,7 +3589,7 @@
             "uuid": "5cab4cc7-d8e0-491f-9142-755d70fd516f"
           },
           "displayOrder": 8,
-          "mandatory":true
+          "mandatory": false
         },
         {
           "name": "Who pays for cleaning material?",
@@ -3725,7 +3600,7 @@
             "uuid": "5ff7956c-33aa-49a8-94a9-cb4cbaeddfdb"
           },
           "displayOrder": 9,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "cleaning material - Please Explain",
@@ -3735,7 +3610,7 @@
             "uuid": "35f24938-06b4-4163-a351-0e6df4ed32c1"
           },
           "displayOrder": 10,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Do you pick up the clogged / contaminated waste?",
@@ -3745,7 +3620,7 @@
             "uuid": "23d3c16d-da21-4a84-8158-938ad7e104c3"
           },
           "displayOrder": 11,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "How do you dispose the clogged / contaminated waste?",
@@ -3756,7 +3631,7 @@
             "uuid": "43f711df-fc55-47a6-881b-0145226adc2d"
           },
           "displayOrder": 12,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "clogged/contaminated waste - Please Explain",
@@ -3766,7 +3641,7 @@
             "uuid": "c477a1c5-f12a-4c20-ae6f-627c0fc7d8b0"
           },
           "displayOrder": 13,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Is there any other work you do in the house / institution / establishment / office?",
@@ -3777,7 +3652,7 @@
             "uuid": "38da7597-ed42-4e84-a56a-d11b6d9af8f0"
           },
           "displayOrder": 14,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "house/institution/establishment/office - Please Explain",
@@ -3787,7 +3662,7 @@
             "uuid": "b346603d-de9a-4c00-a11c-9f036606160a"
           },
           "displayOrder": 15,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "How many of you go together for undertaking the work?",
@@ -3798,7 +3673,7 @@
             "uuid": "f6ac6da1-6e86-4d6c-b8ec-5673ec1e9bac"
           },
           "displayOrder": 16,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Do you have access and facilities to clean yourself?",
@@ -3809,7 +3684,7 @@
             "uuid": "1d0f3660-171e-432d-a9b1-ce6d3eee0c93"
           },
           "displayOrder": 17,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
@@ -3828,7 +3703,7 @@
             "uuid": "454df756-e351-45e5-8aca-1727accc45bf"
           },
           "displayOrder": 1,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "tools/implants - Please Explain",
@@ -3838,7 +3713,7 @@
             "uuid": "a2b12c6a-af74-4496-9ded-ec489ddde9e7"
           },
           "displayOrder": 2,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Who provided these implants?",
@@ -3849,7 +3724,7 @@
             "uuid": "18a0d0f4-65ed-47eb-bc0b-fd2067e88736"
           },
           "displayOrder": 3,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
@@ -3868,7 +3743,7 @@
             "uuid": "1a26fe3c-d3a9-43c6-ac1a-d3bf6939a91a"
           },
           "displayOrder": 3,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Do you use any cleaning materials?",
@@ -3879,7 +3754,7 @@
             "uuid": "af019ebf-1458-4914-b73e-400afc103ae9"
           },
           "displayOrder": 4,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "materials - Please Explain",
@@ -3889,7 +3764,7 @@
             "uuid": "98dcbb1c-b6db-4a7d-8785-8fc28c9d2168"
           },
           "displayOrder": 5,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "How do you dispose the collected waste?",
@@ -3900,7 +3775,7 @@
             "uuid": "b83f9afe-32e3-4fac-bd8b-1dcf68494a5a"
           },
           "displayOrder": 6,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "collected waste - Please Explain",
@@ -3910,7 +3785,7 @@
             "uuid": "53535493-b0dd-42c2-b5ca-a7d45c765d6c"
           },
           "displayOrder": 7,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
@@ -3929,7 +3804,7 @@
             "uuid": "f0cc3f0b-2afd-465d-9e2b-b32990e402a9"
           },
           "displayOrder": 1,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
