@@ -75,144 +75,254 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Informal Worker");
     }
 
+    @WithName("Work Address Line 1 (House No, Street No/ Name)")
+    @WithRegistrationStatusBuilder
+    WA1([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker");
+    }
+
+    @WithName("Work Address Line 2 (Post Office)")
+    @WithRegistrationStatusBuilder
+    WA2([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker");
+    }
+
+    @WithName("Work Address Landmark 1")
+    @WithRegistrationStatusBuilder
+    WA3([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker");
+    }
+
+    @WithName("Work Address Landmark 2")
+    @WithRegistrationStatusBuilder
+    WA4([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker");
+    }
+
+    @WithName("Work Address Area")
+    @WithRegistrationStatusBuilder
+    WA5([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker");
+    }
+
+    @WithName("Work Address Pincode")
+    @WithRegistrationStatusBuilder
+    WA6([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker");
+    }
+
+    @WithName("Work Address Contact Number 1")
+    @WithRegistrationStatusBuilder
+    WA7([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker");
+    }
+
+    @WithName("Work Address Contact Number 2")
+    @WithRegistrationStatusBuilder
+    WA8([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker");
+    }
+
+    @WithName("Is your present address same as your work address?")
+    @WithRegistrationStatusBuilder
+    PRA0([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker");
+    }
+
     @WithName("Address Line 1 (House No, Street No/ Name)")
     @WithRegistrationStatusBuilder
     PRA1([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether present address same as work address")
+            .containsAnswerConceptName("No");
     }
 
     @WithName("Address Line 2 (Post Office)")
     @WithRegistrationStatusBuilder
     PRA2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether present address same as work address")
+            .containsAnswerConceptName("No");
     }
 
     @WithName("Landmark 1")
     @WithRegistrationStatusBuilder
     PRA3([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether present address same as work address")
+            .containsAnswerConceptName("No");
     }
 
     @WithName("Landmark 2")
     @WithRegistrationStatusBuilder
     PRA4([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether present address same as work address")
+            .containsAnswerConceptName("No");
     }
 
     @WithName("Area")
     @WithRegistrationStatusBuilder
     PRA5([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether present address same as work address")
+            .containsAnswerConceptName("No");
     }
 
     @WithName("Pincode")
     @WithRegistrationStatusBuilder
     PRA6([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether present address same as work address")
+            .containsAnswerConceptName("No");
     }
 
     @WithName("Contact Number 1")
     @WithRegistrationStatusBuilder
     PRA7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether present address same as work address")
+            .containsAnswerConceptName("No");
     }
 
     @WithName("Contact Number 2")
     @WithRegistrationStatusBuilder
     PRA8([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether present address same as work address")
+            .containsAnswerConceptName("No");
+    }
+
+    @WithName("Is your permanent address same as your present address?")
+    @WithRegistrationStatusBuilder
+    PMA0([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
     }
 
-    @WithName("Address Line 1 (House No, Street No/ Name)")
+    @WithName("Permanent Address Line 1 (House No, Street No/ Name)")
     @WithRegistrationStatusBuilder
     PMA1([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
-    @WithName("Address Line 2 (Post Office)")
+    @WithName("Permanent Address Line 2 (Post Office)")
     @WithRegistrationStatusBuilder
     PMA2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
-    @WithName("Landmark 1")
+    @WithName("Permanent Address Landmark 1")
     @WithRegistrationStatusBuilder
     PMA3([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
-    @WithName("Landmark 2")
+    @WithName("Permanent Address Landmark 2")
     @WithRegistrationStatusBuilder
     PMA4([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
-    @WithName("Area")
+    @WithName("Permanent Address Area")
     @WithRegistrationStatusBuilder
     PMA5([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
-    @WithName("Pincode")
+    @WithName("Permanent Address Pincode")
     @WithRegistrationStatusBuilder
     PMA6([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
-    @WithName("State")
+    @WithName("Permanent Address State")
     @WithRegistrationStatusBuilder
     PMA7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
-    @WithName("City")
+    @WithName("Permanent Address City")
     @WithRegistrationStatusBuilder
     PMA8([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
-    @WithName("Contact Name 1")
+    @WithName("Permanent Address Contact Name 1")
     @WithRegistrationStatusBuilder
     PMA9([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
-    @WithName("Contact Number 1")
+    @WithName("Permanent Address Contact Number 1")
     @WithRegistrationStatusBuilder
     PMA10([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
-    @WithName("Contact Name 2")
+    @WithName("Permanent Address Contact Name 2")
     @WithRegistrationStatusBuilder
     PMA11([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
-    @WithName("Contact Number 2")
+    @WithName("Permanent Address Contact Number 2")
     @WithRegistrationStatusBuilder
     PMA12([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker");
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Whether permanent address same as present address")
+            .containsAnswerConceptName("No");
     }
 
     @WithName("How long have you been a informal waste/sanitation worker?")

@@ -270,7 +270,6 @@
     "uuid": "6a76ce42-0e9b-4467-beee-014bf4ac243c",
     "name": "Other"
   },
-  
   {
     "name": "Level of Education",
     "uuid": "172422bf-c005-49e5-bd17-910356ea70a0",
@@ -575,6 +574,46 @@
     ]
   },
   {
+    "name": "Work Address Line 1 (House No, Street No/ Name)",
+    "uuid": "50954463-e5f0-4eba-9f50-97e1406feff9",
+    "dataType": "Text"
+  },
+  {
+    "name": "Work Address Line 2 (Post Office)",
+    "uuid": "1eee4e06-ad6b-4c7b-a1a3-f0357f1fab2a",
+    "dataType": "Text"
+  },
+  {
+    "name": "Work Address Landmark 1",
+    "uuid": "7185c1c4-0aaf-45c5-88fe-0463223d71a7",
+    "dataType": "Text"
+  },
+  {
+    "name": "Work Address Landmark 2",
+    "uuid": "bf21d936-4499-47a8-9646-5ee790afbccd",
+    "dataType": "Text"
+  },
+  {
+    "name": "Work Address Area",
+    "uuid": "fd2c724e-3fe6-4855-9686-2cc612446b0b",
+    "dataType": "Text"
+  },
+  {
+    "name": "Work Address Pincode",
+    "uuid": "19890b78-ea50-4b3f-ac59-fbe4e495fb40",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Work Address Contact Number 1",
+    "uuid": "b848c328-fc58-400e-aad4-9aaaa47a4471",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Work Address Contact Number 2",
+    "uuid": "3d80b640-900a-42d4-ac47-0ac88aaf4f8f",
+    "dataType": "Numeric"
+  },
+  {
     "name": "Address Line 1 (House No, Street No/ Name)",
     "uuid": "78cf3a0c-51cb-42be-8e35-23466e6333c2",
     "dataType": "Text"
@@ -832,7 +871,6 @@
     "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "name": "Others"
   },
-
   {
     "name": "Please select the body that issued the Occupational Identity Card",
     "uuid": "bb3d286a-e212-44e5-a3a0-f7960d6360b1",
@@ -865,7 +903,6 @@
     "uuid": "ca370cfa-9d94-4e0e-b7f5-7bde88fadecd",
     "dataType": "Text"
   },
-
   {
     "name": "Whether you have Voter Registration Card",
     "uuid": "23dbec91-3aae-4e0f-98ee-17f75efb64d0",
@@ -1234,7 +1271,6 @@
       {
         "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
       }
-
     ]
   },
   {
@@ -3183,7 +3219,6 @@
     "uuid": "cbe43149-bcc0-4603-b6ba-148620ae1238",
     "dataType": "Text"
   },
-
   {
     "uuid": "9f2252c8-f7ec-4f5d-a180-c360bbba5e63",
     "name": "Wastepicker"
@@ -3751,7 +3786,6 @@
       }
     ]
   },
-
   {
     "uuid": "a747e02e-7f66-4101-9a6a-ce21a6cc4163",
     "name": "Mostly households / mostly small establishments"
@@ -4217,7 +4251,6 @@
     "uuid": "f8ae05e9-884a-461c-b3a9-90dee6d811cd",
     "dataType": "Text"
   },
-
   {
     "name": "Plastics PET (Pearlpet) waste sold per week in Kg",
     "uuid": "779eaf00-bd68-40ee-8b4d-c795af18135f",
@@ -6342,5 +6375,35 @@
     "name": "When is your weekly off",
     "uuid": "259cead1-7bc2-41a0-864f-53f0db6ad383",
     "dataType": "Text"
+  },
+  {
+    "name": "Whether present address same as work address",
+    "uuid": "23360122-f60f-4835-9fd2-ca0fe5e544ba",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Whether permanent address same as present address",
+    "uuid": "e6b9e04d-f5a6-4e4e-afa2-ff74ee9e75af",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
   }
 ]

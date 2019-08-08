@@ -196,11 +196,130 @@
       ]
     },
     {
+      "uuid": "7a5527df-26e1-44c0-93b2-1f59a0278bea",
+      "name": "Work Address",
+      "display": "Work Address",
+      "displayOrder": 4.5,
+      "formElements": [
+        {
+          "name": "Work Address Line 1 (House No, Street No/ Name)",
+          "uuid": "b37eddc9-ba6d-49e2-b9b7-7ac82b608696",
+          "keyValues": [],
+          "concept": {
+            "name": "Work Address Line 1 (House No, Street No/ Name)",
+            "uuid": "50954463-e5f0-4eba-9f50-97e1406feff9"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Work Address Line 2 (Post Office)",
+          "uuid": "d27a3aef-0fa0-4f7e-bafe-bfa02f741149",
+          "keyValues": [],
+          "concept": {
+            "name": "Work Address Line 2 (Post Office)",
+            "uuid": "1eee4e06-ad6b-4c7b-a1a3-f0357f1fab2a"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Work Address Landmark 1",
+          "uuid": "56087f1a-8038-403c-b0c6-b2d6133f969e",
+          "keyValues": [],
+          "concept": {
+            "name": "Work Address Landmark 1",
+            "uuid": "7185c1c4-0aaf-45c5-88fe-0463223d71a7"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Work Address Landmark 2",
+          "uuid": "8df0f1eb-6729-4767-8aac-188d59d678fb",
+          "keyValues": [],
+          "concept": {
+            "name": "Work Address Landmark 2",
+            "uuid": "bf21d936-4499-47a8-9646-5ee790afbccd"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Work Address Area",
+          "uuid": "04e02ef4-80c6-4548-a2ec-0cde6b63b757",
+          "keyValues": [],
+          "concept": {
+            "name": "Work Address Area",
+            "uuid": "fd2c724e-3fe6-4855-9686-2cc612446b0b"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Work Address Pincode",
+          "uuid": "de7be35f-52aa-4b65-97f9-dc11947819e0",
+          "keyValues": [],
+          "concept": {
+            "name": "Work Address Pincode",
+            "uuid": "19890b78-ea50-4b3f-ac59-fbe4e495fb40"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{6}$",
+            "descriptionKey": "Required6Digits"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Work Address Contact Number 1",
+          "uuid": "430c71ec-dafa-4db4-b543-029f834ad6ac",
+          "keyValues": [],
+          "concept": {
+            "name": "Work Address Contact Number 1",
+            "uuid": "b848c328-fc58-400e-aad4-9aaaa47a4471"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{10}$",
+            "descriptionKey": "Required10Digits"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "Work Address Contact Number 2",
+          "uuid": "6e16837c-c587-4821-a448-804d0edf7830",
+          "keyValues": [],
+          "concept": {
+            "name": "Work Address Contact Number 2",
+            "uuid": "3d80b640-900a-42d4-ac47-0ac88aaf4f8f"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{10}$",
+            "descriptionKey": "Required10Digits"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        }
+      ]
+    },
+    {
       "uuid": "dfe909b9-4b66-47b0-947b-31280d2bf7dc",
       "name": "Present address",
       "display": "Present address",
       "displayOrder": 5,
       "formElements": [
+        {
+          "name": "Is your present address same as your work address?",
+          "uuid": "7713af22-8522-4bca-84d7-8f30abbac0c5",
+          "keyValues": [],
+          "concept": {
+            "name": "Whether present address same as work address",
+            "uuid": "23360122-f60f-4835-9fd2-ca0fe5e544ba"
+          },
+          "displayOrder": 0.5,
+          "mandatory": true
+        },
         {
           "name": "Address Line 1 (House No, Street No/ Name)",
           "uuid": "1a593973-0e94-48b9-927d-13b8469d9110",
@@ -302,7 +421,18 @@
       "displayOrder": 6,
       "formElements": [
         {
-          "name": "Address Line 1 (House No, Street No/ Name)",
+          "name": "Is your permanent address same as your present address?",
+          "uuid": "8a750874-91f5-43fe-90f8-ea0058b2015f",
+          "keyValues": [],
+          "concept": {
+            "name": "Whether permanent address same as present address",
+            "uuid": "e6b9e04d-f5a6-4e4e-afa2-ff74ee9e75af"
+          },
+          "displayOrder": 0.5 ,
+          "mandatory": true
+        },
+        {
+          "name": "Permanent Address Line 1 (House No, Street No/ Name)",
           "uuid": "ab688589-ba2c-4a23-9808-94babbf55fa8",
           "keyValues": [],
           "concept": {
@@ -312,7 +442,7 @@
           "mandatory": true
         },
         {
-          "name": "Address Line 2 (Post Office)",
+          "name": "Permanent Address Line 2 (Post Office)",
           "uuid": "630bf980-9274-475c-9bbd-62df1afc4fa0",
           "keyValues": [],
           "concept": {
@@ -322,7 +452,7 @@
           "mandatory": false
         },
         {
-          "name": "Landmark 1",
+          "name": "Permanent Address Landmark 1",
           "uuid": "82ef43fd-9bde-4746-9db3-61f349a7557f",
           "keyValues": [],
           "concept": {
@@ -332,7 +462,7 @@
           "mandatory": true
         },
         {
-          "name": "Landmark 2",
+          "name": "Permanent Address Landmark 2",
           "uuid": "75030f0c-6af6-4b4a-b0b7-5f77b5964804",
           "keyValues": [],
           "concept": {
@@ -342,7 +472,7 @@
           "mandatory": false
         },
         {
-          "name": "Area",
+          "name": "Permanent Address Area",
           "uuid": "3f754d8f-d004-4822-8def-2343104f73bb",
           "keyValues": [],
           "concept": {
@@ -352,7 +482,7 @@
           "mandatory": true
         },
         {
-          "name": "Pincode",
+          "name": "Permanent Address Pincode",
           "uuid": "8bd4852a-20b2-4507-900d-990d6e2122b7",
           "keyValues": [],
           "concept": {
@@ -366,7 +496,7 @@
           "mandatory": true
         },
         {
-          "name": "State",
+          "name": "Permanent Address State",
           "uuid": "c2a80969-9244-4361-a0b1-107eb89ae2d2",
           "keyValues": [],
           "concept": {
@@ -376,7 +506,7 @@
           "mandatory": true
         },
         {
-          "name": "City",
+          "name": "Permanent Address City",
           "uuid": "4e503d2c-7a8a-4d31-b6cb-28d7d4e75b35",
           "keyValues": [],
           "concept": {
@@ -386,7 +516,7 @@
           "mandatory": true
         },
         {
-          "name": "Contact Name 1",
+          "name": "Permanent Address Contact Name 1",
           "uuid": "371a18aa-7a8f-40ed-8fb0-dce3a4fb30ff",
           "keyValues": [],
           "concept": {
@@ -396,7 +526,7 @@
           "mandatory": true
         },
         {
-          "name": "Contact Number 1",
+          "name": "Permanent Address Contact Number 1",
           "uuid": "1711f44f-21fd-470d-840a-9f0010764e6d",
           "keyValues": [],
           "concept": {
@@ -410,7 +540,7 @@
           "mandatory": true
         },
         {
-          "name": "Contact Name 2",
+          "name": "Permanent Address Contact Name 2",
           "uuid": "30b77b56-6cc2-4cc1-a0f6-9ece1cf5e166",
           "keyValues": [],
           "concept": {
@@ -420,7 +550,7 @@
           "mandatory": false
         },
         {
-          "name": "Contact Number 2",
+          "name": "Permanent Address Contact Number 2",
           "uuid": "069b199d-0435-4866-bd00-d20b94d5e4e0",
           "keyValues": [],
           "concept": {
