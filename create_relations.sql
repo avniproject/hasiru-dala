@@ -113,7 +113,7 @@ from organisation
 where name = 'Hasiru Dala';
 
 INSERT INTO individual_relation (name, uuid, version, audit_id, is_voided, organisation_id)
-SELECT 'Mother in law',
+SELECT 'Mother-in-law',
        uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
@@ -123,7 +123,7 @@ from organisation
 where name = 'Hasiru Dala';
 
 INSERT INTO individual_relation (name, uuid, version, audit_id, is_voided, organisation_id)
-SELECT 'Father in law',
+SELECT 'Father-in-law',
        uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
@@ -133,7 +133,23 @@ from organisation
 where name = 'Hasiru Dala';
 
 INSERT INTO individual_relation (name, uuid, version, audit_id, is_voided, organisation_id)
-SELECT 'Sister in law',
+SELECT 'Son-in-law', uuid_generate_v4(), 1, create_audit((select id from users where username = 'admin@hasiru')), false, id
+from organisation
+where name = 'Hasiru Dala';
+
+INSERT INTO individual_relation (name, uuid, version, audit_id, is_voided, organisation_id)
+SELECT 'Daughter-in-law',
+       uuid_generate_v4(),
+       1,
+       create_audit((select id from users where username = 'admin@hasiru')),
+       false,
+       id
+from organisation
+where name = 'Hasiru Dala';
+
+
+INSERT INTO individual_relation (name, uuid, version, audit_id, is_voided, organisation_id)
+SELECT 'Sister-in-law',
        uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
@@ -143,7 +159,7 @@ from organisation
 where name = 'Hasiru Dala';
 
 INSERT INTO individual_relation (name, uuid, version, audit_id, is_voided, organisation_id)
-SELECT 'Brother in law',
+SELECT 'Brother-in-law',
        uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
@@ -324,7 +340,7 @@ SELECT uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
        false,
-       (select id from individual_relation where name = 'Mother in law'),
+       (select id from individual_relation where name = 'Mother-in-law'),
        (select id from gender where name = 'Female'),
        id
 from organisation
@@ -336,7 +352,32 @@ SELECT uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
        false,
-       (select id from individual_relation where name = 'Father in law'),
+       (select id from individual_relation where name = 'Father-in-law'),
+       (select id from gender where name = 'Male'),
+       id
+from organisation
+where name = 'Hasiru Dala';
+
+insert into individual_relation_gender_mapping(uuid, version, audit_id, is_voided, relation_id, gender_id,
+                                               organisation_id)
+
+SELECT uuid_generate_v4(),
+       1,
+       create_audit((select id from users where username = 'admin@hasiru')),
+       false,
+       (select id from individual_relation where name = 'Daughter-in-law'),
+       (select id from gender where name = 'Female'),
+       id
+from organisation
+where name = 'Hasiru Dala';
+
+insert into individual_relation_gender_mapping(uuid, version, audit_id, is_voided, relation_id, gender_id,
+                                               organisation_id)
+SELECT uuid_generate_v4(),
+       1,
+       create_audit((select id from users where username = 'admin@hasiru')),
+       false,
+       (select id from individual_relation where name = 'Son-in-law'),
        (select id from gender where name = 'Male'),
        id
 from organisation
@@ -348,7 +389,7 @@ SELECT uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
        false,
-       (select id from individual_relation where name = 'Sister in law'),
+       (select id from individual_relation where name = 'Sister-in-law'),
        (select id from gender where name = 'Female'),
        id
 from organisation
@@ -360,7 +401,7 @@ SELECT uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
        false,
-       (select id from individual_relation where name = 'Brother in law'),
+       (select id from individual_relation where name = 'Brother-in-law'),
        (select id from gender where name = 'Male'),
        id
 from organisation
@@ -590,9 +631,9 @@ INSERT INTO individual_relationship_type (uuid, version, audit_id, name, individ
 SELECT uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
-       'Father in law-Son',
-       (select id from individual_relation where name = 'Father in law'),
-       (select id from individual_relation where name = 'Son'),
+       'Father-in-law-Son',
+       (select id from individual_relation where name = 'Father-in-law'),
+       (select id from individual_relation where name = 'Son-in-law'),
        id
 from organisation
 where name = 'Hasiru Dala';
@@ -602,9 +643,9 @@ INSERT INTO individual_relationship_type (uuid, version, audit_id, name, individ
 SELECT uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
-       'Father in law-Daughter',
-       (select id from individual_relation where name = 'Father in law'),
-       (select id from individual_relation where name = 'Daughter'),
+       'Father-in-law-Daughter',
+       (select id from individual_relation where name = 'Father-in-law'),
+       (select id from individual_relation where name = 'Daughter-in-law'),
        id
 from organisation
 where name = 'Hasiru Dala';
@@ -614,9 +655,9 @@ INSERT INTO individual_relationship_type (uuid, version, audit_id, name, individ
 SELECT uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
-       'Mother in law-Son',
-       (select id from individual_relation where name = 'Mother in law'),
-       (select id from individual_relation where name = 'Son'),
+       'Mother-in-law-Son-in-law',
+       (select id from individual_relation where name = 'Mother-in-law'),
+       (select id from individual_relation where name = 'Son-in-law'),
        id
 from organisation
 where name = 'Hasiru Dala';
@@ -626,9 +667,9 @@ INSERT INTO individual_relationship_type (uuid, version, audit_id, name, individ
 SELECT uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
-       'Mother in law-Daughter',
-       (select id from individual_relation where name = 'Mother in law'),
-       (select id from individual_relation where name = 'Daughter'),
+       'Mother-in-law-Daughter-in-law',
+       (select id from individual_relation where name = 'Mother-in-law'),
+       (select id from individual_relation where name = 'Daughter-in-law'),
        id
 from organisation
 where name = 'Hasiru Dala';
@@ -638,9 +679,9 @@ INSERT INTO individual_relationship_type (uuid, version, audit_id, name, individ
 SELECT uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
-       'Sister in law-Brother in law',
-       (select id from individual_relation where name = 'Sister in law'),
-       (select id from individual_relation where name = 'Brother in law'),
+       'Sister-in-law-Brother-in-law',
+       (select id from individual_relation where name = 'Sister-in-law'),
+       (select id from individual_relation where name = 'Brother-in-law'),
        id
 from organisation
 where name = 'Hasiru Dala';
@@ -650,9 +691,9 @@ INSERT INTO individual_relationship_type (uuid, version, audit_id, name, individ
 SELECT uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
-       'Sister in law-Sister in law',
-       (select id from individual_relation where name = 'Sister in law'),
-       (select id from individual_relation where name = 'Sister in law'),
+       'Sister-in-law-Sister-in-law',
+       (select id from individual_relation where name = 'Sister-in-law'),
+       (select id from individual_relation where name = 'Sister-in-law'),
        id
 from organisation
 where name = 'Hasiru Dala';
@@ -662,9 +703,9 @@ INSERT INTO individual_relationship_type (uuid, version, audit_id, name, individ
 SELECT uuid_generate_v4(),
        1,
        create_audit((select id from users where username = 'admin@hasiru')),
-       'Brother in law-Brother in law',
-       (select id from individual_relation where name = 'Brother in law'),
-       (select id from individual_relation where name = 'Brother in law'),
+       'Brother-in-law-Brother-in-law',
+       (select id from individual_relation where name = 'Brother-in-law'),
+       (select id from individual_relation where name = 'Brother-in-law'),
        id
 from organisation
 where name = 'Hasiru Dala';
