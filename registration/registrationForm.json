@@ -18,7 +18,7 @@
             "uuid": "68963bf5-37d4-47ab-ab0a-4601050f5908"
           },
           "displayOrder": 0.9 ,
-          "mandatory": false
+          "mandatory": true
         },
 
         {
@@ -299,7 +299,7 @@
             "descriptionKey": "Required10Digits"
           },
           "displayOrder": 8,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
@@ -709,7 +709,7 @@
             "uuid": "17147552-019f-43d2-bfb3-300742d8daf8"
           },
           "displayOrder": 10,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Whether you have Labour Card",
@@ -922,7 +922,7 @@
             "uuid": "f275d690-ca9f-4f0a-81b0-d42a28ce5b85"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you have a doctor's certificate indicating the percentage of disability?",
@@ -932,7 +932,7 @@
             "uuid": "d7686bf2-e43d-42cc-89f2-69b15363ecd9"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you experience any of these?",
@@ -3952,7 +3952,7 @@
             "uuid": "22a79433-4513-41bf-80dc-9677262b57e6"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Title/Designation",
@@ -3962,7 +3962,7 @@
             "uuid": "2789fc32-a398-42a9-97c3-552206c5b4ad"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     }
