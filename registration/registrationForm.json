@@ -172,7 +172,7 @@
             "uuid": "e7ea1066-616b-44b4-a522-8885dc8e75eb"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -191,7 +191,7 @@
             "uuid": "ef22528d-d19d-44e8-aff7-2ecd6f0f0f66"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -410,7 +410,7 @@
             "descriptionKey": "Required10Digits"
           },
           "displayOrder": 8,
-          "mandatory": true
+          "mandatory": false
         }
       ]
     },
@@ -830,7 +830,7 @@
             "uuid": "418206d7-6c60-4f8f-9bb5-ce04c8917853"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "roofing - Please Elaborate",
@@ -851,7 +851,7 @@
             "uuid": "49661ec6-763f-4a2f-afc1-e2420ac70c8e"
           },
           "displayOrder": 7,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you have an electricity connection for your house?",
@@ -872,7 +872,7 @@
             "uuid": "e2711da9-244c-4ff0-91d7-3ad2315541c8"
           },
           "displayOrder": 9,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "What is the source of cooking fuel at your house?",
@@ -883,7 +883,7 @@
             "uuid": "ec489ed1-2ea4-4689-9fcf-d3534bb01f3f"
           },
           "displayOrder": 10,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you have any of the following at your house?",
@@ -894,7 +894,7 @@
             "uuid": "a28deb76-d4ae-4a5f-a66c-9b2a5dfd920a"
           },
           "displayOrder": 11,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -912,7 +912,7 @@
             "uuid": "c99fcaa9-153e-478a-bc39-96295855e8eb"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Please provide details",
@@ -943,7 +943,7 @@
             "uuid": "c4977a35-b91b-4d29-b948-cd1d61090e8d"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "experience - Please Elaborate",
@@ -972,7 +972,7 @@
             "uuid": "844ce1a5-d7d3-4192-b871-bcd53daeaf3c"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Working Area",
@@ -983,7 +983,7 @@
             "uuid": "79296eee-0bf5-4b35-8ec7-06b5fed71a1c"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Please name them",

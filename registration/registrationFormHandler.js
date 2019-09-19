@@ -385,31 +385,11 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
     }
 
-    @WithRegistrationStatusBuilder
-    voterRegistrationCardNumber([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Voter Registration Card").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    voterRegistrationCardPhoto([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Voter Registration Card").is.yes;
-    }
-
     @WithName("Whether you have Ration/BPL Card with your name included")
     @WithRegistrationStatusBuilder
     ID2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
-    }
-
-    @WithRegistrationStatusBuilder
-    rationBplCardNumber([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Ration/BPL Card with your name included").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    rationBplCardPhoto([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Ration/BPL Card with your name included").is.yes;
     }
 
     @WithName("Whether you have Aadhar Card")
@@ -420,86 +400,34 @@ class RegistrationViewHandlerHasiruDala {
     }
 
     @WithRegistrationStatusBuilder
-    aadharCardNumber([], statusBuilder) {
+    whetherYouHaveAadharEnrolmentId([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Card").is.yes;
     }
 
-    @WithRegistrationStatusBuilder
-    aadharCardPhoto([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Card").is.yes;
-    }
-
-    @WithName("Whether you have Aadhar Enrolment ID")
+    @WithName("Whether you have Labour Card")
     @WithRegistrationStatusBuilder
     ID4([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
     }
 
-    @WithRegistrationStatusBuilder
-    aadharEnrolmentIdNumber([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Enrolment ID").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    aadharEnrolmentIdPhoto([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Enrolment ID").is.yes;
-    }
-
-    @WithName("Whether you have Labour Card")
+    @WithName("Whether you have Health Card")
     @WithRegistrationStatusBuilder
     ID5([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
     }
 
-    @WithRegistrationStatusBuilder
-    labourCardNumber([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Labour Card").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    labourCardPhoto([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Labour Card").is.yes;
-    }
-
-    @WithName("Whether you have Health Card")
+    @WithName("Whether you have PAN Card")
     @WithRegistrationStatusBuilder
     ID6([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
     }
 
-    @WithRegistrationStatusBuilder
-    healthCardNumber([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Health Card").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    healthCardPhoto([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Health Card").is.yes;
-    }
-
-    @WithName("Whether you have PAN Card")
-    @WithRegistrationStatusBuilder
-    ID7([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
-    }
-
-    @WithRegistrationStatusBuilder
-    panCardNumber([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have PAN Card").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    panCardPhoto([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have PAN Card").is.yes;
-    }
-
     @WithName("Whether you have any Other Cards")
     @WithRegistrationStatusBuilder
-    ID8([], statusBuilder) {
+    ID7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
     }
