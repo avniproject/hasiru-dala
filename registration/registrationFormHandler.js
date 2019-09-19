@@ -1218,7 +1218,7 @@ class RegistrationViewHandlerHasiruDala {
     @WithName("Do you get old age pension (OAP)?")
     @WithRegistrationStatusBuilder
     SS1([], statusBuilder) {
-       statusBuilder.show().when.ageInYears.is.greaterThanOrEqualTo(65)
+       statusBuilder.show().when.ageInYears.is.greaterThanOrEqualTo(64)
            .and.valueInRegistration("Please choose the type of respondent")
            .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)");
    }
