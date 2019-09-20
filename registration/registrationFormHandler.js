@@ -1844,8 +1844,7 @@ class RegistrationViewHandlerHasiruDala {
                 "Solid Waste Micro Compost Worker",
                 "Street Sweeper / Drain Cleaner",)
             .or.when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker",
-                "Railway Track Cleaner");
+            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker");
     }
 
     @WithRegistrationStatusBuilder
@@ -2154,7 +2153,7 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     tc5([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Railway Track Cleaner", "Decanting Station/Sewage Treatment Plant (STP) Worker", "Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker", "Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
     }
 
     @WithName("frequency of cleaning - Please Explain")
@@ -2239,14 +2238,14 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     tc17([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker", "Railway Track Cleaner", "Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker", "Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
     }
 
     @WithName("What are tools/implants used at work?")
     @WithRegistrationStatusBuilder
     tc18([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment", "Railway Track Cleaner", "Decanting Station/Sewage Treatment Plant (STP) Worker");
+            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment", "Decanting Station/Sewage Treatment Plant (STP) Worker");
     }
 
     @WithName("tools/implants - Please Explain")
@@ -2268,7 +2267,7 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     dwr1([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Railway Track Cleaner", "Decanting Station/Sewage Treatment Plant (STP) Worker");
+            .containsAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker");
     }
 
 
@@ -2283,14 +2282,14 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     dwr3([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Railway Track Cleaner", "Decanting Station/Sewage Treatment Plant (STP) Worker");
+            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker");
     }
 
     @WithName("Do you use any cleaning materials?")
     @WithRegistrationStatusBuilder
     dwr4([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Railway Track Cleaner", "Decanting Station/Sewage Treatment Plant (STP) Worker");
+            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker");
     }
 
     @WithName("materials - Please Explain")
@@ -2304,7 +2303,7 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     dwr6([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Railway Track Cleaner", "Decanting Station/Sewage Treatment Plant (STP) Worker");
+            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker");
     }
 
     @WithName("collected waste - Please Explain")
