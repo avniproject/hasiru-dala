@@ -401,7 +401,7 @@ class RegistrationViewHandlerHasiruDala {
 
     @WithRegistrationStatusBuilder
     whetherYouHaveAadharEnrolmentId([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Card").is.yes;
+        statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Card").is.no;
     }
 
     @WithName("Whether you have Labour Card")
