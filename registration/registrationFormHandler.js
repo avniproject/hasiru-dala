@@ -325,327 +325,397 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("No");
     }
 
-// @WithName("How long have you been a informal waste/sanitation worker?")
-// @WithRegistrationStatusBuilder
-// IW1([], statusBuilder) {
-//   statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-//     .containsAnswerConceptName("Informal Worker");
-// }
+  @WithName("How long have you been a informal waste/sanitation worker?")
+  @WithRegistrationStatusBuilder
+  IW1([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+      .containsAnswerConceptName("Informal Worker");
+  }
 
-// @WithName("What work were you doing before this?")
-// @WithRegistrationStatusBuilder
-// IW11([], statusBuilder) {
-//  statusBuilder.show().when.valueInRegistration("How long have you been a informal waste/sanitation worker?")
-//    .containsAnyAnswerConceptName("0-2 years", "2-5 years", "5-10 years");
-// }
+  @WithName("What work were you doing before this?")
+  @WithRegistrationStatusBuilder
+  IW11([], statusBuilder) {
+     statusBuilder.show().when.valueInRegistration("How long have you been a informal waste/sanitation worker?")
+         .containsAnyAnswerConceptName("0-2 years", "2-5 years", "5-10 years");
+  }
 
-    @WithName("What work were you doing before this?")
-    @WithRegistrationStatusBuilder
-    IW11([], statusBuilder) {
+  @WithName("What work were you doing before this?")
+  @WithRegistrationStatusBuilder
+  IW12([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker")
             .and.when.valueInRegistration("How long have you been a informal waste/sanitation worker?")
             .containsAnyAnswerConceptName("0-2 years", "2-5 years", "5-10 years");
-    }
+  }
 
-    @WithName("Were any of your parents doing the same work?")
-    @WithRegistrationStatusBuilder
-    IW2([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+  @WithName("Were any of your parents doing the same work?")
+  @WithRegistrationStatusBuilder
+  IW2([], statusBuilder) {
+       statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-//  @WithName("Why did you choose this occupation?")
-//  @WithRegistrationStatusBuilder
-//  IW3([], statusBuilder) {
-//      statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-//         .containsAnswerConceptName("Informal Worker");
-//    }
+  @WithName("Why did you choose this occupation?")
+  @WithRegistrationStatusBuilder
+  IW3([], statusBuilder) {
+      statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+         .containsAnswerConceptName("Informal Worker");
+  }
 
-//  @WithRegistrationStatusBuilder
-//  occupationPleaseElaborate([], statusBuilder) {
-//      statusBuilder.show().when.valueInRegistration("Why did you choose this occupation?")
-//      .containsAnswerConceptName("Others");
-//  }
+  @WithRegistrationStatusBuilder
+  occupationPleaseElaborate([], statusBuilder) {
+      statusBuilder.show().when.valueInRegistration("Why did you choose this occupation?")
+          .containsAnswerConceptName("Others");
+  }
 
-    @WithName("Occupation - Please Elaborate")
-    @WithRegistrationStatusBuilder
-    IW3([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+  @WithName("Occupation - Please Elaborate")
+  @WithRegistrationStatusBuilder
+  IW4([], statusBuilder) {
+       statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker")
             .and.when.valueInRegistration("Why did you choose this occupation?")
             .containsAnswerConceptName("Others");
-    }
+  }
 
-//    @WithName("Do you have an Occupational Identity Card?")
-//    @WithRegistrationStatusBuilder
-//    OIC1([], statusBuilder) {
-//        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-//            .containsAnswerConceptName("Informal Worker");
-//    }
+  @WithName("Do you have an Occupational Identity Card?")
+  @WithRegistrationStatusBuilder
+  OIC1([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker");
+  }
 
-//    @WithRegistrationStatusBuilder
-//    pleaseSelectTheBodyThatIssuedTheOccupationalIdentityCard([], statusBuilder) {
-//        statusBuilder.show().when.valueInRegistration("Do you have an Occupational Identity Card?").is.yes;
-//    }
+  @WithRegistrationStatusBuilder
+  pleaseSelectTheBodyThatIssuedTheOccupationalIdentityCard([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Do you have an Occupational Identity Card?").is.yes;
+  }
 
-    @WithName("Please select the body that issued the Occupational Identity Card")
-    @WithRegistrationStatusBuilder
-    OIC1([], statusBuilder) {
+  @WithName("Please select the body that issued the Occupational Identity Card")
+  @WithRegistrationStatusBuilder
+  OIC2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker")
             .and.when.valueInRegistration("Do you have an Occupational Identity Card?").is.yes;
-    }
+  }
 
-    @WithName("Please Specifying")
-    @WithRegistrationStatusBuilder
-    OIC112([], statusBuilder) {
+  @WithName("Please Specifying")
+  @WithRegistrationStatusBuilder
+  OIC112([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please select the body that issued the Occupational Identity Card")
             .containsAnyAnswerConceptName("NGO/SHG/CBO authorized to issue the card", "Others");
-    }
+  }
 
-    @WithName("Whether you have Voter Registration Card")
-    @WithRegistrationStatusBuilder
-    ID1([], statusBuilder) {
+  @WithName("Whether you have Voter Registration Card")
+  @WithRegistrationStatusBuilder
+  ID1([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
-    }
+  }
 
-    @WithName("Whether you have Ration/BPL Card with your name included")
-    @WithRegistrationStatusBuilder
-    ID2([], statusBuilder) {
+  @WithName("Whether you have Ration/BPL Card with your name included")
+  @WithRegistrationStatusBuilder
+  ID2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
-    }
+  }
 
-//    @WithName("Whether you have Aadhar Card")
-//    @WithRegistrationStatusBuilder
-//    ID3([], statusBuilder) {
-//        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-//            .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
-//    }
+  @WithName("Whether you have Aadhar Card")
+  @WithRegistrationStatusBuilder
+  ID3([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
+  }
 
-//    @WithRegistrationStatusBuilder
-//    whetherYouHaveAadharEnrolmentId([], statusBuilder) {
-//        statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Card").is.no;
-//    }
+  @WithRegistrationStatusBuilder
+  whetherYouHaveAadharEnrolmentId([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Card").is.no;
+  }
 
-@WithName("Whether you have Aadhar Enrolment ID")
-    @WithRegistrationStatusBuilder
-    ID3([], statusBuilder) {
+  @WithName("Whether you have Aadhar Enrolment ID")
+  @WithRegistrationStatusBuilder
+  ID4([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
           .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
           .and.when.valueInRegistration("Whether you have Aadhar Card").is.no;
-    }
+  }
 
-    @WithName("Whether you have Labour Card")
-    @WithRegistrationStatusBuilder
-    ID4([], statusBuilder) {
+  @WithName("Whether you have Labour Card")
+  @WithRegistrationStatusBuilder
+  ID5([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
-    }
+  }
 
-    @WithName("Whether you have Health Card")
-    @WithRegistrationStatusBuilder
-    ID5([], statusBuilder) {
+  @WithName("Whether you have Health Card")
+  @WithRegistrationStatusBuilder
+  ID6([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
-    }
+  }
 
-    @WithName("Whether you have PAN Card")
-    @WithRegistrationStatusBuilder
-    ID6([], statusBuilder) {
+  @WithName("Whether you have PAN Card")
+  @WithRegistrationStatusBuilder
+  ID7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
-    }
+  }
 
-    @WithName("Whether you have any Other Cards")
-    @WithRegistrationStatusBuilder
-    ID7([], statusBuilder) {
+  @WithName("Whether you have any Other Cards")
+  @WithRegistrationStatusBuilder
+  ID8([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
-    }
+  }
 
-    @WithRegistrationStatusBuilder
-    nameOfTheId([], statusBuilder) {
+  @WithRegistrationStatusBuilder
+  nameOfTheId([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Whether you have any Other Cards").is.yes;
-    }
+  }
 
-    @WithRegistrationStatusBuilder
-    description([], statusBuilder) {
+  @WithName("Name of the ID")
+  @WithRegistrationStatusBuilder
+  ID9([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
+          .and.when.valueInRegistration("Whether you have any Other Cards").is.yes;
+  }
+
+  @WithRegistrationStatusBuilder
+  description([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Whether you have any Other Cards").is.yes;
-    }
+  }
 
-    @WithName("What is the type of ownership of your house?")
-    @WithRegistrationStatusBuilder
-    H1([], statusBuilder) {
+  @WithName("Description")
+  @WithRegistrationStatusBuilder
+  ID10([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
+          .and.when.valueInRegistration("Whether you have any Other Cards").is.yes;
+  }
+
+  @WithName("What is the type of ownership of your house?")
+  @WithRegistrationStatusBuilder
+  H1([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithRegistrationStatusBuilder
-    housePleaseExplain([], statusBuilder) {
+  @WithRegistrationStatusBuilder
+  housePleaseExplain([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("What is the type of ownership of your house?")
         .containsAnswerConceptName("Any Other");
-    }
+  }
 
-    @WithName("What is the type of ownership of land on which your house is built?")
-    @WithRegistrationStatusBuilder
-    H2([], statusBuilder) {
+  @WithName("House - Please Explain")
+  @WithRegistrationStatusBuilder
+  H2([], statusBuilder) {
+       statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("What is the type of ownership of your house?")
+            .containsAnswerConceptName("Any Other");
+  }
+
+  @WithName("What is the type of ownership of land on which your house is built?")
+  @WithRegistrationStatusBuilder
+  H3([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithRegistrationStatusBuilder
-    ownershipOfLandPleaseElaborate([], statusBuilder) {
+  @WithRegistrationStatusBuilder
+  ownershipOfLandPleaseElaborate([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("What is the type of ownership of land on which your house is built?")
             .containsAnswerConceptName("Others");
-    }
+  }
 
-    @WithName("What is the type of roofing of your house?")
-    @WithRegistrationStatusBuilder
-    H3([], statusBuilder) {
+  @WithName("ownership of land - Please Elaborate")
+  @WithRegistrationStatusBuilder
+  H4([], statusBuilder) {
+       statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("What is the type of ownership of land on which your house is built?")
+            .containsAnswerConceptName("Others");
+  }
+
+  @WithName("What is the type of roofing of your house?")
+  @WithRegistrationStatusBuilder
+  H5([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithRegistrationStatusBuilder
-    roofingPleaseElaborate([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("What is the type of roofing of your house?").containsAnswerConceptName("Others");
-    }
+  @WithRegistrationStatusBuilder
+  roofingPleaseElaborate([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("What is the type of roofing of your house?")
+        .containsAnswerConceptName("Others");
+  }
 
-    @WithName("What type of toilet system do you use?")
-    @WithRegistrationStatusBuilder
-    H4([], statusBuilder) {
+  @WithName("roofing - Please Elaborate")
+  @WithRegistrationStatusBuilder
+  H6([], statusBuilder) {
+       statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("What is the type of roofing of your house?")
+            .containsAnswerConceptName("Others");
+  }
+
+  @WithName("What type of toilet system do you use?")
+  @WithRegistrationStatusBuilder
+  H7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithName("Do you have an electricity connection for your house?")
-    @WithRegistrationStatusBuilder
-    H5([], statusBuilder) {
+  @WithName("Do you have an electricity connection for your house?")
+  @WithRegistrationStatusBuilder
+  H8([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithName("What is the source of drinking water for your house?")
-    @WithRegistrationStatusBuilder
-    H6([], statusBuilder) {
+  @WithName("What is the source of drinking water for your house?")
+  @WithRegistrationStatusBuilder
+  H9([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithName("What is the source of cooking fuel at your house?")
-    @WithRegistrationStatusBuilder
-    H7([], statusBuilder) {
+  @WithName("What is the source of cooking fuel at your house?")
+  @WithRegistrationStatusBuilder
+  H10([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithName("Do you have any of the following at your house?")
-    @WithRegistrationStatusBuilder
-    H8([], statusBuilder) {
+  @WithName("Do you have any of the following at your house?")
+  @WithRegistrationStatusBuilder
+  H11([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithName("Do you have any partial/total disablement that affects your day-to-day functioning")
-    @WithRegistrationStatusBuilder
-    D1([], statusBuilder) {
+  @WithName("Do you have any partial/total disablement that affects your day-to-day functioning")
+  @WithRegistrationStatusBuilder
+  D1([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
-    }
+  }
 
-    @WithRegistrationStatusBuilder
-    pleaseProvideDetails([], statusBuilder) {
+  @WithRegistrationStatusBuilder
+  pleaseProvideDetails([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Do you have any partial/total disablement that affects your day-to-day functioning").is.yes;
-    }
+  }
 
-    @WithRegistrationStatusBuilder
-    doYouHaveADoctorsCertificateIndicatingThePercentageOfDisability([], statusBuilder) {
+  @WithName("Please provide details")
+  @WithRegistrationStatusBuilder
+  D2([], statusBuilder) {
+       statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+         .containsAnswerConceptName("Informal Worker")
+         .and.when.valueInRegistration("Do you have any partial/total disablement that affects your day-to-day functioning").is.yes;
+
+  }
+
+  @WithRegistrationStatusBuilder
+  doYouHaveADoctorsCertificateIndicatingThePercentageOfDisability([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Do you have any partial/total disablement that affects your day-to-day functioning").is.yes;
-    }
+  }
 
-    @WithRegistrationStatusBuilder
-    doYouReceiveADisabilityPension([], statusBuilder) {
+  @WithName("Do you have a doctor's certificate indicating the percentage of disability?")
+  @WithRegistrationStatusBuilder
+  D3([], statusBuilder) {
+       statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+         .containsAnswerConceptName("Informal Worker")
+         .and.when.valueInRegistration("Do you have any partial/total disablement that affects your day-to-day functioning").is.yes;
+
+  }
+  @WithRegistrationStatusBuilder
+  doYouReceiveADisabilityPension([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Do you have any partial/total disablement that affects your day-to-day functioning").is.yes;
-    }
+  }
 
-    @WithName("Do you experience any of these?")
-    @WithRegistrationStatusBuilder
-    D2([], statusBuilder) {
+  @WithName("Do you experience any of these?")
+  @WithRegistrationStatusBuilder
+  D4([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
-    }
+            .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)");
+  }
 
-    @WithName("experience - Please Elaborate")
-    @WithRegistrationStatusBuilder
-    D21([], statusBuilder) {
+  @WithName("experience - Please Elaborate")
+  @WithRegistrationStatusBuilder
+  D21([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Do you experience any of these?")
             .containsAnswerConceptName("Others");
-    }
+  }
 
-    @WithName("Nature of Employment")
-    @WithRegistrationStatusBuilder
-    P1([], statusBuilder) {
+  @WithName("experience - Please Elaborate")
+  @WithRegistrationStatusBuilder
+  D5([], statusBuilder) {
+       statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Do you experience any of these?")
+            .containsAnswerConceptName("Others");
+  }
+
+  @WithName("Nature of Employment")
+  @WithRegistrationStatusBuilder
+  P1([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithName("Working Area")
-    @WithRegistrationStatusBuilder
-    P2([], statusBuilder) {
+  @WithName("Working Area")
+  @WithRegistrationStatusBuilder
+  P2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithName("Please name them")
-    @WithRegistrationStatusBuilder
-    P21([], statusBuilder) {
+  @WithRegistrationStatusBuilder
+  pleaseNameThem([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Working Area")
             .containsAnyAnswerConceptName("Zone(s)", "Ward(s)", "Area(s)", "Outside City", "Inside and Outside City/Town");
-    }
+  }
 
-    @WithRegistrationStatusBuilder
-    namePleaseExplain([], statusBuilder) {
+  @WithRegistrationStatusBuilder
+  namePleaseExplain([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Working Area").containsAnswerConceptName("Others");
-    }
+  }
 
-    @WithName("Frequency of work (How often do you get work?)")
-    @WithRegistrationStatusBuilder
-    P3([], statusBuilder) {
+  @WithName("Frequency of work (How often do you get work?)")
+  @WithRegistrationStatusBuilder
+  P3([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithRegistrationStatusBuilder
-    frequencyOfWorkPleaseElaborate([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Frequency of work (How often do you get work?)").containsAnswerConceptName("Others");
-    }
+  @WithRegistrationStatusBuilder
+  frequencyOfWorkPleaseElaborate([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Frequency of work (How often do you get work?)")
+        .containsAnswerConceptName("Others");
+  }
 
-    @WithName("No. of hours of work in a day")
-    @WithRegistrationStatusBuilder
-    P4([], statusBuilder) {
+  @WithName("No. of hours of work in a day")
+  @WithRegistrationStatusBuilder
+  P4([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithName("Basis of Income")
-    @WithRegistrationStatusBuilder
-    P5([], statusBuilder) {
+  @WithName("Basis of Income")
+  @WithRegistrationStatusBuilder
+  P5([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
-    }
+  }
 
-    @WithName("Fixed Rate (INR)")
-    @WithRegistrationStatusBuilder
-    P51([], statusBuilder) {
+  @WithName("Fixed Rate (INR)")
+  @WithRegistrationStatusBuilder
+  P51([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Basis of Income")
             .containsAnyAnswerConceptName("Hourly Fixed Rate (Enter Rate per Hour in INR)",
                 "Daily Fixed Rate (Enter Rate per Day in INR)",
                 "Weekly Fixed Rate (Enter Rate per Week in INR)",
                 "Monthly Fixed Rate (Enter Rate per Month in INR)");
-    }
+  }
 
     @WithName("No. of Pieces/Trips per Day")
     @WithRegistrationStatusBuilder
@@ -1218,12 +1288,20 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnyAnswerConceptName("Relative Living with Informal Worker (Dependent)", "Relative Living with Informal Worker (Not Dependent)");
     }
 
-    @WithName("profession - Please Explain")
     @WithRegistrationStatusBuilder
-    relative2([], statusBuilder) {
+    professionPleaseExplain([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("What is your profession?")
             .containsAnswerConceptName("Others");
     }
+
+   @WithName("profession - Please Explain")
+   @WithRegistrationStatusBuilder
+   relative2([], statusBuilder) {
+       statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnyAnswerConceptName("Relative Living with Informal Worker (Dependent)", "Relative Living with Informal Worker (Not Dependent)")
+            .and.when.valueInRegistration("What is your profession?")
+            .containsAnswerConceptName("Others");
+   }
 
     @WithName("Type of Informal Waste Worker")
     @WithRegistrationStatusBuilder
