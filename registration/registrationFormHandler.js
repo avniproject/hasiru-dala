@@ -675,14 +675,32 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnyAnswerConceptName("Zone(s)", "Ward(s)", "Area(s)", "Outside City", "Inside and Outside City/Town");
   }
 
+  @WithName("Please name them")
+  @WithRegistrationStatusBuilder
+  P3([], statusBuilder) {
+         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Informal Worker")
+            .and.when.valueInRegistration("Working Area")
+            .containsAnyAnswerConceptName("Zone(s)", "Ward(s)", "Area(s)", "Outside City", "Inside and Outside City/Town");
+  }
+
   @WithRegistrationStatusBuilder
   namePleaseExplain([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Working Area").containsAnswerConceptName("Others");
   }
 
+  @WithName("name - Please Explain")
+  @WithRegistrationStatusBuilder
+  P4([], statusBuilder) {
+     statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Working Area")
+          .containsAnswerConceptName("Others");
+  }
+
   @WithName("Frequency of work (How often do you get work?)")
   @WithRegistrationStatusBuilder
-  P3([], statusBuilder) {
+  P5([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
   }
@@ -693,16 +711,25 @@ class RegistrationViewHandlerHasiruDala {
         .containsAnswerConceptName("Others");
   }
 
+  @WithName("Frequency of work - Please Elaborate")
+  @WithRegistrationStatusBuilder
+  P6([], statusBuilder) {
+     statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Frequency of work (How often do you get work?)")
+          .containsAnswerConceptName("Others");
+  }
+
   @WithName("No. of hours of work in a day")
   @WithRegistrationStatusBuilder
-  P4([], statusBuilder) {
+  P5([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
   }
 
   @WithName("Basis of Income")
   @WithRegistrationStatusBuilder
-  P5([], statusBuilder) {
+  P6([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
   }
