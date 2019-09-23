@@ -14,10 +14,9 @@
           "uuid": "fdd8118f-7fbb-404d-8f64-b48f9dd25737",
           "keyValues": [],
           "concept": {
-            "name": "Picture of the duly filled consent form",
             "uuid": "68963bf5-37d4-47ab-ab0a-4601050f5908"
           },
-          "displayOrder": 0.9 ,
+          "displayOrder": 0.9,
           "mandatory": true
         },
 
@@ -1894,7 +1893,7 @@
           "mandatory": false
         },
         {
-          "name": "NSKFDC - Please explain ",
+          "name": "NSKFDC - Please explain",
           "uuid": "1cb42800-4771-423a-b310-ffec21a2b3a9",
           "keyValues": [],
           "concept": {
