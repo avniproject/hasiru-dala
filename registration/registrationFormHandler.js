@@ -609,7 +609,7 @@ class RegistrationViewHandlerHasiruDala {
   @WithRegistrationStatusBuilder
   D2([], statusBuilder) {
        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-         .containsAnswerConceptName("Informal Worker")
+         .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
          .and.when.valueInRegistration("Do you have any partial/total disablement that affects your day-to-day functioning").is.yes;
 
   }
@@ -623,7 +623,7 @@ class RegistrationViewHandlerHasiruDala {
   @WithRegistrationStatusBuilder
   D3([], statusBuilder) {
        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-         .containsAnswerConceptName("Informal Worker")
+         .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
          .and.when.valueInRegistration("Do you have any partial/total disablement that affects your day-to-day functioning").is.yes;
 
   }
@@ -651,7 +651,7 @@ class RegistrationViewHandlerHasiruDala {
   @WithRegistrationStatusBuilder
   D5([], statusBuilder) {
        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)");
+            .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)")
             .and.when.valueInRegistration("Do you experience any of these?")
             .containsAnswerConceptName("Others");
   }
