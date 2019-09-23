@@ -722,14 +722,14 @@ class RegistrationViewHandlerHasiruDala {
 
   @WithName("No. of hours of work in a day")
   @WithRegistrationStatusBuilder
-  P5([], statusBuilder) {
+  P7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
   }
 
   @WithName("Basis of Income")
   @WithRegistrationStatusBuilder
-  P6([], statusBuilder) {
+  P8([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Informal Worker");
   }
