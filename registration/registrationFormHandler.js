@@ -651,7 +651,7 @@ class RegistrationViewHandlerHasiruDala {
   @WithRegistrationStatusBuilder
   D5([], statusBuilder) {
        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Informal Worker")
+            .containsAnyAnswerConceptName("Informal Worker", "Relative Living with Informal Worker (Dependent)");
             .and.when.valueInRegistration("Do you experience any of these?")
             .containsAnswerConceptName("Others");
   }
