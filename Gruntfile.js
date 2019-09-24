@@ -1,12 +1,13 @@
 const rulesConfigInfra = require('rules-config/infra');
 const IDI = require('openchs-idi');
+const secrets = require('../secrets.json');
 
 module.exports = IDI.configure({
     "name": "hasiru",
     "chs-admin": "admin",
     "org-name": "Hasiru Dala",
     "org-admin": "admin@hasiru",
-    "secrets": '../secrets.json',
+    "secrets": secrets,
     "files": {
         "adminUsers": {
             // "prod": ["admin-user.json"],
@@ -50,16 +51,6 @@ module.exports = IDI.configure({
         ],
         "organisationSql": [
             /* "create_organisation.sql"*/
-        ],
-        "organisationConfig": ["organisationConfig.json"],
-        "translations": [
-            "translations/en.json",
-        ],
-        "platformTranslation": [
-            "translations/platform/en.json",
-            "translations/platform/gu_IN.json",
-            "translations/platform/hi_IN.json",
-            "translations/platform/mr_IN.json",
         ]
     }
 }, rulesConfigInfra);
