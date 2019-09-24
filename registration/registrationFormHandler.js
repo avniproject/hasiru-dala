@@ -2646,9 +2646,7 @@ class RegistrationViewHandlerHasiruDala {
          .containsAnyAnswerConceptName("Waste collectors on ULB Autorickshaws/trucks",
                          "Solid Waste Door to Door Collector",
                          "Solid Waste Micro Compost Worker",
-                         "Street Sweeper / Drain Cleaner",)
-         .or.when.valueInRegistration("Type of Informal Sanitation Worker")
-         .containsAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker")
+                         "Street Sweeper / Drain Cleaner","Decanting Station/Sewage Treatment Plant (STP) Worker")
          .and.when.valueInRegistration("Do you receive any income apart from wages?").is.yes;
 
   }
