@@ -2547,14 +2547,20 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     dtdc7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-        .containsAnyAnswerConceptName("Street Sweeper / Drain Cleaner", "Waste collectors on ULB Autorickshaws/trucks", "Solid Waste Door to Door Collector", "Solid Waste Micro Compost Worker");
+        .containsAnyAnswerConceptName("Street Sweeper / Drain Cleaner",
+            "Waste collectors on ULB Autorickshaws/trucks",
+            "Solid Waste Door to Door Collector",
+            "Solid Waste Micro Compost Worker");
     }
 
     @WithName("When is your weekly off?")
     @WithRegistrationStatusBuilder
     dtdc75([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-            .containsAnyAnswerConceptName("Street Sweeper / Drain Cleaner", "Waste collectors on ULB Autorickshaws/trucks", "Solid Waste Door to Door Collector", "Solid Waste Micro Compost Worker");
+            .containsAnyAnswerConceptName("Street Sweeper / Drain Cleaner",
+                "Waste collectors on ULB Autorickshaws/trucks",
+                "Solid Waste Door to Door Collector",
+                "Solid Waste Micro Compost Worker");
     }
 
     @WithName("Do you also work at ULB site/plant/landfill?")
@@ -2646,7 +2652,9 @@ class RegistrationViewHandlerHasiruDala {
          .containsAnyAnswerConceptName("Waste collectors on ULB Autorickshaws/trucks",
                          "Solid Waste Door to Door Collector",
                          "Solid Waste Micro Compost Worker",
-                         "Street Sweeper / Drain Cleaner","Decanting Station/Sewage Treatment Plant (STP) Worker")
+                         "Street Sweeper / Drain Cleaner",)
+         .or.when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker")
          .and.when.valueInRegistration("Do you receive any income apart from wages?").is.yes;
 
   }
@@ -2807,6 +2815,19 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Others");
     }
 
+    @WithName("truck - Please Explain")
+    @WithRegistrationStatusBuilder
+    P101([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Ownership of the truck")
+          .containsAnswerConceptName("Others");
+    }
+
     @WithName("Nature of work")
     @WithRegistrationStatusBuilder
     dw3([], statusBuilder) {
@@ -2818,12 +2839,32 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     dw4([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnswerConceptName("Desludging Worker", "Household Sanitation Worker", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment", "Community/Public Toilet Cleaner", "Toilet Cleaner in Schools and Offices");
+            .containsAnswerConceptName("Desludging Worker", "Household Sanitation Worker",
+            "Toilet Cleaner at Railways",
+            "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment",
+            "Community/Public Toilet Cleaner",
+            "Toilet Cleaner in Schools and Offices");
     }
 
     @WithRegistrationStatusBuilder
     whatAreTheCommonReasonsForBlockages([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Do you also remove blockages?").is.yes;
+    }
+
+    @WithName("what are the common reasons for blockages?")
+    @WithRegistrationStatusBuilder
+    P102([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker", "Household Sanitation Worker",
+                     "Toilet Cleaner at Railways",
+                     "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment",
+                     "Community/Public Toilet Cleaner",
+                     "Toilet Cleaner in Schools and Offices")
+          .and.when.valueInRegistration("Do you also remove blockages?").is.yes;
     }
 
     @WithName("What is the average group size of a typical desludging work?")
@@ -2854,6 +2895,19 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Others");
     }
 
+    @WithName("customers - Please Explain")
+    @WithRegistrationStatusBuilder
+    P103([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("What type of customers do you serve?")
+          .containsAnswerConceptName("Others");
+    }
+
     @WithName("Do you leave the lid of the tank open for some time before cleaning?")
     @WithRegistrationStatusBuilder
     dw9([], statusBuilder) {
@@ -2873,9 +2927,33 @@ class RegistrationViewHandlerHasiruDala {
         statusBuilder.show().when.valueInRegistration("Have you entered the tank for cleaning?").is.yes;
     }
 
+    @WithName("How often do you enter the tank?")
+    @WithRegistrationStatusBuilder
+    P104([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Have you entered the tank for cleaning?").is.yes;
+    }
+
     @WithRegistrationStatusBuilder
     whatAreTheReasonsForEnteringIntoTheTank([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Have you entered the tank for cleaning?").is.yes;
+    }
+
+    @WithName("What are the reasons for entering into the tank?")
+    @WithRegistrationStatusBuilder
+    P105([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Have you entered the tank for cleaning?").is.yes;
     }
 
     @WithName("tank - Please Explain")
@@ -2883,6 +2961,19 @@ class RegistrationViewHandlerHasiruDala {
     dw11([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("What are the reasons for entering into the tank?")
             .containsAnswerConceptName("Others");
+    }
+
+    @WithName("tank - Please Explain")
+    @WithRegistrationStatusBuilder
+    P106([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("What are the reasons for entering into the tank?")
+          .containsAnswerConceptName("Others");
     }
 
     @WithName("Do you use any tools at work?")
@@ -2897,6 +2988,18 @@ class RegistrationViewHandlerHasiruDala {
         statusBuilder.show().when.valueInRegistration("Do you use any tools at work?").is.yes;
     }
 
+    @WithName("What type of tools do you use?")
+    @WithRegistrationStatusBuilder
+    P107([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Do you use any tools at work?").is.yes;
+    }
+
     @WithName("Who provided these tools?")
     @WithRegistrationStatusBuilder
     dw13([], statusBuilder) {
@@ -2909,6 +3012,19 @@ class RegistrationViewHandlerHasiruDala {
     dw14([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Who provided these tools?")
             .containsAnswerConceptName("Others");
+    }
+
+    @WithName("tools - Please Explain")
+    @WithRegistrationStatusBuilder
+    P108([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Who provided these tools?")
+          .containsAnswerConceptName("Others");
     }
 
     @WithName("Who taught you the process of desludging?")
@@ -2928,6 +3044,18 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     nameOfTheOrganisationThatProvidedTheTraining([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Have you been formally trained?").is.yes;
+    }
+
+    @WithName("Name of the organisation that provided the training")
+    @WithRegistrationStatusBuilder
+    P109([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Have you been formally trained?").is.yes;
     }
 
     @WithName("When did you receive training?")
@@ -2956,15 +3084,52 @@ class RegistrationViewHandlerHasiruDala {
         statusBuilder.show().when.valueInRegistration("Do you clean yourself after collection from septic tank?").is.yes;
     }
 
+    @WithName("septic tank - Do you use water to clean?")
+    @WithRegistrationStatusBuilder
+    P110([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Do you clean yourself after collection from septic tank?").is.yes;
+    }
+
     @WithRegistrationStatusBuilder
     septicTankDoYouUseSoapCleaningDetergentToClean([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Do you clean yourself after collection from septic tank?").is.yes;
+    }
+
+    @WithName("septic tank - Do you use soap/cleaning detergent to clean?")
+    @WithRegistrationStatusBuilder
+    P111([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Do you clean yourself after collection from septic tank?").is.yes;
     }
 
     @WithRegistrationStatusBuilder
     septicTankDoYouWipeOnCloth([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Do you clean yourself after collection from septic tank?").is.yes;
     }
+
+    @WithName("septic tank - Do you wipe on cloth?")
+    @WithRegistrationStatusBuilder
+    P112([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Do you clean yourself after collection from septic tank?").is.yes;
+    }
+
 
     @WithName("Do you clean yourself after disposing the load?")
     @WithRegistrationStatusBuilder
@@ -2978,9 +3143,33 @@ class RegistrationViewHandlerHasiruDala {
         statusBuilder.show().when.valueInRegistration("Do you clean yourself after disposing the load?").is.yes;
     }
 
+    @WithName("Do you use water to clean?")
+    @WithRegistrationStatusBuilder
+    P113([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Do you clean yourself after disposing the load?").is.yes;
+    }
+
     @WithRegistrationStatusBuilder
     doYouUseSoapCleaningDetergentToClean([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Do you clean yourself after disposing the load?").is.yes;
+    }
+
+    @WithName("Do you use soap/cleaning detergent to clean?")
+    @WithRegistrationStatusBuilder
+    P114([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Do you clean yourself after disposing the load?").is.yes;
     }
 
     @WithRegistrationStatusBuilder
@@ -2988,19 +3177,53 @@ class RegistrationViewHandlerHasiruDala {
         statusBuilder.show().when.valueInRegistration("Do you clean yourself after disposing the load?").is.yes;
     }
 
+    @WithName("Do you wipe on cloth?")
+    @WithRegistrationStatusBuilder
+    P115([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Desludging Worker")
+          .and.when.valueInRegistration("Do you clean yourself after disposing the load?").is.yes;
+    }
 
     @WithName("Where do you carry out toilet cleaning activities?")
     @WithRegistrationStatusBuilder
     tc1([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner",
+            "Household Sanitation Worker",
+            "Toilet Cleaner in Schools and Offices",
+            "Toilet Cleaner at Railways",
+            "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
     }
 
     @WithName("No. of Establishments")
     @WithRegistrationStatusBuilder
     tc2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Where do you carry out toilet cleaning activities?")
-            .containsAnyAnswerConceptName("House", "Commercial Establishment", "Office", "Community/ Public Toilet", "Railways", "Others");
+            .containsAnyAnswerConceptName("House", "Commercial Establishment", "Office",
+                "Community/ Public Toilet", "Railways", "Others");
+    }
+
+    @WithName("No. of Establishments")
+    @WithRegistrationStatusBuilder
+    P116([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnyAnswerConceptName("Community/Public Toilet Cleaner",
+                      "Household Sanitation Worker",
+                      "Toilet Cleaner in Schools and Offices",
+                      "Toilet Cleaner at Railways",
+                      "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment")
+          .and.when.valueInRegistration("Where do you carry out toilet cleaning activities?")
+          .containsAnyAnswerConceptName("House","Commercial Establishment", "Office",
+                          "Community/ Public Toilet", "Railways", "Others");
     }
 
     @WithName("Do you get paid when the schools are on summer holiday?")
@@ -3008,6 +3231,23 @@ class RegistrationViewHandlerHasiruDala {
     tc3([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Where do you carry out toilet cleaning activities?")
             .containsAnswerConceptName("School/College");
+    }
+
+    @WithName("Do you get paid when the schools are on summer holiday?")
+    @WithRegistrationStatusBuilder
+    P117([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnyAnswerConceptName("Community/Public Toilet Cleaner",
+                      "Household Sanitation Worker",
+                      "Toilet Cleaner in Schools and Offices",
+                      "Toilet Cleaner at Railways",
+                      "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment")
+          .and.when.valueInRegistration("Where do you carry out toilet cleaning activities?")
+          .containsAnswerConceptName("School/College");
     }
 
     @WithName("How many toilet seats do you clean per day?")
@@ -3021,7 +3261,9 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     tc5([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker", "Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker",
+            "Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices",
+             "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
     }
 
     @WithName("frequency of cleaning - Please Explain")
@@ -3031,11 +3273,30 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Others");
     }
 
+    @WithName("frequency of cleaning - Please Explain")
+    @WithRegistrationStatusBuilder
+    P118([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker",
+                      "Community/Public Toilet Cleaner", "Household Sanitation Worker",
+                      "Toilet Cleaner in Schools and Offices",
+                      "Toilet Cleaner at Railways",
+                      "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment")
+          .and.when.valueInRegistration("Who decides frequency of cleaning?")
+           .containsAnswerConceptName("Others");
+    }
+
     @WithName("What cleaning materials do you use?")
     @WithRegistrationStatusBuilder
     tc7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker",
+            "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways",
+            "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
     }
 
     @WithName("cleaning materials - Please Explain")
@@ -3045,11 +3306,28 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Others");
     }
 
+    @WithName("cleaning materials - Please Explain")
+    @WithRegistrationStatusBuilder
+    P119([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker",
+                     "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways",
+                     "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment")
+          .and.when.valueInRegistration("What cleaning materials do you use?")
+           .containsAnswerConceptName("Others");
+    }
+
     @WithName("Who pays for cleaning material?")
     @WithRegistrationStatusBuilder
     tc9([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker",
+             "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways",
+             "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
     }
 
     @WithName("cleaning material - Please Explain")
@@ -3057,6 +3335,21 @@ class RegistrationViewHandlerHasiruDala {
     tc10([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Who pays for cleaning material?")
             .containsAnswerConceptName("Contractors");
+    }
+
+    @WithName("cleaning material - Please Explain")
+    @WithRegistrationStatusBuilder
+    P120([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+         .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker",
+                      "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways",
+                      "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment")
+          .and.when.valueInRegistration("Who pays for cleaning material?")
+          .containsAnswerConceptName("Contractors");
     }
 
     @WithName("Do you pick up the clogged / contaminated waste?")
@@ -3070,7 +3363,9 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     tc12([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker",
+            "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways",
+            "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
     }
 
 
@@ -3081,11 +3376,28 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Others");
     }
 
+    @WithName("clogged/contaminated waste - Please Explain")
+    @WithRegistrationStatusBuilder
+    P121([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker",
+                     "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways",
+                     "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment")
+          .and.when.valueInRegistration("How do you dispose the clogged / contaminated waste?")
+          .containsAnswerConceptName("Others");
+    }
+
     @WithName("Is there any other work you do in the house / institution / establishment / office?")
     @WithRegistrationStatusBuilder
     tc14([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker",
+            "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways",
+            "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
     }
 
     @WithName("house/institution/establishment/office - Please Explain")
@@ -3093,6 +3405,21 @@ class RegistrationViewHandlerHasiruDala {
     tc15([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Is there any other work you do in the house / institution / establishment / office?")
             .containsAnswerConceptName("Others");
+    }
+
+    @WithName("house/institution/establishment/office - Please Explain")
+    @WithRegistrationStatusBuilder
+    P122([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker",
+                     "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways",
+                     "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment")
+          .and.when.valueInRegistration("Is there any other work you do in the house / institution / establishment / office?")
+          .containsAnswerConceptName("Others");
     }
 
     @WithName("How many of you go together for undertaking the work?")
@@ -3113,7 +3440,10 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     tc18([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment", "Decanting Station/Sewage Treatment Plant (STP) Worker");
+            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker",
+            "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways",
+            "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment",
+            "Decanting Station/Sewage Treatment Plant (STP) Worker");
     }
 
     @WithName("tools/implants - Please Explain")
@@ -3123,11 +3453,29 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Others");
     }
 
+    @WithName("tools/implants - Please Explain")
+    @WithRegistrationStatusBuilder
+    P123([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker",
+                     "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways",
+                     "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment",
+                     "Decanting Station/Sewage Treatment Plant (STP) Worker")
+          .and.when.valueInRegistration("What are tools/implants used at work?")
+          .containsAnswerConceptName("Others");
+    }
+
     @WithName("Who provided these implants?")
     @WithRegistrationStatusBuilder
     tc20([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker", "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways", "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
+            .containsAnyAnswerConceptName("Community/Public Toilet Cleaner", "Household Sanitation Worker",
+             "Toilet Cleaner in Schools and Offices", "Toilet Cleaner at Railways",
+             "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment");
     }
 
 
@@ -3144,6 +3492,19 @@ class RegistrationViewHandlerHasiruDala {
     dwr2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("What work do you perform at decanting station / Sewage Treatment Plant?")
             .containsAnswerConceptName("Others");
+    }
+
+    @WithName("decanting station/Sewage Treatment Plant - Please Explain")
+    @WithRegistrationStatusBuilder
+    P124([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker")
+          .and.when.valueInRegistration("What work do you perform at decanting station / Sewage Treatment Plant?")
+          .containsAnswerConceptName("Others");
     }
 
     @WithName("Who provides these tools/implants?")
@@ -3167,6 +3528,19 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Others");
     }
 
+    @WithName("materials - Please Explain")
+    @WithRegistrationStatusBuilder
+    P125([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker")
+          .and.when.valueInRegistration("Do you use any cleaning materials?")
+          .containsAnswerConceptName("Others");
+    }
+
     @WithName("How do you dispose the collected waste?")
     @WithRegistrationStatusBuilder
     dwr6([], statusBuilder) {
@@ -3179,6 +3553,19 @@ class RegistrationViewHandlerHasiruDala {
     dwr7([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("How do you dispose the collected waste?")
             .containsAnswerConceptName("Others");
+    }
+
+    @WithName("collected waste - Please Explain")
+    @WithRegistrationStatusBuilder
+    P126([], statusBuilder) {
+    statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+          .containsAnswerConceptName("Informal Worker")
+          .and.when.valueInRegistration("Please choose your employment type")
+          .containsAnswerConceptName("Informal Sanitation worker")
+          .and.when.valueInRegistration("Type of Informal Sanitation Worker")
+          .containsAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker")
+          .and.when.valueInRegistration("How do you dispose the collected waste?")
+          .containsAnswerConceptName("Others");
     }
 
     @WithName("Do you get any government sponsored scholarship?")
