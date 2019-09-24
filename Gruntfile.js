@@ -50,6 +50,11 @@ module.exports = IDI.configure({
         ],
         "organisationSql": [
             /* "create_organisation.sql"*/
+        ],
+        "organisationConfig": ["organisationConfig.json"],
+        "translations": [
+            "translations/en.json",
+            "translations/ta_IN.json",
         ]
     }
 }, rulesConfigInfra);
