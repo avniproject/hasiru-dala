@@ -19,7 +19,6 @@
           "displayOrder": 0.9,
           "mandatory": true
         },
-
         {
           "name": "Marital status",
           "uuid": "40500879-98d9-4314-bc2e-6f0eff4917cc",
@@ -61,7 +60,7 @@
             "uuid": "43184a9f-5092-4211-ade0-2949f4b438a2"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Caste/Community - Please Specify",
@@ -427,7 +426,7 @@
             "name": "Whether permanent address same as present address",
             "uuid": "e6b9e04d-f5a6-4e4e-afa2-ff74ee9e75af"
           },
-          "displayOrder": 0.5 ,
+          "displayOrder": 0.5,
           "mandatory": true
         },
         {
@@ -942,7 +941,8 @@
             "uuid": "c4977a35-b91b-4d29-b948-cd1d61090e8d"
           },
           "displayOrder": 4,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "experience - Please Elaborate",
@@ -952,7 +952,8 @@
             "uuid": "69d3428a-3c82-4e53-8ff0-18649826cd06"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": false,
+          "voided": true
         }
       ]
     },
@@ -1165,7 +1166,7 @@
             "uuid": "70985144-aecc-41e8-8231-1ab7bbd5645c"
           },
           "displayOrder": 20,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Average Income Earned per Month (INR)",
@@ -1175,7 +1176,7 @@
             "uuid": "0e2d1c4f-1055-4c67-a5fc-549d3b9d8190"
           },
           "displayOrder": 21,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you have other sources of income?",
@@ -1185,7 +1186,7 @@
             "uuid": "9ebc0fa7-ee5e-433e-95a8-c3b8d135d46b"
           },
           "displayOrder": 22,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Source",
@@ -1195,7 +1196,7 @@
             "uuid": "bb288aaf-f55b-4c40-ac7a-086d4657d4a8"
           },
           "displayOrder": 23,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Average Income Earned per Month from other sources (INR)",
@@ -1205,7 +1206,7 @@
             "uuid": "8d1d87d9-d58a-46e4-99a6-d77c91639deb"
           },
           "displayOrder": 24,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Mode of Payment",
@@ -1216,7 +1217,7 @@
             "uuid": "188549be-f224-454b-8a3e-9a2a27ecf490"
           },
           "displayOrder": 25,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Payment - Please Elaborate",
@@ -1226,7 +1227,7 @@
             "uuid": "98fc24a4-2cc5-4193-b52a-a96d5a039d24"
           },
           "displayOrder": 26,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Who hands over the cash/cheque or makes the money transfer?",
@@ -1237,7 +1238,7 @@
             "uuid": "04974b75-8449-40f6-ac72-a82c51dfde44"
           },
           "displayOrder": 27,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Please specify the Dept./Agency (Ex. Railways etc.)",
@@ -1247,7 +1248,7 @@
             "uuid": "bdc4b148-abf5-4aa9-b640-fcdc12844eee"
           },
           "displayOrder": 28,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Please specify NGO/SHG (Ex. Wave Federation etc.)",
@@ -1257,7 +1258,7 @@
             "uuid": "cd5af3dd-5ce6-4a0a-8b9e-915b439e014c"
           },
           "displayOrder": 29,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "money transfer - Please Elaborate",
@@ -1267,7 +1268,7 @@
             "uuid": "9d129863-4374-44dd-a37a-7ba4b1ac5587"
           },
           "displayOrder": 30,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -1286,7 +1287,7 @@
             "uuid": "c1c17ae2-5a1f-4127-b391-87d8efe0a635"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "symptoms/disorders - Please Elaborate",
@@ -1306,7 +1307,7 @@
             "uuid": "f421fb17-2086-4a6e-acec-721218f2bcf6"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "When do you consume alcohol/narcotic drugs?",
@@ -1317,7 +1318,7 @@
             "uuid": "2b35ad0f-a8fa-40af-bb30-169cb923336e"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "If you or someone is sick at home where do you go for medical help?",
@@ -1328,7 +1329,7 @@
             "uuid": "8ec3f00a-3c85-456c-91b5-732b2c18e72d"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "medical help - Please Elaborate",
@@ -1338,7 +1339,7 @@
             "uuid": "46f16837-cc5c-405f-b0ed-0014dfca32ab"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Please specify the distance to the nearest Government/Private/Primary Health Centre from your house",
@@ -1349,7 +1350,7 @@
             "uuid": "fb358853-5cdc-40ce-9e39-3519c21b120f"
           },
           "displayOrder": 7,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Have you ever participated in a health camp?",
@@ -1360,7 +1361,7 @@
             "uuid": "319ccbad-7380-4d47-9b8d-e44e1d27fcea"
           },
           "displayOrder": 8,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Will you participate in a  medical camp, if conducted in the future?",
@@ -1371,7 +1372,7 @@
             "uuid": "1b3b4ee9-e711-42d5-a5e8-c6e0aaa94509"
           },
           "displayOrder": 9,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you have a facility (Like a Bathroom/Changing Room) to refresh after work?",
@@ -1381,7 +1382,7 @@
             "uuid": "796a4bfd-2d8d-4ccd-994a-89efbc55d6d6"
           },
           "displayOrder": 10,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you have separate toilets for men and women?",
@@ -1391,7 +1392,7 @@
             "uuid": "e7ce7c2e-b600-431f-948e-16def6efb14d"
           },
           "displayOrder": 11,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -1507,17 +1508,17 @@
       "displayOrder": 15,
       "formElements": [
         {
-          "name": "Are you part of a Trade Union?",
+          "name": "Are you a member of a trade union?",
           "uuid": "d45cc143-a75d-4b29-b2de-c1414962d3e8",
           "keyValues": [],
           "concept": {
             "uuid": "ac4871e6-e130-4246-968b-3803a0c89be9"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
-          "name": "Name of the Organization(s)",
+          "name": "Name of the union(s)",
           "uuid": "d2ee106a-b500-4ee3-81a3-470d9fc9812e",
           "keyValues": [],
           "concept": {
@@ -1555,14 +1556,14 @@
       "displayOrder": 16,
       "formElements": [
         {
-          "name": "Are you part of a Political Party?",
+          "name": "Are you affiliated to a political party?",
           "uuid": "084bf18b-e752-4e84-90cb-ed3fa61fa853",
           "keyValues": [],
           "concept": {
             "uuid": "50f4e0a0-5d14-4e7f-8294-e47fe82cf03f"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Name of the Party",
@@ -1603,14 +1604,14 @@
       "displayOrder": 17,
       "formElements": [
         {
-          "name": "Are you part of any SHG?",
+          "name": "Are you a member of any SHG?",
           "uuid": "4eb9e423-435f-435a-8cd6-6020a29aa584",
           "keyValues": [],
           "concept": {
             "uuid": "3ef76ea7-ccbb-46c1-99a3-866e9aca5932"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Name and Location of SHG",
@@ -1658,7 +1659,7 @@
             "uuid": "77aef8a0-e434-445b-8aa9-087c8fd3c8cf"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Name of the youth association",
@@ -1699,14 +1700,14 @@
       "displayOrder": 19,
       "formElements": [
         {
-          "name": "Are you part of any caste association?",
+          "name": "Are you a member of any caste association?",
           "uuid": "0643fd66-8e6c-46b0-b871-610940139995",
           "keyValues": [],
           "concept": {
             "uuid": "bb9294b1-2f1b-4374-85a1-21057b560933"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Name of the caste association",
@@ -1754,7 +1755,7 @@
             "uuid": "5fb88114-2dad-4f90-9db7-5b733c5281ad"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Name of the club/association",
@@ -1802,10 +1803,10 @@
             "uuid": "afafe7a1-9a1a-41c3-aef3-b7b38cf01408"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
-          "name": "Name of the other association",
+          "name": "Name of the association",
           "uuid": "65dd2108-566e-401f-b1fe-71e0d1829cee",
           "keyValues": [],
           "concept": {
@@ -1843,14 +1844,14 @@
       "displayOrder": 22,
       "formElements": [
         {
-          "name": "Have you received any assistance from any government body? (Ex. TAHDCO, Slum Board etc.)",
+          "name": "Have you received assistance from any government body? (Ex. TAHDCO, Slum Board etc.)",
           "uuid": "3817d5bd-99cc-4b51-9691-96fa40340455",
           "keyValues": [],
           "concept": {
             "uuid": "b514e437-3073-4bf7-8fb8-6f0fa6eeced3"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Name of the body",
@@ -1890,7 +1891,7 @@
             "uuid": "e9f8a3ad-154e-4434-817f-d7e5727c532c"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "NSKFDC - Please explain",
@@ -1918,7 +1919,7 @@
             "uuid": "b09cf665-e5bb-4664-abc4-a889f2c16ffb"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Are you registered with Employee Provident Fund Organization (EPFO)?",
@@ -1928,7 +1929,7 @@
             "uuid": "361ec670-a468-4283-85af-1e3eb1e61d03"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Have you been able to access details about PF / ESI?",
@@ -1939,7 +1940,7 @@
             "uuid": "a6438ea2-7163-4977-bc88-d914898d87be"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Who do you approach when you need loan?",
@@ -1950,7 +1951,7 @@
             "uuid": "a752867a-f2b3-486a-96d3-3b9966955d3c"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Loan - Please explain",
@@ -1971,7 +1972,7 @@
             "uuid": "dd9ef773-f45f-4707-99e1-f300c447e608"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -2010,7 +2011,7 @@
             "uuid": "15e6cb07-9b3f-47dc-bad0-ac43f15b1d0e"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Have you or any one in your house enrolled in a government sponsored health insurance scheme?",
@@ -2021,7 +2022,7 @@
             "uuid": "d8e7c642-3c44-4529-8760-40096d92fe09"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you get any government sponsored scholarship?",
@@ -2031,7 +2032,7 @@
             "uuid": "a59e1b63-14e7-40bc-ac99-a66b827768da"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you receive a widow pension?",
@@ -2041,7 +2042,7 @@
             "uuid": "ac2f640b-6634-4113-b494-c21edd4b1d04"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you receive a single woman pension?",
@@ -2051,7 +2052,7 @@
             "uuid": "34115b94-3934-40c3-a054-91cce427486d"
           },
           "displayOrder": 7,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you receive a Disability Pension?",
@@ -2061,7 +2062,7 @@
             "uuid": "4549530e-3fd3-42cd-973b-da17c0dca3ce"
           },
           "displayOrder": 8,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -2146,6 +2147,46 @@
       ]
     },
     {
+      "uuid": "b0154812-2211-4b49-bd19-3760d4721270",
+      "name": "Training Common Waste Worker",
+      "display": "Training",
+      "displayOrder": 26.5,
+      "formElements": [
+        {
+          "name": "Have you undergone any of the vocational trainings?",
+          "uuid": "3f83df2f-7578-46f3-8907-88d4ee8c80b1",
+          "keyValues": [],
+          "concept": {
+            "name": "Have you undergone any of the vocational trainings?",
+            "uuid": "991e6edd-38fa-44ce-a696-42135ed031c7"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Please select from the list",
+          "uuid": "4dc1381f-dc7c-463f-9010-d7c14211e873",
+          "keyValues": [],
+          "concept": {
+            "name": "Please select from the list",
+            "uuid": "99e911cd-a515-409b-be51-9fe90518b68e"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Training - Please Explain",
+          "uuid": "e55bb93f-0143-46b7-8d08-a97d0f93e36f",
+          "keyValues": [],
+          "concept": {
+            "name": "Training - Please Explain",
+            "uuid": "00b1f3a4-3cf5-4ea1-8b93-f258f97a54c6"
+          },
+          "displayOrder": 3
+        }
+      ]
+    },
+    {
       "uuid": "aa4253a9-8e6d-45bf-bcef-9c788f5de6ee",
       "name": "Trainings",
       "display": "Trainings",
@@ -2189,7 +2230,7 @@
             "uuid": "e19cbd29-b63e-4902-817c-468dc21c0eb9"
           },
           "displayOrder": 1,
-          "mandatory":true
+          "mandatory": true
         },
         {
           "name": "How do you pick waste?",
@@ -2445,7 +2486,7 @@
           "mandatory": false
         },
         {
-          "name": "Do you have an advance with scrap dealer/buyer?",
+          "name": "Do you get an advance from the scrap dealer/buyer?",
           "uuid": "d812bbd0-6ca5-479b-a687-58ae39906b09",
           "keyValues": [],
           "concept": {
@@ -2507,7 +2548,7 @@
           "name": "How do you transport your collected waste?",
           "uuid": "9d51ca28-4099-4252-9bf2-2062b16cb19e",
           "keyValues": [],
-          "type": "SingleSelect",
+          "type": "MultiSelect",
           "concept": {
             "uuid": "33c3d095-9ee5-4ad3-83f3-e65e256c7bd8"
           },
@@ -2669,7 +2710,6 @@
       "display": "Waste sold per week",
       "displayOrder": 34,
       "formElements": [
-
         {
           "name": "Glass Quarter Bottles waste sold per week in Kg",
           "uuid": "4ed15af9-af57-497e-95f1-10a0f3911c35",
@@ -2988,7 +3028,7 @@
             "uuid": "90c35dbd-0765-4297-a232-05b988a21510"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "collection from households/establishments - Please Explain",
@@ -3019,7 +3059,7 @@
             "uuid": "8c9054fc-8a40-44cb-9b16-1f49de4be657"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "How much of waste do you collect per day?",
@@ -3030,7 +3070,7 @@
             "uuid": "91187b01-1b31-4c91-8e59-447fd39daef3"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "How many hours do you work in a day?",
@@ -3041,7 +3081,7 @@
             "uuid": "353ea629-c72a-4c3f-831d-75c6a3a74626"
           },
           "displayOrder": 7,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "When is your weekly off?",
@@ -3052,7 +3092,7 @@
             "uuid": "259cead1-7bc2-41a0-864f-53f0db6ad383"
           },
           "displayOrder": 7.5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you also work at ULB site/plant/landfill?",
@@ -3062,7 +3102,7 @@
             "uuid": "6cf0b5a3-5b85-4dc0-b6f7-8b036dbf94ab"
           },
           "displayOrder": 8,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Where do you work? (Ex. DWCC/MRF/Composting Plant/Landfill etc.)",
@@ -3072,7 +3112,7 @@
             "uuid": "576549fa-5e22-41ae-b0d4-1be2304c36cb"
           },
           "displayOrder": 9,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "What work do you do at there?",
@@ -3083,7 +3123,7 @@
             "uuid": "f856e489-d692-433b-b88f-a598336e0705"
           },
           "displayOrder": 10,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Work - Please Explain",
@@ -3111,7 +3151,7 @@
             "uuid": "fb526c9d-ca60-4a55-aef8-970e37379552"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Source of additional income",
@@ -3121,7 +3161,7 @@
             "uuid": "4714add9-36a7-4870-8a8c-42021d8b4ced"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Income per month (INR)",
@@ -3131,7 +3171,7 @@
             "uuid": "99d8d6e3-99cc-4e84-a841-79bfbae6d390"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -3160,7 +3200,7 @@
             "uuid": "965e603f-51ae-434c-97c7-a6db8e30a550"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you carry the waste after sweeping?",
@@ -3170,7 +3210,7 @@
             "uuid": "e6c84945-d3ee-4350-a999-1a0ee0cf9cec"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "How long do you carry the waste after sweeping?",
@@ -3191,7 +3231,7 @@
             "uuid": "309be17e-3b98-40c3-98d7-056f7f573df1"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Sweeping - Please Specify",
@@ -3212,7 +3252,7 @@
             "uuid": "dffe35ba-836f-48f2-9cc6-a030c9a49e4c"
           },
           "displayOrder": 7,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Brooms - Please specify",
@@ -3233,7 +3273,7 @@
             "uuid": "e0fdcb46-9c47-417b-8fac-65484b920db7"
           },
           "displayOrder": 9,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "New Brooms - Please specify",
@@ -3262,7 +3302,7 @@
             "uuid": "f13fcdf4-dd02-4486-a628-1c25cdcf9148"
           },
           "displayOrder": 1,
-          "mandatory":false
+          "mandatory": true
         },
         {
           "name": "truck - Please Explain",
@@ -3283,17 +3323,18 @@
             "uuid": "d4ad16c2-6f7e-4be5-9153-205a0de65053"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you also remove blockages?",
           "uuid": "b9151e1b-2f06-4707-93ab-9ede94a88958",
           "keyValues": [],
+          "type": "SingleSelect",
           "concept": {
             "uuid": "79247b07-d4de-4ab7-8a6d-19fdf3a1edb8"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "what are the common reasons for blockages?",
@@ -3314,7 +3355,7 @@
             "uuid": "d28332f1-616b-4af6-bfee-6cc1b5847b84"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "On an average, how many houses/establishments do you desludge on a typical working day?",
@@ -3325,7 +3366,7 @@
             "uuid": "a3f10443-84da-4192-806c-971b90b11d21"
           },
           "displayOrder": 7,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "What type of customers do you serve?",
@@ -3336,7 +3377,7 @@
             "uuid": "d47bfcae-e925-492e-9f69-b8f32e2ea0e2"
           },
           "displayOrder": 8,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "customers - Please Explain",
@@ -3356,7 +3397,7 @@
             "uuid": "98fc51f0-8bd4-422a-8ffb-82f17a5d8ba5"
           },
           "displayOrder": 10,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Have you entered the tank for cleaning?",
@@ -3366,7 +3407,7 @@
             "uuid": "a6d7ed06-f6aa-4c84-9f16-9a7940625180"
           },
           "displayOrder": 11,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "How often do you enter the tank?",
@@ -3377,7 +3418,7 @@
             "uuid": "b18fdcfe-9eef-411f-9330-b2b4dd64f78a"
           },
           "displayOrder": 12,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "What are the reasons for entering into the tank?",
@@ -3388,7 +3429,7 @@
             "uuid": "de9b12ff-b9d9-475b-847f-3e66e7be9a76"
           },
           "displayOrder": 13,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "tank - Please Explain",
@@ -3416,7 +3457,7 @@
             "uuid": "f76520a8-c2c9-4b63-a073-1170713904e3"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "What type of tools do you use?",
@@ -3427,7 +3468,7 @@
             "uuid": "cecf31ca-4b75-4456-8f0f-e762ef55e320"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Who provided these tools?",
@@ -3438,7 +3479,7 @@
             "uuid": "67d83c7d-07cb-4f64-840d-e29ece2bea11"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "tools - Please Explain",
@@ -3467,7 +3508,7 @@
             "uuid": "e0e781b0-5f49-4bcf-b65c-db69618f695a"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Have you been formally trained?",
@@ -3477,7 +3518,7 @@
             "uuid": "a3cf5bdf-5187-4b3a-9e51-98f5c8d881d0"
           },
           "displayOrder": 2,
-          "mandatory":false
+          "mandatory": true
         },
         {
           "name": "Name of the organisation that provided the training",
@@ -3498,7 +3539,7 @@
             "uuid": "3cbea185-d64d-453b-a9f8-d7f6fc0885b4"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -3516,7 +3557,7 @@
             "uuid": "3eb278fb-39df-4f73-a50f-6148bd5017e9"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you clean yourself after collection from septic tank?",
@@ -3526,7 +3567,7 @@
             "uuid": "f0d9fc04-76c9-4abb-b32a-a242159eea26"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "septic tank - Do you use water to clean?",
@@ -3536,7 +3577,7 @@
             "uuid": "7a1d7206-b285-49b7-99bd-587bffc82ba3"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "septic tank - Do you use soap/cleaning detergent to clean?",
@@ -3546,7 +3587,7 @@
             "uuid": "d6852796-01a8-4536-9b5b-067ecd6fbd38"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "septic tank - Do you wipe on cloth?",
@@ -3556,7 +3597,7 @@
             "uuid": "180002b6-f6cc-4074-94b9-c0bb5ee10138"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you clean yourself after disposing the load?",
@@ -3566,7 +3607,7 @@
             "uuid": "0adcce05-7374-424a-ab3c-f89a6244fadc"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you use water to clean?",
@@ -3576,7 +3617,7 @@
             "uuid": "536947e9-8ba6-4be2-a0d6-c48fadbe5670"
           },
           "displayOrder": 7,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you use soap/cleaning detergent to clean?",
@@ -3586,7 +3627,7 @@
             "uuid": "0af589b3-e9f1-42f7-ac73-3dcb68fd7661"
           },
           "displayOrder": 8,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you wipe on cloth?",
@@ -3596,7 +3637,7 @@
             "uuid": "de830e17-5aeb-417f-98ec-dd2ca009e41d"
           },
           "displayOrder": 9,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -3615,7 +3656,7 @@
             "uuid": "a59e82d4-0809-4647-83c6-9cb744f19381"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "decanting station/Sewage Treatment Plant - Please Explain",
@@ -3687,7 +3728,7 @@
             "uuid": "816a132f-25b8-4314-a00a-0b8c2613c47e"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "frequency of cleaning - Please Explain",
@@ -3745,6 +3786,7 @@
           "name": "Do you pick up the clogged / contaminated waste?",
           "uuid": "62c1dae8-9aea-439c-b8dc-100625840461",
           "keyValues": [],
+          "type": "SingleSelect",
           "concept": {
             "uuid": "23d3c16d-da21-4a84-8158-938ad7e104c3"
           },
@@ -3813,7 +3855,7 @@
             "uuid": "1d0f3660-171e-432d-a9b1-ce6d3eee0c93"
           },
           "displayOrder": 17,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -3832,7 +3874,7 @@
             "uuid": "454df756-e351-45e5-8aca-1727accc45bf"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "tools/implants - Please Explain",
@@ -3872,7 +3914,7 @@
             "uuid": "1a26fe3c-d3a9-43c6-ac1a-d3bf6939a91a"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you use any cleaning materials?",
@@ -3883,7 +3925,7 @@
             "uuid": "af019ebf-1458-4914-b73e-400afc103ae9"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "materials - Please Explain",
@@ -3904,7 +3946,7 @@
             "uuid": "b83f9afe-32e3-4fac-bd8b-1dcf68494a5a"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "collected waste - Please Explain",
@@ -3918,7 +3960,6 @@
         }
       ]
     },
-
     {
       "uuid": "91d5cd3d-186f-46eb-a81a-1330363d3528",
       "name": "Comments",
