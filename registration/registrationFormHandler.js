@@ -401,7 +401,9 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     OIC112([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please select the body that issued the Occupational Identity Card")
-            .containsAnyAnswerConceptName("NGO/SHG/CBO authorized to issue the card", "Others");
+            .containsAnyAnswerConceptName("NGO/SHG/CBO authorized to issue the card", "Others")
+            .and.when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Worker / Informal Worker");
     }
 
     @WithName("Whether you have Voter Registration Card")
@@ -706,12 +708,6 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Worker / Informal Worker");
     }
 
-    @WithRegistrationStatusBuilder
-    frequencyOfWorkPleaseElaborate([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Frequency of work (How often do you get work?)")
-            .containsAnswerConceptName("Others");
-    }
-
     @WithName("Frequency of work - Please Elaborate")
     @WithRegistrationStatusBuilder
     P6([], statusBuilder) {
@@ -1010,6 +1006,8 @@ class RegistrationViewHandlerHasiruDala {
     P38([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Basis of Income")
             .containsAnswerConceptName("Work Difficulty")
+            .and.when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptName("Worker / Informal Worker")
     }
 
     @WithName("No. of Complex Work done in a month")
@@ -1490,11 +1488,6 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Worker / Informal Worker");
     }
 
-    @WithRegistrationStatusBuilder
-    nameOfTheClubAssociation([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Are you part of any fan club/association?").is.yes;
-    }
-
     @WithName("Name of the club/associationn")
     @WithRegistrationStatusBuilder
     P66([], statusBuilder) {
@@ -1503,22 +1496,12 @@ class RegistrationViewHandlerHasiruDala {
             .and.when.valueInRegistration("Are you part of any fan club/association?").is.yes;
     }
 
-    @WithRegistrationStatusBuilder
-    haveYouReceivedAnyAssistanceFromClubAssociation([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Are you part of any fan club/association?").is.yes;
-    }
-
     @WithName("Have you received any assistance from Club/Association?")
     @WithRegistrationStatusBuilder
     P67([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Worker / Informal Worker")
             .and.when.valueInRegistration("Are you part of any fan club/association?").is.yes;
-    }
-
-    @WithRegistrationStatusBuilder
-    clubAssociationPleaseExplain([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Have you received any assistance from Club/Association?").is.yes;
     }
 
     @WithName("Club/Association - Please explain")
@@ -3544,103 +3527,6 @@ class RegistrationViewHandlerHasiruDala {
             .and.when.valueInRegistration("Have you undergone any of the vocational trainings?").containsAnswerConceptName("Yes")
             .and.when.valueInRegistration("Please select from the list").containsAnswerConceptName("Others");
     }
-
-    @WithName("Do you also remove blockages?")
-    @WithRegistrationStatusBuilder
-    sk1([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("Do you leave the lid of the tank open for some time before cleaning?")
-    @WithRegistrationStatusBuilder
-    sk2([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("Have you entered the tank for cleaning?")
-    @WithRegistrationStatusBuilder
-    sk3([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("How often do you enter the tank?")
-    @WithRegistrationStatusBuilder
-    sk4([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("Do you use any tools at work?")
-    @WithRegistrationStatusBuilder
-    sk5([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("Do you carry First Aid kit with you at all times?")
-    @WithRegistrationStatusBuilder
-    sk6([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("Do you clean yourself after collection from septic tank?")
-    @WithRegistrationStatusBuilder
-    sk7([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("septic tank - Do you use water to clean? ")
-    @WithRegistrationStatusBuilder
-    sk8([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("septic tank - Do you use soap/cleaning detergent to clean?")
-    @WithRegistrationStatusBuilder
-    sk9([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("septic tank - Do you wipe on cloth?")
-    @WithRegistrationStatusBuilder
-    sk10([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("Do you clean yourself after disposing the load?")
-    @WithRegistrationStatusBuilder
-    sk11([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("Do you use water to clean? ")
-    @WithRegistrationStatusBuilder
-    sk12([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("Do you use soap/cleaning detergent to clean?")
-    @WithRegistrationStatusBuilder
-    sk13([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("Do you wipe on cloth?")
-    @WithRegistrationStatusBuilder
-    sk14([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("Do you pick up the clogged / contaminated waste?")
-    @WithRegistrationStatusBuilder
-    sk15([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
-    @WithName("Do you have access and facilities to clean yourself?")
-    @WithRegistrationStatusBuilder
-    sk16([], statusBuilder) {
-        statusBuilder.skipAnswers('Yes', 'No');
-    }
-
 }
 
 
