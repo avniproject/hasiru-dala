@@ -1607,7 +1607,12 @@
   },
   {
     "uuid": "df6759dc-7100-46b2-8f73-8cb263e12bc2",
-    "name": "4-5 days in a week"
+    "name": "4-5 days in a week",
+    "voided": true
+  },
+  {
+    "uuid": "0fbfec6d-b338-4abe-99d6-de3e86ab0f69",
+    "name": "4-6 days in a week"
   },
   {
     "uuid": "56d7489a-a321-41e9-900e-c9503b19d812",
@@ -1639,7 +1644,7 @@
         "name": "All days of the week"
       },
       {
-        "uuid": "df6759dc-7100-46b2-8f73-8cb263e12bc2",
+        "uuid": "0fbfec6d-b338-4abe-99d6-de3e86ab0f69",
         "name": "4-6 days in a week"
       },
       {
@@ -6588,53 +6593,5 @@
         "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
       }
     ]
-  },
-  {
-    "name": "Please select from the list",
-    "uuid": "99e911cd-a515-409b-be51-9fe90518b68e",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "447bcec8-54e2-4f22-8af4-ba76881fdca0",
-        "name": "Organic Waste Processing"
-      },
-      {
-        "uuid": "9ef3bb7c-b8d4-40b3-8439-4c5f1b4fb033",
-        "name": "Event Waste Management"
-      },
-      {
-        "uuid": "103d7c81-6e8b-4bfc-a18e-51b966e02186",
-        "name": "Plastics Waste Management/Recycling/CIPET"
-      },
-      {
-        "uuid": "f988e8ae-cde3-4399-bc69-adf8fdb43958",
-        "name": "Skill Council for Green Jobs (SCGJ) Training"
-      },
-      {
-        "uuid": "9d20be27-871c-4fb3-82c2-3f8f2983021d",
-        "name": "Retail Scrap Shop Certificate Program"
-      },
-      {
-        "uuid": "adb9a9cd-88d8-4be8-abeb-7232776229da",
-        "name": "Four Wheeler/Commercial Vehicle Driver's Training"
-      },
-      {
-        "uuid": "5c84d73b-c5e4-4af4-97f3-6129e0dd8d06",
-        "name": "Mushroom training"
-      },
-      {
-        "uuid": "cff5ce7c-3381-47b8-afe8-ee892ddb80c7",
-        "name": "Chicken Rearing Training "
-      },
-      {
-        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
-        "name": "Others"
-      }
-    ]
-  },
-  {
-    "name": "Training - Please Explain",
-    "uuid": "00b1f3a4-3cf5-4ea1-8b93-f258f97a54c6",
-    "dataType": "Text"
   }
 ]

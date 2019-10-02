@@ -3545,6 +3545,102 @@ class RegistrationViewHandlerHasiruDala {
             .and.when.valueInRegistration("Please select from the list").containsAnswerConceptName("Others");
     }
 
+    @WithName("Do you also remove blockages?")
+    @WithRegistrationStatusBuilder
+    sk1([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("Do you leave the lid of the tank open for some time before cleaning?")
+    @WithRegistrationStatusBuilder
+    sk2([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("Have you entered the tank for cleaning?")
+    @WithRegistrationStatusBuilder
+    sk3([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("How often do you enter the tank?")
+    @WithRegistrationStatusBuilder
+    sk4([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("Do you use any tools at work?")
+    @WithRegistrationStatusBuilder
+    sk5([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("Do you carry First Aid kit with you at all times?")
+    @WithRegistrationStatusBuilder
+    sk6([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("Do you clean yourself after collection from septic tank?")
+    @WithRegistrationStatusBuilder
+    sk7([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("septic tank - Do you use water to clean? ")
+    @WithRegistrationStatusBuilder
+    sk8([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("septic tank - Do you use soap/cleaning detergent to clean?")
+    @WithRegistrationStatusBuilder
+    sk9([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("septic tank - Do you wipe on cloth?")
+    @WithRegistrationStatusBuilder
+    sk10([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("Do you clean yourself after disposing the load?")
+    @WithRegistrationStatusBuilder
+    sk11([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("Do you use water to clean? ")
+    @WithRegistrationStatusBuilder
+    sk12([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("Do you use soap/cleaning detergent to clean?")
+    @WithRegistrationStatusBuilder
+    sk13([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("Do you wipe on cloth?")
+    @WithRegistrationStatusBuilder
+    sk14([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("Do you pick up the clogged / contaminated waste?")
+    @WithRegistrationStatusBuilder
+    sk15([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
+    @WithName("Do you have access and facilities to clean yourself?")
+    @WithRegistrationStatusBuilder
+    sk16([], statusBuilder) {
+        statusBuilder.skipAnswers('Yes', 'No');
+    }
+
 }
 
 

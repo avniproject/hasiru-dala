@@ -786,7 +786,7 @@
             "uuid": "880a3d27-ee1c-401c-bcc8-71dfb25a3c2b"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "House - Please Explain",
@@ -796,7 +796,7 @@
             "uuid": "cff9437b-345d-462f-aaf7-308ed464f0df"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "What is the type of ownership of land on which your house is built?",
@@ -1014,7 +1014,7 @@
             "uuid": "3263774a-022b-4713-9393-7ce853310460"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Frequency of work - Please Elaborate",
@@ -1411,7 +1411,7 @@
             "uuid": "17f14ed3-1fad-4531-b1fa-6cdf93ae8f80"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "How often do you use Mask for emptying and collecting",
@@ -1422,7 +1422,7 @@
             "uuid": "8485cc4b-e9b1-412b-b8de-bbb27494ed3d"
           },
           "displayOrder": 2,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "How often do you use Uniform for emptying and collecting",
@@ -1433,7 +1433,7 @@
             "uuid": "3fe32a9f-df1e-47d7-92eb-4fdf3fba5d16"
           },
           "displayOrder": 3,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "How often do you use Aprons/Old Shirt for emptying and collecting",
@@ -1444,7 +1444,7 @@
             "uuid": "39c42df1-db38-4c4a-9bd7-e8ea86af9f92"
           },
           "displayOrder": 4,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "How often do you use Gum Boots for emptying and collecting",
@@ -1455,7 +1455,7 @@
             "uuid": "d9dd9516-7a55-4dc7-80a9-fcd42bee11ef"
           },
           "displayOrder": 5,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "How often do you use Chappals for emptying and collecting",
@@ -1466,7 +1466,7 @@
             "uuid": "d2fdf1b5-c37a-4846-bdab-d3b8b4360acc"
           },
           "displayOrder": 6,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Do you use any other personal protection equipment (PPE) during collection/ Emptying?",
@@ -1476,7 +1476,7 @@
             "uuid": "902921a1-bc7a-4912-a2f2-b802be9bf409"
           },
           "displayOrder": 7,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "Please Explain (Type of PPE)",
@@ -1497,7 +1497,7 @@
             "uuid": "1c6adbef-818b-49c0-ba8c-5d5b42c137dd"
           },
           "displayOrder": 9,
-          "mandatory": false
+          "mandatory": true
         }
       ]
     },
@@ -2081,7 +2081,7 @@
             "uuid": "7697dc05-3910-452f-9af6-7a36cf29ae0b"
           },
           "displayOrder": 1,
-          "mandatory": false
+          "mandatory": true
         },
         {
           "name": "profession - Please Explain",
@@ -2147,14 +2147,14 @@
       ]
     },
     {
-      "uuid": "b0154812-2211-4b49-bd19-3760d4721270",
-      "name": "Training Common Waste Worker",
-      "display": "Training",
-      "displayOrder": 26.5,
+      "uuid": "aa4253a9-8e6d-45bf-bcef-9c788f5de6ee",
+      "name": "Trainings",
+      "display": "Trainings",
+      "displayOrder": 27,
       "formElements": [
         {
           "name": "Have you undergone any of the vocational trainings?",
-          "uuid": "3f83df2f-7578-46f3-8907-88d4ee8c80b1",
+          "uuid": "a63ee11a-c58a-43a5-b31e-6f8d738b08b4",
           "keyValues": [],
           "concept": {
             "name": "Have you undergone any of the vocational trainings?",
@@ -2165,42 +2165,13 @@
         },
         {
           "name": "Please select from the list",
-          "uuid": "4dc1381f-dc7c-463f-9010-d7c14211e873",
-          "keyValues": [],
-          "concept": {
-            "name": "Please select from the list",
-            "uuid": "99e911cd-a515-409b-be51-9fe90518b68e"
-          },
-          "displayOrder": 2,
-          "mandatory": true
-        },
-        {
-          "name": "Training - Please Explain",
-          "uuid": "e55bb93f-0143-46b7-8d08-a97d0f93e36f",
-          "keyValues": [],
-          "concept": {
-            "name": "Training - Please Explain",
-            "uuid": "00b1f3a4-3cf5-4ea1-8b93-f258f97a54c6"
-          },
-          "displayOrder": 3
-        }
-      ]
-    },
-    {
-      "uuid": "aa4253a9-8e6d-45bf-bcef-9c788f5de6ee",
-      "name": "Trainings",
-      "display": "Trainings",
-      "displayOrder": 27,
-      "formElements": [
-        {
-          "name": "Have you undergone any of the following trainings?",
           "uuid": "262753d8-bd4a-43b0-ad1d-2bfee3904713",
           "keyValues": [],
           "type": "MultiSelect",
           "concept": {
             "uuid": "2ac22c50-8ca5-4589-8441-88d67fe44b70"
           },
-          "displayOrder": 1,
+          "displayOrder": 1.5,
           "mandatory": true
         },
         {
