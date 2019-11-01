@@ -3,7 +3,7 @@ set role hasiru;
 drop view if exists hasiru_registration_details;
 create view hasiru_registration_details("Id", address_id, uuid, first_name, last_name, "Gender", date_of_birth,
                                         date_of_birth_verified, registration_date, facility_id, "Address title",
-                                        "Catchment", is_voided, "Picture of the duly filled consent form",
+                                        is_voided, "Picture of the duly filled consent form",
                                         "Marital status", "Religion", "Other religion", "Caste/Community",
                                         "Other Caste/Community", "Level of Education", "Other Level of Education",
                                         "Are you studying presently?", "Please select the class/course",
@@ -250,7 +250,6 @@ SELECT individual.id                                                            
        individual.registration_date,
        individual.facility_id,
        a.title                                                                                   AS "Address title",
-       c2.name                                                                                   AS "Catchment",
        individual.is_voided,
        (individual.observations ->>
         '68963bf5-37d4-47ab-ab0a-4601050f5908'::text)                                            AS "Picture of the duly filled consent form",
@@ -940,10 +939,7 @@ SELECT individual.id                                                            
         '2789fc32-a398-42a9-97c3-552206c5b4ad'::text)                                            AS "Title/Designation"
 FROM ((((individual individual
     LEFT JOIN gender g ON ((g.id = individual.gender_id)))
-    LEFT JOIN address_level a ON ((individual.address_id = a.id)))
-    LEFT JOIN virtual_catchment_address_mapping_table m2 ON ((a.id = m2.addresslevel_id)))
-         LEFT JOIN catchment c2 ON ((m2.catchment_id = c2.id)))
-WHERE ((c2.name)::text !~~* '%master%'::text);
+    LEFT JOIN address_level a ON ((individual.address_id = a.id)));
 
 drop view if exists hasiru_locations_view;
 create view hasiru_locations_view(ward_id, ward_name, zone_id, zone_name, city_id, city, state_id, state) as
