@@ -4739,6 +4739,22 @@
       {
         "name": "No",
         "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      },
+      {
+        "name": "Always",
+        "uuid": "7aa7e7ad-0c80-4c05-8d3d-cb6cff6690e1"
+      },
+      {
+        "name": "Never",
+        "uuid": "bd4b89c3-fc07-47a5-9be8-b3e8d14053e9"
+      },
+      {
+        "name": "Sometimes",
+        "uuid": "a6872113-b90c-4141-b3b2-1d4fe779cf36"
+      },
+      {
+        "name": "No Response",
+        "uuid": "2c747614-b51e-44a1-b8eb-4264074a65df"
       }
     ]
   },
@@ -4896,31 +4912,6 @@
     "name": "New Brooms - Please specify",
     "uuid": "e0f17c8f-255d-4d42-b719-6b4e4d58ccf5",
     "dataType": "Text"
-  },
-  {
-    "name": "Do you receive any income apart from wages?",
-    "uuid": "fb526c9d-ca60-4a55-aef8-970e37379552",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "name": "Yes",
-        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
-      },
-      {
-        "name": "No",
-        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
-      }
-    ]
-  },
-  {
-    "name": "Source of additional income",
-    "uuid": "4714add9-36a7-4870-8a8c-42021d8b4ced",
-    "dataType": "Text"
-  },
-  {
-    "name": "Income per month (INR)",
-    "uuid": "99d8d6e3-99cc-4e84-a841-79bfbae6d390",
-    "dataType": "Numeric"
   },
   {
     "uuid": "f3957232-c333-430b-9778-2387c3f3ca40",
@@ -6593,5 +6584,161 @@
         "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
       }
     ]
+  },
+  {
+    "name": "Do you have a local address proof?",
+    "uuid": "26d8ce68-d7cd-4a2b-b5aa-9dddbf9e8bcd",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "uuid": "03d34306-3e0b-4196-9e39-0f75151cf0b2",
+    "name": "Voter Registration Card"
+  },
+  {
+    "uuid": "76ab1b88-51d8-4c21-a135-adb95582ea99",
+    "name": "Ration/BPL card  with your name included"
+  },
+  {
+    "uuid": "2e135003-34dc-4a55-a1ad-eb804b39bccb",
+    "name": "Aadhar Card"
+  },
+  {
+    "uuid": "2a8eb210-999f-4bf4-9de2-aece9919d4ae",
+    "name": "Aadhar Enrollment ID"
+  },
+  {
+    "uuid": "77c49fd8-5394-4fa9-8ea0-e18edb1ca530",
+    "name": "Driving License"
+  },
+  {
+    "name": "Please select the type of local address proof",
+    "uuid": "851d417e-1925-4604-9fce-0a7eb0d40128",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "03d34306-3e0b-4196-9e39-0f75151cf0b2",
+        "name": "Voter Registration Card"
+      },
+      {
+        "uuid": "76ab1b88-51d8-4c21-a135-adb95582ea99",
+        "name": "Ration/BPL card  with your name included"
+      },
+      {
+        "uuid": "2e135003-34dc-4a55-a1ad-eb804b39bccb",
+        "name": "Aadhar Card"
+      },
+      {
+        "uuid": "2a8eb210-999f-4bf4-9de2-aece9919d4ae",
+        "name": "Aadhar Enrollment ID"
+      },
+      {
+        "uuid": "77c49fd8-5394-4fa9-8ea0-e18edb1ca530",
+        "name": "Driving License"
+      },
+      {
+        "uuid": "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
+        "name": "Others"
+      }
+    ]
+  },
+  {
+    "name": "Name of local ID",
+    "uuid": "2332141c-4453-4d6d-bcc1-bc3fde90f2d3",
+    "dataType": "Text"
+  },
+  {
+    "name": "Local ID description",
+    "uuid": "a3d60cb8-8615-44fc-a3b0-4bb32d0933f3",
+    "dataType": "Text"
+  },
+  {
+    "name": "Occupational Identity Card No.",
+    "uuid": "8311695f-16ad-4597-9335-774d467e2559",
+    "dataType": "Text"
+  },
+  {
+    "name": "Upload Photo of the ID",
+    "uuid": "8756d237-c80a-4a26-b02a-45b665ea2a91",
+    "dataType": "Image"
+  },
+  {
+    "name": "Whether you have Driving license",
+    "uuid": "0e2fa18f-9840-4187-bb90-3c7ef92c05d9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Whether you have Cast Certificate",
+    "uuid": "ea39faca-9b32-4437-a080-719c7a0f0498",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Do you have Income Certificate",
+    "uuid": "685b9b91-deb3-475f-b1ed-e18fed8f1560",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Please upload the doctor's certificate",
+    "uuid": "744117e0-fd3e-4f92-a776-57750774772e",
+    "dataType": "Image"
+
+  },
+  {
+    "name": "Photo of the person",
+    "uuid": "8756c196-0333-4eda-aed5-8a3c69ed6dbb",
+    "dataType": "Image"
+
+  },
+  {
+    "name": "Upload Photo of id",
+    "uuid": "4f60af9f-fe12-43c3-b1da-d72ddc481752",
+    "dataType": "Image"
+
+  },
+  {
+    "name": "Upload Photo of Other Card",
+    "uuid": "1b71c0ad-f261-4ddf-9513-8af340acbf53",
+    "dataType": "Image"
+
   }
+
 ]

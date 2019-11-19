@@ -390,6 +390,8 @@ class RegistrationViewHandlerHasiruDala {
     }
 
     @WithName("Please select the body that issued the Occupational Identity Card")
+    @WithName("Occupational Identity Card No.")
+    @WithName("Upload Photo of the ID")
     @WithRegistrationStatusBuilder
     OIC2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
@@ -480,13 +482,22 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnyAnswerConceptName("Worker / Informal Worker", "Relative Living with Worker / Informal Worker (Dependent)")
             .and.when.valueInRegistration("Whether you have any Other Cards").is.yes;
     }
+    @WithName("Upload Photo of Other Card")
+    @WithRegistrationStatusBuilder
+    ID91([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnyAnswerConceptName("Worker / Informal Worker", "Relative Living with Worker / Informal Worker (Dependent)")
+            .and.when.valueInRegistration("Whether you have any Other Cards").is.yes;
+    }
 
     @WithRegistrationStatusBuilder
     description([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Whether you have any Other Cards").is.yes;
     }
 
+
     @WithName("Description")
+
     @WithRegistrationStatusBuilder
     ID10([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
@@ -629,6 +640,14 @@ class RegistrationViewHandlerHasiruDala {
             .and.when.valueInRegistration("Do you have any partial/total disablement that affects your day-to-day functioning").is.yes;
 
     }
+
+    @WithName("Please upload the doctor's certificate")
+    @WithRegistrationStatusBuilder
+    D41([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Do you have a doctor's certificate indicating the percentage of disability?").is.yes;
+    }
+
+
 
     @WithRegistrationStatusBuilder
     doYouReceiveADisabilityPension([], statusBuilder) {
@@ -1808,7 +1827,13 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnyAnswerConceptName("Wastepicker", "Itinerant buyer", "Sorters at scrap shops", "Sorters at DWCC");
     }
 
-    @WithName("How do you pick waste?")
+    // @WithName("How do you pick waste?")
+    // @WithRegistrationStatusBuilder
+    // ibSd2([], statusBuilder) {
+    //     statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+    //         .containsAnyAnswerConceptName("Wastepicker", "Sorters at scrap shops", "Sorters at DWCC");
+    // }
+    @WithName("What is the mode of wastepicking/employment?")
     @WithRegistrationStatusBuilder
     ibSd2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
@@ -1921,6 +1946,13 @@ class RegistrationViewHandlerHasiruDala {
     ibSd10([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Details of the buyer to whom you sell your waste")
             .containsAnyAnswerConceptName("Others");
+    }
+
+    @WithName("Mode of Payment")
+    @WithRegistrationStatusBuilder
+    ibSd101([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnswerConceptNameOtherThan("Relative Living with Worker / Informal Worker (Dependent)");
     }
 
     @WithName("children during off school hours - Please specify")
@@ -2600,71 +2632,7 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Others");
     }
 
-    @WithName("Do you receive any income apart from wages?")
-    @WithRegistrationStatusBuilder
-    dtdc11([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-            .containsAnyAnswerConceptName("Waste collectors on ULB Autorickshaws/trucks",
-                "Solid Waste Door to Door Collector",
-                "Solid Waste Micro Compost Worker",
-                "Street Sweeper / Drain Cleaner",)
-            .or.when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker");
-    }
 
-    @WithName("Source of additional income")
-    P95(individual, formElement) {
-        const case1 = new FormElementStatusBuilder({individual, formElement});
-        case1.show().when.valueInRegistration("Please choose the type of respondent").containsAnswerConceptName("Worker / Informal Worker");
-        const case2 = new FormElementStatusBuilder({individual, formElement});
-        case2.show().when.valueInRegistration("Please choose your employment type")
-            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker", "Sanitation Worker / Informal Sanitation Worker");
-        const case3 = new FormElementStatusBuilder({individual, formElement});
-        case3.show().valueInRegistration("Type of Informal Waste Worker")
-            .containsAnyAnswerConceptName("Waste collectors on ULB Autorickshaws/trucks",
-                "Solid Waste Door to Door Collector",
-                "Solid Waste Micro Compost Worker",
-                "Street Sweeper / Drain Cleaner");
-        const case4 = new FormElementStatusBuilder({individual, formElement});
-        case4.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker");
-        const case5 = new FormElementStatusBuilder({individual, formElement});
-        case5.show().when.valueInRegistration("Do you receive any income apart from wages?").is.yes;
-        return new FormElementStatus(formElement.uuid,
-            (case1.build().visibility &&
-                case2.build().visibility &&
-                case3.build().visibility &&
-                case5.build().visibility)
-            || case4.build().visibility);
-
-    }
-
-    @WithName("Income per month (INR)")
-    P96(individual, formElement) {
-        const case1 = new FormElementStatusBuilder({individual, formElement});
-        case1.show().when.valueInRegistration("Please choose the type of respondent").containsAnswerConceptName("Worker / Informal Worker");
-        const case2 = new FormElementStatusBuilder({individual, formElement});
-        case2.show().when.valueInRegistration("Please choose your employment type")
-            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker", "Sanitation Worker / Informal Sanitation Worker");
-        const case3 = new FormElementStatusBuilder({individual, formElement});
-        case3.show().valueInRegistration("Type of Informal Waste Worker")
-            .containsAnyAnswerConceptName("Waste collectors on ULB Autorickshaws/trucks",
-                "Solid Waste Door to Door Collector",
-                "Solid Waste Micro Compost Worker",
-                "Street Sweeper / Drain Cleaner");
-        const case4 = new FormElementStatusBuilder({individual, formElement});
-        case4.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnyAnswerConceptName("Decanting Station/Sewage Treatment Plant (STP) Worker");
-        const case5 = new FormElementStatusBuilder({individual, formElement});
-        case5.show().when.valueInRegistration("Do you receive any income apart from wages?").is.yes;
-        return new FormElementStatus(formElement.uuid,
-            (case1.build().visibility &&
-                case2.build().visibility &&
-                case3.build().visibility &&
-                case5.build().visibility)
-            || case4.build().visibility);
-
-    }
 
     @WithName("Do you clean the storm water drains and other open drainages?")
     @WithRegistrationStatusBuilder
@@ -2685,30 +2653,40 @@ class RegistrationViewHandlerHasiruDala {
     swm3([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
             .containsAnswerConceptName("Street Sweeper / Drain Cleaner");
+        statusBuilder.skipAnswers('Yes', 'No');
     }
 
-    @WithRegistrationStatusBuilder
-    howLongDoYouCarryTheWasteAfterSweeping([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Do you carry the waste after sweeping?").is.yes;
-    }
+    // @WithName("Do you carry the waste after sweeping?")
+    // @WithRegistrationStatusBuilder
+    // dummmy1([], statusBuilder){
+    //     statusBuilder.skipAnswers('Yes', 'No');
+    // }
+
+
+    // @WithRegistrationStatusBuilder
+    // howLongDoYouCarryTheWasteAfterSweeping([], statusBuilder) {
+    //     statusBuilder.show().when.valueInRegistration("Do you carry the waste after sweeping?")
+    //         .containsAnswerConceptName("Always")
+    //         .or.when.valueInRegistration("Do you carry the waste after sweeping?")
+    //         .containsAnswerConceptName("Sometimes")
+    // }
 
     @WithName("How long do you carry the waste after sweeping?")
     @WithRegistrationStatusBuilder
     P97([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptName("Worker / Informal Worker")
-            .and.when.valueInRegistration("Please choose your employment type")
-            .containsAnswerConceptName("Waste Worker / Informal Waste Worker")
-            .and.when.valueInRegistration("Type of Informal Waste Worker")
-            .containsAnswerConceptName("Street Sweeper / Drain Cleaner")
-            .and.when.valueInRegistration("Do you carry the waste after sweeping?").is.yes;
+        statusBuilder.show().when.valueInRegistration("Do you carry the waste after sweeping?")
+            .containsAnswerConceptName("Always")
+            .or.when.valueInRegistration("Do you carry the waste after sweeping?")
+            .containsAnswerConceptName("Sometimes")
     }
 
     @WithName("How do you carry your waste after sweeping?")
     @WithRegistrationStatusBuilder
     swm4([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-            .containsAnswerConceptName("Street Sweeper / Drain Cleaner");
+        statusBuilder.show().when.valueInRegistration("Do you carry the waste after sweeping?")
+            .containsAnswerConceptName("Always")
+            .or.when.valueInRegistration("Do you carry the waste after sweeping?")
+            .containsAnswerConceptName("Sometimes")
     }
 
     @WithName("Sweeping - Please Specify")
@@ -3007,6 +2985,7 @@ class RegistrationViewHandlerHasiruDala {
     }
 
     @WithName("Name of the organisation that provided the training")
+
     @WithRegistrationStatusBuilder
     P109([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
@@ -3021,8 +3000,8 @@ class RegistrationViewHandlerHasiruDala {
     @WithName("When did you receive training?")
     @WithRegistrationStatusBuilder
     dw17([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnswerConceptName("Desludging Worker");
+        statusBuilder.show().when.valueInRegistration("Have you been formally trained?")
+            .containsAnswerConceptName("Yes");
     }
 
     @WithName("Do you carry First Aid kit with you at all times?")
@@ -3536,6 +3515,33 @@ class RegistrationViewHandlerHasiruDala {
             .and.when.valueInRegistration("Have you undergone any of the vocational trainings?").containsAnswerConceptName("Yes")
             .and.when.valueInRegistration("Please select from the list").containsAnswerConceptName("Others");
     }
+
+    @WithName("Please select the type of local address proof")
+    @WithName("Name of local ID")
+    @WithName("Local ID description")
+
+
+    @WithRegistrationStatusBuilder
+    training4([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Do you have a local address proof?").containsAnswerConceptName('Yes')
+    }
+
+    @WithName("Upload Photo of id")
+    @WithRegistrationStatusBuilder
+    training54([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether you have Voter Registration Card").containsAnswerConceptName('Yes')
+            .or.when.valueInRegistration("Whether you have Ration/BPL Card with your name included").containsAnswerConceptName("Yes")
+            .or.when.valueInRegistration("Whether you have Aadhar Card").containsAnswerConceptName("Yes")
+            .or.when.valueInRegistration("Whether you have Aadhar Enrolment ID").containsAnswerConceptName("Yes")
+            .or.when.valueInRegistration("Whether you have Health Card").containsAnswerConceptName("Yes")
+            .or.when.valueInRegistration("Whether you have PAN Card").containsAnswerConceptName("Yes")
+            .or.when.valueInRegistration("Whether you have Driving license").containsAnswerConceptName("Yes")
+            .or.when.valueInRegistration("Whether you have Cast Certificate").containsAnswerConceptName("Yes")
+            .or.when.valueInRegistration("Do you have Income Certificate").containsAnswerConceptName("Yes");
+
+    }
+
+
 }
 
 

@@ -31,6 +31,16 @@
           "mandatory": true
         },
         {
+          "name": "Photo of the person",
+          "uuid": "6bd3b1c3-5efa-49b0-a667-f952c052917c",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8756c196-0333-4eda-aed5-8a3c69ed6dbb"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
           "name": "Religion",
           "uuid": "16a8d0e9-5142-4908-b634-e8c9c5195881",
           "keyValues": [],
@@ -38,7 +48,7 @@
           "concept": {
             "uuid": "b6d3d7ee-cc1f-4b08-9d3f-d4461ae4323f"
           },
-          "displayOrder": 2,
+          "displayOrder": 3,
           "mandatory": true
         },
         {
@@ -48,7 +58,7 @@
           "concept": {
             "uuid": "ca23148b-6d99-465a-9be6-33efdc3b44ac"
           },
-          "displayOrder": 3,
+          "displayOrder": 4,
           "mandatory": false
         },
         {
@@ -59,7 +69,7 @@
           "concept": {
             "uuid": "43184a9f-5092-4211-ade0-2949f4b438a2"
           },
-          "displayOrder": 4,
+          "displayOrder": 5,
           "mandatory": true
         },
         {
@@ -69,7 +79,7 @@
           "concept": {
             "uuid": "ef3427c9-4c8f-4e6c-90be-1e4cf59bf2b3"
           },
-          "displayOrder": 5,
+          "displayOrder": 6,
           "mandatory": false
         }
       ]
@@ -564,6 +574,61 @@
       ]
     },
     {
+      "uuid": "d53cb674-3741-4677-9250-c2e150bcd263,",
+      "name": "Migration Address Proof",
+      "display":  "Migration Address Proof",
+      "displayOrder":6.5,
+      "formElements": [
+
+        {
+          "name": "Do you have a local address proof?",
+          "uuid": "39deaffe-d3f0-4aca-b34c-6b4f00830dcf",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "26d8ce68-d7cd-4a2b-b5aa-9dddbf9e8bcd"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Please select the type of local address proof",
+          "uuid": "3b769642-3f8e-430c-8b5d-306b1c19311e",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "851d417e-1925-4604-9fce-0a7eb0d40128"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Name of local ID",
+          "uuid": "d51e7e72-867e-4cc1-a74d-faeeb6c03377",
+          "keyValues": [],
+          "concept": {
+            "uuid": "2332141c-4453-4d6d-bcc1-bc3fde90f2d3"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Local ID description",
+          "uuid": "df90e11d-cea1-4da5-8dc7-cf72abdae44a",
+          "keyValues": [],
+          "concept": {
+            "uuid": "a3d60cb8-8615-44fc-a3b0-4bb32d0933f3"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        }
+      ]
+    },
+
+
+
+
+    {
       "uuid": "8849b18e-eb62-4229-b379-35eb84b404c6",
       "name": "Informal Worker",
       "display": "Informal Worker",
@@ -660,7 +725,28 @@
           },
           "displayOrder": 3,
           "mandatory": true
+        },
+        {
+          "name": "Occupational Identity Card No.",
+          "uuid": "83a459f5-2893-45b5-b443-cbf6671d7ee5",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8311695f-16ad-4597-9335-774d467e2559"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Upload Photo of the ID",
+          "uuid": "c8345a85-e89f-4674-a533-f9d424c90fb6",
+          "keyValues": [],
+          "concept": {
+            "uuid": "8756d237-c80a-4a26-b02a-45b665ea2a91"
+          },
+          "displayOrder": 5,
+          "mandatory": false
         }
+
       ]
     },
     {
@@ -740,13 +826,53 @@
           "mandatory": true
         },
         {
+          "name": "Whether you have Driving license",
+          "uuid": "01154e94-81c1-4cc3-89f2-999eb06fb433",
+          "keyValues": [],
+          "concept": {
+            "uuid": "0e2fa18f-9840-4187-bb90-3c7ef92c05d9"
+          },
+          "displayOrder": 20,
+          "mandatory": true
+        },
+        {
+          "name": "Whether you have Cast Certificate",
+          "uuid": "b1cbb888-0137-46d4-beb5-13fee2d1716d",
+          "keyValues": [],
+          "concept": {
+            "uuid": "ea39faca-9b32-4437-a080-719c7a0f0498"
+          },
+          "displayOrder": 21,
+          "mandatory": true
+        },
+        {
+          "name": "Do you have Income Certificate",
+          "uuid": "04dbf8e5-6534-4169-bfe9-68768c16f7c4",
+          "keyValues": [],
+          "concept": {
+            "uuid": "685b9b91-deb3-475f-b1ed-e18fed8f1560"
+          },
+          "displayOrder": 22,
+          "mandatory": true
+        },
+        {
           "name": "Whether you have any Other Cards",
           "uuid": "d18be72d-2c14-49c7-be5d-5f9c58c84562",
           "keyValues": [],
           "concept": {
             "uuid": "3d7cb170-d363-4c90-8755-43aec444abfd"
           },
-          "displayOrder": 22,
+          "displayOrder": 23,
+          "mandatory": true
+        },
+        {
+          "name": "Upload Photo of id",
+          "uuid": "3714b52d-7d02-4fcb-b6b2-1b29dcab5fce",
+          "keyValues": [],
+          "concept": {
+            "uuid": "4f60af9f-fe12-43c3-b1da-d72ddc481752"
+          },
+          "displayOrder": 23.5,
           "mandatory": true
         },
         {
@@ -756,7 +882,7 @@
           "concept": {
             "uuid": "74e32026-d054-4843-9dd3-dfe8a065b013"
           },
-          "displayOrder": 23,
+          "displayOrder": 24,
           "mandatory": false
         },
         {
@@ -766,8 +892,18 @@
           "concept": {
             "uuid": "a2cfd126-1f53-4cd2-ab41-16557d1d1010"
           },
-          "displayOrder": 24,
+          "displayOrder": 25,
           "mandatory": false
+        },
+        {
+          "name": "Upload Photo of Other Card",
+          "uuid": "f930e5f1-a20a-4222-a707-242281c50b93",
+          "keyValues": [],
+          "concept": {
+            "uuid": "1b71c0ad-f261-4ddf-9513-8af340acbf53"
+          },
+          "displayOrder": 25.5,
+          "mandatory": true
         }
       ]
     },
@@ -933,6 +1069,16 @@
           "mandatory": true
         },
         {
+          "name": "Please upload the doctor's certificate",
+          "uuid": "cf26b005-9afa-4099-b624-259d62cd348a",
+          "keyValues": [],
+          "concept": {
+            "uuid": "744117e0-fd3e-4f92-a776-57750774772e"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
           "name": "Do you experience any of these?",
           "uuid": "ed18cebc-85d8-417f-9123-227c962e7a73",
           "keyValues": [],
@@ -940,7 +1086,7 @@
           "concept": {
             "uuid": "c4977a35-b91b-4d29-b948-cd1d61090e8d"
           },
-          "displayOrder": 4,
+          "displayOrder": 5,
           "mandatory": true,
           "voided": true
         },
@@ -951,7 +1097,7 @@
           "concept": {
             "uuid": "69d3428a-3c82-4e53-8ff0-18649826cd06"
           },
-          "displayOrder": 5,
+          "displayOrder": 6,
           "mandatory": false,
           "voided": true
         }
@@ -2099,7 +2245,7 @@
       "uuid": "4ddf478c-c3a1-4454-bd79-240a161ac11c",
       "name": "Profession Common Waste Worker",
       "display": "Profession",
-      "displayOrder": 26,
+      "displayOrder": 4.2,
       "formElements": [
         {
           "name": "Type of Informal Waste Worker",
@@ -2204,7 +2350,7 @@
           "mandatory": true
         },
         {
-          "name": "How do you pick waste?",
+          "name": "What is the mode of wastepicking/employment?",
           "uuid": "d671f0c6-2afd-41c6-bacb-33a6103b7cd4",
           "keyValues": [],
           "type": "MultiSelect",
@@ -2514,6 +2660,7 @@
           },
           "displayOrder": 1,
           "mandatory": true
+
         },
         {
           "name": "How do you transport your collected waste?",
@@ -3122,7 +3269,9 @@
             "uuid": "fb526c9d-ca60-4a55-aef8-970e37379552"
           },
           "displayOrder": 1,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
+
         },
         {
           "name": "Source of additional income",
@@ -3132,7 +3281,8 @@
             "uuid": "4714add9-36a7-4870-8a8c-42021d8b4ced"
           },
           "displayOrder": 2,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Income per month (INR)",
@@ -3142,7 +3292,8 @@
             "uuid": "99d8d6e3-99cc-4e84-a841-79bfbae6d390"
           },
           "displayOrder": 3,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         }
       ]
     },
@@ -3150,7 +3301,7 @@
       "uuid": "2ce6a132-d969-46b3-aec7-01cda7a0caf8",
       "name": "Cleaning and Sweeping",
       "display": "Cleaning and Sweeping",
-      "displayOrder": 37,
+      "displayOrder": 4.3,
       "formElements": [
         {
           "name": "Do you clean the storm water drains and other open drainages?",
@@ -3177,11 +3328,12 @@
           "name": "Do you carry the waste after sweeping?",
           "uuid": "493b4d10-34b7-4ed6-8feb-a8509bcf8eee",
           "keyValues": [],
+          "type":  "SingleSelect",
           "concept": {
             "uuid": "e6c84945-d3ee-4350-a999-1a0ee0cf9cec"
           },
           "displayOrder": 3,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "How long do you carry the waste after sweeping?",
