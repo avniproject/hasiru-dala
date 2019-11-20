@@ -4914,6 +4914,31 @@
     "dataType": "Text"
   },
   {
+    "name": "Do you receive any income apart from wages?",
+    "uuid": "fb526c9d-ca60-4a55-aef8-970e37379552",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392"
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8"
+      }
+    ]
+  },
+  {
+    "name": "Source of additional income",
+    "uuid": "4714add9-36a7-4870-8a8c-42021d8b4ced",
+    "dataType": "Text"
+  },
+  {
+    "name": "Income per month (INR)",
+    "uuid": "99d8d6e3-99cc-4e84-a841-79bfbae6d390",
+    "dataType": "Numeric"
+  },
+  {
     "uuid": "f3957232-c333-430b-9778-2387c3f3ca40",
     "name": "Self-Owned "
   },
