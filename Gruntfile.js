@@ -15,7 +15,7 @@ module.exports = IDI.configure({
             "uat": ["users/uat-admin-user.json"]
         },
         "forms": [
-            "registration/registrationForm.json"
+            "forms/Registration.json"
         ],
         "formMappings": [
             "formMappings.json",
@@ -27,7 +27,7 @@ module.exports = IDI.configure({
         ],
         "checklistDetails": [],
         "concepts": [
-            "registration/registrationConcepts.json",
+            "concepts.json",
         ],
         "locations": [
             "locations/state.json",
