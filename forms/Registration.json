@@ -874,7 +874,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : false
     }, {
       "name" : "Whether you have Ration/BPL Card with your name included",
       "uuid" : "c3d6e62f-7e16-495e-b899-16492003642c",
@@ -894,7 +894,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : false
     }, {
       "name" : "Whether you have Aadhar Card",
       "uuid" : "7a3eb642-b86b-446b-a357-5592320b1dc3",
@@ -914,7 +914,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : false
     }, {
       "name" : "Whether you have Aadhar Enrolment ID",
       "uuid" : "716508dd-81c3-4c36-a903-3322c3fd70fe",
@@ -934,7 +934,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : false
     }, {
       "name" : "Whether you have Labour Card",
       "uuid" : "b9cb383b-2e6d-4693-b223-0469ef46d245",
@@ -974,7 +974,7 @@
       },
       "displayOrder" : 12.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : false
     }, {
       "name" : "Whether you have Driving license",
       "uuid" : "01154e94-81c1-4cc3-89f2-999eb06fb433",
@@ -994,7 +994,7 @@
       },
       "displayOrder" : 14.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : false
     }, {
       "name" : "Whether you have Cast Certificate",
       "uuid" : "b1cbb888-0137-46d4-beb5-13fee2d1716d",
@@ -1014,7 +1014,7 @@
       },
       "displayOrder" : 16.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : false
     }, {
       "name" : "Do you have Income Certificate",
       "uuid" : "04dbf8e5-6534-4169-bfe9-68768c16f7c4",
@@ -1034,7 +1034,7 @@
       },
       "displayOrder" : 18.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : false
     }, {
       "name" : "Whether you have any Other Cards",
       "uuid" : "d18be72d-2c14-49c7-be5d-5f9c58c84562",
@@ -1055,7 +1055,7 @@
       "displayOrder" : 20.0,
       "type" : "SingleSelect",
       "voided" : true,
-      "mandatory" : true
+      "mandatory" : false
     }, {
       "name" : "Name of the ID",
       "uuid" : "123e2c97-f90a-4503-8975-f11162a8b61a",
@@ -1085,7 +1085,7 @@
       },
       "displayOrder" : 23.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : false
     } ]
   }, {
     "uuid" : "3f6b9e3a-a6c4-45ea-87a3-9b4833e6fc63",
