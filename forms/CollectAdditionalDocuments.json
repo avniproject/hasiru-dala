@@ -1,0 +1,25 @@
+{
+  "name": "Collect Additional Documents",
+  "uuid": "cfe6b250-a8a5-4b61-a2fb-5a8b3afe776d",
+  "formType": "ProgramEncounter",
+  "formElementGroups": [
+    {
+      "uuid": "c1858aa1-f7db-4d10-902c-a1260885a890",
+      "name": "Dummy",
+      "display": "Dummy",
+      "displayOrder": 1,
+      "formElements": [
+        {
+          "name": "Dummy",
+          "uuid": "c4cedf52-fcfa-402f-9500-d466fba9f8fa",
+          "keyValues": [],
+          "concept": {
+            "uuid": "e2a77752-ef1a-4ca7-8172-42e4fcb4dab9"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        }
+      ]
+    }
+  ]
+}

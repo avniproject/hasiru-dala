@@ -1,0 +1,30 @@
+{
+  "name": "Start Facilitation",
+  "uuid": "4e2a85f6-e158-40a2-93f6-9971d3a7adeb",
+  "formType": "ProgramEncounter",
+  "formElementGroups": [
+    {
+      "uuid": "4d04670a-4d28-4dd2-b234-5349d62cf095",
+      "name": "Scheme Information",
+      "displayOrder": 1.0,
+      "display": "Scheme Information",
+      "formElements": [
+        {
+          "name": "Scheme",
+          "uuid": "ac2d1684-cf19-4102-80fd-7279cb12ca74",
+          "keyValues": [],
+          "concept": {
+            "name": "Select scheme",
+            "uuid": "15a6fa4a-3eec-4bbe-8a65-5d3ff40e9ba4"
+          },
+          "displayOrder": 1.0,
+          "type": "MultiSelect",
+          "mandatory": false
+        }
+      ]
+    }
+  ],
+  "decisionRule": "",
+  "visitScheduleRule": "\"use strict\";\n({ params, imports}) => {\n  const programEncounter = params.entity;\n  const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n    programEncounter,\n    programEnrolment: programEncounter.programEnrolment\n  });\n  const earliestDate = programEncounter.encounterDateTime;\n  const numberOfDaysForMaxOffset = 7;\n  const maxDate = imports.moment(earliestDate).add(numberOfDaysForMaxOffset, 'days').toDate();\n  const encounterType = 'Documents Collection';\n  const selectedSchemes = programEncounter.getObservationReadableValue(\"Select scheme\");\n  _.forEach(selectedSchemes, schemeName => scheduleBuilder.add({\n    //TODO : change name to <Scheme name> - <Workflow name> - Collect Document\n    name: `${schemeName} - Collect Document`,\n    encounterType,\n    earliestDate,\n    maxDate,\n    visitCreationStrategy: 'createNew'\n  }));\n  return scheduleBuilder.getAllUnique('name');\n};",
+  "validationRule": ""
+}

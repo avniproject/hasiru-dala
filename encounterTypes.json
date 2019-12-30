@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Collect  Additional Documents",
+    "uuid": "ac5f60d1-8768-4cb6-b70a-5e9e6ccda6de",
+    "encounterEligibilityCheckRule": "'use strict';\n({params, imports}) => {\n  return false;\n};"
+  },
+  {
+    "name": "Enquire Application Status",
+    "uuid": "46e24fbb-58ea-4ef8-9b61-fb791873a539",
+    "encounterEligibilityCheckRule": "'use strict';\n({params, imports}) => {\n  return false;\n};"
+  },
+  {
+    "name": "Submit Application",
+    "uuid": "79d0dc61-cfd2-4e00-8507-3495ba227c0d",
+    "encounterEligibilityCheckRule": "'use strict';\n({params, imports}) => {\n  return false;\n};"
+  },
+  {
+    "name": "Documents Collection",
+    "uuid": "027d6475-105f-4835-92b6-9ed742ed50c2",
+    "encounterEligibilityCheckRule": "'use strict';\n({params, imports}) => {\n  return false;\n};"
+  },
+  {
+    "name": "Start Facilitation",
+    "uuid": "16078161-374f-4b97-8fa7-bf95e06bc0ba"
+  }
+]

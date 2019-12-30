@@ -1,0 +1,13 @@
+{
+  "organisationName": "Hasiru Dala",
+  "operationalPrograms": [
+    {
+      "uuid": "da575ffc-de02-4723-8404-c0c338a3c711",
+      "program": {
+        "uuid": "bac54d2b-e127-408a-9035-41dcaa2ef6b3"
+      },
+      "name": "Social Security",
+      "programSubjectLabel": "Social Security"
+    }
+  ]
+}

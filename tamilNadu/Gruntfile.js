@@ -15,12 +15,18 @@ module.exports = IDI.configure({
             "uat": ["users/uat-admin-user.json"]
         },
         "forms": [
-            "../forms/Registration.json"
+            "../forms/Registration.json",
+            "../forms/SocialSecurity.json",
+            "../forms/StartFacilitation.json",
+            "../forms/DocumentsCollection.json",
+            "../forms/SubmitApplication.json",
+            "../forms/EnquireApplicationStatus.json",
+            "../forms/CollectAdditionalDocuments.json",
         ],
         "formMappings": [
             "../formMappings.json",
         ],
-        "formDeletions": [],
+        "formDeletions": ["../forms/EnrolmentDeletions.json"],
         "formAdditions": [],
         "catchments": [
             "catchments.json",
@@ -35,10 +41,10 @@ module.exports = IDI.configure({
             "locations/zones.json",
             "locations/wards.json",
         ],
-        "programs": [],
-        "encounterTypes": [],
-        "operationalEncounterTypes": [],
-        "operationalPrograms": [],
+        "programs": ["../programs.json"],
+        "encounterTypes": ["../encounterTypes.json"],
+        "operationalEncounterTypes": ["operationalModules/operationalEncounterTypes.json"],
+        "operationalPrograms": ["operationalModules/operationalPrograms.json"],
         "subjectTypes": ["../subjectTypes.json"],
         "operationalSubjectTypes": ["operationalModules/operationalSubjectTypes.json"],
         "users": {
