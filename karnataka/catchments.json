@@ -1,0 +1,15 @@
+{
+  "organisation": "Hasiru Dala Karnataka",
+  "catchments": [
+    {
+      "name": "Default",
+      "uuid": "4e7c3b58-086d-4ba9-a743-6841bce2a4bd",
+      "type": "Default",
+      "locations": [
+        {
+          "uuid": "8612a288-fe60-40c5-ac10-fbf776f17b47"
+        }
+      ]
+    }
+  ]
+}

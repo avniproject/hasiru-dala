@@ -1,0 +1,12 @@
+[
+  {
+    "uuid": "fa18d576-4575-4191-b811-209523196944",
+    "name": "Bangalore",
+    "level": 3,
+    "type": "City",
+    "nameLineage": "Karnataka.Bangalore",
+    "parent": {
+      "uuid": "b92fdac1-cbf3-4603-9bd3-ce4e46c90d2c"
+    }
+  }
+]

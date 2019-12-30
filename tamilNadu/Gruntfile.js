@@ -6,7 +6,7 @@ module.exports = IDI.configure({
     "chs-admin": "admin",
     "org-name": "Hasiru Dala",
     "org-admin": "admin@hasiru",
-    "secrets": '../secrets.json',
+    "secrets": '../../secrets.json',
     "files": {
         "adminUsers": {
             // "prod": ["admin-user.json"],
@@ -15,10 +15,10 @@ module.exports = IDI.configure({
             "uat": ["users/uat-admin-user.json"]
         },
         "forms": [
-            "forms/Registration.json"
+            "../forms/Registration.json"
         ],
         "formMappings": [
-            "formMappings.json",
+            "../formMappings.json",
         ],
         "formDeletions": [],
         "formAdditions": [],
@@ -27,7 +27,7 @@ module.exports = IDI.configure({
         ],
         "checklistDetails": [],
         "concepts": [
-            "concepts.json",
+            "../concepts.json",
         ],
         "locations": [
             "locations/state.json",
@@ -39,14 +39,14 @@ module.exports = IDI.configure({
         "encounterTypes": [],
         "operationalEncounterTypes": [],
         "operationalPrograms": [],
-        "subjectTypes": ["subjectTypes.json"],
+        "subjectTypes": ["../subjectTypes.json"],
         "operationalSubjectTypes": ["operationalModules/operationalSubjectTypes.json"],
         "users": {
             "dev": ["users/dev-users.json"],
             "staging": ["users/staging-users.json"]
         },
         "rules": [
-            "./rules.js"
+            "../rules.js"
         ],
         "organisationSql": [
             /* "create_organisation.sql"*/

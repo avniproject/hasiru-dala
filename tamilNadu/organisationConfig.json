@@ -1,0 +1,38 @@
+{
+  "uuid": "e17f1456-dff2-4913-b325-16cae3649cd4",
+  "settings": {
+    "languages": [
+      "en",
+      "ta_IN"
+    ],
+    "searchFilters": [
+      {
+        "type": "Name",
+        "titleKey": "Name",
+        "subjectTypeUUID": "7161dab3-0e5f-4708-9676-5a6be5f3544e"
+      },
+      {
+        "type": "Age",
+        "titleKey": "Age",
+        "subjectTypeUUID": "7161dab3-0e5f-4708-9676-5a6be5f3544e"
+      },
+      {
+        "type": "Address",
+        "titleKey": "Address",
+        "subjectTypeUUID": "7161dab3-0e5f-4708-9676-5a6be5f3544e"
+      },
+      {
+        "type": "SearchAll",
+        "titleKey": "SearchAll",
+        "subjectTypeUUID": "7161dab3-0e5f-4708-9676-5a6be5f3544e"
+      }
+    ],
+    "myDashboardFilters": [
+      {
+        "type": "Address",
+        "titleKey": "Address",
+        "subjectTypeUUID": "7161dab3-0e5f-4708-9676-5a6be5f3544e"
+      }
+    ]
+  }
+}

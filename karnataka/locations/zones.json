@@ -1,0 +1,12 @@
+[
+  {
+    "uuid": "4f4006b8-a157-43ab-ba9e-b4464fa4c57c",
+    "name": "East",
+    "level": 2,
+    "type": "Zone",
+    "nameLineage": "Karnataka.Bangalore.East",
+    "parent": {
+      "uuid": "fa18d576-4575-4191-b811-209523196944"
+    }
+  }
+]

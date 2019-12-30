@@ -1,0 +1,14 @@
+[
+  {
+    "uuid": "93d18fd7-79bd-4cfd-83e3-11e4c6a72abf",
+    "name": "staging@hasiru-kar",
+    "password": "password",
+    "email": "openchssupport+hasiru@samanvayfoundation.org",
+    "phoneNumber": "+919923139403",
+    "organisationUUID": "122f37c1-b3a3-4d12-b109-c2e14651f86a",
+    "catchmentUUID": "4e7c3b58-086d-4ba9-a743-6841bce2a4bd",
+    "operatingIndividualScope": "ByCatchment",
+    "admin": false,
+    "orgAdmin": false
+  }
+]

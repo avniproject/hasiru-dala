@@ -1,0 +1,13 @@
+[
+  {
+    "uuid": "3464de74-436f-4539-9060-09681c0a8808",
+    "name": "admin@hasiru-kar",
+    "password": "password",
+    "email": "openchssupport+hasiru+1@samanvayfoundation.org",
+    "phoneNumber": "+919923139403",
+    "organisationUUID": "122f37c1-b3a3-4d12-b109-c2e14651f86a",
+    "operatingIndividualScope": "None",
+    "admin": false,
+    "orgAdmin": true
+  }
+]

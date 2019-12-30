@@ -1,0 +1,12 @@
+[
+  {
+    "uuid": "8612a288-fe60-40c5-ac10-fbf776f17b47",
+    "name": "Shanthi Nagar",
+    "level": 1,
+    "type": "Ward",
+    "nameLineage": "Karnataka.Bangalore.East.Shanthi Nagar",
+    "parent": {
+      "uuid": "4f4006b8-a157-43ab-ba9e-b4464fa4c57c"
+    }
+  }
+]
