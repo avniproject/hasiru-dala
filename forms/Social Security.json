@@ -1,0 +1,27 @@
+{
+  "name" : "Social Security",
+  "uuid" : "53fe299a-417d-432f-addc-fa1985874db6",
+  "formType" : "ProgramEnrolment",
+  "formElementGroups" : [ {
+    "uuid" : "98982bb3-6da1-48eb-b617-3f27f34a3bca",
+    "name" : "Dummy",
+    "displayOrder" : 1.0,
+    "display" : "Dummy",
+    "formElements" : [ {
+      "name" : "Dummy",
+      "uuid" : "9914268b-f2b8-48f0-93db-8a2f026fe952",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Dummy",
+        "uuid" : "e2a77752-ef1a-4ca7-8172-42e4fcb4dab9"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : false,
+      "voided" : true
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "\"use strict\";\n({ params, imports}) => {\n  const programEnrolment = params.entity;\n  const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n    programEnrolment\n  });\n  const earliestDate = programEnrolment.enrolmentDateTime;\n  const maxDate = imports.moment(earliestDate).add(8, 'days').toDate();\n  scheduleBuilder\n    .add({\n      name: \"Start Facilitation\",\n      encounterType: \"Start Facilitation\",\n      earliestDate: earliestDate,\n      maxDate: maxDate\n    })\n  return scheduleBuilder.getAllUnique('name');\n};",
+  "validationRule" : ""
+}

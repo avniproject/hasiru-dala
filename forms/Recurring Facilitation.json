@@ -1,0 +1,62 @@
+{
+  "name" : "Recurring Facilitation",
+  "uuid" : "cd629aea-f830-45de-9b63-0bd2c86cff7c",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ {
+    "uuid" : "33aa5bec-c12d-482e-ac60-fc65ee531d9b",
+    "name" : "Facilitation information",
+    "displayOrder" : 1.0,
+    "display" : "Facilitation information",
+    "formElements" : [ {
+      "name" : "Were you able to complete the previous facilitation on-time?",
+      "uuid" : "5e0ad909-6d38-405c-9212-f7b0928f1f53",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Were you able to complete the previous facilitation on-time",
+        "uuid" : "ae1eedf2-a76f-4d2f-8d72-4d4a5d4c021e"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "rule" : "",
+      "mandatory" : true
+    }, {
+      "name" : "Chose the reason for delay",
+      "uuid" : "4fa341f0-cca0-4b76-8824-09f8e199b1de",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Chose the reason for delay",
+        "uuid" : "b7d39d32-b63c-4e3a-8288-1ea96b714a6f"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Were you able to complete the previous facilitation on-time').containsAnswerConceptName(\"No\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Do you want to schedule the Next Recurring Facilitation?",
+      "uuid" : "a5a0c712-f6b0-478a-9ac9-a562151f4683",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Do you want to schedule the Next Recurring Facilitation",
+        "uuid" : "89bd3728-07a3-428d-b026-26c14d730de7"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Enter the date of next facilitation",
+      "uuid" : "0970ee77-a8da-4929-b776-607402cf40e1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Enter the date of next facilitation",
+        "uuid" : "d81141e5-d372-4103-9931-30845a04a8a6"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Do you want to schedule the Next Recurring Facilitation').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEncounter = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const nextVisitDate = programEncounter.getObservationReadableValue(\"Enter the date of next facilitation\");\n    const schemeName = imports.lodash.trim(programEncounter.name.split('-')[0]);\n    const encounterType = 'Recurring Facilitation';\n    const maxDate = imports.moment(nextVisitDate).add(7, 'days').toDate();\n    if (!_.isNil(nextVisitDate) && imports.moment().isSameOrBefore(maxDate, 'day')) {\n        scheduleBuilder.add({\n            name: `${schemeName} - Recurring`,\n            encounterType,\n            earliestDate: nextVisitDate,\n            maxDate\n        });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
+  "validationRule" : ""
+}

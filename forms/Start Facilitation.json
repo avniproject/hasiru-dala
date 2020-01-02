@@ -1,0 +1,97 @@
+{
+  "name" : "Start Facilitation",
+  "uuid" : "4e2a85f6-e158-40a2-93f6-9971d3a7adeb",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ {
+    "uuid" : "4d04670a-4d28-4dd2-b234-5349d62cf095",
+    "name" : "Scheme Information",
+    "displayOrder" : 1.0,
+    "display" : "Scheme Information",
+    "formElements" : [ {
+      "name" : "Enroll to a scheme",
+      "uuid" : "ac2d1684-cf19-4102-80fd-7279cb12ca74",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Enroll scheme",
+        "uuid" : "15a6fa4a-3eec-4bbe-8a65-5d3ff40e9ba4"
+      },
+      "displayOrder" : 1.0,
+      "type" : "MultiSelect",
+      "mandatory" : true,
+      "voided" : true
+    }, {
+      "name" : "Enroll to a scheme",
+      "uuid" : "8826e5b6-bd76-451e-9de7-3c561f45ef86",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Enroll scheme",
+        "uuid" : "15a6fa4a-3eec-4bbe-8a65-5d3ff40e9ba4"
+      },
+      "displayOrder" : 2.0,
+      "type" : "MultiSelect",
+      "mandatory" : false
+    }, {
+      "name" : "Register a scheme",
+      "uuid" : "eecd4fb5-71d9-4618-92da-7f7cf5fa5946",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Register scheme",
+        "uuid" : "0b08d8e8-a000-43ca-987c-d69b2ebd062a"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "",
+      "mandatory" : false
+    }, {
+      "name" : "Select First Recurring Facilitation Date",
+      "uuid" : "78475c37-ee83-4c11-9314-0a28b7253e1b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "First Recurring Facilitation Date",
+        "uuid" : "d0966ab2-0d92-444f-9094-785988214880"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const schemeDetails = new Map([\n        [\"Aadhar Card\", {\"recurring\": false}],\n        [\"Voter ID\", {\"recurring\": false}],\n        [\"PAN Card\", {\"recurring\": false}],\n        [\"Old Age Pension\", {\"recurring\": true}]\n    ]);\n  const programEnrolment = params.entity;\n  const formElement = params.formElement;\n  const registerScheme = programEnrolment.getObservationReadableValue('Register scheme');\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEnrolment, formElement});\n  const status = registerScheme && schemeDetails.get(registerScheme).recurring || false;\n  statusBuilder.show().whenItem(status).is.truthy;\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Update Details",
+      "uuid" : "b00e5ea6-ef29-49f1-b0b9-607f5e18380f",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Update scheme",
+        "uuid" : "6e181afe-62f3-4340-a6e8-f1d8e6fe4b68"
+      },
+      "displayOrder" : 5.0,
+      "type" : "MultiSelect",
+      "mandatory" : false
+    }, {
+      "name" : "Register a scheme",
+      "uuid" : "a17b75d6-5d2d-43fc-9886-35abfeee334a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Name of the scheme",
+        "uuid" : "1be5d6d6-17a3-4983-8471-7a55acf72a54"
+      },
+      "displayOrder" : 6.0,
+      "type" : "MultiSelect",
+      "mandatory" : true,
+      "voided" : true
+    }, {
+      "name" : "Update a scheme",
+      "uuid" : "47484908-63e6-433e-9ba5-cc51b900678e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Please explain (Name Of The Disability Pension Scheme, Amount and Frequency)",
+        "uuid" : "c97be1c3-ef3f-44b6-8c27-627c6895c3cc"
+      },
+      "displayOrder" : 7.0,
+      "type" : "MultiSelect",
+      "mandatory" : true,
+      "voided" : true
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEncounter = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const schemeDetails = new Map([\n        [\"Aadhar Card\", {\"recurring\": false}],\n        [\"Voter ID\", {\"recurring\": false}],\n        [\"PAN Card\", {\"recurring\": false}],\n        [\"Old Age Pension\", {\"recurring\": true}]\n    ]);\n    const earliestDate = programEncounter.encounterDateTime;\n    const numberOfDaysForMaxOffset = 7;\n    const maxDate = imports.moment(earliestDate).add(numberOfDaysForMaxOffset, 'days').toDate();\n    const encounterType = 'Documents Collection';\n    const selectedSchemes = programEncounter.getObservationReadableValue(\"Enroll scheme\");\n    _.forEach(selectedSchemes, schemeName => scheduleBuilder.add({\n        name: `${schemeName} - Collect Document`,\n        encounterType,\n        earliestDate,\n        maxDate,\n        visitCreationStrategy: 'createNew'\n    }));\n    const schemesToUpdate = programEncounter.getObservationReadableValue(\"Update scheme\");\n    _.forEach(schemesToUpdate, schemeName => scheduleBuilder.add({\n        name: `Update ${schemeName} - Collect Document`,\n        encounterType,\n        earliestDate,\n        maxDate,\n        visitCreationStrategy: 'createNew'\n    }));\n    const schemesToRegister = programEncounter.getObservationReadableValue(\"Register scheme\");\n    const firstFacilitationDate = programEncounter.getObservationReadableValue(\"First Recurring Facilitation Date\");\n    if (!_.isNil(schemesToRegister) && !_.isNil(firstFacilitationDate)) {\n        scheduleBuilder.add({\n            name: `${schemesToRegister} - Recurring`,\n            encounterType: 'Recurring Facilitation',\n            earliestDate: firstFacilitationDate,\n            maxDate: imports.moment(firstFacilitationDate).add(7, 'days').toDate(),\n            visitCreationStrategy: 'createNew'\n        });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};\n",
+  "validationRule" : ""
+}

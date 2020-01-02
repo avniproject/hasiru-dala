@@ -251,6 +251,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Additional documents required",
+    "uuid": "6ad93185-71ed-4a6d-9f52-93246d0b8dba",
+    "dataType": "NA"
+  },
+  {
     "name": "additional jobs - Please Explain",
     "uuid": "87c9523a-bb8a-4f93-b1c8-89649603b09f",
     "dataType": "Text"
@@ -308,6 +313,26 @@
   {
     "name": "Anywhere Within City Limits",
     "uuid": "1bd151fc-9d10-4463-b525-f3875dd555f9",
+    "dataType": "NA"
+  },
+  {
+    "name": "Application Approved",
+    "uuid": "b2892e4a-e84d-402b-89f8-9fc009e27eb3",
+    "dataType": "NA"
+  },
+  {
+    "name": "Application Rejected",
+    "uuid": "c489c941-8aed-4922-8160-af7efe1f5c94",
+    "dataType": "NA"
+  },
+  {
+    "name": "Application under Processing/Review",
+    "uuid": "86b84c7c-bfac-4802-8066-e1fcc673aa41",
+    "dataType": "NA"
+  },
+  {
+    "name": "Applications are not being accepted temporarily",
+    "uuid": "6e0bbb91-dafc-4c9c-939d-4875c8e01ddc",
     "dataType": "NA"
   },
   {
@@ -650,6 +675,21 @@
     "dataType": "NA"
   },
   {
+    "name": "Beneficiary does not have all the required documents",
+    "uuid": "411fa0af-f980-4746-add0-ff262c7d420d",
+    "dataType": "NA"
+  },
+  {
+    "name": "Beneficiary not cooperating",
+    "uuid": "7c0ae09f-fefe-4bed-9c4c-dbd366d784b5",
+    "dataType": "NA"
+  },
+  {
+    "name": "Beneficiary not cooperating/Beneficiary absconding",
+    "uuid": "c0afd9cc-b782-494a-84a0-864ec3c3cddb",
+    "dataType": "NA"
+  },
+  {
     "name": "Between Rs. 100 – 200 per day",
     "uuid": "a2e91670-efa3-41ae-a7b3-209883a0dc07",
     "dataType": "NA"
@@ -703,6 +743,11 @@
     "name": "canal",
     "uuid": "cbd2330b-b4ed-48c1-ae9d-2b4bbcb7c73d",
     "dataType": "NA"
+  },
+  {
+    "name": "Card Number",
+    "uuid": "a929b924-8c31-4de5-b3ae-38ce5eb7e22c",
+    "dataType": "Text"
   },
   {
     "name": "Cardboard",
@@ -792,6 +837,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Change in the scheme terms",
+    "uuid": "4b7d579b-a821-4256-8ce5-ccd569ac0393",
+    "dataType": "NA"
+  },
+  {
     "name": "Cheque",
     "uuid": "2e6ef12f-6ce0-4f0c-92cb-fdad607e11ce",
     "dataType": "NA"
@@ -805,6 +855,28 @@
     "name": "children during off school hours - Please specify",
     "uuid": "4a6a0bbb-7fc9-40c5-a1d7-3a04ba5b1333",
     "dataType": "Text"
+  },
+  {
+    "name": "Chose the reason for delay",
+    "uuid": "b7d39d32-b63c-4e3a-8288-1ea96b714a6f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Beneficiary not cooperating/Beneficiary absconding",
+        "uuid": "c0afd9cc-b782-494a-84a0-864ec3c3cddb",
+        "order": 0.0
+      },
+      {
+        "name": "The follow-up is time-consuming/tedious",
+        "uuid": "f0a4063e-7c16-469f-bb12-82f9fb021233",
+        "order": 1.0
+      },
+      {
+        "name": "Change in the scheme terms",
+        "uuid": "4b7d579b-a821-4256-8ce5-ccd569ac0393",
+        "order": 2.0
+      }
+    ]
   },
   {
     "name": "Christianity",
@@ -2003,6 +2075,142 @@
     ]
   },
   {
+    "name": "Do you want to end this facilitation",
+    "uuid": "18876d40-1638-41af-9410-c3e7c50ec07a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "order": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Do you want to enter the card number/scheme registration number",
+    "uuid": "0320361f-390f-45e7-b7f4-a79629ade947",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "order": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Do you want to reschedule this step to a future date",
+    "uuid": "cc07dd6a-5479-4e3b-a085-667f226db9fd",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "order": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Do you want to save the acknowledgement number/status",
+    "uuid": "6cc1751a-1dea-41b8-ad2c-b7827abc6f60",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "order": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Do you want to schedule the Next Recurring Facilitation",
+    "uuid": "89bd3728-07a3-428d-b026-26c14d730de7",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "order": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Do you want to the restart the process of facilitation",
+    "uuid": "98003f91-cb1e-4f3d-bc2c-5e07fb1fc333",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "order": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Do you want to upload an image",
+    "uuid": "6cd07340-c64d-4ae4-a964-786894b77f9a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "order": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Do you want to upload an image for acknowledgement",
+    "uuid": "d47776cb-f62e-4208-bb72-7156d01b5f3e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "order": 1.0
+      }
+    ]
+  },
+  {
     "name": "Do you wipe on cloth?",
     "uuid": "de830e17-5aeb-417f-98ec-dd2ca009e41d",
     "dataType": "Coded",
@@ -2142,6 +2350,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Dummy",
+    "uuid": "e2a77752-ef1a-4ca7-8172-42e4fcb4dab9",
+    "dataType": "Coded"
+  },
+  {
     "name": "Dumped in open",
     "uuid": "4e12878b-57ba-4b67-846a-1a804bc7eeb9",
     "dataType": "NA"
@@ -2185,6 +2398,58 @@
     "name": "Employer",
     "uuid": "8de043ec-7572-4c1b-97a6-a45c79069f1e",
     "dataType": "NA"
+  },
+  {
+    "name": "Enroll scheme",
+    "uuid": "15a6fa4a-3eec-4bbe-8a65-5d3ff40e9ba4",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Aadhar Card",
+        "uuid": "2e135003-34dc-4a55-a1ad-eb804b39bccb",
+        "order": 0.0
+      },
+      {
+        "name": "Voter ID",
+        "uuid": "6a2c9de3-1b5a-4804-92d4-0504ed9be2bf",
+        "order": 1.0
+      },
+      {
+        "name": "Old Age Pension",
+        "uuid": "6709dbf9-0050-4fc0-8ec8-f94c6983b009",
+        "order": 2.0
+      },
+      {
+        "name": "PAN Card",
+        "uuid": "93b5d453-d035-42c1-aa42-afd0cedd2fc8",
+        "order": 3.0
+      }
+    ]
+  },
+  {
+    "name": "Enter the acknowledgment  number/status",
+    "uuid": "fe6384bf-7c95-41a2-8490-b71d38bb5279",
+    "dataType": "Text"
+  },
+  {
+    "name": "Enter the card number/scheme registration number",
+    "uuid": "6b339f28-bc02-465e-a8d3-55cf6e08f42b",
+    "dataType": "Text"
+  },
+  {
+    "name": "Enter the date for rescheduling this step",
+    "uuid": "67fc4d4c-cf7c-4c36-a55d-b462595ec1c3",
+    "dataType": "Date"
+  },
+  {
+    "name": "Enter the date of next facilitation",
+    "uuid": "d81141e5-d372-4103-9931-30845a04a8a6",
+    "dataType": "Date"
+  },
+  {
+    "name": "Enter the reason for rejection",
+    "uuid": "9b2e804b-73b7-4066-b9fc-f7de1f43bce3",
+    "dataType": "Text"
   },
   {
     "name": "Event Waste Management",
@@ -2240,6 +2505,11 @@
     "name": "Firewood",
     "uuid": "54b2558b-f659-4177-8e92-f958cb35d2c9",
     "dataType": "NA"
+  },
+  {
+    "name": "First Recurring Facilitation Date",
+    "uuid": "d0966ab2-0d92-444f-9094-785988214880",
+    "dataType": "Date"
   },
   {
     "name": "Fixed Rate (INR)",
@@ -2387,6 +2657,23 @@
     "name": "Hand Implements (Mechanical)",
     "uuid": "2b00b01b-55b3-4ef9-825a-81651554bef0",
     "dataType": "NA"
+  },
+  {
+    "name": "Has the application been submitted",
+    "uuid": "0f7dbe5a-a0c3-4d62-b2af-5ab3b43f5f4a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "order": 1.0
+      }
+    ]
   },
   {
     "name": "Have not been to school",
@@ -3817,6 +4104,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Lost to Follow Up / Unable to Determine Status",
+    "uuid": "2d924d9b-7af8-4385-b09f-17b241accfea",
+    "dataType": "NA"
+  },
+  {
     "name": "LPG",
     "uuid": "91198998-28b8-44d7-bf6c-420987ebfde2",
     "dataType": "NA"
@@ -3936,6 +4228,11 @@
   {
     "name": "Minidoor Auto",
     "uuid": "024fac58-ea3c-45c8-8777-b56742a41816",
+    "dataType": "NA"
+  },
+  {
+    "name": "Missed the submission deadline",
+    "uuid": "422f0887-a3ee-4aca-8b71-a1fb1ded23b4",
     "dataType": "NA"
   },
   {
@@ -4123,6 +4420,11 @@
   {
     "name": "Name of the body",
     "uuid": "36c600ef-1fc6-463c-be88-aaf0c968a3bf",
+    "dataType": "Text"
+  },
+  {
+    "name": "Name of the card/scheme",
+    "uuid": "edeabe44-f487-42ab-8135-292903aad2ff",
     "dataType": "Text"
   },
   {
@@ -4347,6 +4649,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Not able to contact beneficiary",
+    "uuid": "b3b4a48e-b5c6-49d3-9c84-248b7d7bb6fa",
+    "dataType": "NA"
+  },
+  {
     "name": "Not anymore",
     "uuid": "5a9a7b2a-c5cc-4718-98f6-1580a13b87cb",
     "dataType": "NA"
@@ -4399,6 +4706,11 @@
   {
     "name": "Offices/schools/colleges",
     "uuid": "975de13a-3166-474f-abf8-801d15906421",
+    "dataType": "NA"
+  },
+  {
+    "name": "Old Age Pension",
+    "uuid": "6709dbf9-0050-4fc0-8ec8-f94c6983b009",
     "dataType": "NA"
   },
   {
@@ -4588,6 +4900,11 @@
   {
     "name": "paid water through can or tanker",
     "uuid": "94eeffdd-3c9e-4bdf-b6ca-aba230450263",
+    "dataType": "NA"
+  },
+  {
+    "name": "PAN Card",
+    "uuid": "93b5d453-d035-42c1-aa42-afd0cedd2fc8",
     "dataType": "NA"
   },
   {
@@ -5220,6 +5537,33 @@
     "dataType": "NA"
   },
   {
+    "name": "Register scheme",
+    "uuid": "0b08d8e8-a000-43ca-987c-d69b2ebd062a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Aadhar Card",
+        "uuid": "2e135003-34dc-4a55-a1ad-eb804b39bccb",
+        "order": 0.0
+      },
+      {
+        "name": "Voter ID",
+        "uuid": "6a2c9de3-1b5a-4804-92d4-0504ed9be2bf",
+        "order": 1.0
+      },
+      {
+        "name": "PAN Card",
+        "uuid": "93b5d453-d035-42c1-aa42-afd0cedd2fc8",
+        "order": 2.0
+      },
+      {
+        "name": "Old Age Pension",
+        "uuid": "6709dbf9-0050-4fc0-8ec8-f94c6983b009",
+        "order": 3.0
+      }
+    ]
+  },
+  {
     "name": "Regularly",
     "uuid": "65f7ad5d-5b03-4d6b-94bf-1ca90f1b04b6",
     "dataType": "NA"
@@ -5409,6 +5753,11 @@
   {
     "name": "SC-Thoti",
     "uuid": "92b4dc4e-3476-4e11-8855-0459cffeb766",
+    "dataType": "NA"
+  },
+  {
+    "name": "Scheme/Card eligibility criteria changed",
+    "uuid": "360799eb-af5b-4c6a-ac68-bfb5420c35f8",
     "dataType": "NA"
   },
   {
@@ -5800,6 +6149,11 @@
     "dataType": "NA"
   },
   {
+    "name": "The follow-up is time-consuming/tedious",
+    "uuid": "f0a4063e-7c16-469f-bb12-82f9fb021233",
+    "dataType": "NA"
+  },
+  {
     "name": "Thermocol/Styrofoam",
     "uuid": "b3267364-c440-4dad-942f-758eb64b63df",
     "dataType": "Text"
@@ -5863,6 +6217,11 @@
     "name": "Two three times a week",
     "uuid": "7977ae6d-df70-4a02-8f95-3fb7d8f205fe",
     "dataType": "NA"
+  },
+  {
+    "name": "Type of Card",
+    "uuid": "7479d59f-b41a-4876-894f-c90c2c972eae",
+    "dataType": "Text"
   },
   {
     "name": "Type of Informal Sanitation Worker",
@@ -5989,6 +6348,43 @@
     "dataType": "NA"
   },
   {
+    "name": "Update scheme",
+    "uuid": "6e181afe-62f3-4340-a6e8-f1d8e6fe4b68",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Aadhar Card",
+        "uuid": "2e135003-34dc-4a55-a1ad-eb804b39bccb",
+        "order": 0.0
+      },
+      {
+        "name": "Voter ID",
+        "uuid": "6a2c9de3-1b5a-4804-92d4-0504ed9be2bf",
+        "order": 1.0
+      },
+      {
+        "name": "Old Age Pension",
+        "uuid": "6709dbf9-0050-4fc0-8ec8-f94c6983b009",
+        "order": 2.0
+      },
+      {
+        "name": "PAN Card",
+        "uuid": "93b5d453-d035-42c1-aa42-afd0cedd2fc8",
+        "order": 3.0
+      }
+    ]
+  },
+  {
+    "name": "Upload image or click a photo",
+    "uuid": "0d1603b9-47c8-4188-ac03-80606e49acf9",
+    "dataType": "Image"
+  },
+  {
+    "name": "Upload or click the image of card",
+    "uuid": "01ec64df-e292-4d2e-a370-aacc1a8f9d80",
+    "dataType": "Image"
+  },
+  {
     "name": "Upload Photo of Aadhar Card",
     "uuid": "be129af3-8938-4cf8-ab07-020524f9fc1e",
     "dataType": "Image"
@@ -6059,6 +6455,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Voter ID",
+    "uuid": "6a2c9de3-1b5a-4804-92d4-0504ed9be2bf",
+    "dataType": "NA"
+  },
+  {
     "name": "Voter Registration Card",
     "uuid": "03d34306-3e0b-4196-9e39-0f75151cf0b2",
     "dataType": "NA"
@@ -6112,6 +6513,40 @@
         "name": "No",
         "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
         "order": 2.0
+      }
+    ]
+  },
+  {
+    "name": "Were you able to collect and verify all documents",
+    "uuid": "1c4d0ab5-6d5c-43cb-9ea2-db48eac5915d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "order": 1.0
+      }
+    ]
+  },
+  {
+    "name": "Were you able to complete the previous facilitation on-time",
+    "uuid": "ae1eedf2-a76f-4d2f-8d72-4d4a5d4c021e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "order": 1.0
       }
     ]
   },
@@ -6471,6 +6906,43 @@
       {
         "name": "canal",
         "uuid": "cbd2330b-b4ed-48c1-ae9d-2b4bbcb7c73d",
+        "order": 5.0
+      }
+    ]
+  },
+  {
+    "name": "What is the status of the application",
+    "uuid": "a554e7ec-a138-4489-9653-964c7b604d78",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Application Approved",
+        "uuid": "b2892e4a-e84d-402b-89f8-9fc009e27eb3",
+        "order": 0.0
+      },
+      {
+        "name": "Application Rejected",
+        "uuid": "c489c941-8aed-4922-8160-af7efe1f5c94",
+        "order": 1.0
+      },
+      {
+        "name": "Additional documents required",
+        "uuid": "6ad93185-71ed-4a6d-9f52-93246d0b8dba",
+        "order": 2.0
+      },
+      {
+        "name": "Yet to check the status",
+        "uuid": "361ce3c3-bb58-41c4-a26b-37bea3efb2eb",
+        "order": 3.0
+      },
+      {
+        "name": "Application under Processing/Review",
+        "uuid": "86b84c7c-bfac-4802-8066-e1fcc673aa41",
+        "order": 4.0
+      },
+      {
+        "name": "Lost to Follow Up / Unable to Determine Status",
+        "uuid": "2d924d9b-7af8-4385-b09f-17b241accfea",
         "order": 5.0
       }
     ]
@@ -7548,6 +8020,80 @@
     ]
   },
   {
+    "name": "Why do you want to end this facilitation",
+    "uuid": "c2903216-9adc-4c86-9ae7-2e0259150e6c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Not able to contact beneficiary",
+        "uuid": "b3b4a48e-b5c6-49d3-9c84-248b7d7bb6fa",
+        "order": 0.0
+      },
+      {
+        "name": "Beneficiary does not have all the required documents",
+        "uuid": "411fa0af-f980-4746-add0-ff262c7d420d",
+        "order": 1.0
+      },
+      {
+        "name": "Beneficiary not cooperating",
+        "uuid": "7c0ae09f-fefe-4bed-9c4c-dbd366d784b5",
+        "order": 2.0
+      },
+      {
+        "name": "Missed the submission deadline",
+        "uuid": "422f0887-a3ee-4aca-8b71-a1fb1ded23b4",
+        "order": 3.0
+      },
+      {
+        "name": "Applications are not being accepted temporarily",
+        "uuid": "6e0bbb91-dafc-4c9c-939d-4875c8e01ddc",
+        "order": 4.0
+      },
+      {
+        "name": "Scheme/Card eligibility criteria changed",
+        "uuid": "360799eb-af5b-4c6a-ac68-bfb5420c35f8",
+        "order": 5.0
+      },
+      {
+        "name": "Other",
+        "uuid": "6a76ce42-0e9b-4467-beee-014bf4ac243c",
+        "order": 6.0
+      }
+    ]
+  },
+  {
+    "name": "Why weren't you able to submit the application",
+    "uuid": "74bea4ec-82c0-4491-b464-2aa743c55d8c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Missed the submission deadline",
+        "uuid": "422f0887-a3ee-4aca-8b71-a1fb1ded23b4",
+        "order": 0.0
+      },
+      {
+        "name": "Applications are not being accepted temporarily",
+        "uuid": "6e0bbb91-dafc-4c9c-939d-4875c8e01ddc",
+        "order": 1.0
+      },
+      {
+        "name": "Scheme/Card eligibility criteria changed",
+        "uuid": "360799eb-af5b-4c6a-ac68-bfb5420c35f8",
+        "order": 2.0
+      },
+      {
+        "name": "Additional documents required",
+        "uuid": "6ad93185-71ed-4a6d-9f52-93246d0b8dba",
+        "order": 3.0
+      },
+      {
+        "name": "Other",
+        "uuid": "6a76ce42-0e9b-4467-beee-014bf4ac243c",
+        "order": 4.0
+      }
+    ]
+  },
+  {
     "name": "Widowed",
     "uuid": "708e7ddd-8c0f-4e74-ad30-097ca30e1f5f",
     "dataType": "NA"
@@ -7717,6 +8263,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Yet to check the status",
+    "uuid": "361ce3c3-bb58-41c4-a26b-37bea3efb2eb",
+    "dataType": "NA"
+  },
+  {
     "name": "Youth Association - Please Explain",
     "uuid": "64cfc862-7deb-4e1c-a78a-bf24e819cf92",
     "dataType": "Text"
@@ -7725,46 +8276,5 @@
     "name": "Zone(s)",
     "uuid": "d47c55fb-8e7b-4d46-99ad-2bf20a578424",
     "dataType": "NA"
-  },
-  {
-    "name": "Dummy",
-    "uuid": "e2a77752-ef1a-4ca7-8172-42e4fcb4dab9",
-    "dataType": "Coded",
-    "answers": []
-  },
-  {
-    "uuid": "6a2c9de3-1b5a-4804-92d4-0504ed9be2bf",
-    "name": "Voter ID"
-  },
-  {
-    "uuid": "6709dbf9-0050-4fc0-8ec8-f94c6983b009",
-    "name": "Old Age Pension"
-  },
-  {
-    "uuid": "93b5d453-d035-42c1-aa42-afd0cedd2fc8",
-    "name": "PAN Card"
-  },
-  {
-    "uuid": "15a6fa4a-3eec-4bbe-8a65-5d3ff40e9ba4",
-    "name": "Select scheme",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "name": "Aadhar Card",
-        "uuid": "2e135003-34dc-4a55-a1ad-eb804b39bccb"
-      },
-      {
-        "uuid": "6a2c9de3-1b5a-4804-92d4-0504ed9be2bf",
-        "name": "Voter ID"
-      },
-      {
-        "uuid": "6709dbf9-0050-4fc0-8ec8-f94c6983b009",
-        "name": "Old Age Pension"
-      },
-      {
-        "uuid": "93b5d453-d035-42c1-aa42-afd0cedd2fc8",
-        "name": "PAN Card"
-      }
-    ]
   }
 ]

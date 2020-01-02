@@ -1,5 +1,10 @@
 [
   {
+    "name": "Recurring Facilitation",
+    "uuid": "ccbc1fea-3b6f-4993-8f0a-58c18feb0705",
+    "encounterEligibilityCheckRule": "'use strict';\n({params, imports}) => {\n  return false;\n};"
+  },
+  {
     "name": "Collect  Additional Documents",
     "uuid": "ac5f60d1-8768-4cb6-b70a-5e9e6ccda6de",
     "encounterEligibilityCheckRule": "'use strict';\n({params, imports}) => {\n  return false;\n};"

@@ -1,0 +1,88 @@
+{
+  "name" : "Collect Additional Documents",
+  "uuid" : "cfe6b250-a8a5-4b61-a2fb-5a8b3afe776d",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ {
+    "uuid" : "c1858aa1-f7db-4d10-902c-a1260885a890",
+    "name" : "Information",
+    "displayOrder" : 1.0,
+    "display" : "Information",
+    "formElements" : [ {
+      "name" : "Dummy",
+      "uuid" : "c4cedf52-fcfa-402f-9500-d466fba9f8fa",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Dummy",
+        "uuid" : "e2a77752-ef1a-4ca7-8172-42e4fcb4dab9"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : false,
+      "voided" : true
+    }, {
+      "name" : "Were you able to collect and verify all documents?",
+      "uuid" : "c392aea8-9c30-4f18-acfa-d17fb290073b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Were you able to collect and verify all documents",
+        "uuid" : "1c4d0ab5-6d5c-43cb-9ea2-db48eac5915d"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Do you want to reschedule this step to a future date?",
+      "uuid" : "6944f194-63d7-471e-89c7-e3f66ef9b25e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Do you want to reschedule this step to a future date",
+        "uuid" : "cc07dd6a-5479-4e3b-a085-667f226db9fd"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEnrolment = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEnrolment, formElement});\n  statusBuilder.show().when.valueInEnrolment('Were you able to collect and verify all documents').containsAnswerConceptName(\"No\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true,
+      "voided" : true
+    }, {
+      "name" : "Enter the date for rescheduling this step",
+      "uuid" : "d3554ce6-026a-4db0-a6b1-74be36fcdda5",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Enter the date for rescheduling this step",
+        "uuid" : "67fc4d4c-cf7c-4c36-a55d-b462595ec1c3"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEnrolment = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEnrolment, formElement});\n  statusBuilder.show().when.valueInEnrolment('Do you want to reschedule this step to a future date').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true,
+      "voided" : true
+    }, {
+      "name" : "Do you want to end this facilitation?",
+      "uuid" : "4f3b74d5-aea7-426d-b59d-e689a21b94b5",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Do you want to end this facilitation",
+        "uuid" : "18876d40-1638-41af-9410-c3e7c50ec07a"
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "rule" : "",
+      "mandatory" : true
+    }, {
+      "name" : "Why do you want to end this facilitation?",
+      "uuid" : "6c078952-d401-45ce-bf91-a0d392dad81c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Why do you want to end this facilitation",
+        "uuid" : "c2903216-9adc-4c86-9ae7-2e0259150e6c"
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Do you want to end this facilitation').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : ""
+}

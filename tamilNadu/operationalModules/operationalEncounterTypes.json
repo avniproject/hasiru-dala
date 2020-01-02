@@ -2,25 +2,18 @@
   "organisationName": "Hasiru Dala",
   "operationalEncounterTypes": [
     {
-      "uuid": "5f501364-c114-4ade-bc04-08857a1de5bd",
+      "uuid": "63b9baa1-16b2-44f1-8701-9cf372bf87ac",
       "encounterType": {
-        "uuid": "16078161-374f-4b97-8fa7-bf95e06bc0ba"
+        "uuid": "ccbc1fea-3b6f-4993-8f0a-58c18feb0705"
       },
-      "name": "Start Facilitation"
+      "name": "Recurring Facilitation"
     },
     {
-      "uuid": "15c1f548-e50b-462e-bc86-6b34ae662430",
+      "uuid": "6cbdb0c3-bd5a-4768-9705-22b06a462a90",
       "encounterType": {
-        "uuid": "027d6475-105f-4835-92b6-9ed742ed50c2"
+        "uuid": "ac5f60d1-8768-4cb6-b70a-5e9e6ccda6de"
       },
-      "name": "Documents Collection"
-    },
-    {
-      "uuid": "2b2eba50-22e9-47af-a4b8-4662482e8dfb",
-      "encounterType": {
-        "uuid": "79d0dc61-cfd2-4e00-8507-3495ba227c0d"
-      },
-      "name": "Submit Application"
+      "name": "Collect  Additional Documents"
     },
     {
       "uuid": "33cdfc4b-2761-48e6-8456-0f3a53f48726",
@@ -30,11 +23,25 @@
       "name": "Enquire Application Status"
     },
     {
-      "uuid": "6cbdb0c3-bd5a-4768-9705-22b06a462a90",
+      "uuid": "2b2eba50-22e9-47af-a4b8-4662482e8dfb",
       "encounterType": {
-        "uuid": "ac5f60d1-8768-4cb6-b70a-5e9e6ccda6de"
+        "uuid": "79d0dc61-cfd2-4e00-8507-3495ba227c0d"
       },
-      "name": "Collect  Additional Documents"
+      "name": "Submit Application"
+    },
+    {
+      "uuid": "15c1f548-e50b-462e-bc86-6b34ae662430",
+      "encounterType": {
+        "uuid": "027d6475-105f-4835-92b6-9ed742ed50c2"
+      },
+      "name": "Documents Collection"
+    },
+    {
+      "uuid": "5f501364-c114-4ade-bc04-08857a1de5bd",
+      "encounterType": {
+        "uuid": "16078161-374f-4b97-8fa7-bf95e06bc0ba"
+      },
+      "name": "Start Facilitation"
     }
   ]
 }

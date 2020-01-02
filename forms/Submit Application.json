@@ -1,0 +1,135 @@
+{
+  "name" : "Submit Application",
+  "uuid" : "21bfcc72-799c-4736-866a-c8c537328e14",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ {
+    "uuid" : "03f37c61-d04b-46dc-8334-b07e30b4b98e",
+    "name" : "Information",
+    "displayOrder" : 1.0,
+    "display" : "Information",
+    "formElements" : [ {
+      "name" : "Dummy",
+      "uuid" : "32f509c1-7c17-4219-aea2-dbd05fe8d68a",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Dummy",
+        "uuid" : "e2a77752-ef1a-4ca7-8172-42e4fcb4dab9"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : false,
+      "voided" : true
+    }, {
+      "name" : "Has the application been submitted?",
+      "uuid" : "25840588-7996-421e-9cf0-6bbb3d590822",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Has the application been submitted",
+        "uuid" : "0f7dbe5a-a0c3-4d62-b2af-5ab3b43f5f4a"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Do you want to save the acknowledgement number/status?",
+      "uuid" : "c4833104-975f-4728-940a-daf72151d321",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Do you want to save the acknowledgement number/status",
+        "uuid" : "6cc1751a-1dea-41b8-ad2c-b7827abc6f60"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Has the application been submitted').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Enter the acknowledgment  number/status",
+      "uuid" : "aaab342c-2656-4076-8e1c-be2c3c3dfe38",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Enter the acknowledgment  number/status",
+        "uuid" : "fe6384bf-7c95-41a2-8490-b71d38bb5279"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Do you want to save the acknowledgement number/status').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Do you want to upload an image for acknowledgement?",
+      "uuid" : "b958c956-7dad-4370-9d40-627093530cfd",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Do you want to upload an image for acknowledgement",
+        "uuid" : "d47776cb-f62e-4208-bb72-7156d01b5f3e"
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Do you want to save the acknowledgement number/status').containsAnswerConceptName(\"No\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Upload image or click a photo",
+      "uuid" : "e3f1520d-0744-4816-8e75-d0ad89a4d44c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Upload image or click a photo",
+        "uuid" : "0d1603b9-47c8-4188-ac03-80606e49acf9"
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Do you want to upload an image for acknowledgement').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Why weren't you able to submit the application?",
+      "uuid" : "6e0ef0e2-2590-4658-9deb-c3f2480c76c2",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Why weren't you able to submit the application",
+        "uuid" : "74bea4ec-82c0-4491-b464-2aa743c55d8c"
+      },
+      "displayOrder" : 7.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Has the application been submitted').containsAnswerConceptName(\"No\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Do you want to reschedule this step to a future date?",
+      "uuid" : "d38ff43c-0fe1-4cd9-9817-28c8b5485fa6",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Do you want to reschedule this step to a future date",
+        "uuid" : "cc07dd6a-5479-4e3b-a085-667f226db9fd"
+      },
+      "displayOrder" : 8.0,
+      "type" : "SingleSelect",
+      "mandatory" : true,
+      "voided" : true
+    }, {
+      "name" : "Enter the date for rescheduling this step",
+      "uuid" : "6dc22424-d28a-404f-bbf4-885f5b44a401",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Enter the date for rescheduling this step",
+        "uuid" : "67fc4d4c-cf7c-4c36-a55d-b462595ec1c3"
+      },
+      "displayOrder" : 9.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEnrolment = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEnrolment, formElement});\n  statusBuilder.show().when.valueInEnrolment('Do you want to reschedule this step to a future date').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true,
+      "voided" : true
+    }, {
+      "name" : "Do you want to end this facilitation?",
+      "uuid" : "6f9c49b4-4fbf-441a-bcef-4821f3157983",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Do you want to end this facilitation",
+        "uuid" : "18876d40-1638-41af-9410-c3e7c50ec07a"
+      },
+      "displayOrder" : 10.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Has the application been submitted').containsAnswerConceptName(\"No\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEncounter = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const schemeName = imports.lodash.trim(programEncounter.name.split('-')[0]);\n    const scheduleNextStep = programEncounter.getObservationReadableValue(\"Has the application been submitted\");\n    if (scheduleNextStep === 'Yes') {\n        scheduleBuilder.add({\n            name: `${schemeName} - Application Status Enquiry`,\n            encounterType: 'Enquire Application Status',\n            earliestDate: programEncounter.encounterDateTime,\n            maxDate: imports.moment(programEncounter.encounterDateTime).add(7, 'days').toDate()\n        });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
+  "validationRule" : ""
+}

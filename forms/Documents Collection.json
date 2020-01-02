@@ -1,0 +1,87 @@
+{
+  "name" : "Documents Collection",
+  "uuid" : "476452a2-4124-4a48-a81a-aa0efe16d175",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ {
+    "uuid" : "a54fa68d-5acd-4adc-8fe6-c2f5089950ab",
+    "name" : "Information",
+    "displayOrder" : 1.0,
+    "display" : "Information",
+    "formElements" : [ {
+      "name" : "Were you able to collect and verify all documents?",
+      "uuid" : "5e046f58-9ab4-4cc8-8c07-b7626cae977b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Were you able to collect and verify all documents",
+        "uuid" : "1c4d0ab5-6d5c-43cb-9ea2-db48eac5915d"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Do you want to reschedule this step to a future date?",
+      "uuid" : "443419ef-9d91-4b84-8f17-fd52a4797f77",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Do you want to reschedule this step to a future date",
+        "uuid" : "cc07dd6a-5479-4e3b-a085-667f226db9fd"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "mandatory" : true,
+      "voided" : true
+    }, {
+      "name" : "Enter the date for rescheduling this step",
+      "uuid" : "f4772d1a-944a-4361-9f91-b67fb1a6fe85",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Enter the date for rescheduling this step",
+        "uuid" : "67fc4d4c-cf7c-4c36-a55d-b462595ec1c3"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEnrolment = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEnrolment, formElement});\n  statusBuilder.show().when.valueInEnrolment('Do you want to reschedule this step to a future date').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true,
+      "voided" : true
+    }, {
+      "name" : "Do you want to end this facilitation?",
+      "uuid" : "0e726e57-b8aa-4ac7-ba11-7d956a989dc1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Do you want to end this facilitation",
+        "uuid" : "18876d40-1638-41af-9410-c3e7c50ec07a"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Were you able to collect and verify all documents').containsAnswerConceptName(\"No\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Why do you want to end this facilitation?",
+      "uuid" : "8cd71f63-ee25-43ae-9027-22a9189d47e1",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Why do you want to end this facilitation",
+        "uuid" : "c2903216-9adc-4c86-9ae7-2e0259150e6c"
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Do you want to end this facilitation').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
+      "mandatory" : false
+    }, {
+      "name" : "Please Specify",
+      "uuid" : "f2d7832f-ae45-452a-b340-ec2dacd82086",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Please Specify",
+        "uuid" : "ca23148b-6d99-465a-9be6-33efdc3b44ac"
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Why do you want to end this facilitation').containsAnswerConceptName(\"Other\");\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEncounter = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const schemeName = imports.lodash.trim(programEncounter.name.split('-')[0]);\n    const scheduleNextVisit = programEncounter.getObservationReadableValue(\"Were you able to collect and verify all documents\");\n    if(scheduleNextVisit === 'Yes'){\n    scheduleBuilder.add({\n        name: `${schemeName} - Submit Application`,\n        encounterType: 'Submit Application',\n        earliestDate: programEncounter.encounterDateTime,\n        maxDate: imports.moment(programEncounter.encounterDateTime).add(1, 'days').toDate()\n    });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
+  "validationRule" : ""
+}
