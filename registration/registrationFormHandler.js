@@ -463,6 +463,27 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnyAnswerConceptName("Worker / Informal Worker", "Relative Living with Worker / Informal Worker (Dependent)")
     }
 
+    @WithName("Whether you have Driving license")
+    @WithRegistrationStatusBuilder
+    ID71([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnyAnswerConceptName("Worker / Informal Worker", "Relative Living with Worker / Informal Worker (Dependent)")
+    }
+
+    @WithName("Whether you have Cast Certificate")
+    @WithRegistrationStatusBuilder
+    ID72([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnyAnswerConceptName("Worker / Informal Worker", "Relative Living with Worker / Informal Worker (Dependent)")
+    }
+
+    @WithName("Do you have Income Certificate")
+    @WithRegistrationStatusBuilder
+    ID73([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
+            .containsAnyAnswerConceptName("Worker / Informal Worker", "Relative Living with Worker / Informal Worker (Dependent)")
+    }
+
     @WithName("Whether you have any Other Cards")
     @WithRegistrationStatusBuilder
     ID8([], statusBuilder) {
@@ -1984,7 +2005,7 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     ibSd101([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
-            .containsAnswerConceptNameOtherThan("Relative Living with Worker / Informal Worker (Dependent)");
+            .containsAnswerConceptName("Worker / Informal Worker");
     }
 
     @WithName("children during off school hours - Please specify")
@@ -3554,29 +3575,11 @@ class RegistrationViewHandlerHasiruDala {
     }
 
     @WithName("Please select the type of local address proof")
-    @WithName("Name of local ID")
-    @WithName("Local ID description")
-
-
     @WithRegistrationStatusBuilder
     training4([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Do you have a local address proof?").containsAnswerConceptName('Yes')
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent").containsAnswerConceptNameOtherThan("Relative Living with Worker / Informal Worker (Not Dependent)")
+            .and.when.valueInRegistration("Do you have a local address proof?").containsAnswerConceptName('Yes')
     }
-
-    // // @WithName("Upload Photo of id")
-    // @WithRegistrationStatusBuilder
-    // training54([], statusBuilder) {
-    //     statusBuilder.show().when.valueInRegistration("Whether you have Voter Registration Card").containsAnswerConceptName('Yes')
-    //         .or.when.valueInRegistration("Whether you have Ration/BPL Card with your name included").containsAnswerConceptName("Yes")
-    //         .or.when.valueInRegistration("Whether you have Aadhar Card").containsAnswerConceptName("Yes")
-    //         .or.when.valueInRegistration("Whether you have Aadhar Enrolment ID").containsAnswerConceptName("Yes")
-    //         .or.when.valueInRegistration("Whether you have Health Card").containsAnswerConceptName("Yes")
-    //         .or.when.valueInRegistration("Whether you have PAN Card").containsAnswerConceptName("Yes")
-    //         .or.when.valueInRegistration("Whether you have Driving license").containsAnswerConceptName("Yes")
-    //         .or.when.valueInRegistration("Whether you have Cast Certificate").containsAnswerConceptName("Yes")
-    //         .or.when.valueInRegistration("Do you have Income Certificate").containsAnswerConceptName("Yes");
-    //
-    // }
 
     @WithName("Do you have a local address proof?")
     @WithRegistrationStatusBuilder
@@ -3585,24 +3588,19 @@ class RegistrationViewHandlerHasiruDala {
 
     }
 
-    @WithName("Please select the type of local address proof")
-    @WithRegistrationStatusBuilder
-    phid123([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent").containsAnswerConceptNameOtherThan("Relative Living with Worker / Informal Worker (Not Dependent)");
-
-    }
-
     @WithName("Name of local ID")
     @WithRegistrationStatusBuilder
     phid124([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent").containsAnswerConceptNameOtherThan("Relative Living with Worker / Informal Worker (Not Dependent)");
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent").containsAnswerConceptNameOtherThan("Relative Living with Worker / Informal Worker (Not Dependent)")
+            .and.when.valueInRegistration("Please select the type of local address proof").containsAnswerConceptName("Others");
 
     }
 
     @WithName("Local ID description")
     @WithRegistrationStatusBuilder
     phid125([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent").containsAnswerConceptNameOtherThan("Relative Living with Worker / Informal Worker (Not Dependent)");
+        statusBuilder.show().when.valueInRegistration("Please choose the type of respondent").containsAnswerConceptNameOtherThan("Relative Living with Worker / Informal Worker (Not Dependent)")
+            .and.when.valueInRegistration("Please select the type of local address proof").containsAnswerConceptName("Others");
 
     }
 
