@@ -1,5 +1,10 @@
 [
   {
+    "name": "",
+    "uuid": "bdd4c352-509b-4c17-b525-3798671e8140",
+    "dataType": "NA"
+  },
+  {
     "name": "0-2 hours",
     "uuid": "6260b606-d2f2-4004-b2c3-6d7913f668fc",
     "dataType": "NA"
@@ -298,6 +303,11 @@
   {
     "name": "All days of the week",
     "uuid": "8d130f47-2813-43ea-b4b4-876bf4fa55b5",
+    "dataType": "NA"
+  },
+  {
+    "name": "All recurring facilitations are complete",
+    "uuid": "5336387b-6000-4211-8ac4-059515d2282a",
     "dataType": "NA"
   },
   {
@@ -805,6 +815,11 @@
     "dataType": "Text"
   },
   {
+    "name": "Caste Certificate",
+    "uuid": "1f29ea85-3601-48e6-9694-79d281ee4605",
+    "dataType": "NA"
+  },
+  {
     "name": "Caste/Community",
     "uuid": "43184a9f-5092-4211-ade0-2949f4b438a2",
     "dataType": "Coded",
@@ -1139,6 +1154,11 @@
     "name": "decanting station/Sewage Treatment Plant - Please Explain",
     "uuid": "9260b495-e429-42a0-ac5f-f6c8357392aa",
     "dataType": "Text"
+  },
+  {
+    "name": "Defaulted/Ineligible to continue due to beneficairy/process related delays",
+    "uuid": "fef7bbf7-9270-4bf3-94cc-0c507b701f95",
+    "dataType": "NA"
   },
   {
     "name": "Degree Fail",
@@ -2427,7 +2447,7 @@
     "dataType": "NA"
   },
   {
-    "name": "Driving License",
+    "name": "Driving license",
     "uuid": "77c49fd8-5394-4fa9-8ea0-e18edb1ca530",
     "dataType": "NA"
   },
@@ -2525,6 +2545,16 @@
         "name": "Test scheme",
         "uuid": "33a4c187-278a-4573-8cf0-37854a8436d0",
         "order": 4.0
+      },
+      {
+        "name": "Driving license",
+        "uuid": "77c49fd8-5394-4fa9-8ea0-e18edb1ca530",
+        "order": 5.0
+      },
+      {
+        "name": "Caste Certificate",
+        "uuid": "1f29ea85-3601-48e6-9694-79d281ee4605",
+        "order": 6.0
       }
     ]
   },
@@ -4750,6 +4780,23 @@
     "dataType": "Text"
   },
   {
+    "name": "Next recurring step",
+    "uuid": "3d39dbdd-557a-41a2-9f22-d5e52add46e3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "End facilitation",
+        "uuid": "31508f3c-ae04-45d6-ab38-3191b66f2c29",
+        "order": 0.0
+      },
+      {
+        "name": "Schedule next facilitation",
+        "uuid": "f6d4fd62-d5a0-4565-957c-95207ea379c3",
+        "order": 1.0
+      }
+    ]
+  },
+  {
     "name": "NGO/SHG/CBO authorized to issue the card",
     "uuid": "d20aff4f-f68f-4e01-a377-62f373170e79",
     "dataType": "NA"
@@ -5561,7 +5608,7 @@
         "order": 4.0
       },
       {
-        "name": "Driving License",
+        "name": "Driving license",
         "uuid": "77c49fd8-5394-4fa9-8ea0-e18edb1ca530",
         "order": 5.0
       },
@@ -5768,6 +5815,33 @@
     "dataType": "Text"
   },
   {
+    "name": "Reason for ending recurring facilitation",
+    "uuid": "06f5c0aa-5dd6-492c-bb89-07494a01cd41",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "All recurring facilitations are complete",
+        "uuid": "5336387b-6000-4211-8ac4-059515d2282a",
+        "order": 0.0
+      },
+      {
+        "name": "Subsequent facilitaitons are not needed",
+        "uuid": "0d4ad537-cb5f-427f-a6f1-365d5b4bc410",
+        "order": 1.0
+      },
+      {
+        "name": "Defaulted/Ineligible to continue due to beneficairy/process related delays",
+        "uuid": "fef7bbf7-9270-4bf3-94cc-0c507b701f95",
+        "order": 2.0
+      },
+      {
+        "name": "Other",
+        "uuid": "6a76ce42-0e9b-4467-beee-014bf4ac243c",
+        "order": 3.0
+      }
+    ]
+  },
+  {
     "name": "Refrigerator",
     "uuid": "83991192-ea8d-4be8-9a56-8d7424fc5e33",
     "dataType": "NA"
@@ -5806,6 +5880,16 @@
         "name": "Test scheme",
         "uuid": "33a4c187-278a-4573-8cf0-37854a8436d0",
         "order": 4.0
+      },
+      {
+        "name": "Driving license",
+        "uuid": "77c49fd8-5394-4fa9-8ea0-e18edb1ca530",
+        "order": 5.0
+      },
+      {
+        "name": "Caste Certificate",
+        "uuid": "1f29ea85-3601-48e6-9694-79d281ee4605",
+        "order": 6.0
       }
     ]
   },
@@ -6007,6 +6091,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Schedule next facilitation",
+    "uuid": "f6d4fd62-d5a0-4565-957c-95207ea379c3",
+    "dataType": "NA"
+  },
+  {
     "name": "Scheme",
     "uuid": "d91be634-8003-408d-b95e-622c1819ef06",
     "dataType": "Coded",
@@ -6030,6 +6119,26 @@
         "name": "PAN Card",
         "uuid": "93b5d453-d035-42c1-aa42-afd0cedd2fc8",
         "order": 3.0
+      },
+      {
+        "name": "Test scheme",
+        "uuid": "33a4c187-278a-4573-8cf0-37854a8436d0",
+        "order": 4.0
+      },
+      {
+        "name": "Driving license",
+        "uuid": "77c49fd8-5394-4fa9-8ea0-e18edb1ca530",
+        "order": 5.0
+      },
+      {
+        "name": "Caste Certificate",
+        "uuid": "1f29ea85-3601-48e6-9694-79d281ee4605",
+        "order": 6.0
+      },
+      {
+        "name": "",
+        "uuid": "bdd4c352-509b-4c17-b525-3798671e8140",
+        "order": 7.0
       }
     ]
   },
@@ -6454,6 +6563,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Subsequent facilitaitons are not needed",
+    "uuid": "0d4ad537-cb5f-427f-a6f1-365d5b4bc410",
+    "dataType": "NA"
+  },
+  {
     "name": "Sweeping - Please Specify",
     "uuid": "ca599946-2d1c-43f3-bfb8-5a985cb6f4df",
     "dataType": "Text"
@@ -6731,6 +6845,21 @@
         "name": "Test scheme",
         "uuid": "33a4c187-278a-4573-8cf0-37854a8436d0",
         "order": 4.0
+      },
+      {
+        "name": "Driving license",
+        "uuid": "77c49fd8-5394-4fa9-8ea0-e18edb1ca530",
+        "order": 5.0
+      },
+      {
+        "name": "Caste Certificate",
+        "uuid": "1f29ea85-3601-48e6-9694-79d281ee4605",
+        "order": 6.0
+      },
+      {
+        "name": "",
+        "uuid": "bdd4c352-509b-4c17-b525-3798671e8140",
+        "order": 7.0
       }
     ]
   },
