@@ -1,0 +1,62 @@
+{
+  "name" : "Application submission Cancellation",
+  "uuid" : "34fa0789-46c6-472b-aaaf-2382fa391a63",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ {
+    "uuid" : "c04237af-354f-4c7c-ad6a-1302d97f454a",
+    "name" : "Information",
+    "displayOrder" : 1.0,
+    "display" : "Information",
+    "formElements" : [ {
+      "name" : "Reason of cancellation",
+      "uuid" : "fe29f604-f735-4cf1-aa0a-fea646631571",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Why weren't you able to submit the application",
+        "uuid" : "74bea4ec-82c0-4491-b464-2aa743c55d8c"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Specify Other",
+      "uuid" : "2c8a63b9-b426-43e7-8f53-4790fcbfd5cd",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Please Specify",
+        "uuid" : "ca23148b-6d99-465a-9be6-33efdc3b44ac"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  const other = programEncounter.findCancelEncounterObservationReadableValue(\"Why weren't you able to submit the application\");\n  statusBuilder.show().whenItem(other === 'Other').is.truthy;\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Select Next Step",
+      "uuid" : "5c2255d5-b773-41aa-9fc3-155a39c5ca4c",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Select next step",
+        "uuid" : "28e54736-2ffe-40d3-ab37-5b86834b72a8"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  const reason = programEncounter.findCancelEncounterObservationReadableValue(\"Why weren't you able to submit the application\");\n  statusBuilder.show().whenItem(reason !== 'Additional documents required').is.truthy;\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Enter the date for rescheduling this step.",
+      "uuid" : "18b7c36b-ae40-4be5-b9c9-f7f8bdc993da",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Enter the date for rescheduling this step",
+        "uuid" : "67fc4d4c-cf7c-4c36-a55d-b462595ec1c3"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  const rescheduleVisit = programEncounter.findCancelEncounterObservationReadableValue(\"Select next step\");\n  statusBuilder.show().whenItem(rescheduleVisit === 'Reschedule facilitation').is.truthy;\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    } ]
+  } ],
+  "decisionRule" : "\"use strict\";\n({params, imports}) => {\n    const facilitationToStepMap = new Map([\n        ['Collect Document', 'Collect documents'],\n        ['Submit Application', 'Submit application'],\n        ['Application Status Enquiry', 'Enquire application status'],\n        ['Collect Additional Documents', 'Collect additional documents']\n    ]);\n    const decisions = params.decisions;\n    const programEncounter = params.entity;\n    const nextStep = programEncounter.findCancelEncounterObservationReadableValue(\"Select next step\");\n    const cancelReason = programEncounter.findCancelEncounterObservationReadableValue(\"Why weren't you able to submit the application\");\n    const schemeDetails = programEncounter.name.split('-');\n    const schemeName = imports.lodash.trim(schemeDetails[0]);\n    const workflow = imports.lodash.trim(schemeDetails[1]);\n    const facilitationStepName = _.trim(_.last(schemeDetails));\n    var facilitationStatus = facilitationToStepMap.get(facilitationStepName);\n    const workflowName = workflow === 'Update' ? 'Update' : (workflow === 'Recurring' ? 'Register' : 'Enrolment');\n    var schemeStatus = 'Facilitation in progress';\n    if (cancelReason === 'Additional documents required') {\n        facilitationStatus = 'Collect additional documents';\n    } else if (nextStep === 'End facilitation') {\n        facilitationStatus = 'Ended';\n        schemeStatus = 'Not availed';\n    }\n    decisions.encounterDecisions.push({name: 'Scheme', value: [schemeName]});\n    decisions.encounterDecisions.push({name: 'Scheme status', value: [schemeStatus]});\n    decisions.encounterDecisions.push({name: 'Facilitation workflow', value: [workflowName]});\n    decisions.encounterDecisions.push({name: 'Facilitation status', value: [facilitationStatus]});\n    return decisions;\n};",
+  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEncounter = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const maxDateMap = new Map([\n        ['Documents Collection', 7],\n        ['Submit Application', 1],\n        ['Enquire Application Status', 7],\n        ['Collect Additional Documents', 1]\n    ]);\n    const newDate = programEncounter.findCancelEncounterObservationReadableValue(\"Enter the date for rescheduling this step\");\n    const getMaxDate = (date, numOfDay) => imports.moment(date).add(numOfDay, 'days').toDate();\n    let maxDate = getMaxDate(newDate, maxDateMap.get(programEncounter.encounterType.name));\n    if (!_.isNil(newDate) && imports.moment().isSameOrBefore(maxDate, 'day')) {\n        scheduleBuilder.add({\n            name: programEncounter.name,\n            encounterType: programEncounter.encounterType.name,\n            earliestDate: newDate,\n            maxDate: maxDate\n        });\n    }\n    const lastStep = programEncounter.findCancelEncounterObservationReadableValue(\"Why weren't you able to submit the application\");\n    const schemeDetails = programEncounter.name.split('-');\n    const workflow = imports.lodash.trim(schemeDetails[1]);\n    const schemeName = imports.lodash.trim(schemeDetails[0]);\n    let maxDate1 = getMaxDate(programEncounter.cancelDateTime, 1);\n    if (lastStep === 'Additional documents required' && imports.moment().isSameOrBefore(maxDate1, 'day')) {\n        scheduleBuilder.add({\n            name: workflow === 'Update' ? `${schemeName} - Update - Additional Document Collection` : `${schemeName} - Additional Document Collection`,\n            encounterType: 'Collect Additional Documents',\n            earliestDate: programEncounter.cancelDateTime,\n            maxDate: maxDate1\n        });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
+  "validationRule" : ""
+}

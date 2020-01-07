@@ -22,6 +22,6 @@
     } ]
   } ],
   "decisionRule" : "",
-  "visitScheduleRule" : "\"use strict\";\n({ params, imports}) => {\n  const programEnrolment = params.entity;\n  const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n    programEnrolment\n  });\n  const earliestDate = programEnrolment.enrolmentDateTime;\n  const maxDate = imports.moment(earliestDate).add(8, 'days').toDate();\n  scheduleBuilder\n    .add({\n      name: \"Start Facilitation\",\n      encounterType: \"Start Facilitation\",\n      earliestDate: earliestDate,\n      maxDate: maxDate\n    })\n  return scheduleBuilder.getAllUnique('name');\n};",
+  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEnrolment = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEnrolment\n    });\n    const earliestDate = programEnrolment.enrolmentDateTime;\n    const maxDate = imports.moment(earliestDate).add(8, 'days').toDate();\n    if (imports.moment().isSameOrBefore(maxDate, 'day')) {\n        scheduleBuilder\n            .add({\n                name: \"Start Facilitation\",\n                encounterType: \"Start Facilitation\",\n                earliestDate: earliestDate,\n                maxDate: maxDate\n            });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
   "validationRule" : ""
 }

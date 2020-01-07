@@ -1,0 +1,26 @@
+{
+  "name" : "Register already availed scheme",
+  "uuid" : "de2ab7a3-5a40-4b3e-a520-5949087639e4",
+  "formType" : "ProgramEncounter",
+  "formElementGroups" : [ {
+    "uuid" : "062fa79f-d91c-49b8-a780-6e100e7fae24",
+    "name" : "Information",
+    "displayOrder" : 1.0,
+    "display" : "Information",
+    "formElements" : [ {
+      "name" : "Register scheme",
+      "uuid" : "19be079b-42d8-4553-87e7-334b96438a79",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Register scheme",
+        "uuid" : "0b08d8e8-a000-43ca-987c-d69b2ebd062a"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const schemeDetails = new Map([\n        [\"Aadhar Card\", {\"recurring\": false}],\n        [\"Voter ID\", {\"recurring\": false}],\n        [\"PAN Card\", {\"recurring\": false}],\n        [\"Old Age Pension\", {\"recurring\": true}],\n        [\"Test scheme\", {\"recurring\": false}]\n    ]);\n    const programEncounter = params.entity;\n    const schemesToRegister = programEncounter.getObservationReadableValue(\"Register scheme\");\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const earliestDate = programEncounter.encounterDateTime;\n    const maxDate = imports.moment(earliestDate).add(8, 'days').toDate();\n    if (schemeDetails.get(schemesToRegister).recurring && imports.moment().isSameOrBefore(maxDate, 'day')) {\n        scheduleBuilder.add({\n            name: \"Start Facilitation For Recurring Scheme\",\n            encounterType: \"Start Facilitation\",\n            earliestDate: earliestDate,\n            maxDate: maxDate\n        });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
+  "validationRule" : ""
+}

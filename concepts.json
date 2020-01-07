@@ -231,6 +231,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Aad",
+    "uuid": "225b74e1-03a6-4e5a-9072-99d827d3e776",
+    "dataType": "NA"
+  },
+  {
     "name": "Aadhar Card",
     "uuid": "2e135003-34dc-4a55-a1ad-eb804b39bccb",
     "dataType": "NA"
@@ -246,9 +251,19 @@
     "dataType": "NA"
   },
   {
+    "name": "abv",
+    "uuid": "8bfaebc8-f682-47dd-b5c2-0e5cadf59dbb",
+    "dataType": "NA"
+  },
+  {
     "name": "Acid",
     "uuid": "6f3d5f60-7ebb-46b2-ba35-9ed02f467940",
     "dataType": "NA"
+  },
+  {
+    "name": "Additional Document Collection Pending",
+    "uuid": "2ed887b6-b957-44df-aee0-857f9ebe54ec",
+    "dataType": "Text"
   },
   {
     "name": "Additional documents required",
@@ -324,6 +339,16 @@
     "name": "Application Rejected",
     "uuid": "c489c941-8aed-4922-8160-af7efe1f5c94",
     "dataType": "NA"
+  },
+  {
+    "name": "Application Status Enquiry Pending",
+    "uuid": "e577d953-be41-4259-9e01-5fc757437dca",
+    "dataType": "Text"
+  },
+  {
+    "name": "Application Submission Pending",
+    "uuid": "ce545920-e8ba-450f-b0b6-9926f95dddd0",
+    "dataType": "Text"
   },
   {
     "name": "Application under Processing/Review",
@@ -541,6 +566,16 @@
     "name": "Auto tipper",
     "uuid": "75b6004e-7458-4c8c-b611-3d5dc067875f",
     "dataType": "NA"
+  },
+  {
+    "name": "Availed",
+    "uuid": "8addcf21-7ce7-4e47-a0b2-4eca62cf6a95",
+    "dataType": "NA"
+  },
+  {
+    "name": "Availed schemes",
+    "uuid": "28dab99a-3346-499a-bb68-cb915b2f2aed",
+    "dataType": "Text"
   },
   {
     "name": "Average Income Earned per Month (INR)",
@@ -934,6 +969,26 @@
     "dataType": "Text"
   },
   {
+    "name": "Cold",
+    "uuid": "c86a03b4-a06b-4133-a9b6-6f76070f83d2",
+    "dataType": "NA"
+  },
+  {
+    "name": "Collect  additional documents",
+    "uuid": "8f892036-ad79-4bca-be77-b88307dccbab",
+    "dataType": "NA"
+  },
+  {
+    "name": "Collect additional documents",
+    "uuid": "dc9f934f-6482-438d-9d75-895aa42da7cf",
+    "dataType": "NA"
+  },
+  {
+    "name": "Collect documents",
+    "uuid": "adfc54f1-3430-4235-a8fc-73146f4a8b61",
+    "dataType": "NA"
+  },
+  {
     "name": "collected waste - Please Explain",
     "uuid": "53535493-b0dd-42c2-b5ca-a7d45c765d6c",
     "dataType": "Text"
@@ -972,6 +1027,28 @@
     "name": "Community/Public Toilet Cleaner",
     "uuid": "e94a90d6-6901-4a9b-b772-bbed44fc6b8a",
     "dataType": "NA"
+  },
+  {
+    "name": "Complaints",
+    "uuid": "53f7b040-e2f2-4e4f-9d92-0cbf25a7f864",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Fever",
+        "uuid": "65c5390e-6514-459a-a9fb-1f1062827e31",
+        "order": 0.0
+      },
+      {
+        "name": "Cold",
+        "uuid": "c86a03b4-a06b-4133-a9b6-6f76070f83d2",
+        "order": 1.0
+      },
+      {
+        "name": "Headache",
+        "uuid": "777d44ba-3b6b-4a1f-accc-f7736f9d2fc0",
+        "order": 2.0
+      }
+    ]
   },
   {
     "name": "Complex - Please Elaborate",
@@ -2310,18 +2387,23 @@
     ]
   },
   {
+    "name": "Document Collection Pending",
+    "uuid": "a4dbd1ca-6081-433a-8ca8-db854ee0c792",
+    "dataType": "Text"
+  },
+  {
     "name": "Domestic Help",
     "uuid": "15d3479e-2ada-4ca4-b5da-0b04b935283c",
     "dataType": "NA"
   },
   {
-    "name": "Don’t know",
-    "uuid": "4028b1a7-1fcb-4b52-b2d5-e8801a92f74c",
+    "name": "Don’t Know",
+    "uuid": "4c8ff881-e8e9-4b55-b5ab-260a0fb0b4fa",
     "dataType": "NA"
   },
   {
-    "name": "Don’t Know",
-    "uuid": "4c8ff881-e8e9-4b55-b5ab-260a0fb0b4fa",
+    "name": "Don’t know",
+    "uuid": "4028b1a7-1fcb-4b52-b2d5-e8801a92f74c",
     "dataType": "NA"
   },
   {
@@ -2400,6 +2482,21 @@
     "dataType": "NA"
   },
   {
+    "name": "End facilitation",
+    "uuid": "31508f3c-ae04-45d6-ab38-3191b66f2c29",
+    "dataType": "NA"
+  },
+  {
+    "name": "Ended",
+    "uuid": "0b5e3060-8c14-405b-b179-8f123b768d8f",
+    "dataType": "NA"
+  },
+  {
+    "name": "Enquire application status",
+    "uuid": "84b39c65-fe10-414c-862e-f58dc6eb0116",
+    "dataType": "NA"
+  },
+  {
     "name": "Enroll scheme",
     "uuid": "15a6fa4a-3eec-4bbe-8a65-5d3ff40e9ba4",
     "dataType": "Coded",
@@ -2423,8 +2520,18 @@
         "name": "PAN Card",
         "uuid": "93b5d453-d035-42c1-aa42-afd0cedd2fc8",
         "order": 3.0
+      },
+      {
+        "name": "Test scheme",
+        "uuid": "33a4c187-278a-4573-8cf0-37854a8436d0",
+        "order": 4.0
       }
     ]
+  },
+  {
+    "name": "Enrolment",
+    "uuid": "33e802ef-efd8-42c4-a754-d2e3c94c0e65",
+    "dataType": "NA"
   },
   {
     "name": "Enter the acknowledgment  number/status",
@@ -2472,6 +2579,82 @@
     "dataType": "Text"
   },
   {
+    "name": "Facilitation in progress",
+    "uuid": "c15cbb0f-d6f7-498d-b813-71d91a131b8c",
+    "dataType": "NA"
+  },
+  {
+    "name": "Facilitation status",
+    "uuid": "03e28a38-2893-4b7c-b51b-b9d6ae294828",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Start facilitation",
+        "uuid": "3813a2a4-08fd-4c3b-8ed3-1e2764ee64ef",
+        "order": 0.0
+      },
+      {
+        "name": "Collect documents",
+        "uuid": "adfc54f1-3430-4235-a8fc-73146f4a8b61",
+        "order": 1.0
+      },
+      {
+        "name": "Submit application",
+        "uuid": "ec6efba7-93cc-4d52-90d0-6625a7726e6a",
+        "order": 2.0
+      },
+      {
+        "name": "Enquire application status",
+        "uuid": "84b39c65-fe10-414c-862e-f58dc6eb0116",
+        "order": 3.0
+      },
+      {
+        "name": "Collect  additional documents",
+        "uuid": "8f892036-ad79-4bca-be77-b88307dccbab",
+        "order": 4.0,
+        "voided": true
+      },
+      {
+        "name": "abv",
+        "uuid": "8bfaebc8-f682-47dd-b5c2-0e5cadf59dbb",
+        "order": 5.0,
+        "voided": true
+      },
+      {
+        "name": "Ended",
+        "uuid": "0b5e3060-8c14-405b-b179-8f123b768d8f",
+        "order": 6.0
+      },
+      {
+        "name": "Collect additional documents",
+        "uuid": "dc9f934f-6482-438d-9d75-895aa42da7cf",
+        "order": 7.0
+      }
+    ]
+  },
+  {
+    "name": "Facilitation workflow",
+    "uuid": "92152a84-4441-440e-876b-b3d23ecd450f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Enrolment",
+        "uuid": "33e802ef-efd8-42c4-a754-d2e3c94c0e65",
+        "order": 0.0
+      },
+      {
+        "name": "Register",
+        "uuid": "3b0d7fed-607b-47ab-a266-49a6d1696c5a",
+        "order": 1.0
+      },
+      {
+        "name": "Update",
+        "uuid": "1e2fd357-13c5-40d5-b2e1-b028f3c3c031",
+        "order": 2.0
+      }
+    ]
+  },
+  {
     "name": "Factory/Industry",
     "uuid": "a36fefd0-d724-49d8-a5e9-c30cbb91d696",
     "dataType": "NA"
@@ -2494,6 +2677,11 @@
   {
     "name": "Fellow wastepicker",
     "uuid": "3af0fd7d-b609-48f9-965f-c84949149f1b",
+    "dataType": "NA"
+  },
+  {
+    "name": "Fever",
+    "uuid": "65c5390e-6514-459a-a9fb-1f1062827e31",
     "dataType": "NA"
   },
   {
@@ -2644,13 +2832,13 @@
     "dataType": "NA"
   },
   {
-    "name": "Hand cart",
-    "uuid": "9195e81b-23aa-4a72-8459-85c2281cbc45",
+    "name": "Hand Cart",
+    "uuid": "4ce925f1-01a8-4e7a-819d-8cf763134ef5",
     "dataType": "NA"
   },
   {
-    "name": "Hand Cart",
-    "uuid": "4ce925f1-01a8-4e7a-819d-8cf763134ef5",
+    "name": "Hand cart",
+    "uuid": "9195e81b-23aa-4a72-8459-85c2281cbc45",
     "dataType": "NA"
   },
   {
@@ -3011,6 +3199,11 @@
         "order": 2.0
       }
     ]
+  },
+  {
+    "name": "Headache",
+    "uuid": "777d44ba-3b6b-4a1f-accc-f7736f9d2fc0",
+    "dataType": "NA"
   },
   {
     "name": "Headache/Migraine",
@@ -3895,6 +4088,26 @@
     "dataType": "NA"
   },
   {
+    "name": "is having fever",
+    "uuid": "4da252e7-f74e-4580-bbc1-f318db65a039",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yes",
+        "uuid": "99d2a63e-9390-4fe9-b020-8fc248705392",
+        "unique": true,
+        "abnormal": true,
+        "order": 0.0
+      },
+      {
+        "name": "No",
+        "uuid": "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+        "unique": true,
+        "order": 1.0
+      }
+    ]
+  },
+  {
     "name": "Is there any other work you do in the house / institution / establishment / office?",
     "uuid": "38da7597-ed42-4e84-a56a-d11b6d9af8f0",
     "dataType": "Coded",
@@ -4318,13 +4531,13 @@
     "dataType": "NA"
   },
   {
-    "name": "More than 8 hours",
-    "uuid": "592d8b2f-b4ec-478b-8dd8-4e773e7035d4",
+    "name": "more than 8 hours",
+    "uuid": "f9d4c0ed-98c6-4dea-a16e-9aef7f6a763d",
     "dataType": "NA"
   },
   {
-    "name": "more than 8 hours",
-    "uuid": "f9d4c0ed-98c6-4dea-a16e-9aef7f6a763d",
+    "name": "More than 8 hours",
+    "uuid": "592d8b2f-b4ec-478b-8dd8-4e773e7035d4",
     "dataType": "NA"
   },
   {
@@ -4567,13 +4780,13 @@
     "dataType": "NA"
   },
   {
-    "name": "No Response",
-    "uuid": "b5bcaa38-9789-4cb9-9001-3ec4db9547bb",
+    "name": "No response",
+    "uuid": "2c747614-b51e-44a1-b8eb-4264074a65df",
     "dataType": "NA"
   },
   {
-    "name": "No response",
-    "uuid": "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "name": "No Response",
+    "uuid": "b5bcaa38-9789-4cb9-9001-3ec4db9547bb",
     "dataType": "NA"
   },
   {
@@ -4656,6 +4869,11 @@
   {
     "name": "Not anymore",
     "uuid": "5a9a7b2a-c5cc-4718-98f6-1580a13b87cb",
+    "dataType": "NA"
+  },
+  {
+    "name": "Not availed",
+    "uuid": "ed78caa2-22c1-4fc2-809c-675b91698e86",
     "dataType": "NA"
   },
   {
@@ -5532,8 +5750,31 @@
     "dataType": "NA"
   },
   {
+    "name": "Reason for canceling application enquiry status",
+    "uuid": "6fcd9443-0c13-405c-92c9-80caf8bc3270",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Yet to check the status",
+        "uuid": "361ce3c3-bb58-41c4-a26b-37bea3efb2eb",
+        "order": 0.0,
+        "voided": true
+      }
+    ]
+  },
+  {
+    "name": "Reason for cancellation",
+    "uuid": "1dc606e3-6d68-464d-9732-10d63503cf1e",
+    "dataType": "Text"
+  },
+  {
     "name": "Refrigerator",
     "uuid": "83991192-ea8d-4be8-9a56-8d7424fc5e33",
+    "dataType": "NA"
+  },
+  {
+    "name": "Register",
+    "uuid": "3b0d7fed-607b-47ab-a266-49a6d1696c5a",
     "dataType": "NA"
   },
   {
@@ -5560,6 +5801,11 @@
         "name": "Old Age Pension",
         "uuid": "6709dbf9-0050-4fc0-8ec8-f94c6983b009",
         "order": 3.0
+      },
+      {
+        "name": "Test scheme",
+        "uuid": "33a4c187-278a-4573-8cf0-37854a8436d0",
+        "order": 4.0
       }
     ]
   },
@@ -5666,6 +5912,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Reschedule facilitation",
+    "uuid": "a0374789-fe30-4a60-92ec-6a9b753f7ad4",
+    "dataType": "NA"
+  },
+  {
     "name": "Respiratory Disorder",
     "uuid": "78d9ae1c-09eb-4c03-aa39-64ac62d83574",
     "dataType": "NA"
@@ -5756,6 +6007,55 @@
     "dataType": "NA"
   },
   {
+    "name": "Scheme",
+    "uuid": "d91be634-8003-408d-b95e-622c1819ef06",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Aadhar Card",
+        "uuid": "2e135003-34dc-4a55-a1ad-eb804b39bccb",
+        "order": 0.0
+      },
+      {
+        "name": "Voter ID",
+        "uuid": "6a2c9de3-1b5a-4804-92d4-0504ed9be2bf",
+        "order": 1.0
+      },
+      {
+        "name": "Old Age Pension",
+        "uuid": "6709dbf9-0050-4fc0-8ec8-f94c6983b009",
+        "order": 2.0
+      },
+      {
+        "name": "PAN Card",
+        "uuid": "93b5d453-d035-42c1-aa42-afd0cedd2fc8",
+        "order": 3.0
+      }
+    ]
+  },
+  {
+    "name": "Scheme status",
+    "uuid": "eb617077-1ac5-4f29-a7b0-6233df335491",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Availed",
+        "uuid": "8addcf21-7ce7-4e47-a0b2-4eca62cf6a95",
+        "order": 0.0
+      },
+      {
+        "name": "Not availed",
+        "uuid": "ed78caa2-22c1-4fc2-809c-675b91698e86",
+        "order": 1.0
+      },
+      {
+        "name": "Facilitation in progress",
+        "uuid": "c15cbb0f-d6f7-498d-b813-71d91a131b8c",
+        "order": 2.0
+      }
+    ]
+  },
+  {
     "name": "Scheme/Card eligibility criteria changed",
     "uuid": "360799eb-af5b-4c6a-ac68-bfb5420c35f8",
     "dataType": "NA"
@@ -5799,6 +6099,23 @@
     "name": "Segregate waste",
     "uuid": "4483ed11-8316-44ab-8dc2-5185ab5a75d9",
     "dataType": "NA"
+  },
+  {
+    "name": "Select next step",
+    "uuid": "28e54736-2ffe-40d3-ab37-5b86834b72a8",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "End facilitation",
+        "uuid": "31508f3c-ae04-45d6-ab38-3191b66f2c29",
+        "order": 0.0
+      },
+      {
+        "name": "Reschedule facilitation",
+        "uuid": "a0374789-fe30-4a60-92ec-6a9b753f7ad4",
+        "order": 1.0
+      }
+    ]
   },
   {
     "name": "Self",
@@ -6064,6 +6381,29 @@
     "dataType": "NA"
   },
   {
+    "name": "Start facilitation",
+    "uuid": "3813a2a4-08fd-4c3b-8ed3-1e2764ee64ef",
+    "dataType": "NA"
+  },
+  {
+    "name": "Start recurring steps for",
+    "uuid": "09207c84-eb6d-48e5-b8d0-812776c44eb4",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Aad",
+        "uuid": "225b74e1-03a6-4e5a-9072-99d827d3e776",
+        "order": 0.0,
+        "voided": true
+      },
+      {
+        "name": "Old Age Pension",
+        "uuid": "6709dbf9-0050-4fc0-8ec8-f94c6983b009",
+        "order": 1.0
+      }
+    ]
+  },
+  {
     "name": "State Government",
     "uuid": "a63d8fed-94f5-4ed4-acbe-6cb5f50c77db",
     "dataType": "NA"
@@ -6109,6 +6449,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Submit application",
+    "uuid": "ec6efba7-93cc-4d52-90d0-6625a7726e6a",
+    "dataType": "NA"
+  },
+  {
     "name": "Sweeping - Please Specify",
     "uuid": "ca599946-2d1c-43f3-bfb8-5a985cb6f4df",
     "dataType": "Text"
@@ -6136,6 +6481,11 @@
   {
     "name": "Television",
     "uuid": "3111d0a5-3995-41e9-b68e-d3044ae30142",
+    "dataType": "NA"
+  },
+  {
+    "name": "Test scheme",
+    "uuid": "33a4c187-278a-4573-8cf0-37854a8436d0",
     "dataType": "NA"
   },
   {
@@ -6348,6 +6698,11 @@
     "dataType": "NA"
   },
   {
+    "name": "Update",
+    "uuid": "1e2fd357-13c5-40d5-b2e1-b028f3c3c031",
+    "dataType": "NA"
+  },
+  {
     "name": "Update scheme",
     "uuid": "6e181afe-62f3-4340-a6e8-f1d8e6fe4b68",
     "dataType": "Coded",
@@ -6371,6 +6726,11 @@
         "name": "PAN Card",
         "uuid": "93b5d453-d035-42c1-aa42-afd0cedd2fc8",
         "order": 3.0
+      },
+      {
+        "name": "Test scheme",
+        "uuid": "33a4c187-278a-4573-8cf0-37854a8436d0",
+        "order": 4.0
       }
     ]
   },
@@ -8082,14 +8442,32 @@
         "order": 2.0
       },
       {
-        "name": "Additional documents required",
-        "uuid": "6ad93185-71ed-4a6d-9f52-93246d0b8dba",
-        "order": 3.0
+        "name": "Not able to contact beneficiary",
+        "uuid": "b3b4a48e-b5c6-49d3-9c84-248b7d7bb6fa",
+        "order": 3.0,
+        "voided": true
+      },
+      {
+        "name": "Beneficiary does not have all the required documents",
+        "uuid": "411fa0af-f980-4746-add0-ff262c7d420d",
+        "order": 4.0,
+        "voided": true
+      },
+      {
+        "name": "Beneficiary not cooperating",
+        "uuid": "7c0ae09f-fefe-4bed-9c4c-dbd366d784b5",
+        "order": 5.0,
+        "voided": true
       },
       {
         "name": "Other",
         "uuid": "6a76ce42-0e9b-4467-beee-014bf4ac243c",
-        "order": 4.0
+        "order": 7.0
+      },
+      {
+        "name": "Additional documents required",
+        "uuid": "6ad93185-71ed-4a6d-9f52-93246d0b8dba",
+        "order": 8.0
       }
     ]
   },

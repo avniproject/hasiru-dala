@@ -29,7 +29,8 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided" : true
     }, {
       "name" : "Do you want to save the acknowledgement number/status?",
       "uuid" : "c4833104-975f-4728-940a-daf72151d321",
@@ -41,7 +42,8 @@
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
       "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Has the application been submitted').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided" : true
     }, {
       "name" : "Enter the acknowledgment  number/status",
       "uuid" : "aaab342c-2656-4076-8e1c-be2c3c3dfe38",
@@ -52,7 +54,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Do you want to save the acknowledgement number/status').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
+      "rule" : "",
       "mandatory" : true
     }, {
       "name" : "Do you want to upload an image for acknowledgement?",
@@ -65,7 +67,8 @@
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
       "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Do you want to save the acknowledgement number/status').containsAnswerConceptName(\"No\");\n  return statusBuilder.build();\n};",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided" : true
     }, {
       "name" : "Upload image or click a photo",
       "uuid" : "e3f1520d-0744-4816-8e75-d0ad89a4d44c",
@@ -76,8 +79,8 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Do you want to upload an image for acknowledgement').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
-      "mandatory" : true
+      "rule" : "",
+      "mandatory" : false
     }, {
       "name" : "Why weren't you able to submit the application?",
       "uuid" : "6e0ef0e2-2590-4658-9deb-c3f2480c76c2",
@@ -89,7 +92,8 @@
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
       "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Has the application been submitted').containsAnswerConceptName(\"No\");\n  return statusBuilder.build();\n};",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided" : true
     }, {
       "name" : "Do you want to reschedule this step to a future date?",
       "uuid" : "d38ff43c-0fe1-4cd9-9817-28c8b5485fa6",
@@ -126,10 +130,11 @@
       "displayOrder" : 10.0,
       "type" : "SingleSelect",
       "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Has the application been submitted').containsAnswerConceptName(\"No\");\n  return statusBuilder.build();\n};",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided" : true
     } ]
   } ],
-  "decisionRule" : "",
-  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEncounter = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const schemeName = imports.lodash.trim(programEncounter.name.split('-')[0]);\n    const scheduleNextStep = programEncounter.getObservationReadableValue(\"Has the application been submitted\");\n    if (scheduleNextStep === 'Yes') {\n        scheduleBuilder.add({\n            name: `${schemeName} - Application Status Enquiry`,\n            encounterType: 'Enquire Application Status',\n            earliestDate: programEncounter.encounterDateTime,\n            maxDate: imports.moment(programEncounter.encounterDateTime).add(7, 'days').toDate()\n        });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
+  "decisionRule" : "\"use strict\";\n({params, imports}) => {\n    const decisions = params.decisions;\n    const programEncounter = params.entity;\n    const schemeDetails = programEncounter.name.split('-');\n    const schemeName = imports.lodash.trim(schemeDetails[0]);\n    const workflow = imports.lodash.trim(schemeDetails[1]);\n    const workflowName = workflow === 'Update' ? 'Update' : (workflow === 'Recurring' ? 'Register' : 'Enrolment');\n    decisions.encounterDecisions.push({name: 'Scheme', value: [schemeName]});\n    decisions.encounterDecisions.push({name: 'Scheme status', value: ['Facilitation in progress']});\n    decisions.encounterDecisions.push({name: 'Facilitation workflow', value: [workflowName]});\n    decisions.encounterDecisions.push({name: 'Facilitation status', value:  ['Enquire application status']});\n    return decisions;\n};",
+  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEncounter = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const schemeDetails = programEncounter.name.split('-');\n    const workflow = imports.lodash.trim(schemeDetails[1]);\n    const schemeName = imports.lodash.trim(schemeDetails[0]);\n    const maxDate = imports.moment(programEncounter.encounterDateTime).add(7, 'days').toDate();\n    if (imports.moment().isSameOrBefore(maxDate, 'day')) {\n        scheduleBuilder.add({\n            name: workflow === 'Update' ? `${schemeName} - Update - Application Status Enquiry` : `${schemeName} - Application Status Enquiry`,\n            encounterType: 'Enquire Application Status',\n            earliestDate: programEncounter.encounterDateTime,\n            maxDate\n        });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
   "validationRule" : ""
 }

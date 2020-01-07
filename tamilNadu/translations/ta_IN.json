@@ -829,6 +829,7 @@
     "Male": "ஆண்",
     "No response": "எந்த பதிலும் இல்லை",
     "Other Gender": "பிற பாலினம்",
-    "REG_DISPLAY-Individual": "தனிநபர் "
+    "REG_DISPLAY-Individual": "தனிநபர் ",
+    "REG_ENROL_DISPLAY-Social Security": "சமூக பாதுகாப்பு"
   }
 }

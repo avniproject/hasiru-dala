@@ -1,0 +1,86 @@
+{
+  "name" : "Document Collection Cancelation",
+  "uuid" : "cd553b0e-cb52-44e6-8284-b90abaa74b00",
+  "formType" : "ProgramEncounterCancellation",
+  "formElementGroups" : [ {
+    "uuid" : "90ef8dd0-dffd-48fd-8e67-b6e14cfa429c",
+    "name" : "Information",
+    "displayOrder" : 1.0,
+    "display" : "Information",
+    "formElements" : [ {
+      "name" : "Reason for cancellation",
+      "uuid" : "80559d1f-a125-4db9-998e-7d6940df2c86",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Reason for cancellation",
+        "uuid" : "1dc606e3-6d68-464d-9732-10d63503cf1e"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : false,
+      "voided" : true
+    }, {
+      "name" : "Reason for cancellation",
+      "uuid" : "69ee94e9-5867-48c0-9f77-7a53985c08f3",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Why do you want to end this facilitation",
+        "uuid" : "c2903216-9adc-4c86-9ae7-2e0259150e6c"
+      },
+      "displayOrder" : 2.0,
+      "type" : "SingleSelect",
+      "rule" : "",
+      "mandatory" : true
+    }, {
+      "name" : "Please Specify",
+      "uuid" : "085a521b-b4cd-4086-824b-693b92f3430e",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Please Specify",
+        "uuid" : "ca23148b-6d99-465a-9be6-33efdc3b44ac"
+      },
+      "displayOrder" : 3.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  const other = programEncounter.findCancelEncounterObservationReadableValue(\"Why do you want to end this facilitation\");\n  statusBuilder.show().whenItem(other === 'Other').is.truthy;\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    }, {
+      "name" : "Select next step",
+      "uuid" : "1c420675-1588-496b-9ccb-3d2b62023958",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Select next step",
+        "uuid" : "28e54736-2ffe-40d3-ab37-5b86834b72a8"
+      },
+      "displayOrder" : 4.0,
+      "type" : "SingleSelect",
+      "mandatory" : true
+    }, {
+      "name" : "Do you want to reschedule this step to a future date?",
+      "uuid" : "bfd47151-2a90-4613-8f69-181a832f3f43",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Do you want to reschedule this step to a future date",
+        "uuid" : "cc07dd6a-5479-4e3b-a085-667f226db9fd"
+      },
+      "displayOrder" : 5.0,
+      "type" : "SingleSelect",
+      "mandatory" : true,
+      "voided" : true
+    }, {
+      "name" : "Enter the date for rescheduling this step",
+      "uuid" : "69fdccb9-ebb9-4440-9377-4ff6a158d488",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Enter the date for rescheduling this step",
+        "uuid" : "67fc4d4c-cf7c-4c36-a55d-b462595ec1c3"
+      },
+      "displayOrder" : 6.0,
+      "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  const rescheduleVisit = programEncounter.findCancelEncounterObservationReadableValue(\"Select next step\");\n  statusBuilder.show().whenItem(rescheduleVisit === 'Reschedule facilitation').is.truthy;\n  return statusBuilder.build();\n};",
+      "mandatory" : true
+    } ]
+  } ],
+  "decisionRule" : "\"use strict\";\n({params, imports}) => {\n    const facilitationToStepMap = new Map([\n        ['Collect Document', 'Collect documents'],\n        ['Submit Application', 'Submit application'],\n        ['Application Status Enquiry', 'Enquire application status'],\n        ['Collect Additional Documents', 'Collect additional documents']\n    ]);\n    const decisions = params.decisions;\n    const programEncounter = params.entity;\n    const nextStep = programEncounter.findCancelEncounterObservationReadableValue(\"Select next step\");\n    const schemeDetails = programEncounter.name.split('-');\n    const schemeName = imports.lodash.trim(schemeDetails[0]);\n    const workflow = imports.lodash.trim(schemeDetails[1]);\n    const facilitationStepName = _.trim(_.last(schemeDetails));\n    var facilitationStatus = facilitationToStepMap.get(facilitationStepName);\n    var schemeStatus = 'Facilitation in progress';\n    if (nextStep === 'End facilitation') {\n        facilitationStatus = 'Ended';\n        schemeStatus = 'Not availed';\n    }\n    const workflowName = workflow === 'Update' ? 'Update' : (workflow === 'Recurring' ? 'Register' : 'Enrolment');\n    decisions.encounterDecisions.push({name: 'Scheme', value: [schemeName]});\n    decisions.encounterDecisions.push({name: 'Scheme status', value: [schemeStatus]});\n    decisions.encounterDecisions.push({name: 'Facilitation workflow', value: [workflowName]});\n    decisions.encounterDecisions.push({name: 'Facilitation status', value: [facilitationStatus]});\n    return decisions;\n};",
+  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEncounter = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const maxDateMap = new Map([\n        ['Documents Collection', 7],\n        ['Submit Application', 1],\n        ['Enquire Application Status', 7],\n        ['Collect Additional Documents', 1]\n    ]);\n    const newDate = programEncounter.findCancelEncounterObservationReadableValue(\"Enter the date for rescheduling this step\");\n    const maxDate = imports.moment(newDate).add(maxDateMap.get(programEncounter.encounterType.name), 'days').toDate();\n    if (!_.isNil(newDate) && imports.moment().isSameOrBefore(maxDate, 'day')) {\n        scheduleBuilder.add({\n            name: programEncounter.name,\n            encounterType: programEncounter.encounterType.name,\n            earliestDate: newDate,\n            maxDate\n        });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
+  "validationRule" : ""
+}

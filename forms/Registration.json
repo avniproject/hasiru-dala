@@ -778,6 +778,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "MultiSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  const other = programEncounter.findCancelEncounterObservationReadableValue(\"Do you have a local address proof?\");\n  statusBuilder.show().whenItem(other === 'Yes').is.truthy;\n  return statusBuilder.build();\n};",
       "mandatory" : true
     }, {
       "name" : "Name of local ID",
@@ -789,6 +790,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  const other = programEncounter.findCancelEncounterObservationReadableValue(\"Please select the type of local address proof\");\n  statusBuilder.show().whenItem(other === 'Other').is.truthy;\n  return statusBuilder.build();\n};",
       "mandatory" : true
     }, {
       "name" : "Local ID description",
@@ -800,6 +802,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  const other = programEncounter.findCancelEncounterObservationReadableValue(\"Please select the type of local address proof\");\n  statusBuilder.show().whenItem(other === 'Other').is.truthy;\n  return statusBuilder.build();\n};",
       "mandatory" : true
     } ]
   }, {
@@ -1148,7 +1151,7 @@
       },
       "displayOrder" : 20.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
+      "mandatory" : true,
       "voided" : true
     }, {
       "name" : "Name of the ID",
@@ -4392,9 +4395,40 @@
       "mandatory" : false
     } ]
   }, {
+    "uuid" : "384ebc49-9978-4b18-961d-e0b91844fc40",
+    "name" : "temp page",
+    "displayOrder" : 49.0,
+    "display" : "temp page",
+    "formElements" : [ {
+      "name" : "Is having fever?",
+      "uuid" : "9e29f43c-7b0b-42f5-8a8f-0240f91c8bcb",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "is having fever",
+        "uuid" : "4da252e7-f74e-4580-bbc1-f318db65a039"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : false,
+      "voided" : true
+    }, {
+      "name" : "What complaints do you have?",
+      "uuid" : "2a93f98b-02f6-4619-a0ac-c6b1b8bae216",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Complaints",
+        "uuid" : "53f7b040-e2f2-4e4f-9d92-0cbf25a7f864"
+      },
+      "displayOrder" : 2.0,
+      "type" : "MultiSelect",
+      "mandatory" : true,
+      "voided" : true
+    } ],
+    "voided" : true
+  }, {
     "uuid" : "79158f16-8896-412b-93d5-78dc8d133f14",
     "name" : "Introduced by",
-    "displayOrder" : 49.0,
+    "displayOrder" : 50.0,
     "display" : "Introduced by",
     "formElements" : [ {
       "name" : "Name",
@@ -4419,5 +4453,8 @@
       "type" : "SingleSelect",
       "mandatory" : true
     } ]
-  } ]
+  } ],
+  "decisionRule" : "",
+  "visitScheduleRule" : "",
+  "validationRule" : ""
 }

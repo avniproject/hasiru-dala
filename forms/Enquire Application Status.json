@@ -22,7 +22,10 @@
     }, {
       "name" : "What is the status of the application?",
       "uuid" : "c13136e8-c177-41fc-91b8-e15f602f577a",
-      "keyValues" : [ ],
+      "keyValues" : [ {
+        "key" : "ExcludedAnswers",
+        "value" : [ "Yet to check the status" ]
+      } ],
       "concept" : {
         "name" : "What is the status of the application",
         "uuid" : "a554e7ec-a138-4489-9653-964c7b604d78"
@@ -40,7 +43,8 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided" : true
     }, {
       "name" : "Card Number",
       "uuid" : "c3cf84c5-2a11-4bfa-ba79-b7d97d0ce9e5",
@@ -51,7 +55,8 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided" : true
     }, {
       "name" : "Upload image or click a photo",
       "uuid" : "645964d8-9168-49ff-96d8-b426a2c0183f",
@@ -62,7 +67,8 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : false,
+      "voided" : true
     }, {
       "name" : "Name of the card/scheme",
       "uuid" : "36748270-8970-4c6e-9d13-4467e29bf7f8",
@@ -73,7 +79,8 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided" : true
     }, {
       "name" : "Do you want to enter the card number/scheme registration number?",
       "uuid" : "520c3b8d-5330-4cae-96af-af7268b56a49",
@@ -84,7 +91,8 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided" : true
     }, {
       "name" : "Enter the card number/scheme registration number",
       "uuid" : "add9ee01-6831-4d15-a922-9d00c7651e1c",
@@ -95,7 +103,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Do you want to enter the card number/scheme registration number').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('What is the status of the application').containsAnswerConceptName(\"Application Approved\");\n  return statusBuilder.build();\n};",
       "mandatory" : true
     }, {
       "name" : "Do you want to upload an image?",
@@ -107,7 +115,8 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided" : true
     }, {
       "name" : "Upload image or click a photo",
       "uuid" : "547c31d9-f7c7-438f-bb96-4299be27894c",
@@ -118,8 +127,8 @@
       },
       "displayOrder" : 10.0,
       "type" : "SingleSelect",
-      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Do you want to upload an image').containsAnswerConceptName(\"Yes\");\n  return statusBuilder.build();\n};",
-      "mandatory" : true
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('What is the status of the application').containsAnswerConceptName(\"Application Approved\");\n  return statusBuilder.build();\n};",
+      "mandatory" : false
     }, {
       "name" : "Enter the reason for rejection",
       "uuid" : "13908f4b-562e-44a1-9761-d1c9f1c45648",
@@ -142,6 +151,7 @@
       },
       "displayOrder" : 12.0,
       "type" : "SingleSelect",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('What is the status of the application').containsAnswerConceptName(\"Application Rejected\").or.when.valueInEncounter('What is the status of the application').containsAnswerConceptName(\"Lost to FollowUp / Unable to Determine Status\") ;\n  return statusBuilder.build();\n};",
       "mandatory" : true
     }, {
       "name" : "Do you want to reschedule this step to a future date?",
@@ -170,7 +180,7 @@
       "voided" : true
     } ]
   } ],
-  "decisionRule" : "",
-  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEncounter = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const schemeName = imports.lodash.trim(programEncounter.name.split('-')[0]);\n    const scheduleNextStep = programEncounter.getObservationReadableValue(\"What is the status of the application\");\n    if (scheduleNextStep === 'Additional documents required') {\n        scheduleBuilder.add({\n            name: `${schemeName} - Additional Document Collection`,\n            encounterType: 'Collect  Additional Documents',\n            earliestDate: programEncounter.encounterDateTime,\n            maxDate: imports.moment(programEncounter.encounterDateTime).add(1, 'days').toDate()\n        });\n    }\n    const restartProcess = programEncounter.getObservationReadableValue(\"Do you want to the restart the process of facilitation\");\n    if (restartProcess === 'Yes') {\n        scheduleBuilder.add({\n            name: `${schemeName} - Collect Document`,\n            encounterType: 'Documents Collection',\n            earliestDate: programEncounter.encounterDateTime,\n            maxDate: imports.moment(programEncounter.encounterDateTime).add(7, 'days').toDate()\n        });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
+  "decisionRule" : "\"use strict\";\n({params, imports}) => {\n    const decisions = params.decisions;\n    const programEncounter = params.entity;\n    const nextStep = programEncounter.getObservationReadableValue(\"What is the status of the application\");\n    const restart = programEncounter.getObservationReadableValue('Do you want to the restart the process of facilitation');\n    var facilitationStatus = 'Enquire application status';\n    var schemeStatus = 'Facilitation in progress';\n    if (nextStep === 'Additional documents required') {\n        facilitationStatus = 'Collect additional documents';\n    } else if (nextStep === 'Application Approved') {\n        facilitationStatus = 'Ended';\n        schemeStatus = 'Availed';\n    } else if (nextStep === 'Application Rejected' && restart === 'Yes') {\n        facilitationStatus = 'Collect documents'\n    } else if (nextStep === 'Application Rejected' && restart === 'No') {\n        facilitationStatus = 'Ended';\n        schemeStatus = 'Not availed';\n    }\n    const schemeDetails = programEncounter.name.split('-');\n    const schemeName = imports.lodash.trim(schemeDetails[0]);\n    const workflow = imports.lodash.trim(schemeDetails[1]);\n    const workflowName = workflow === 'Update' ? 'Update' : (workflow === 'Recurring' ? 'Register' : 'Enrolment');\n    decisions.encounterDecisions.push({name: 'Scheme', value: [schemeName]});\n    decisions.encounterDecisions.push({name: 'Scheme status', value: [schemeStatus]});\n    decisions.encounterDecisions.push({name: 'Facilitation workflow', value: [workflowName]});\n    decisions.encounterDecisions.push({name: 'Facilitation status', value: [facilitationStatus]});\n    return decisions;\n};",
+  "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEncounter = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const schemeDetails = programEncounter.name.split('-');\n    const workflow = imports.lodash.trim(schemeDetails[1]);\n    const schemeName = imports.lodash.trim(schemeDetails[0]);\n    const scheduleNextStep = programEncounter.getObservationReadableValue(\"What is the status of the application\");\n    const getMaxDate = day => imports.moment(programEncounter.encounterDateTime).add(day, 'days').toDate();\n    if (scheduleNextStep === 'Additional documents required' && imports.moment().isSameOrBefore(getMaxDate(1), 'day')) {\n        scheduleBuilder.add({\n            name: workflow === 'Update' ? `${schemeName} - Update - Additional Document Collection` : `${schemeName} - Additional Document Collection`,\n            encounterType: 'Collect Additional Documents',\n            earliestDate: programEncounter.encounterDateTime,\n            maxDate: getMaxDate(1)\n        });\n    }\n    const restartProcess = programEncounter.getObservationReadableValue(\"Do you want to the restart the process of facilitation\");\n    if (restartProcess === 'Yes' && imports.moment().isSameOrBefore(getMaxDate(7), 'day')) {\n        scheduleBuilder.add({\n            name: workflow === 'Update' ? `${schemeName} - Update - Collect Document` : `${schemeName} - Collect Document`,\n            encounterType: 'Documents Collection',\n            earliestDate: programEncounter.encounterDateTime,\n            maxDate: getMaxDate(7)\n        });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
   "validationRule" : ""
 }

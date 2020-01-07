@@ -22,13 +22,18 @@ module.exports = IDI.configure({
             "../forms/Submit Application.json",
             "../forms/Enquire Application Status.json",
             "../forms/Collect Additional Documents.json",
-            "../forms/Encounter Cancelation.json",
             "../forms/Recurring Facilitation.json",
+            "../forms/Application Status Enquiry Cancellation.json",
+            "../forms/Application submission Cancellation.json",
+            "../forms/Document Collection Cancelation.json",
+            "../forms/Register already availed scheme.json",
         ],
         "formMappings": [
             "../formMappings.json",
         ],
-        "formDeletions": ["../forms/EnrolmentDeletions.json"],
+        "formDeletions": [
+            "../forms/EnrolmentDeletions.json"
+        ],
         "formAdditions": [],
         "catchments": [
             "catchments.json",
