@@ -243,7 +243,17 @@
   {
     "name": "Aadhar Card",
     "uuid": "2e135003-34dc-4a55-a1ad-eb804b39bccb",
-    "dataType": "NA"
+    "dataType": "NA",
+    "keyValues": [
+      {
+        "key": "id",
+        "value": true
+      },
+      {
+        "key": "recurring",
+        "value": false
+      }
+    ]
   },
   {
     "name": "Aadhar Enrollment ID",
@@ -817,7 +827,17 @@
   {
     "name": "Caste Certificate",
     "uuid": "1f29ea85-3601-48e6-9694-79d281ee4605",
-    "dataType": "NA"
+    "dataType": "NA",
+    "keyValues": [
+      {
+        "key": "id",
+        "value": true
+      },
+      {
+        "key": "recurring",
+        "value": false
+      }
+    ]
   },
   {
     "name": "Caste/Community",
@@ -2449,7 +2469,17 @@
   {
     "name": "Driving license",
     "uuid": "77c49fd8-5394-4fa9-8ea0-e18edb1ca530",
-    "dataType": "NA"
+    "dataType": "NA",
+    "keyValues": [
+      {
+        "key": "id",
+        "value": true
+      },
+      {
+        "key": "recurring",
+        "value": false
+      }
+    ]
   },
   {
     "name": "Dummy",
@@ -4976,7 +5006,17 @@
   {
     "name": "Old Age Pension",
     "uuid": "6709dbf9-0050-4fc0-8ec8-f94c6983b009",
-    "dataType": "NA"
+    "dataType": "NA",
+    "keyValues": [
+      {
+        "key": "id",
+        "value": false
+      },
+      {
+        "key": "recurring",
+        "value": true
+      }
+    ]
   },
   {
     "name": "On an average, how many houses/establishments do you desludge on a typical working day?",
@@ -5170,7 +5210,17 @@
   {
     "name": "PAN Card",
     "uuid": "93b5d453-d035-42c1-aa42-afd0cedd2fc8",
-    "dataType": "NA"
+    "dataType": "NA",
+    "keyValues": [
+      {
+        "key": "id",
+        "value": true
+      },
+      {
+        "key": "recurring",
+        "value": false
+      }
+    ]
   },
   {
     "name": "Paper",
@@ -6600,7 +6650,17 @@
   {
     "name": "Test scheme",
     "uuid": "33a4c187-278a-4573-8cf0-37854a8436d0",
-    "dataType": "NA"
+    "dataType": "NA",
+    "keyValues": [
+      {
+        "key": "id",
+        "value": true
+      },
+      {
+        "key": "recurring",
+        "value": false
+      }
+    ]
   },
   {
     "name": "Tetrapak Details",
@@ -6946,7 +7006,17 @@
   {
     "name": "Voter ID",
     "uuid": "6a2c9de3-1b5a-4804-92d4-0504ed9be2bf",
-    "dataType": "NA"
+    "dataType": "NA",
+    "keyValues": [
+      {
+        "key": "id",
+        "value": true
+      },
+      {
+        "key": "recurring",
+        "value": false
+      }
+    ]
   },
   {
     "name": "Voter Registration Card",
