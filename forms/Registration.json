@@ -210,7 +210,10 @@
     "formElements" : [ {
       "name" : "Type of Informal Waste Worker",
       "uuid" : "df80a8dc-5545-4653-9b79-40dc6d472ad7",
-      "keyValues" : [ ],
+      "keyValues" : [ {
+        "key" : "ExcludedAnswers",
+        "value" : [ "Street Sweeper / Drain Cleaner" ]
+      } ],
       "concept" : {
         "name" : "Type of Informal Waste Worker",
         "uuid" : "53779ea6-1734-40ef-a99d-87358952ae90"

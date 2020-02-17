@@ -5,7 +5,7 @@ module.exports = IDI.configure({
     "name": "hasiru-karnataka",
     "chs-admin": "admin",
     "org-name": "Hasiru Dala Karnataka",
-    "org-admin": "admin@hd_ka",
+    "org-admin": "admin@hasiru-kar",
     "secrets": '../../secrets.json',
     "files": {
         "adminUsers": {
@@ -23,17 +23,17 @@ module.exports = IDI.configure({
         "formDeletions": [],
         "formAdditions": [],
         "catchments": [
-            //"catchments.json",
+            "catchments.json",
         ],
         "checklistDetails": [],
         "concepts": [
             "../concepts.json",
         ],
         "locations": [
-            // "locations/state.json",
-            // "locations/city.json",
-            // "locations/zones.json",
-            // "locations/wards.json",
+            "locations/state.json",
+            "locations/city.json",
+            "locations/zones.json",
+            "locations/wards.json",
         ],
         "programs": [],
         "encounterTypes": [],
