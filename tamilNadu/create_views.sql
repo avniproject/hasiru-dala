@@ -1,7 +1,7 @@
 set role hasiru;
 
 drop view if exists hasiru_registration_details;
-create view hasiru_registration_details("Id", address_id, uuid, first_name, last_name, "Gender", date_of_birth,
+create view hasiru_registration_details("Id", address_id, uuid, first_name, last_name, "Gender", date_of_birth, age,
                                         date_of_birth_verified, registration_date, facility_id, "Address title",
                                         is_voided, "Picture of the duly filled consent form",
                                         "Marital status", "Religion", "Other religion", "Caste/Community",
@@ -246,6 +246,7 @@ SELECT individual.id                                                            
        individual.last_name,
        g.name                                                                                    AS "Gender",
        individual.date_of_birth,
+       ((date_part('year',age(date_of_birth))) + (date_part('month',age(date_of_birth))/12) + (date_part('day',age(date_of_birth))/365)),
        individual.date_of_birth_verified,
        individual.registration_date,
        individual.facility_id,
@@ -955,5 +956,55 @@ FROM (((address_level ward
     JOIN address_level zone ON ((ward.parent_id = zone.id)))
     JOIN address_level city ON ((zone.parent_id = city.id)))
          JOIN address_level state ON ((city.parent_id = state.id)));
+
+drop view if exists hasiru_category_view;
+create view hasiru_category_view(name) as
+    (select 'ST'
+     union
+     select 'SC-Arunthathiyar'
+     union
+     select 'SC-Thoti'
+     union
+     select 'SC-Paraiyar'
+     union
+     select 'SC-Others'
+     union
+     select 'BC'
+     union
+     select 'MBC'
+     union
+     select 'FC'
+     union
+     select 'No Response'
+     union
+     select 'Other');
+
+drop view if exists hasiru_marial_status_view;
+create view hasiru_marial_status_view(name) as (
+    select 'Single'
+    union
+    select 'Married'
+    union
+    select 'Widowed'
+    union
+    select 'Separated'
+    union
+    select 'Divorced'
+);
+
+drop view if exists hasiru_age_group;
+create view hasiru_age_group (range) as (
+    select '0-10'
+    union
+    select '11-18'
+    union
+    select '19-25'
+    union
+    select '26-50'
+    union
+    select '51-60'
+    union
+    select '61 and above'
+);
 
 set role none;
