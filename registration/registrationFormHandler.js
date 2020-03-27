@@ -1876,7 +1876,7 @@ class RegistrationViewHandlerHasiruDala {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Worker / Informal Worker")
             .and.when.valueInRegistration("Please choose your employment type")
-            .containsAnswerConceptName("Waste Worker / Informal Waste Worker")
+            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker","Sanitation Worker / Informal Sanitation Worker")
             .and.when.valueInRegistration("Have you undergone any of the following trainings?")
             .containsAnswerConceptName("Others");
     }
@@ -3539,14 +3539,15 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     training1([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
-            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker");
+            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker", "Sanitation Worker / Informal Sanitation Worker");
+
     }
 
     @WithName("Please select from the list")
     @WithRegistrationStatusBuilder
     training2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
-            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker")
+            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker", "Sanitation Worker / Informal Sanitation Worker")
             .and.when.valueInRegistration("Have you undergone any of the vocational trainings?").containsAnswerConceptName("Yes");
     }
 
@@ -3637,12 +3638,12 @@ class RegistrationViewHandlerHasiruDala {
     }
 
 
- @WithName("How many hour do you work in a day?")
- @WithName("When is your weekly off ?")
+    @WithName("How many hour do you work in a day?")
+    @WithName("When is your weekly off ?")
     @WithRegistrationStatusBuilder
     work([], statusBuilder) {
-     statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-         .containsAnswerConceptName("Street Sweeper / Drain Cleaner");
+        statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
+            .containsAnswerConceptName("Street Sweeper / Drain Cleaner");
     }
 
 
