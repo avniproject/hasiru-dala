@@ -3225,7 +3225,20 @@
     "name" : "Waste sold per week",
     "displayOrder" : 37.0,
     "display" : "Waste sold per week",
-    "formElements" : [ {
+    "formElements" : [ 
+      {
+        "name" : "Details of waste sold per week",
+        "uuid" : "32286f6a-fd47-4ed3-a2de-90f57266cf9b",
+        "keyValues" : [ ],
+        "concept" : {
+          "name" : "Details of waste sold per week",
+          "uuid" : "34150883-814f-43be-904a-cb7674233c1f"
+     },
+        "displayOrder" : 1.0,
+        "type" : "SingleSelect",
+        "mandatory" : false
+      },
+      {
       "name" : "Glass Quarter Bottles waste sold per week in Kg",
       "uuid" : "4ed15af9-af57-497e-95f1-10a0f3911c35",
       "keyValues" : [ ],
@@ -3233,7 +3246,7 @@
         "name" : "Glass Quarter Bottles waste sold per week in Kg",
         "uuid" : "47c88209-fd79-44f1-ac20-1371becc9540"
       },
-      "displayOrder" : 1.0,
+      "displayOrder" : 1.1,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
