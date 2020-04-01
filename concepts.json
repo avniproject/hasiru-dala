@@ -3,11 +3,6 @@
   "uuid" : "bdd4c352-509b-4c17-b525-3798671e8140",
   "dataType" : "NA"
 }, {
-  "name" : "Details of waste sold per week",
-  "uuid" : "34150883-814f-43be-904a-cb7674233c1f",
-  "dataType" : "Numeric",
-  "unit": "kg"
-}, {
   "name" : "0-2 hours",
   "uuid" : "6260b606-d2f2-4004-b2c3-6d7913f668fc",
   "dataType" : "NA"

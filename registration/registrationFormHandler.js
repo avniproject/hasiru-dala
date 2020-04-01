@@ -2353,13 +2353,6 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Scrap Dealer");
     }
 
-    @WithName("Details of waste sold per week")
-    @WithRegistrationStatusBuilder
-    scrapDealer40([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-            .containsAnswerConceptName("Scrap Dealer");
-    }
-
     @WithName("Glass Quarter Bottles waste sold per week in Kg")
     @WithRegistrationStatusBuilder
     scrapDealer10([], statusBuilder) {
