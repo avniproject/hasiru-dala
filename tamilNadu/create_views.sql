@@ -1007,4 +1007,50 @@ create view hasiru_age_group (range) as (
     select '61 and above'
 );
 
+DROP VIEW IF EXISTS hd_registration_base_view;
+CREATE VIEW hd_registration_base_view as (
+    with individual_data as (
+        select id                                                                         individual_id,
+               is_voided                                                                  individual_voided,
+               address_id                                                                 address_id,
+               single_select_coded(
+                           observations ->> 'e7ea1066-616b-44b4-a522-8885dc8e75eb')           respondent_type,
+               single_select_coded(
+                           observations ->> 'ef22528d-d19d-44e8-aff7-2ecd6f0f0f66')           employment_type,
+               multi_select_coded(observations -> '2ac22c50-8ca5-4589-8441-88d67fe44b70') trainings
+        from individual
+    )
+    select individual_id,
+           individual_voided,
+           address_id,
+           jsonb_build_object(
+                   'respondentType', respondent_type,
+                   'employmentType', employment_type,
+                   'trainings', trainings
+               ) as valueMap
+    from individual_data
+);
+
+DROP VIEW IF EXISTS hd_training_view;
+CREATE VIEW hd_training_view (training) as (
+    select 'Organic Waste Processing'
+    union
+    select 'Event Waste Management'
+    union
+    select 'Plastics Waste Management/Recycling/CIPET'
+    union
+    select 'Skill Council for Green Jobs (SCGJ) Training'
+    union
+    select 'Retail Scrap Shop Certificate Program'
+    union
+    select 'Four Wheeler/Commercial Vehicle Driver''s Training'
+    union
+    select 'Mushroom training'
+    union
+    select 'Chicken Rearing Training'
+    union
+    select 'Others'
+);
+
+
 set role none;
