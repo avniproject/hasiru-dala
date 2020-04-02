@@ -1010,14 +1010,41 @@ create view hasiru_age_group (range) as (
 DROP VIEW IF EXISTS hd_registration_base_view;
 CREATE VIEW hd_registration_base_view as (
     with individual_data as (
-        select id                                                                         individual_id,
-               is_voided                                                                  individual_voided,
-               address_id                                                                 address_id,
-               single_select_coded(
-                           observations ->> 'e7ea1066-616b-44b4-a522-8885dc8e75eb')           respondent_type,
-               single_select_coded(
-                           observations ->> 'ef22528d-d19d-44e8-aff7-2ecd6f0f0f66')           employment_type,
-               multi_select_coded(observations -> '2ac22c50-8ca5-4589-8441-88d67fe44b70') trainings
+        select  id                                                                             individual_id,
+                is_voided                                                                      individual_voided,
+                address_id                                                                     address_id,
+                single_select_coded(observations ->> 'e7ea1066-616b-44b4-a522-8885dc8e75eb')   respondent_type,
+                single_select_coded(observations ->> 'ef22528d-d19d-44e8-aff7-2ecd6f0f0f66')   employment_type,
+                multi_select_coded(observations -> '2ac22c50-8ca5-4589-8441-88d67fe44b70')     trainings,
+                single_select_coded(observations ->> '53779ea6-1734-40ef-a99d-87358952ae90')   type_of_informal_waste_worker,
+                multi_select_coded(observations -> 'a59e77bb-592c-4476-9dac-20d9f2d03dc6')  name_of_waste,
+                (observations ->> '8c38807b-f81e-4b26-ae43-b2480f49ff0a')                   quantity_of_waste_collected,
+                (observations ->>  '154663b0-60d9-47b6-8ec6-b741a2608703')                  glass_beer_bottles,
+                (observations ->>'9db314f8-7258-4bd5-9c1e-126a403c5a33')                    glass_waste,
+                (observations ->>     '3ec94beb-294d-4504-a237-8a405fd90a21')               metal_ferrous_metals_iron,
+                (observations ->>     '4b5fe8c0-de6e-43a7-96ea-513aca1be885')               metal_copper,
+                (observations ->>     '420be15f-ae29-496f-9a8a-c6204d2de989')               metal_aluminum,
+                (observations ->>     '487d5a0e-dec5-4488-990f-6b22d9531e9e')               metal_other,
+                (observations ->>     '7a12d032-2607-4a1d-9b95-d699c4d154a1')               metal_batteries,
+                (observations ->>     'b011b8e3-79cd-4f88-87f1-4f0ccc5c0a55')               metal_brass,
+                (observations ->>     'dc875734-a6f9-464e-bba8-9038f3508925')               metal_mercury,
+                (observations ->>     'bdf9a8d2-1cee-4ff8-88d8-5b31e5d4e2be')               paper_cardboard,
+                (observations ->>     '03cefc64-eeb7-41a5-a962-78ccf8cc1d87')               paper_white_record,
+                (observations ->>     '73171ed1-722c-4ba6-9307-4249162c10f9')               paper_road_scrap,
+                (observations ->>     'f93c0e42-6c89-408b-8acf-43b266ece7db')               paper_tetrapak,
+                (observations ->>     'f8ae05e9-884a-461c-b3a9-90dee6d811cd')               tetrapak,
+                (observations ->>     '779eaf00-bd68-40ee-8b4d-c795af18135f')               plastics_pet,
+                (observations ->>     '093b7d7f-d87a-4b3e-9838-17eb088a5840')               plastics_hard,
+                (observations ->>     '2841104a-7c1d-44b4-904a-a6597f47dafe')               plastics_soft,
+                (observations ->>     '027e3561-0ea8-47b5-82cf-43a2c91fd721')               plastics_soles,
+                (observations ->>     '058e4290-a314-4ca5-9b99-76e7e47d66e3')               plastics_milk_bags,
+                (observations ->>     'ab3cfea9-4b81-41d7-8154-2889df35eb9b')               plastics_LD,
+                (observations ->>     '84d96538-2103-432e-ad55-465c3e943e51')               plastics_thin,
+                (observations ->>     '38855c44-d115-4b3d-bf5f-7dc04b9fed1f')               plastics_white,
+                (observations ->>     '15c19384-5215-4934-8cf1-466a58fa5613')               others_rubber,
+                (observations ->>     'fd448acc-d983-4a08-a8bb-53d78bd214bd')               others_textile,
+                (observations ->>     'e1b495c4-6ed8-4861-86b5-609de063c7d8')               others_tin,
+                (observations ->>     '0ccc5149-a19d-4ac0-bedd-8d621951f4be')               others_thermocol
         from individual
     )
     select individual_id,
@@ -1026,8 +1053,36 @@ CREATE VIEW hd_registration_base_view as (
            jsonb_build_object(
                    'respondentType', respondent_type,
                    'employmentType', employment_type,
-                   'trainings', trainings
-               ) as valueMap
+                   'trainings', trainings,
+                   'type_of_informal_waste_worker' , type_of_informal_waste_worker,
+                   'name_of_waste' , name_of_waste,
+                   'quantity_of_waste_collected' , quantity_of_waste_collected,
+                   'glass_beer_bottles' glass_beer_bottles,
+                   'glass_waste',glass_waste,
+                   'metal_ferrous_metals_iron',metal_ferrous_metals_iron,
+                   'metal_copper', metal_copper,
+                   'metal_aluminum', metal_aluminum,
+                   'metal_other',metal_other,
+                   'metal_batteries', metal_batteries,
+                   'metal_brass',metal_brass,
+                   'metal_mercury',metal_mercury,
+                   'paper_cardboard',paper_cardboard,
+                   'paper_white_record',paper_white_record,
+                   'paper_road_scrap',paper_road_scrap,
+                   'paper_tetrapak',paper_road_scrap,
+                   'tetrapak',tetrapak,
+                   'plastics_pet', plastics_pet,
+                   'plastics_hard',plastics_hard,
+                   'plastics_soft',plastics_soft,
+                   'plastics_milk_bags',plastics_milk_bags,
+                   'plastics_LD',plastics_LD,
+                   'plastics_thin',plastics_thin,
+                   'plastics_white',plastics_white,
+                   'others_rubber',others_rubber,
+                   'others_textile',others_textile,
+                   'others_tin',others_tin,
+                   'others_thermocol',others_thermocol)
+            ) as valueMap
     from individual_data
 );
 
