@@ -1057,31 +1057,31 @@ CREATE VIEW hd_registration_base_view as (
                    'type_of_informal_waste_worker' , type_of_informal_waste_worker,
                    'name_of_waste' , name_of_waste,
                    'quantity_of_waste_collected' , quantity_of_waste_collected,
-                   'glass_beer_bottles' glass_beer_bottles,
-                   'glass_waste',glass_waste,
-                   'metal_ferrous_metals_iron',metal_ferrous_metals_iron,
-                   'metal_copper', metal_copper,
-                   'metal_aluminum', metal_aluminum,
-                   'metal_other',metal_other,
-                   'metal_batteries', metal_batteries,
-                   'metal_brass',metal_brass,
-                   'metal_mercury',metal_mercury,
-                   'paper_cardboard',paper_cardboard,
-                   'paper_white_record',paper_white_record,
-                   'paper_road_scrap',paper_road_scrap,
-                   'paper_tetrapak',paper_road_scrap,
-                   'tetrapak',tetrapak,
-                   'plastics_pet', plastics_pet,
-                   'plastics_hard',plastics_hard,
-                   'plastics_soft',plastics_soft,
-                   'plastics_milk_bags',plastics_milk_bags,
-                   'plastics_LD',plastics_LD,
-                   'plastics_thin',plastics_thin,
-                   'plastics_white',plastics_white,
-                   'others_rubber',others_rubber,
-                   'others_textile',others_textile,
-                   'others_tin',others_tin,
-                   'others_thermocol',others_thermocol)
+                   'quantity_of_waste_sold' ,jsonb_agg(glass_beer_bottles,
+                   glass_waste,
+                   metal_ferrous_metals_iron,
+                   metal_copper,
+                   metal_aluminum,
+                   metal_other,
+                   metal_batteries,
+                   metal_brass,
+                   metal_mercury,
+                   paper_cardboard,
+                   paper_white_record,
+                   paper_road_scrap,
+                   paper_road_scrap,
+                   tetrapak,
+                   plastics_pet,
+                   plastics_hard,
+                   plastics_soft,
+                   plastics_milk_bags,
+                   plastics_LD,
+                   plastics_thin,
+                   plastics_white,
+                   others_rubber,
+                   others_textile,
+                   others_tin,
+                   others_thermocol)
             ) as valueMap
     from individual_data
 );
@@ -1105,6 +1105,14 @@ CREATE VIEW hd_training_view (training) as (
     select 'Chicken Rearing Training'
     union
     select 'Others'
+);
+
+
+DROP VIEW IF EXISTS hd_type_of_informal_waste_worker;
+CREATE VIEW hd_type_of_informal_waste_worker (typeOfWorker) as (
+    select 'Wastepicker'
+    union
+    select 'Scrap Dealer'
 );
 
 
