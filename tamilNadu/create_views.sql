@@ -1029,7 +1029,7 @@ CREATE VIEW hd_registration_base_view as (
                 coalesce((observations ->> 'b011b8e3-79cd-4f88-87f1-4f0ccc5c0a55')  ::numeric,  0)             metal_brass,
                 coalesce((observations ->> 'dc875734-a6f9-464e-bba8-9038f3508925')  ::numeric,  0)             metal_mercury,
                 coalesce((observations ->> 'bdf9a8d2-1cee-4ff8-88d8-5b31e5d4e2be')  ::numeric,  0)             paper_cardboard,
-                (coalesce(observations ->> '03cefc64-eeb7-41a5-a962-78ccf8cc1d87')  ::numeric,  0)             paper_white_record,
+                coalesce((observations ->> '03cefc64-eeb7-41a5-a962-78ccf8cc1d87')  ::numeric,  0)             paper_white_record,
                 coalesce((observations ->> '73171ed1-722c-4ba6-9307-4249162c10f9')  ::numeric,  0)             paper_road_scrap,
                 coalesce((observations ->> 'f93c0e42-6c89-408b-8acf-43b266ece7db')   ::numeric,  0)            paper_tetrapak,
                 coalesce((observations ->> '779eaf00-bd68-40ee-8b4d-c795af18135f')  ::numeric,  0)             plastics_pet,
