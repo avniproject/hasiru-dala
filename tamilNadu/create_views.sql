@@ -1015,6 +1015,8 @@ CREATE VIEW hd_registration_base_view as (
                 address_id                                                                     address_id,
                 single_select_coded(observations ->> 'e7ea1066-616b-44b4-a522-8885dc8e75eb')   respondent_type,
                 single_select_coded(observations ->> 'ef22528d-d19d-44e8-aff7-2ecd6f0f0f66')   employment_type,
+                (observations ->> '1be5d6d6-17a3-4983-8471-7a55acf72a54')                      name_of_the_scheme,
+                (observations ->> 'eb617077-1ac5-4f29-a7b0-6233df335491')                      scheme_status,    
                 multi_select_coded(observations -> '2ac22c50-8ca5-4589-8441-88d67fe44b70')     trainings,
                 single_select_coded(observations ->> '53779ea6-1734-40ef-a99d-87358952ae90')   type_of_informal_waste_worker,
                 multi_select_coded(observations -> 'a59e77bb-592c-4476-9dac-20d9f2d03dc6')  name_of_waste,
@@ -1052,6 +1054,8 @@ CREATE VIEW hd_registration_base_view as (
            jsonb_build_object(
                    'respondentType', respondent_type,
                    'employmentType', employment_type,
+                   'name_of_the_scheme',name_of_the_scheme,
+                   'scheme_status',scheme_status,
                    'trainings', trainings,
                    'type_of_informal_waste_worker' , type_of_informal_waste_worker,
                    'name_of_waste' , name_of_waste,
@@ -1113,5 +1117,33 @@ CREATE VIEW hd_type_of_informal_waste_worker (typeOfWorker) as (
     select 'Scrap Dealer'
 );
 
+
+DROP VIEW IF EXISTS hd_scheme_view;
+CREATE VIEW hd_scheme_view (scheme) as (
+    select 'Aadhar Card'
+    union
+    select 'Voter ID'
+     union
+    select 'Old Age Pension'
+     union
+    select 'PAN Card'
+    union
+    select 'Old Age Pension'
+    union
+    select 'Test scheme'
+    union
+    select 'Driving license'
+     union
+    select 'Caste Certificate'
+);
+
+DROP VIEW IF EXISTS hd_scheme_status_view;
+CREATE VIEW hd_scheme_status_view (status) as (
+    select 'Availed'
+    union
+    select 'Not availed'
+     union
+    select 'Facilitation in progress'
+);
 
 set role none;
