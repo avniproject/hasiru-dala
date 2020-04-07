@@ -1016,7 +1016,7 @@ CREATE VIEW hd_registration_base_view as (
                 single_select_coded(observations ->> 'e7ea1066-616b-44b4-a522-8885dc8e75eb')   respondent_type,
                 single_select_coded(observations ->> 'ef22528d-d19d-44e8-aff7-2ecd6f0f0f66')   employment_type,
                 (observations ->> '1be5d6d6-17a3-4983-8471-7a55acf72a54')                      name_of_the_scheme,
-                (observations ->> 'eb617077-1ac5-4f29-a7b0-6233df335491')                      scheme_status,    
+                (observations ->> 'eb617077-1ac5-4f29-a7b0-6233df335491')                      scheme_status,
                 multi_select_coded(observations -> '2ac22c50-8ca5-4589-8441-88d67fe44b70')     trainings,
                 single_select_coded(observations ->> '53779ea6-1734-40ef-a99d-87358952ae90')   type_of_informal_waste_worker,
                 multi_select_coded(observations -> 'a59e77bb-592c-4476-9dac-20d9f2d03dc6')  name_of_waste,
@@ -1061,7 +1061,7 @@ CREATE VIEW hd_registration_base_view as (
                    'name_of_waste' , name_of_waste,
                    'quantity_of_waste_collected' , quantity_of_waste_collected,
                    'quantity_of_waste_sold' , (glass_beer_bottles
-                   + glass_waste 
+                   + glass_waste
                    + metal_ferrous_metals_iron
                    + metal_copper
                    + metal_aluminum
@@ -1072,7 +1072,7 @@ CREATE VIEW hd_registration_base_view as (
                    + paper_cardboard
                    + paper_white_record
                    + paper_road_scrap
-                   + paper_tetrapak                  
+                   + paper_tetrapak
                    + plastics_pet
                    + plastics_hard
                    + plastics_soft
@@ -1145,5 +1145,33 @@ CREATE VIEW hd_scheme_status_view (status) as (
      union
     select 'Facilitation in progress'
 );
+
+DROP VIEW IF EXISTS hd_scheme_status_base_view;
+CREATE VIEW hd_scheme_status_base_view as (
+    with data as (select i.id                                                                                                 individual_id,
+                         split_part(name, ' -', 1)                                                                         as scheme_name,
+                         single_select_coded(
+                                 enc.observations -> 'eb617077-1ac5-4f29-a7b0-6233df335491')                               as scheme_status,
+                         i.is_voided                                                                                          individual_voided,
+                         i.address_id                                                                                         address_id,
+                         row_number()
+                         over (partition by split_part(name, ' -', 1), pe.individual_id order by encounter_date_time desc) as rn
+                  from program_encounter enc
+                           join program_enrolment pe on enc.program_enrolment_id = pe.id
+                           join individual i on pe.individual_id = i.id
+                  where split_part(name, ' -', 1) notnull
+                    and enc.name <> 'Start Facilitation'
+                    and encounter_date_time notnull
+                    and single_select_coded(
+                          enc.observations -> 'eb617077-1ac5-4f29-a7b0-6233df335491') notnull
+    )
+    select individual_id,
+           address_id,
+           string_agg(concat(scheme_name, '--', scheme_status), ',') scheme_with_status
+    from data
+    where rn = 1
+    group by 1, 2
+);
+
 
 set role none;
