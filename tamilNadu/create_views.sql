@@ -1109,6 +1109,24 @@ CREATE VIEW hd_training_view (training) as (
     select 'Others'
 );
 
+DROP VIEW IF EXISTS hd_type_of_waste_view;
+CREATE VIEW hd_type_of_waste_view (waste) as (
+    select 'Plastic'
+    union
+    select 'Road scrap'
+    union
+    select 'Metal'
+    union
+    select 'Wires'
+    union
+    select 'Glass'
+    union
+    select 'Paper'
+    union
+    select 'Cardboard'
+    union
+    select 'Others'
+);
 
 DROP VIEW IF EXISTS hd_type_of_informal_waste_worker;
 CREATE VIEW hd_type_of_informal_waste_worker (typeOfWorker) as (
