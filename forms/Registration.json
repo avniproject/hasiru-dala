@@ -3226,6 +3226,18 @@
     "displayOrder" : 37.0,
     "display" : "Waste sold per week",
     "formElements" : [ {
+      "name" : "Details of waste sold per week",
+      "uuid" : "32286f6a-fd47-4ed3-a2de-90f57266cf9b",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "Details of waste sold per week",
+        "uuid" : "34150883-814f-43be-904a-cb7674233c1f"
+      },
+      "displayOrder" : 1.0,
+      "type" : "SingleSelect",
+      "mandatory" : false,
+      "voided" : true
+    }, {
       "name" : "Glass Quarter Bottles waste sold per week in Kg",
       "uuid" : "4ed15af9-af57-497e-95f1-10a0f3911c35",
       "keyValues" : [ ],
@@ -3233,7 +3245,7 @@
         "name" : "Glass Quarter Bottles waste sold per week in Kg",
         "uuid" : "47c88209-fd79-44f1-ac20-1371becc9540"
       },
-      "displayOrder" : 1.0,
+      "displayOrder" : 2.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3244,7 +3256,7 @@
         "name" : "Glass Beer bottles waste sold per week in Kg",
         "uuid" : "154663b0-60d9-47b6-8ec6-b741a2608703"
       },
-      "displayOrder" : 2.0,
+      "displayOrder" : 3.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3255,7 +3267,7 @@
         "name" : "Glass waste sold per week in Kg",
         "uuid" : "9db314f8-7258-4bd5-9c1e-126a403c5a33"
       },
-      "displayOrder" : 3.0,
+      "displayOrder" : 4.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3266,7 +3278,7 @@
         "name" : "Metal Ferrous Metals/Iron waste sold per week in Kg",
         "uuid" : "3ec94beb-294d-4504-a237-8a405fd90a21"
       },
-      "displayOrder" : 4.0,
+      "displayOrder" : 5.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3277,7 +3289,7 @@
         "name" : "Metal Copper waste sold per week in Kg",
         "uuid" : "4b5fe8c0-de6e-43a7-96ea-513aca1be885"
       },
-      "displayOrder" : 5.0,
+      "displayOrder" : 6.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3288,7 +3300,7 @@
         "name" : "Metal Aluminum waste sold per week in Kg",
         "uuid" : "420be15f-ae29-496f-9a8a-c6204d2de989"
       },
-      "displayOrder" : 6.0,
+      "displayOrder" : 7.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3299,7 +3311,7 @@
         "name" : "Metal Other Metals waste sold per week in Kg",
         "uuid" : "487d5a0e-dec5-4488-990f-6b22d9531e9e"
       },
-      "displayOrder" : 7.0,
+      "displayOrder" : 8.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3310,7 +3322,7 @@
         "name" : "Metal Batteries waste sold per week in Kg",
         "uuid" : "7a12d032-2607-4a1d-9b95-d699c4d154a1"
       },
-      "displayOrder" : 8.0,
+      "displayOrder" : 9.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3321,7 +3333,7 @@
         "name" : "Metal Brass waste sold per week in Kg",
         "uuid" : "b011b8e3-79cd-4f88-87f1-4f0ccc5c0a55"
       },
-      "displayOrder" : 9.0,
+      "displayOrder" : 10.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3332,7 +3344,7 @@
         "name" : "Metal Mercury waste sold per week in Kg",
         "uuid" : "dc875734-a6f9-464e-bba8-9038f3508925"
       },
-      "displayOrder" : 10.0,
+      "displayOrder" : 11.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3343,7 +3355,7 @@
         "name" : "Paper Cardboard/Corrugated boxes waste sold per week in Kg",
         "uuid" : "bdf9a8d2-1cee-4ff8-88d8-5b31e5d4e2be"
       },
-      "displayOrder" : 11.0,
+      "displayOrder" : 12.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3354,7 +3366,7 @@
         "name" : "Paper White Paper/White Record waste sold per week in Kg",
         "uuid" : "03cefc64-eeb7-41a5-a962-78ccf8cc1d87"
       },
-      "displayOrder" : 12.0,
+      "displayOrder" : 13.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3365,7 +3377,7 @@
         "name" : "Paper Road scrap paper waste sold per week in Kg",
         "uuid" : "73171ed1-722c-4ba6-9307-4249162c10f9"
       },
-      "displayOrder" : 13.0,
+      "displayOrder" : 14.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3376,7 +3388,7 @@
         "name" : "Paper Tetrapak waste sold per week in Kg",
         "uuid" : "f93c0e42-6c89-408b-8acf-43b266ece7db"
       },
-      "displayOrder" : 14.0,
+      "displayOrder" : 15.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3387,7 +3399,7 @@
         "name" : "Tetrapak Details",
         "uuid" : "f8ae05e9-884a-461c-b3a9-90dee6d811cd"
       },
-      "displayOrder" : 15.0,
+      "displayOrder" : 16.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3398,7 +3410,7 @@
         "name" : "Plastics PET (Pearlpet) waste sold per week in Kg",
         "uuid" : "779eaf00-bd68-40ee-8b4d-c795af18135f"
       },
-      "displayOrder" : 16.0,
+      "displayOrder" : 17.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3409,7 +3421,7 @@
         "name" : "Plastics Hard Plastic items (cassette covers) waste sold per week in Kg",
         "uuid" : "093b7d7f-d87a-4b3e-9838-17eb088a5840"
       },
-      "displayOrder" : 17.0,
+      "displayOrder" : 18.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3420,7 +3432,7 @@
         "name" : "Plastics Soft Plastic items (Buckets) waste sold per week in Kg",
         "uuid" : "2841104a-7c1d-44b4-904a-a6597f47dafe"
       },
-      "displayOrder" : 18.0,
+      "displayOrder" : 19.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3431,7 +3443,7 @@
         "name" : "Plastics Soft Plastic, Chappal, soles waste sold per week in Kg",
         "uuid" : "027e3561-0ea8-47b5-82cf-43a2c91fd721"
       },
-      "displayOrder" : 19.0,
+      "displayOrder" : 20.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3442,7 +3454,7 @@
         "name" : "Plastics Milk Bags waste sold per week in Kg",
         "uuid" : "058e4290-a314-4ca5-9b99-76e7e47d66e3"
       },
-      "displayOrder" : 20.0,
+      "displayOrder" : 21.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3453,7 +3465,7 @@
         "name" : "Plastics LD Plastic bags waste sold per week in Kg",
         "uuid" : "ab3cfea9-4b81-41d7-8154-2889df35eb9b"
       },
-      "displayOrder" : 21.0,
+      "displayOrder" : 22.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3464,7 +3476,7 @@
         "name" : "Plastics Thin Plastic bags waste sold per week in Kg",
         "uuid" : "84d96538-2103-432e-ad55-465c3e943e51"
       },
-      "displayOrder" : 22.0,
+      "displayOrder" : 23.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3475,7 +3487,7 @@
         "name" : "Plastics White Plastic waste sold per week in Kg",
         "uuid" : "38855c44-d115-4b3d-bf5f-7dc04b9fed1f"
       },
-      "displayOrder" : 23.0,
+      "displayOrder" : 24.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3486,51 +3498,62 @@
         "name" : "White Plastic Details",
         "uuid" : "3bac6f5f-17f5-494e-882e-9fb6ff303653"
       },
-      "displayOrder" : 24.0,
+      "displayOrder" : 25.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
-      "name" : "Others Rubber waste sold per week in Kg",
+      "name" : "Rubber waste sold per week in Kg",
       "uuid" : "80990c87-8493-41d1-86f1-8f97e86e4376",
       "keyValues" : [ ],
       "concept" : {
         "name" : "Others Rubber waste sold per week in Kg",
         "uuid" : "15c19384-5215-4934-8cf1-466a58fa5613"
       },
-      "displayOrder" : 25.0,
+      "displayOrder" : 26.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
-      "name" : "Others Textiles/Rags waste sold per week in Kg",
+      "name" : "Textiles/Rags waste sold per week in Kg",
       "uuid" : "dbf25788-cb6b-400f-ad2b-c4926edf788b",
       "keyValues" : [ ],
       "concept" : {
         "name" : "Others Textiles/Rags waste sold per week in Kg",
         "uuid" : "fd448acc-d983-4a08-a8bb-53d78bd214bd"
       },
-      "displayOrder" : 26.0,
+      "displayOrder" : 27.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
-      "name" : "Others Tin waste sold per week in Kg",
+      "name" : "Tin waste sold per week in Kg",
       "uuid" : "72f59745-b3f3-4936-82d0-7cef99addf24",
       "keyValues" : [ ],
       "concept" : {
         "name" : "Others Tin waste sold per week in Kg",
         "uuid" : "e1b495c4-6ed8-4861-86b5-609de063c7d8"
       },
-      "displayOrder" : 27.0,
+      "displayOrder" : 28.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
-      "name" : "Others Thermocol/Styrofoam waste sold per week in Kg",
+      "name" : "Thermocol/Styrofoam waste sold per week in Kg",
       "uuid" : "87a343ef-095d-4294-8161-c7e6e51f8b4c",
       "keyValues" : [ ],
       "concept" : {
         "name" : "Others Thermocol/Styrofoam waste sold per week in Kg",
         "uuid" : "0ccc5149-a19d-4ac0-bedd-8d621951f4be"
       },
-      "displayOrder" : 28.0,
+      "displayOrder" : 29.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    }, {
+      "name" : "If any other waste is sold, please mention the quality waste sold per week",
+      "uuid" : "b72e1b92-9c54-4cb6-8eb2-d8c5b05406ae",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "If any other waste is sold, please mention the quality waste sold per week",
+        "uuid" : "e09e8244-5b00-4ff5-b83e-67a0fc3529e4"
+      },
+      "displayOrder" : 30.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3541,9 +3564,10 @@
         "name" : "Thermocol/Styrofoam",
         "uuid" : "b3267364-c440-4dad-942f-758eb64b63df"
       },
-      "displayOrder" : 29.0,
+      "displayOrder" : 31.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : false,
+      "voided" : true
     } ]
   }, {
     "uuid" : "3a9eca76-db0e-4500-ab17-db2563b2e422",
