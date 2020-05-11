@@ -3255,6 +3255,16 @@
   "uuid" : "495631f3-1336-4741-8dc7-97599fc0e3f1",
   "dataType" : "NA"
 }, {
+  "name" : "If any other paper is sold, please mention the quantity in sold per week",
+  "uuid" : "a31312ff-bab3-4858-b8a7-580787d44dc3",
+  "dataType" : "Numeric",
+  "keyValues" : [ ]
+}, {
+  "name" : "If any other plastic is sold, please mention the quantity in sold per week",
+  "uuid" : "73737d4f-9bc9-43c6-89df-1c9b5548058e",
+  "dataType" : "Numeric",
+  "keyValues" : [ ]
+}, {
   "name" : "If any other waste is sold, please mention the quality waste sold per week",
   "uuid" : "e09e8244-5b00-4ff5-b83e-67a0fc3529e4",
   "dataType" : "Text",
@@ -6636,10 +6646,6 @@
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
   } ]
-}, {
-  "name" : "White Plastic Details",
-  "uuid" : "3bac6f5f-17f5-494e-882e-9fb6ff303653",
-  "dataType" : "Text"
 }, {
   "name" : "Who decides frequency of cleaning?",
   "uuid" : "816a132f-25b8-4314-a00a-0b8c2613c47e",

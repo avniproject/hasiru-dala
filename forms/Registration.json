@@ -3392,6 +3392,17 @@
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
+      "name" : "If any other paper is sold, please mention the quantity in sold per week",
+      "uuid" : "656ac8d1-d67a-4087-b470-64fc1af6b89d",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "If any other paper is sold, please mention the quantity in sold per week",
+        "uuid" : "a31312ff-bab3-4858-b8a7-580787d44dc3"
+      },
+      "displayOrder" : 16.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    }, {
       "name" : "Tetrapak Details",
       "uuid" : "aef96f01-bdd4-423d-84b7-e73c0bbbccfc",
       "keyValues" : [ ],
@@ -3399,9 +3410,10 @@
         "name" : "Tetrapak Details",
         "uuid" : "f8ae05e9-884a-461c-b3a9-90dee6d811cd"
       },
-      "displayOrder" : 16.0,
+      "displayOrder" : 17.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : false,
+      "voided" : true
     }, {
       "name" : "Plastics PET (Pearlpet) waste sold per week in Kg",
       "uuid" : "a9fb364b-b3f4-4682-beff-355b94d1de2c",
@@ -3410,7 +3422,7 @@
         "name" : "Plastics PET (Pearlpet) waste sold per week in Kg",
         "uuid" : "779eaf00-bd68-40ee-8b4d-c795af18135f"
       },
-      "displayOrder" : 17.0,
+      "displayOrder" : 18.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3421,7 +3433,7 @@
         "name" : "Plastics Hard Plastic items (cassette covers) waste sold per week in Kg",
         "uuid" : "093b7d7f-d87a-4b3e-9838-17eb088a5840"
       },
-      "displayOrder" : 18.0,
+      "displayOrder" : 19.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3432,7 +3444,7 @@
         "name" : "Plastics Soft Plastic items (Buckets) waste sold per week in Kg",
         "uuid" : "2841104a-7c1d-44b4-904a-a6597f47dafe"
       },
-      "displayOrder" : 19.0,
+      "displayOrder" : 20.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3443,7 +3455,7 @@
         "name" : "Plastics Soft Plastic, Chappal, soles waste sold per week in Kg",
         "uuid" : "027e3561-0ea8-47b5-82cf-43a2c91fd721"
       },
-      "displayOrder" : 20.0,
+      "displayOrder" : 21.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3454,7 +3466,7 @@
         "name" : "Plastics Milk Bags waste sold per week in Kg",
         "uuid" : "058e4290-a314-4ca5-9b99-76e7e47d66e3"
       },
-      "displayOrder" : 21.0,
+      "displayOrder" : 22.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3465,7 +3477,7 @@
         "name" : "Plastics LD Plastic bags waste sold per week in Kg",
         "uuid" : "ab3cfea9-4b81-41d7-8154-2889df35eb9b"
       },
-      "displayOrder" : 22.0,
+      "displayOrder" : 23.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3476,7 +3488,7 @@
         "name" : "Plastics Thin Plastic bags waste sold per week in Kg",
         "uuid" : "84d96538-2103-432e-ad55-465c3e943e51"
       },
-      "displayOrder" : 23.0,
+      "displayOrder" : 24.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3487,20 +3499,32 @@
         "name" : "Plastics White Plastic waste sold per week in Kg",
         "uuid" : "38855c44-d115-4b3d-bf5f-7dc04b9fed1f"
       },
-      "displayOrder" : 24.0,
-      "type" : "SingleSelect",
-      "mandatory" : false
-    }, {
-      "name" : "White Plastic Details",
-      "uuid" : "b89801c1-59b7-4804-b62c-000e4a948318",
-      "keyValues" : [ ],
-      "concept" : {
-        "name" : "White Plastic Details",
-        "uuid" : "3bac6f5f-17f5-494e-882e-9fb6ff303653"
-      },
       "displayOrder" : 25.0,
       "type" : "SingleSelect",
       "mandatory" : false
+    }, {
+      "name" : "If any other plastic is sold, please mention the quantity in sold per week",
+      "uuid" : "6185143a-373b-4e82-ab0e-4dcec26db2a0",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "If any other plastic is sold, please mention the quantity in sold per week",
+        "uuid" : "73737d4f-9bc9-43c6-89df-1c9b5548058e"
+      },
+      "displayOrder" : 26.0,
+      "type" : "SingleSelect",
+      "mandatory" : false
+    }, {
+      "name" : "If any other plastic is sold, please mention the quantity in sold per week",
+      "uuid" : "b89801c1-59b7-4804-b62c-000e4a948318",
+      "keyValues" : [ ],
+      "concept" : {
+        "name" : "aax",
+        "uuid" : "3bac6f5f-17f5-494e-882e-9fb6ff303653"
+      },
+      "displayOrder" : 27.0,
+      "type" : "SingleSelect",
+      "mandatory" : false,
+      "voided" : true
     }, {
       "name" : "Rubber waste sold per week in Kg",
       "uuid" : "80990c87-8493-41d1-86f1-8f97e86e4376",
@@ -3509,7 +3533,7 @@
         "name" : "Others Rubber waste sold per week in Kg",
         "uuid" : "15c19384-5215-4934-8cf1-466a58fa5613"
       },
-      "displayOrder" : 26.0,
+      "displayOrder" : 28.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3520,7 +3544,7 @@
         "name" : "Others Textiles/Rags waste sold per week in Kg",
         "uuid" : "fd448acc-d983-4a08-a8bb-53d78bd214bd"
       },
-      "displayOrder" : 27.0,
+      "displayOrder" : 29.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3531,7 +3555,7 @@
         "name" : "Others Tin waste sold per week in Kg",
         "uuid" : "e1b495c4-6ed8-4861-86b5-609de063c7d8"
       },
-      "displayOrder" : 28.0,
+      "displayOrder" : 30.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3542,7 +3566,7 @@
         "name" : "Others Thermocol/Styrofoam waste sold per week in Kg",
         "uuid" : "0ccc5149-a19d-4ac0-bedd-8d621951f4be"
       },
-      "displayOrder" : 29.0,
+      "displayOrder" : 31.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3553,7 +3577,7 @@
         "name" : "If any other waste is sold, please mention the quality waste sold per week",
         "uuid" : "e09e8244-5b00-4ff5-b83e-67a0fc3529e4"
       },
-      "displayOrder" : 30.0,
+      "displayOrder" : 32.0,
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
@@ -3564,7 +3588,7 @@
         "name" : "Thermocol/Styrofoam",
         "uuid" : "b3267364-c440-4dad-942f-758eb64b63df"
       },
-      "displayOrder" : 31.0,
+      "displayOrder" : 33.0,
       "type" : "SingleSelect",
       "mandatory" : false,
       "voided" : true
