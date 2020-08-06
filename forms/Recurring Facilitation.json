@@ -88,11 +88,12 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Next recurring step').containsAnswerConceptName(\"Schedule next facilitation\");\n  return statusBuilder.build();\n};",
+      "rule" : "'use strict';\n({params, imports}) => {\n  const programEncounter = params.entity;\n  const formElement = params.formElement;\n  const statusBuilder = new imports.rulesConfig.FormElementStatusBuilder({programEncounter, formElement});\n  statusBuilder.show().when.valueInEncounter('Next recurring step').containsAnswerConceptName(\"Schedule next facilitation\");\n  const selectedDate = programEncounter.getObservationReadableValue('Enter the date of next facilitation');\n  selectedDate &&  statusBuilder.validationError(\"Past date not allowed\").whenItem(imports.moment().isAfter(selectedDate, 'day')).is.truthy;\n  return statusBuilder.build();\n};",
       "mandatory" : true
     } ]
   } ],
   "decisionRule" : "",
   "visitScheduleRule" : "\"use strict\";\n({params, imports}) => {\n    const programEncounter = params.entity;\n    const scheduleBuilder = new imports.rulesConfig.VisitScheduleBuilder({\n        programEncounter,\n        programEnrolment: programEncounter.programEnrolment\n    });\n    const nextVisitDate = programEncounter.getObservationReadableValue(\"Enter the date of next facilitation\");\n    const schemeName = imports.lodash.trim(programEncounter.name.split('-')[0]);\n    const encounterType = 'Recurring Facilitation';\n    const maxDate = imports.moment(nextVisitDate).add(7, 'days').toDate();\n    if (!_.isNil(nextVisitDate) && imports.moment().isSameOrBefore(maxDate, 'day')) {\n        scheduleBuilder.add({\n            name: `${schemeName} - Recurring`,\n            encounterType,\n            earliestDate: nextVisitDate,\n            maxDate\n        });\n    }\n    return scheduleBuilder.getAllUnique('name');\n};",
-  "validationRule" : ""
+  "validationRule" : "",
+  "checklistsRule" : ""
 }

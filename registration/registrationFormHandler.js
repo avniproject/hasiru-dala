@@ -407,7 +407,7 @@ class RegistrationViewHandlerHasiruDala {
             .and.when.valueInRegistration("Do you have an Occupational Identity Card?").is.yes;
     }
 
-    @WithName("Please Specifying")
+    @WithName("Please Specify")
     @WithRegistrationStatusBuilder
     OIC112([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please select the body that issued the Occupational Identity Card")
@@ -2451,6 +2451,13 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Scrap Dealer");
     }
 
+    @WithName("If any other paper is sold, please mention the quantity in sold per week")
+    @WithRegistrationStatusBuilder
+    scrapDealer231([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+            .containsAnswerConceptName("Scrap Dealer");
+    }
+
     @WithName("Tetrapak Details")
     @WithRegistrationStatusBuilder
     scrapDealer24([], statusBuilder) {
@@ -2514,7 +2521,14 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Scrap Dealer");
     }
 
-    @WithName("White Plastic Details")
+    @WithName("If any other plastic is sold, please mention the quantity in sold per week")
+    @WithRegistrationStatusBuilder
+    scrapDealer321([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+            .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("Rubber waste sold per week in Kg")
     @WithRegistrationStatusBuilder
     scrapDealer33([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
@@ -2528,23 +2542,30 @@ class RegistrationViewHandlerHasiruDala {
             .containsAnswerConceptName("Scrap Dealer");
     }
 
-    @WithName("Others Textiles/Rags waste sold per week in Kg")
+    @WithName("Textiles/Rags waste sold per week in Kg")
     @WithRegistrationStatusBuilder
     scrapDealer35([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
             .containsAnswerConceptName("Scrap Dealer");
     }
 
-    @WithName("Others Tin waste sold per week in Kg")
+    @WithName("Tin waste sold per week in Kg")
     @WithRegistrationStatusBuilder
     scrapDealer36([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
             .containsAnswerConceptName("Scrap Dealer");
     }
 
-    @WithName("Others Thermocol/Styrofoam waste sold per week in Kg")
+    @WithName("Thermocol/Styrofoam waste sold per week in Kg")
     @WithRegistrationStatusBuilder
     scrapDealer37([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
+            .containsAnswerConceptName("Scrap Dealer");
+    }
+
+    @WithName("If any other waste is sold, please mention the quality waste sold per week")
+    @WithRegistrationStatusBuilder
+    scrapDealer371([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
             .containsAnswerConceptName("Scrap Dealer");
     }
