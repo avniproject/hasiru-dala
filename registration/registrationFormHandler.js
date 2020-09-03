@@ -2859,11 +2859,11 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     dw4([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnswerConceptName("Desludging Worker", "Household Sanitation Worker",
+            .containsAnyAnswerConceptName("Desludging Worker", "Household Sanitation Worker",
                 "Toilet Cleaner at Railways",
                 "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment",
                 "Community/Public Toilet Cleaner",
-                "Toilet Cleaner in Schools and Offices");
+                "Toilet Cleaner in Schools and Offices");    
     }
 
     @WithName("what are the common reasons for blockages?")
@@ -2874,7 +2874,7 @@ class RegistrationViewHandlerHasiruDala {
             .and.when.valueInRegistration("Please choose your employment type")
             .containsAnswerConceptName("Sanitation Worker / Informal Sanitation Worker")
             .and.when.valueInRegistration("Type of Informal Sanitation Worker")
-            .containsAnswerConceptName("Desludging Worker", "Household Sanitation Worker",
+            .containsAnyAnswerConceptName("Desludging Worker", "Household Sanitation Worker",
                 "Toilet Cleaner at Railways",
                 "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment",
                 "Community/Public Toilet Cleaner",
