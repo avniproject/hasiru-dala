@@ -3556,29 +3556,29 @@ class RegistrationViewHandlerHasiruDala {
         statusBuilder.show().when.valueInRegistration("Do you get any government sponsored scholarship?").is.yes;
     }
 
-    @WithName("Have you undergone any of the vocational trainings?")
-    @WithRegistrationStatusBuilder
-    training1([], statusBuilder) {
-        statusBuilder.show().when.valueInRegistration("Please choose your employment type")
-            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker", "Sanitation Worker / Informal Sanitation Worker");
+    //@WithName("Have you undergone any of the vocational trainings?")
+    //@WithRegistrationStatusBuilder
+    //training1([], statusBuilder) {
+    //    statusBuilder.show().when.valueInRegistration("Please choose your employment type")
+    //        .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker", "Sanitation Worker / Informal Sanitation Worker");
+    //    }
 
-    }
-
-    @WithName("Please select from the list")
+    @WithName("Have you undergone any of the following training?")
     @WithRegistrationStatusBuilder
     training2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
-            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker", "Sanitation Worker / Informal Sanitation Worker")
-            .and.when.valueInRegistration("Have you undergone any of the vocational trainings?").containsAnswerConceptName("Yes");
+            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker", "Sanitation Worker / Informal Sanitation Worker");
+            //.and.when.valueInRegistration("Have you undergone any of the vocational trainings?").containsAnswerConceptName("Yes")
     }
 
-    @WithName("Training - Please Explain")
+    @WithName("Trainings - Please Explain")
     @WithRegistrationStatusBuilder
     training3([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
             .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker")
-            .and.when.valueInRegistration("Have you undergone any of the vocational trainings?").containsAnswerConceptName("Yes")
-            .and.when.valueInRegistration("Please select from the list").containsAnswerConceptName("Others");
+            .and.when.valueInRegistration("Have you undergone any of the following trainings?").containsAnswerConceptName("Others");
+            // .and.when.valueInRegistration("Have you undergone any of the vocational trainings?").containsAnswerConceptName("Yes")
+
     }
 
 
