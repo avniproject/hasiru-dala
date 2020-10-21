@@ -1876,7 +1876,7 @@ class RegistrationViewHandlerHasiruDala {
         statusBuilder.show().when.valueInRegistration("Please choose the type of respondent")
             .containsAnswerConceptName("Worker / Informal Worker")
             .and.when.valueInRegistration("Please choose your employment type")
-            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker","Sanitation Worker / Informal Sanitation Worker")
+            .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker", "Sanitation Worker / Informal Sanitation Worker")
             .and.when.valueInRegistration("Have you undergone any of the following trainings?")
             .containsAnswerConceptName("Others");
     }
@@ -2033,42 +2033,54 @@ class RegistrationViewHandlerHasiruDala {
     @WithRegistrationStatusBuilder
     ibSd11([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-            .containsAnyAnswerConceptName("Wastepicker", "Itinerant buyer", "Sorters at scrap shops", "Sorters at DWCC");
+            .containsAnyAnswerConceptName("Wastepicker", "Itinerant buyer", "Sorters at scrap shops", "Sorters at DWCC")
+            .and.when.valueInRegistration("Details of the buyer to whom you sell your waste")
+            .containsAnyAnswerConceptName("Scrap shop in my residential neighbourhood", "Large scrap shop beyond 3 kilometres");
     }
 
     @WithName("Address of scrap dealer/buyer")
     @WithRegistrationStatusBuilder
     ibSd12([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-            .containsAnyAnswerConceptName("Wastepicker", "Itinerant buyer", "Sorters at scrap shops", "Sorters at DWCC");
+            .containsAnyAnswerConceptName("Wastepicker", "Itinerant buyer", "Sorters at scrap shops", "Sorters at DWCC")
+            .and.when.valueInRegistration("Details of the buyer to whom you sell your waste")
+            .containsAnyAnswerConceptName("Scrap shop in my residential neighbourhood", "Large scrap shop beyond 3 kilometres");
     }
 
     @WithName("Phone number of scrap dealer/buyer")
     @WithRegistrationStatusBuilder
     ibSd13([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-            .containsAnyAnswerConceptName("Wastepicker", "Itinerant buyer", "Sorters at scrap shops", "Sorters at DWCC");
+            .containsAnyAnswerConceptName("Wastepicker", "Itinerant buyer", "Sorters at scrap shops", "Sorters at DWCC")
+            .and.when.valueInRegistration("Details of the buyer to whom you sell your waste")
+            .containsAnyAnswerConceptName("Scrap shop in my residential neighbourhood", "Large scrap shop beyond 3 kilometres");
     }
 
     @WithName("Do you get an advance from the scrap dealer/buyer?")
     @WithRegistrationStatusBuilder
     ibSd14([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-            .containsAnyAnswerConceptName("Wastepicker", "Sorters at scrap shops", "Sorters at DWCC");
+            .containsAnyAnswerConceptName("Wastepicker", "Sorters at scrap shops", "Sorters at DWCC")
+            .and.when.valueInRegistration("How do you pick waste?")
+            .containsAnyAnswerConceptName("Free roaming and migrant from other states (living in the city for less than 5 years)", "Free roaming living in city for more than 5 years");
     }
 
     @WithName("Do you face police harassment?")
     @WithRegistrationStatusBuilder
     ibSd15([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-            .containsAnyAnswerConceptName("Wastepicker", "Sorters at scrap shops", "Sorters at DWCC");
+            .containsAnyAnswerConceptName("Wastepicker", "Sorters at scrap shops", "Sorters at DWCC")
+            .and.when.valueInRegistration("How do you pick waste?")
+            .containsAnyAnswerConceptName("Free roaming and migrant from other states (living in the city for less than 5 years)", "Free roaming living in city for more than 5 years");
     }
 
     @WithName("Do you involve you children during off school hours?")
     @WithRegistrationStatusBuilder
     ibSd16([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Type of Informal Waste Worker")
-            .containsAnyAnswerConceptName("Wastepicker", "Sorters at scrap shops", "Sorters at DWCC");
+            .containsAnyAnswerConceptName("Wastepicker", "Sorters at scrap shops", "Sorters at DWCC")
+            .and.when.valueInRegistration("How do you pick waste?")
+            .containsAnyAnswerConceptName("Free roaming and migrant from other states (living in the city for less than 5 years)", "Free roaming living in city for more than 5 years");
     }
 
     @WithName("Please specify 2")
@@ -2863,7 +2875,7 @@ class RegistrationViewHandlerHasiruDala {
                 "Toilet Cleaner at Railways",
                 "Sanitation Worker at Lodge/Hotel/Hospital/Commercial Establishment",
                 "Community/Public Toilet Cleaner",
-                "Toilet Cleaner in Schools and Offices");    
+                "Toilet Cleaner in Schools and Offices");
     }
 
     @WithName("what are the common reasons for blockages?")
@@ -3568,7 +3580,7 @@ class RegistrationViewHandlerHasiruDala {
     training2([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
             .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker", "Sanitation Worker / Informal Sanitation Worker");
-            //.and.when.valueInRegistration("Have you undergone any of the vocational trainings?").containsAnswerConceptName("Yes")
+        //.and.when.valueInRegistration("Have you undergone any of the vocational trainings?").containsAnswerConceptName("Yes")
     }
 
     @WithName("Trainings - Please Explain")
@@ -3577,7 +3589,7 @@ class RegistrationViewHandlerHasiruDala {
         statusBuilder.show().when.valueInRegistration("Please choose your employment type")
             .containsAnyAnswerConceptName("Waste Worker / Informal Waste Worker")
             .and.when.valueInRegistration("Have you undergone any of the following trainings?").containsAnswerConceptName("Others");
-            // .and.when.valueInRegistration("Have you undergone any of the vocational trainings?").containsAnswerConceptName("Yes")
+        // .and.when.valueInRegistration("Have you undergone any of the vocational trainings?").containsAnswerConceptName("Yes")
 
     }
 
