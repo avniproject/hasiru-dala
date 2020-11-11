@@ -410,7 +410,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Are you a member of any caste association?",
   "uuid" : "bb9294b1-2f1b-4374-85a1-21057b560933",
@@ -424,7 +429,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Are you a member of any SHG?",
   "uuid" : "3ef76ea7-ccbb-46c1-99a3-866e9aca5932",
@@ -438,7 +448,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Are you affiliated to a political party?",
   "uuid" : "50f4e0a0-5d14-4e7f-8294-e47fe82cf03f",
@@ -452,7 +467,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Are you currently in debt?",
   "uuid" : "dd9ef773-f45f-4707-99e1-f300c447e608",
@@ -484,6 +504,10 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 3.0
   } ]
 }, {
   "name" : "Are you part of any other association?",
@@ -498,7 +522,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Are you part of any youth association?",
   "uuid" : "77aef8a0-e434-445b-8aa9-087c8fd3c8cf",
@@ -512,7 +541,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  } ,
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Are you registered with Employee Provident Fund Organization (EPFO)?",
   "uuid" : "361ec670-a468-4283-85af-1e3eb1e61d03",
@@ -843,6 +877,11 @@
   "dataType" : "Text",
   "active" : true
 }, {
+  "name" : "General",
+  "uuid" : "6c27cb37-f51d-43d3-876f-52752b05c561",
+  "dataType" : "NA",
+  "active" : true
+}, {
   "name" : "Caste Certificate",
   "uuid" : "9bdceed2-d4d1-46f8-a1e0-505c4345d156",
   "dataType" : "NA",
@@ -878,9 +917,13 @@
   "dataType" : "Coded",
   "active" : true,
   "answers" : [ {
+    "name" : "General",
+    "uuid" : "6c27cb37-f51d-43d3-876f-52752b05c561",
+    "order" : 1.0
+  },{
     "name" : "ST",
     "uuid" : "cec07a1c-6cf5-4fb4-85e1-76e045ad9bc9",
-    "order" : 1.0
+    "order" : 1.2
   }, {
     "name" : "SC-Arunthathiyar",
     "uuid" : "3e827cab-054d-4ac7-a67c-9f1ad3a60307",
@@ -1258,6 +1301,10 @@
     "name" : "Others",
     "uuid" : "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "order" : 4.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 5.0
   } ]
 }, {
   "name" : "Details of waste sold per week",
@@ -1273,6 +1320,16 @@
 }, {
   "name" : "Did not get any other job",
   "uuid" : "2395ef8f-38c1-4a69-9ce8-cf038a1b965e",
+  "dataType" : "NA",
+  "active" : true
+},{
+  "name" : "None of the above",
+  "uuid" : "5f612d7f-d53b-460e-bf26-3ef2f9429764",
+  "dataType" : "NA",
+  "active" : true
+},{
+  "name" : "Self - through sale of waste",
+  "uuid" : "2f779fc2-c400-4467-ada6-0049f72c0a27",
   "dataType" : "NA",
   "active" : true
 }, {
@@ -1344,7 +1401,7 @@
     "order" : 4.0
   } ]
 }, {
-  "name" : "Do you carry the waste after sweeping?",
+    "name" : "Do you carry the waste after sweeping?",
   "uuid" : "e6c84945-d3ee-4350-a999-1a0ee0cf9cec",
   "dataType" : "Coded",
   "active" : true,
@@ -1379,14 +1436,22 @@
   "dataType" : "Coded",
   "active" : true,
   "answers" : [ {
-    "name" : "Yes",
-    "uuid" : "99d2a63e-9390-4fe9-b020-8fc248705392",
+    "name" : "Always",
+    "uuid" : "7aa7e7ad-0c80-4c05-8d3d-cb6cff6690e1",
     "order" : 1.0
   }, {
-    "name" : "No",
-    "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
+    "name" : "Never",
+    "uuid" : "bd4b89c3-fc07-47a5-9be8-b3e8d14053e9",
     "order" : 2.0
-  } ]
+  }, {
+    "name" : "Sometimes",
+    "uuid" : "a6872113-b90c-4141-b3b2-1d4fe779cf36",
+    "order" : 3.0
+  }, {
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 4.0
+  }  ]
 }, {
   "name" : "Do you clean yourself after collection from septic tank?",
   "uuid" : "f0d9fc04-76c9-4abb-b32a-a242159eea26",
@@ -1480,7 +1545,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Do you get an advance from the scrap dealer/buyer?",
   "uuid" : "b2facab1-473d-4f26-97f1-b7a6b8421338",
@@ -1494,6 +1564,10 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 3.0
   } ]
 }, {
   "name" : "Do you get any government sponsored scholarship?",
@@ -1664,6 +1738,10 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 3.0
   } ]
 }, {
   "name" : "Do you have an electricity connection for your house?",
@@ -1730,6 +1808,10 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 8.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 9.0
   } ]
 }, {
   "name" : "Do you have any license?",
@@ -1765,7 +1847,16 @@
     "name" : "Mixer/Grinder",
     "uuid" : "9b7a7268-2ba7-482b-9307-3f5c14568825",
     "order" : 6.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 4.0
+    },{
+      "name" : "None of the above",
+      "uuid" : "5f612d7f-d53b-460e-bf26-3ef2f9429764",
+      "order" : 4.0
+    }]
 }, {
   "name" : "Do you have any partial/total disablement that affects your day-to-day functioning",
   "uuid" : "c99fcaa9-153e-478a-bc39-96295855e8eb",
@@ -1835,7 +1926,11 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  } ,{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 3.0
+  }]
 }, {
   "name" : "Do you leave the lid of the tank open for some time before cleaning?",
   "uuid" : "98fc51f0-8bd4-422a-8ffb-82f17a5d8ba5",
@@ -2246,7 +2341,12 @@
     "name" : "No problem",
     "uuid" : "2d83786a-c861-4b0d-99c3-848aef75bfe2",
     "order" : 13.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 14.0
+    }]
 }, {
   "name" : "Document Collection Pending",
   "uuid" : "a4dbd1ca-6081-433a-8ca8-db854ee0c792",
@@ -2991,7 +3091,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Have you received any assistance from Club/Association?",
   "uuid" : "65aa1546-9b99-4b35-b740-a92734e093ea",
@@ -3005,7 +3110,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Have you received any assistance from Other Association?",
   "uuid" : "958da202-b219-4b34-bd4c-ddc08b33a836",
@@ -3019,6 +3129,10 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 3.0
   } ]
 }, {
   "name" : "Have you received any assistance from Political Party?",
@@ -3033,6 +3147,10 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 3.0
   } ]
 }, {
   "name" : "Have you received any assistance from SHG?",
@@ -3047,6 +3165,10 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 3.0
   } ]
 }, {
   "name" : "Have you received any assistance from Trade Union?",
@@ -3061,7 +3183,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Have you received any assistance from Youth Association?",
   "uuid" : "a54432b9-09d2-4928-bbea-22f395e48c31",
@@ -3075,7 +3202,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Have you received assistance from any government body? (Ex. TAHDCO, Slum Board etc.)",
   "uuid" : "b514e437-3073-4bf7-8fb8-6f0fa6eeced3",
@@ -3131,6 +3263,10 @@
     "name" : "Others",
     "uuid" : "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "order" : 9.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 10.0
   } ]
 }, {
   "name" : "Have you undergone any of the vocational trainings?",
@@ -3387,6 +3523,10 @@
     "name" : "Motorised vehicle",
     "uuid" : "1369bbe4-e900-4b77-b40d-2247f83362f0",
     "order" : 4.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 5.0
   } ]
 }, {
   "name" : "How long do you carry the collected waste if no vehicle is available?",
@@ -3520,7 +3660,12 @@
     "name" : "more than 8 hours",
     "uuid" : "f9d4c0ed-98c6-4dea-a16e-9aef7f6a763d",
     "order" : 4.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "How many of you go together for undertaking the work?",
   "uuid" : "f6ac6da1-6e86-4d6c-b8ec-5673ec1e9bac",
@@ -3613,6 +3758,10 @@
     "name" : "Rs. 600 and above per week",
     "uuid" : "478dd520-c5e5-4cd5-8ce2-5b1059488dbc",
     "order" : 6.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 7.0
   } ]
 }, {
   "name" : "How much Metal waste you buy per week in (Kg)?",
@@ -3645,7 +3794,12 @@
     "name" : "more than 300 kg",
     "uuid" : "b1bf1a71-4249-4ddc-8a5d-cf0451689726",
     "order" : 4.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "How much Paper-White waste you buy per week in (Kg)?",
   "uuid" : "5bbdc2ad-2a6b-4494-8885-d5416e6613c3",
@@ -4036,7 +4190,17 @@
     "name" : "Others",
     "uuid" : "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "order" : 7.0
-  } ]
+  } ,
+    {
+      "name" : "No other work",
+      "uuid" : "f322c421-e401-4992-8ba0-5167efda4744",
+      "order" : 8.0
+    } ,
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 9.0
+    }]
 }, {
   "name" : "Islam",
   "uuid" : "4aeb2faf-c570-40e7-919a-ffa07a2d11a7",
@@ -4671,7 +4835,13 @@
   "uuid" : "51ec44ce-5469-4c26-8ac8-10f0c62c3afd",
   "dataType" : "NA",
   "active" : true
-}, {
+},
+  {
+    "name" : "No other work",
+    "uuid" : "f322c421-e401-4992-8ba0-5167efda4744",
+    "dataType" : "NA",
+    "active" : true
+  },{
   "name" : "No of Working Days in a Month",
   "uuid" : "c6d5d874-bcce-4c02-9828-a9b646c31790",
   "dataType" : "Numeric",
@@ -6788,7 +6958,12 @@
     "name" : "No",
     "uuid" : "3bdb940c-77f5-4a2d-bb15-da4d609970b8",
     "order" : 2.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Sometimes",
   "uuid" : "a6872113-b90c-4141-b3b2-1d4fe779cf36",
@@ -7853,7 +8028,12 @@
     "name" : "> 10 km",
     "uuid" : "92a6e43b-2f0b-4dcf-984a-deebbda3b7c0",
     "order" : 5.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "What is the average group size of a typical desludging work?",
   "uuid" : "d28332f1-616b-4af6-bfee-6cc1b5847b84",
@@ -8026,7 +8206,12 @@
     "name" : "Others",
     "uuid" : "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "order" : 9.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 10.0
+    }]
 }, {
   "name" : "What is the type of ownership of your house?",
   "uuid" : "880a3d27-ee1c-401c-bcc8-71dfb25a3c2b",
@@ -8060,7 +8245,12 @@
     "name" : "Any Other",
     "uuid" : "c42c683a-6389-41c5-9e71-ff0e80b6d854",
     "order" : 7.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 8.0
+    }]
 }, {
   "name" : "What is the type of roofing of your house?",
   "uuid" : "418206d7-6c60-4f8f-9bb5-ce04c8917853",
@@ -8142,12 +8332,32 @@
     "name" : "Unemployed",
     "uuid" : "e8f28442-e599-4aab-9204-9d2fba5ce897",
     "order" : 10.0
-  }, {
+  },
+    {
+      "name" : "Student",
+      "uuid" : "ab506cb9-409b-4c1b-a476-3f4ac7016432",
+      "order" : 11.0
+    }, {
+      "name" : "Infant",
+      "uuid" : "94ca0cb5-9bf0-4d10-a7f4-abd793f0c586",
+      "order" : 12.0
+    }, {
     "name" : "Others",
     "uuid" : "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
-    "order" : 11.0
+    "order" : 13.0
   } ]
-}, {
+},
+  {
+    "name" : "Infant",
+    "uuid" : "94ca0cb5-9bf0-4d10-a7f4-abd793f0c586",
+    "dataType" : "NA",
+    "active" : true
+  },{
+  "name" : "Student",
+  "uuid" : "ab506cb9-409b-4c1b-a476-3f4ac7016432",
+  "dataType" : "NA",
+  "active" : true
+},{
   "name" : "What kind of brooms do you use?",
   "uuid" : "dffe35ba-836f-48f2-9cc6-a030c9a49e4c",
   "dataType" : "Coded",
@@ -8264,6 +8474,10 @@
     "name" : "Others",
     "uuid" : "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "order" : 4.0
+  },{
+    "name" : "No response",
+    "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+    "order" : 3.0
   } ]
 }, {
   "name" : "What work do you perform at decanting station / Sewage Treatment Plant?",
@@ -8678,7 +8892,12 @@
     "name" : "Others",
     "uuid" : "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
     "order" : 8.0
-  } ]
+  },
+    {
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 9.0
+    }]
 }, {
   "name" : "Who hands over the cash/cheque or makes the money transfer?",
   "uuid" : "04974b75-8449-40f6-ac72-a82c51dfde44",
@@ -8708,6 +8927,11 @@
     "name" : "User fee",
     "uuid" : "384ced86-1d35-4a3c-a34d-7bf131d9fda2",
     "order" : 6.0
+  },
+    {
+    "name" : "Self - through sale of waste",
+    "uuid" : "2f779fc2-c400-4467-ada6-0049f72c0a27",
+    "order" : 6.5
   }, {
     "name" : "Others",
     "uuid" : "12b7fab3-4226-46ed-b3ae-e97e2fdfcca7",
@@ -8804,7 +9028,11 @@
     "name" : "Scrap trader",
     "uuid" : "a9f5766e-31d9-4f51-b568-710fdcb34ccb",
     "order" : 2.0
-  } ]
+  } ,{
+      "name" : "No response",
+      "uuid" : "2c747614-b51e-44a1-b8eb-4264074a65df",
+      "order" : 3.0
+    }]
 }, {
   "name" : "Who provides these tools/implants?",
   "uuid" : "1a26fe3c-d3a9-43c6-ac1a-d3bf6939a91a",

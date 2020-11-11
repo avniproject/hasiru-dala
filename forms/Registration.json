@@ -83,7 +83,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     } ]
   }, {
     "uuid" : "985695c7-40a1-4963-91b7-d05b7832eae3",
@@ -155,7 +155,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "MultiSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Please Explain",
       "uuid" : "1020ad4f-c337-4a8e-a0fa-779f89e276f7",
@@ -241,8 +241,8 @@
         "uuid" : "e9be897d-0e8d-4a87-bd0e-5cd507823501"
       },
       "displayOrder" : 3.0,
-      "type" : "SingleSelect",
-      "mandatory" : false
+      "type" : "MultiSelect",
+      "mandatory" : true
     }, {
       "name" : "additional jobs - Please Explain",
       "uuid" : "a6fd1e67-f554-46bf-b335-a37a165020ea",
@@ -1258,7 +1258,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "ownership of land - Please Elaborate",
       "uuid" : "c1a68252-113b-4e51-9623-a7fa30cc2f80",
@@ -1313,7 +1313,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "What is the source of drinking water for your house?",
       "uuid" : "053274b9-3876-4a03-b3f7-5d051eb43043",
@@ -1503,7 +1503,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Basis of Income",
       "uuid" : "77daab69-b023-4017-969e-9f9b214de630",
@@ -1514,7 +1514,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Fixed Rate (INR)",
       "uuid" : "9c457df8-fd59-4465-9430-41fa1cd477e5",
@@ -2027,7 +2027,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Trade Union - Please explain",
       "uuid" : "26cddfaa-ae33-427d-a558-7667b5fcfa19",
@@ -2077,7 +2077,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Political Party - Please explain",
       "uuid" : "f336b7ec-0e95-4830-b764-5e333db376a2",
@@ -2127,7 +2127,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "SHG - Please explain",
       "uuid" : "0e218595-a4ed-48ad-ab3b-56037e9d5cef",
@@ -2177,7 +2177,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Youth Association - Please explain",
       "uuid" : "f05dfdaa-6a73-4009-b6a3-9b07ced4e3c0",
@@ -2227,7 +2227,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Caste Association - Please explain",
       "uuid" : "8b8cf95d-1b30-4c21-8f75-25afde35ac3a",
@@ -2277,7 +2277,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Club/Association - Please explain",
       "uuid" : "a1fd84b6-1309-40f4-9c52-3a1fcb53dd30",
@@ -2327,7 +2327,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Other Association - Please explain",
       "uuid" : "3d095383-7383-4a3e-aab3-fa3f10c3b107",
@@ -2687,9 +2687,10 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true
+      "mandatory" : true,
+      "voided" : true
     }, {
-      "name" : "Please select from the list",
+      "name" : "Have you undergone any of the following trainings?",
       "uuid" : "262753d8-bd4a-43b0-ad1d-2bfee3904713",
       "keyValues" : [ ],
       "concept" : {
@@ -2748,7 +2749,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "MultiSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "How much quantity in kg do you collect on average per week?",
       "uuid" : "44170abe-e72d-47a3-bd6c-e6f531180c5b",
@@ -2792,7 +2793,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "MultiSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Where do you buy your scrap from?",
       "uuid" : "aef6d366-e9f4-4d0d-8c14-d5c99a02639b",
@@ -2836,7 +2837,7 @@
       },
       "displayOrder" : 11.0,
       "type" : "MultiSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Any Other :",
       "uuid" : "4339e042-703c-4d2a-a4c4-3d81866e6f25",
@@ -3002,7 +3003,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Do you face police harassment?",
       "uuid" : "3c29499e-d866-48fd-aae5-d0312c5d194f",
@@ -3013,7 +3014,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Do you involve you children during off school hours?",
       "uuid" : "58a5f643-ffdc-4ee5-a90f-b4bea4ebd872",
@@ -3024,7 +3025,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "children during off school hours - Please specify",
       "uuid" : "db77a4ef-d646-4be8-a8ea-70e9827a1d9a",
@@ -3063,7 +3064,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "MultiSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "What distance do you walk per day?",
       "uuid" : "1d0d329e-f790-47f7-b65c-8a0349cd9e7d",
@@ -3074,7 +3075,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "what is your daily expenditure on transport?",
       "uuid" : "263950ee-7593-42c9-b84f-7f5785a6ac30",
@@ -3096,7 +3097,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "If motorised vehicle then what is your daily expenditure on transport?",
       "uuid" : "de16707e-3d81-4174-912d-ec78f3c28a4e",
@@ -4139,7 +4140,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "MultiSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "No. of Establishments",
       "uuid" : "0a31154b-58a8-48f7-9178-d2257d60b479",
@@ -4150,7 +4151,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Do you get paid when the schools are on summer holiday?",
       "uuid" : "858d7edc-8e98-41a7-83d5-3f15e539845c",
@@ -4161,7 +4162,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "How many toilet seats do you clean per day?",
       "uuid" : "e0db8d85-2284-4983-b91a-d49db63adceb",
@@ -4172,7 +4173,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Who decides frequency of cleaning?",
       "uuid" : "f0f65307-42f9-4f50-bbe3-1284257ef6be",
@@ -4194,7 +4195,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "What cleaning materials do you use?",
       "uuid" : "67f282a1-5594-44ac-9590-e98eed1b23b5",
@@ -4205,7 +4206,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "MultiSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "cleaning materials - Please Explain",
       "uuid" : "e15b7e2f-1eed-4d0d-8b36-497772f31437",
@@ -4216,7 +4217,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Who pays for cleaning material?",
       "uuid" : "2f91c198-3ce2-444e-927c-8a35d4b7f7e1",
@@ -4227,7 +4228,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "MultiSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "cleaning material - Please Explain",
       "uuid" : "5b46516d-a509-4750-876b-a3b4d3b46e79",
@@ -4238,7 +4239,7 @@
       },
       "displayOrder" : 10.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Do you pick up the clogged / contaminated waste?",
       "uuid" : "62c1dae8-9aea-439c-b8dc-100625840461",
@@ -4249,7 +4250,7 @@
       },
       "displayOrder" : 11.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "How do you dispose the clogged / contaminated waste?",
       "uuid" : "d856568e-2ef3-49c6-b649-88db7ec1d4ca",
@@ -4260,7 +4261,7 @@
       },
       "displayOrder" : 12.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "clogged/contaminated waste - Please Explain",
       "uuid" : "c17acf0e-934c-4220-8472-c518e1ce6688",
@@ -4271,7 +4272,7 @@
       },
       "displayOrder" : 13.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Is there any other work you do in the house / institution / establishment / office?",
       "uuid" : "ecc7fb58-cd74-4a1d-acaf-372161587d34",
@@ -4282,7 +4283,7 @@
       },
       "displayOrder" : 14.0,
       "type" : "MultiSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "house/institution/establishment/office - Please Explain",
       "uuid" : "bfe7acec-b605-4742-8f87-cadbaf1cc1ce",
@@ -4293,7 +4294,7 @@
       },
       "displayOrder" : 15.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "How many of you go together for undertaking the work?",
       "uuid" : "05392565-9c7f-486b-8f40-cdbb3910e5ac",
@@ -4304,7 +4305,7 @@
       },
       "displayOrder" : 16.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Do you have access and facilities to clean yourself?",
       "uuid" : "7451d126-957b-4dac-af8c-2397ad04c43c",
@@ -4343,7 +4344,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : false
+      "mandatory" : true
     }, {
       "name" : "Who provided these implants?",
       "uuid" : "ef35fe11-c524-487b-83cb-011f28559e78",
@@ -4354,7 +4355,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "MultiSelect",
-      "mandatory" : false
+      "mandatory" : true
     } ]
   }, {
     "uuid" : "c2f829fc-a0a5-4f15-935c-b1d8c4b08718",
