@@ -17,6 +17,17 @@ last_modified_by_id = (select id from users where username = 'nupoork@hasiru_ka_
 where i.observations ->> '36f29633-4d58-46e4-9f67-c2ef47d48032' is null;
 
 
+
+
+
+
+
+
+
+
+
+
+
 --Script to migrate Health encounter questions to Registration
 set role hasiru_ka_uat;
 -- 1809	Registration
@@ -40,3 +51,38 @@ where  enc.individual_id = i.id
        and i.subject_type_id = 271
        and enc.encounter_type_id = 1199
        and enc.observations is not null;
+       
+       
+       
+       
+       
+       
+       
+-- Script to migrate FLP form group to Housing form
+update form_element_group
+ set form_id = (select id from form where name = 'Housing'),
+     display_order = 2,
+     last_modified_date_time = current_timestamp + (id % 10000) * '1 milliseconds'::interval,
+     last_modified_by_id = (select id from users where username = 'nupoork@hasiru_ka_uat')
+where form_id = (select id from form where name = 'FLP');
+
+-- TO migrate flp form observations to Housing observations
+update encounter 
+set encounter.observations = encounter.observations || flp.observations,
+    last_modified_date_time = current_timestamp + ((i.id % 4000) * interval '1 millisecond'),
+    last_modified_by_id = (select id from users where username = 'nupoork@hasiru_ka_uat')
+
+from encounter flp 
+where flp.individual_id = encounter.individual_id
+and encounter.encounter_type_id = (select id from encounter_type where name = 'Housing')
+  and flp.encounter_type_id = (select id from encounter_type where name = 'FLP');
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
