@@ -68,6 +68,19 @@ class RegistrationViewHandlerHasiruDala {
         statusBuilder.show().when.valueInRegistration("Please select the reason(s) for discontinuation").containsAnswerConceptName("Others");
     }
 
+    @WithName("Please record the consent audio")
+    @WithRegistrationStatusBuilder
+    CONSENT1([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("How do you want to record consent")
+            .containsAnswerConceptName("Audio");
+    }
+
+    @WithName("Please upload the consent picture")
+    @WithRegistrationStatusBuilder
+    CONSENT2([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("How do you want to record consent")
+            .containsAnswerConceptName("Picture");
+    }
 
     @WithName("Do you have a local address proof?")
     @WithRegistrationStatusBuilder
@@ -3632,10 +3645,23 @@ class RegistrationViewHandlerHasiruDala {
 
     }
 
+    @WithName("Aadhar card number")
+    @WithRegistrationStatusBuilder
+    phid411([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether you have Aadhar Card").containsAnswerConceptName('Yes');
+
+    }
 
     @WithName("Upload Photo of PAN Card")
     @WithRegistrationStatusBuilder
     phid4([], statusBuilder) {
+        statusBuilder.show().when.valueInRegistration("Whether you have PAN Card").containsAnswerConceptName('Yes');
+
+    }
+
+    @WithName("PAN card number")
+    @WithRegistrationStatusBuilder
+    phid412([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Whether you have PAN Card").containsAnswerConceptName('Yes');
 
     }

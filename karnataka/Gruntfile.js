@@ -2,14 +2,19 @@ const rulesConfigInfra = require('rules-config/infra');
 const IDI = require('openchs-idi');
 
 module.exports = IDI.configure({
-    "name": "hasiru-karnataka",
+    // "name": "wwa",
+    // "chs-admin": "admin",
+    // "org-name": "Waste Workers Association",
+    // "org-admin": "nupoork@wwa",
+    // "secrets": '../../secrets.json',
+    "name": "hasiru_ka_uat",
     "chs-admin": "admin",
-    "org-name": "Hasiru Dala Karnataka",
-    "org-admin": "admin@hd_ka",
+    "org-name": "Hasiru KA uat",
+    "org-admin": "nupoork@hasiru_ka_uat",
     "secrets": '../../secrets.json',
     "files": {
         "adminUsers": {
-            // "prod": ["admin-user.json"],
+            "prod": ["admin-user.json"],
             "dev": ["users/dev-admin-user.json"],
             "staging": ["users/dev-admin-user.json"],
             "uat": ["users/uat-admin-user.json"]
