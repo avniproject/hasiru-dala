@@ -36,5 +36,7 @@ set observations = i.observations || enc.observations,
     last_modified_date_time = current_timestamp + ((i.id % 4000) * interval '1 millisecond'),
     last_modified_by_id = (select id from users where username = 'nupoork@hasiru_ka_uat')
 from encounter enc
-where i.subject_type_id = 271 and encounter_type_id = 1199
-  and enc.observations is not null;
+where  enc.individual_id = i.id
+       and i.subject_type_id = 271
+       and enc.encounter_type_id = 1199
+       and enc.observations is not null;
