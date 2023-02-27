@@ -80,7 +80,51 @@ and encounter.encounter_type_id = (select id from encounter_type where name = 'H
        
        
        
-       
+-- Script to move the bottom 2 question groups to a different form
+
+select * from form f ;
+select * from form_element_group feg where form_id = 2234;
+select * from users;
+
+update form_element_group 
+set form_id = 2234,
+display_order = 4,
+last_modified_by_id = 6686,
+last_modified_date_time = now()
+where form_element_group.id = 6208;
+
+update form_element_group 
+set form_id = 2234,
+display_order = 5,
+last_modified_by_id = 6686,
+last_modified_date_time = now()
+where form_element_group.id = 6207;
+
+
+-- Script to move the data to respective individuals
+
+select * from subject_type st ; -- household id = 303
+select * from encounter_type et ; -- Housing encounter id = 1223;
+
+
+
+with multiple_encounters_done as (select individual_id,last_modified_date_time, row_number() over (partition by enc.individual_id order by enc.encounter_date_time desc) 
+as visit_number 
+from encounter enc
+where encounter_type_id = 1223
+)
+ update individual
+set observations = individual.observations || enc.observations,
+    last_modified_date_time = current_timestamp + ((individual.id % 4000) * interval '1 millisecond'),
+    last_modified_by_id = 6686
+from encounter enc, multiple_encounters_done
+where individual.id = multiple_encounters_done.individual_id
+ and enc.individual_id = individual.id
+       and individual.subject_type_id = 303
+       and enc.encounter_type_id = 1223
+       and enc.observations is not null
+       and multiple_encounters_done.visit_number = 1
+       ;
        
        
        
